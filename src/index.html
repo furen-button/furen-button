@@ -3,19 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>フレンのボタン</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kiwi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <style>
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            4% {
+                transform: scale(1.1);
+            }
+            7% {
+                transform: scale(1);
+            }
+            11% {
+                transform: scale(1.07);
+            }
+            18% {
+                transform: scale(1);
+            }
+        }
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
         .sounds {
             float: left;
-            border-bottom: 2px solid black;
-            border-top: 2px solid black;
-            border-left: 2px solid black;
-            border-right: 2px solid black;
+            border: 2px solid black;
+            border-radius: 5px;
             position: relative;
             padding: 5px;
             width: auto;
             height: auto;
             margin: 2px;
-            z-index: 0;
+            font-size: 24px;
+            font-family: 'Kiwi Maru', serif;
+        }
+        .sounds:hover {
+            cursor: pointer;
+            background-color: #ec1d2f;
+            color: white;
+        }
+        .anime-object {
+            animation: heartbeat 1s infinite ease-in-out;
+            background-color: #ec1d2f;
+            color: white;
+        }
+        .filter-on {
+            color: gray;
+        }
+        .filter-off {
+            color: black;
+        }
+        h1 {
+            font-family: 'Kiwi Maru', serif;
+            font-size: 50px;
         }
     </style>
 </head>
@@ -23,91 +68,119 @@
 <div>
     <h1>フレンボタン</h1>
     <p><a href="https://www.youtube.com/@FurenELustario" target="_blank">コーヴァス帝国から来た女騎士フレン・E・ルスタリオさん</a>のボイス切り抜きをまとめます。</p>
-    <p>'p' キーで連続再生開始。's' キーで停止。</p>
     <p>このページは<a href="http://ushiumi.ichiya-boshi.net" target="_blank">宇志海ボタン</a>のオマージュです。</p>
     <p><a href="https://www.anycolor.co.jp/guidelines/" target="_blank">ANYCOLOR二次創作ガイドライン</a>に基づき、ライバーの活動に敬意を払い、創作性のあるまとめができることを目指しています。</p>
 </div>
 <div>
-<div class="sounds" data-file="yuukai-jiken/acchiike.wav">あっちいけ</div>
-<div class="sounds" data-file="yuukai-jiken/aho.wav">あほ</div>
-<div class="sounds" data-file="yuukai-jiken/ashigahayaine.wav">足が速いね</div>
-<div class="sounds" data-file="yuukai-jiken/babaa.wav">babaa</div>
-<div class="sounds" data-file="yuukai-jiken/baka.wav">baka</div>
-<div class="sounds" data-file="yuukai-jiken/bikkurisita.wav">bikkurisita</div>
-<div class="sounds" data-file="yuukai-jiken/chikayoruna.wav">chikayoruna</div>
-<div class="sounds" data-file="yuukai-jiken/daijoubu.wav">daijoubu</div>
-<div class="sounds" data-file="yuukai-jiken/debu.wav">debu</div>
-<div class="sounds" data-file="yuukai-jiken/doke.wav">doke</div>
-<div class="sounds" data-file="yuukai-jiken/fuwafuwakotoba.wav">fuwafuwakotoba</div>
-<div class="sounds" data-file="yuukai-jiken/ganbattene.wav">ganbattene</div>
-<div class="sounds" data-file="yuukai-jiken/gomenne.wav">gomenne</div>
-<div class="sounds" data-file="yuukai-jiken/hentai-imasu.wav">hentai-imasu</div>
-<div class="sounds" data-file="yuukai-jiken/hetakuso.wav">hetakuso</div>
-<div class="sounds" data-file="yuukai-jiken/hyakutendana.wav">hyakutendana</div>
-<div class="sounds" data-file="yuukai-jiken/iine.wav">iine</div>
-<div class="sounds" data-file="yuukai-jiken/issyoni-asobo.wav">issyoni-asobo</div>
-<div class="sounds" data-file="yuukai-jiken/issyoni-ganbaro.wav">issyoni-ganbaro</div>
-<div class="sounds" data-file="yuukai-jiken/kakkoiine.wav">kakkoiine</div>
-<div class="sounds" data-file="yuukai-jiken/kasu.wav">kasu</div>
-<div class="sounds" data-file="yuukai-jiken/kawaiine.wav">kawaiine</div>
-<div class="sounds" data-file="yuukai-jiken/kimoi.wav">kimoi</div>
-<div class="sounds" data-file="yuukai-jiken/kimotiwarui.wav">kimotiwarui</div>
-<div class="sounds" data-file="yuukai-jiken/kirai.wav">kirai</div>
-<div class="sounds" data-file="yuukai-jiken/korosu.wav">korosu</div>
-<div class="sounds" data-file="yuukai-jiken/kusoyarou.wav">kusoyarou</div>
-<div class="sounds" data-file="yuukai-jiken/manuke.wav">manuke</div>
-<div class="sounds" data-file="yuukai-jiken/mazeteagenai.wav">mazeteagenai</div>
-<div class="sounds" data-file="yuukai-jiken/mou-iiotona-nandesukedo.wav">mou-iiotona-nandesukedo</div>
-<div class="sounds" data-file="yuukai-jiken/mouaitakunai.wav">mouaitakunai</div>
-<div class="sounds" data-file="yuukai-jiken/omae.wav">omae</div>
-<div class="sounds" data-file="yuukai-jiken/omedetou.wav">omedetou</div>
-<div class="sounds" data-file="yuukai-jiken/ouensiteruyo.wav">ouensiteruyo</div>
-<div class="sounds" data-file="yuukai-jiken/shine.wav">shine</div>
-<div class="sounds" data-file="yuukai-jiken/sinzyae.wav">sinzyae</div>
-<div class="sounds" data-file="yuukai-jiken/sugoine.wav">sugoine</div>
-<div class="sounds" data-file="yuukai-jiken/suki.wav">suki</div>
-<div class="sounds" data-file="yuukai-jiken/sutekidane.wav">sutekidane</div>
-<div class="sounds" data-file="yuukai-jiken/syaberanaide.wav">syaberanaide</div>
-<div class="sounds" data-file="yuukai-jiken/tanoshiine.wav">tanoshiine</div>
-<div class="sounds" data-file="yuukai-jiken/tenkousiro.wav">tenkousiro</div>
-<div class="sounds" data-file="yuukai-jiken/tetsudauyo.wav">tetsudauyo</div>
-<div class="sounds" data-file="yuukai-jiken/tikutikukotoba.wav">tikutikukotoba</div>
-<div class="sounds" data-file="yuukai-jiken/tomodachi-yameru.wav">tomodachi-yameru</div>
-<div class="sounds" data-file="yuukai-jiken/urusai.wav">urusai</div>
-<div class="sounds" data-file="yuukai-jiken/uzai.wav">uzai</div>
-<!-- <div class="sounds" data-file="yuukai-jiken/watashi-saikin-onesyo-sitandakedo.wav">watashi-saikin-onesyo-sitandakedo</div> -->
-<div class="sounds" data-file="yuukai-jiken/yabakunai.wav">yabakunai</div>
-<div class="sounds" data-file="yuukai-jiken/yabakunai2.wav">yabakunai2</div>
-<div class="sounds" data-file="yuukai-jiken/yasashiine.wav">yasashiine</div>
-<div class="sounds" data-file="yuukai-jiken/yattane.wav">yattane</div>
-<div class="sounds" data-file="yuukai-jiken/zizii.wav">zizii</div>
-<div class="sounds" data-file="yuukai-jiken/zyouzudane.wav">zyouzudane</div>
+  <button id="all-play">連続再生</button>
+  <button id="all-stop">停止</button>
+  <button id="toggle-filter"></button>
 </div>
-<div style="clear: both;">
-  <!--
-    <p><a href="https://www.youtube.com/@master-j-abc" target="_blank">チャンネル『コーヴァスのなきごえ』</a></p>
-    <p><a href="https://github.com/" target="_blank">GitHub</a></p>
-  -->
+<hr>
+<div>
+  <div class="sounds" data-file="yuukai-jiken/ashigahayaine.wav" data-ruby="あしがはやいね" data-category="">足が速いね</div>
+  <div class="sounds" data-file="yuukai-jiken/acchiike.wav" data-ruby="あっちいけ" data-category="tikutiku">あっちいけ</div>
+  <div class="sounds" data-file="yuukai-jiken/aho.wav" data-ruby="あほ" data-category="tikutiku">あほ</div>
+  <div class="sounds" data-file="yuukai-jiken/iine.wav" data-ruby="いいね" data-category="">いいね</div>
+  <div class="sounds" data-file="yuukai-jiken/issyoni-asobo.wav" data-ruby="いっしょにあそぼ" data-category="">いっしょにあそぼ</div>
+  <div class="sounds" data-file="yuukai-jiken/issyoni-ganbaro.wav" data-ruby="いっしょにがんばろ" data-category="">いっしょにがんばろ</div>
+  <div class="sounds" data-file="yuukai-jiken/uzai.wav" data-ruby="うざい" data-category="tikutiku">うざい</div>
+  <div class="sounds" data-file="yuukai-jiken/urusai.wav" data-ruby="うるさい" data-category="tikutiku">うるさい</div>
+  <div class="sounds" data-file="yuukai-jiken/ouensiteruyo.wav" data-ruby="おうえんしてるよ" data-category="">応援してるよ</div>
+  <div class="sounds" data-file="yuukai-jiken/omae.wav" data-ruby="おまえ" data-category="tikutiku">おまえ</div>
+  <div class="sounds" data-file="yuukai-jiken/omedetou.wav" data-ruby="おめでとう" data-category="">おめでとう</div>
+  <div class="sounds" data-file="yuukai-jiken/kasu.wav" data-ruby="かす" data-category="tikutiku">かす</div>
+  <div class="sounds" data-file="yuukai-jiken/kakkoiine.wav" data-ruby="かっこいいね" data-category="">かっこいいね</div>
+  <div class="sounds" data-file="yuukai-jiken/kawaiine.wav" data-ruby="かわいいね" data-category="">かわいいね</div>
+  <div class="sounds" data-file="yuukai-jiken/ganbattene.wav" data-ruby="がんばってね" data-category="">がんばってね</div>
+  <div class="sounds" data-file="yuukai-jiken/kimoi.wav" data-ruby="きもい" data-category="tikutiku">きもい</div>
+  <div class="sounds" data-file="yuukai-jiken/kimotiwarui.wav" data-ruby="きもちわるい" data-category="tikutiku">きもちわるい</div>
+  <div class="sounds" data-file="yuukai-jiken/kirai.wav" data-ruby="きらい" data-category="tikutiku">きらい</div>
+  <div class="sounds" data-file="yuukai-jiken/kusoyarou.wav" data-ruby="くそやろう" data-category="tikutiku">くそやろう</div>
+  <div class="sounds" data-file="yuukai-jiken/korosu.wav" data-ruby="ころす" data-category="tikutiku">◯す</div>
+  <div class="sounds" data-file="yuukai-jiken/gomenne.wav" data-ruby="ごめんね" data-category="">ごめんね</div>
+  <div class="sounds" data-file="yuukai-jiken/shine.wav" data-ruby="しね" data-category="tikutiku">◯ね</div>
+  <div class="sounds" data-file="yuukai-jiken/syaberanaide.wav" data-ruby="しゃべらないで" data-category="">しゃべらないで</div>
+  <div class="sounds" data-file="yuukai-jiken/sinzyae.wav" data-ruby="しんじゃえ" data-category="tikutiku">◯んじゃえ</div>
+  <div class="sounds" data-file="yuukai-jiken/zizii.wav" data-ruby="じじい" data-category="tikutiku">じじい</div>
+  <div class="sounds" data-file="yuukai-jiken/zyouzudane.wav" data-ruby="じょうずだね" data-category="">上手だね</div>
+  <div class="sounds" data-file="yuukai-jiken/suki.wav" data-ruby="すき" data-category="">すき</div>
+  <div class="sounds" data-file="yuukai-jiken/sugoine.wav" data-ruby="すごいね" data-category="">すごいね</div>
+  <div class="sounds" data-file="yuukai-jiken/sutekidane.wav" data-ruby="すてきだね" data-category="">すてきだね</div>
+  <div class="sounds" data-file="yuukai-jiken/tanoshiine.wav" data-ruby="たのしいね" data-category="">たのしいね</div>
+  <div class="sounds" data-file="yuukai-jiken/daijoubu.wav" data-ruby="だいじょうぶ" data-category="">大丈夫</div>
+  <div class="sounds" data-file="yuukai-jiken/chikayoruna.wav" data-ruby="ちかよるな" data-category="tikutiku">ちかよるな</div>
+  <div class="sounds" data-file="yuukai-jiken/tikutikukotoba.wav" data-ruby="ちくちくことば" data-category="tikutiku">ちくちく言葉</div>
+  <div class="sounds" data-file="yuukai-jiken/tetsudauyo.wav" data-ruby="てつだうよ" data-category="">手伝うよ</div>
+  <div class="sounds" data-file="yuukai-jiken/tenkousiro.wav" data-ruby="てんこうしろ" data-category="tikutiku">てんこうしろ</div>
+  <div class="sounds" data-file="yuukai-jiken/debu.wav" data-ruby="でぶ" data-category="tikutiku">でぶ</div>
+  <div class="sounds" data-file="yuukai-jiken/tomodachi-yameru.wav" data-ruby="ともだちやめる" data-category="tikutiku">ともだちやめる</div>
+  <div class="sounds" data-file="yuukai-jiken/doke.wav" data-ruby="どけ" data-category="tikutiku">どけ</div>
+  <div class="sounds" data-file="yuukai-jiken/baka.wav" data-ruby="ばか" data-category="tikutiku">ばか</div>
+  <div class="sounds" data-file="yuukai-jiken/babaa.wav" data-ruby="ばばあ" data-category="tikutiku">ばばあ</div>
+  <div class="sounds" data-file="yuukai-jiken/hyakutendana.wav" data-ruby="ひゃくてんだな" data-category="">100点だな</div>
+  <div class="sounds" data-file="yuukai-jiken/bikkurisita.wav" data-ruby="びっくりした" data-category="">びっくりした</div>
+  <div class="sounds" data-file="yuukai-jiken/fuwafuwakotoba.wav" data-ruby="ふわふわことば" data-category="">ふわふわ言葉</div>
+  <div class="sounds" data-file="yuukai-jiken/hetakuso.wav" data-ruby="へたくそ" data-category="tikutiku">へたくそ</div>
+  <div class="sounds" data-file="yuukai-jiken/hentai-imasu.wav" data-ruby="へんたいいます" data-category="sensitive">へんたいいます</div>
+  <div class="sounds" data-file="yuukai-jiken/mazeteagenai.wav" data-ruby="まぜてあげない" data-category="tikutiku">まぜてあげない</div>
+  <div class="sounds" data-file="yuukai-jiken/manuke.wav" data-ruby="まぬけ" data-category="tikutiku">まぬけ</div>
+  <div class="sounds" data-file="yuukai-jiken/mouaitakunai.wav" data-ruby="もうあいたくない" data-category="tikutiku">もう会いたくない</div>
+  <div class="sounds" data-file="yuukai-jiken/mou-iiotona-nandesukedo.wav" data-ruby="もういい大人なんですけど" data-category="">もういい大人なんですけど</div>
+  <div class="sounds" data-file="yuukai-jiken/yasashiine.wav" data-ruby="やさしいね" data-category="">やさしいね</div>
+  <div class="sounds" data-file="yuukai-jiken/yattane.wav" data-ruby="やったね" data-category="">やったね</div>
+  <div class="sounds" data-file="yuukai-jiken/yabakunai.wav" data-ruby="やばくない" data-category="">やばくない↑</div>
+  <div class="sounds" data-file="yuukai-jiken/yabakunai2.wav" data-ruby="やばくない" data-category="">やば↓くない</div>
+  <div class="sounds" data-file="yuukai-jiken/watashi-saikin-onesyo-sitandakedo.wav" data-ruby="わたしさいきん" data-category="sensitive">わたし最近</div>
+</div>
+<hr style="clear: both;">
+<div>
+  <p><a href="https://marshmallow-qa.com/stvysomvm06ql3n?t=rtNG12&utm_medium=url_text&utm_source=promotion" target="_blank">ご意見・まとめ要望などぜひマシュマロにお願いいたします！</a></p>
+  <p><a href="https://www.youtube.com/@master-j-abc" target="_blank">チャンネル『コーヴァスのなきごえ』</a></p>
+  <p><a href="https://github.com/" target="_blank">GitHub</a></p>
 </div>
 <script>
-    const noteKeys = ['c', 'd', 'e', 'f', 'g', 'a', 'b'];
-    const keyboardKeys = ['f', 'g', 'h', 'j', 'k', 'l', ';'];
-
-    const DATA_FILE_ATTRIBUTE = 'data-file';
+    const keyboardKeys = ['1', '2', '3', 'q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c'];
+    const setClass = 'sounds';
+    let isFilter = false;
+    function getFilteredSounds() {
+      return Array.from(document.getElementsByClassName(setClass)).filter((element) => !element.hidden);
+    }
+    let sounds = getFilteredSounds();
     const playingAudioList = [];
+
+    function toggleFilter() {
+      isFilter = !isFilter;
+      const button = document.getElementById('toggle-filter');
+      button.innerText = isFilter ? 'ちくちく言葉・センシティブフィルターを無効にする' : 'ちくちく言葉・センシティブフィルターを有効にする';
+      if (isFilter) {
+        button.classList.add('filter-on');
+        button.classList.remove('filter-off');
+      } else {
+        button.classList.remove('filter-on');
+        button.classList.add('filter-off');
+      }
+      Array.from(document.getElementsByClassName(setClass)).forEach((element) => {
+        const { category } = element.dataset;
+        if (category.includes('tikutiku') || category.includes('sensitive')) {
+          console.log(element);
+          // eslint-disable-next-line no-param-reassign
+          element.hidden = isFilter;
+        }
+      });
+      sounds = getFilteredSounds();
+    }
 
     function play(element, callback = () => {}) {
       try {
-        const file = element.getAttribute(DATA_FILE_ATTRIBUTE);
+        const { file } = element.dataset;
         if (file) {
           const audio = new Audio(`sounds/${file}`);
           playingAudioList.push(audio);
           audio.play();
-          // eslint-disable-next-line no-param-reassign
-          element.style.backgroundColor = 'red';
+          element.classList.add('anime-object');
           audio.addEventListener('ended', () => {
-            // eslint-disable-next-line no-param-reassign
-            element.style.backgroundColor = 'white';
+            element.classList.remove('anime-object');
             audio.remove();
             playingAudioList.splice(playingAudioList.indexOf(audio), 1);
             callback(element);
@@ -118,8 +191,6 @@
       }
     }
 
-    const setClass = 'sounds';
-    const sounds = document.getElementsByClassName(setClass);
     for (let i = 0; i < sounds.length; i += 1) {
       sounds[i].onclick = function soundsClick() {
         play(this);
@@ -128,7 +199,7 @@
 
     function allPlay() {
       const callback = function (element) {
-        const no = Array.from(sounds).indexOf(element);
+        const no = sounds.indexOf(element);
         if (no >= 0 && no + 1 < sounds.length) {
           play(sounds[no + 1], callback);
         }
@@ -136,27 +207,35 @@
       play(sounds[0], callback);
     }
 
+    function allStop() {
+      playingAudioList.forEach((audio) => {
+        audio.pause();
+        audio.remove();
+      });
+      for (let i = 0; i < sounds.length; i += 1) {
+        sounds[i].classList.remove('anime-object');
+      }
+      playingAudioList.splice(0, playingAudioList.length);
+    }
+
     document.addEventListener('keydown', (event) => {
       const { key } = event;
-      if (key === 'p') {
-        allPlay();
-      }
-      if (key === 's') {
-        playingAudioList.forEach((audio) => {
-          audio.pause();
-          audio.remove();
-        });
-        for (let i = 0; i < sounds.length; i += 1) {
-          sounds[i].style.backgroundColor = 'white';
-        }
-
-        playingAudioList.splice(0, playingAudioList.length);
-      }
-      const note = keyboardKeys.indexOf(key);
-      if (note >= 0) {
-        play(noteKeys[note]);
+      if (keyboardKeys.includes(key)) {
+        const index = keyboardKeys.indexOf(key);
+        play(sounds[index]);
       }
     });
+
+    document.getElementById('all-play').addEventListener('click', () => {
+      allPlay();
+    });
+
+    document.getElementById('all-stop').addEventListener('click', () => {
+      allStop();
+    });
+
+    toggleFilter();
+    document.getElementById('toggle-filter').onclick = toggleFilter;
 </script>
 </body>
 </html>
