@@ -139,9 +139,18 @@
   <p><a href="https://www.youtube.com/@master-j-abc" target="_blank">チャンネル『コーヴァスのなきごえ』</a></p>
   <p><a href="https://github.com/" target="_blank">GitHub</a></p>
 </div>
+<div id="context" hidden="hidden" style="position: absolute; top: 0; left: 0; padding: 10px; background-color: #fff; border: 1px solid #ccc; border-radius: 5px;">
+  <ul style="width: 300px">
+    <li>file: <span id="context-file"></span></li>
+    <li>ruby: <span id="context-ruby"></span></li>
+    <li>category: <span id="context-category"></span></li>
+  </ul>
+  <button id="close-context">閉じる</button>
+</div>
 <script>
     const keyboardKeys = ['1', '2', '3', 'q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c'];
     const setClass = 'sounds';
+    const directory = 'sounds';
     let isFilter = false;
     function getFilteredSounds() {
       return Array.from(document.getElementsByClassName(setClass)).filter((element) => !element.hidden);
@@ -175,7 +184,7 @@
       try {
         const { file } = element.dataset;
         if (file) {
-          const audio = new Audio(`sounds/${file}`);
+          const audio = new Audio(`${directory}/${file}`);
           playingAudioList.push(audio);
           audio.play();
           element.classList.add('anime-object');
@@ -195,7 +204,26 @@
       sounds[i].onclick = function soundsClick() {
         play(this);
       };
+      sounds[i].oncontextmenu = function soundsRightClick(event) {
+        event.preventDefault();
+        const contextElement = document.getElementById('context');
+        contextElement.hidden = false;
+        contextElement.style.top = `${event.clientY + 20}px`;
+        if (window.innerWidth - event.clientX < 300) {
+          contextElement.style.left = `${event.clientX - 300}px`;
+        } else {
+          contextElement.style.left = `${event.clientX}px`;
+        }
+        document.getElementById('context-file').innerText = this.dataset.file;
+        document.getElementById('context-ruby').innerText = this.dataset.ruby;
+        document.getElementById('context-category').innerText = this.dataset.category;
+        play(this);
+      };
     }
+
+    document.getElementById('close-context').addEventListener('click', () => {
+      document.getElementById('context').hidden = true;
+    });
 
     function allPlay() {
       const callback = function (element) {
