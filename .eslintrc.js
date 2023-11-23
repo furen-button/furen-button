@@ -13,5 +13,6 @@ module.exports = {
   rules: {
     'no-console': ['off'],
     'func-names': ['warn', 'as-needed'],
+    'max-len': ['warn', { code: 300 }],
   },
 };
