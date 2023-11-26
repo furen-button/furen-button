@@ -211,7 +211,6 @@
       Array.from(document.getElementsByClassName(setClass)).forEach((element) => {
         const { category } = element.dataset;
         if (category.includes('tikutiku') || category.includes('sensitive')) {
-          console.log(element);
           // eslint-disable-next-line no-param-reassign
           element.hidden = isFilter;
         }
@@ -234,6 +233,11 @@
             playingAudioList.splice(playingAudioList.indexOf(audio), 1);
             callback(element);
           });
+          // eslint-disable-next-line no-undef
+          gtag('event', 'select_content', {
+            content_type: 'sound_play',
+            content_id: file,
+          });
         }
       } catch (e) {
         console.log(e);
@@ -241,9 +245,16 @@
     }
 
     for (let i = 0; i < sounds.length; i += 1) {
+      // eslint-disable-next-line no-loop-func
       sounds[i].onclick = function soundsClick() {
         play(this);
+        // eslint-disable-next-line no-undef
+        gtag('event', 'select_content', {
+          content_type: 'sound_click',
+          content_id: this.dataset.file,
+        });
       };
+      // eslint-disable-next-line no-loop-func
       sounds[i].oncontextmenu = function soundsRightClick(event) {
         event.preventDefault();
         const contextElement = document.getElementById('context');
@@ -260,6 +271,11 @@
         document.getElementById('context-source').innerText = this.dataset.title;
         document.getElementById('context-source').href = this.dataset.url;
         play(this);
+        // eslint-disable-next-line no-undef
+        gtag('event', 'select_content', {
+          content_type: 'sound_context_click',
+          content_id: this.dataset.file,
+        });
       };
     }
 
