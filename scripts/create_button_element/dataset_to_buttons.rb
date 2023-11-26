@@ -12,6 +12,7 @@ data.flatten!
 File.open("#{__dir__}/buttons.html", "w") do |f|
   data.sort { |a, b| a['ruby'] <=> b['ruby'] }.each do |sound|
     source = sources['sources'].find { |s| s['tag'] == sound['source'] }
+    STDERR.puts "=== source が設定されていない #{sound['source']} ===" if source.nil?
     source_name = ''
     source_url = ''
     source_name = source['title'] unless source.nil?

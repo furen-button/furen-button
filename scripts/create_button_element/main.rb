@@ -12,6 +12,7 @@ def create_button_element(directory)
   end
 
   tags.uniq.each do |tag|
+    tmp_filepath = "#{__dir__}/results/#{tag}.yml"
     File.open("#{__dir__}/results/#{tag}.yml", "w") do |f|
       filepaths.sort.filter { |filepath| tag == Pathname(filepath).parent.basename }.each do |filepath|
         tag = Pathname(filepath).parent.basename
@@ -25,7 +26,9 @@ def create_button_element(directory)
         f.puts %Q{  tag: ""}
       end
     end
-    %x(touch #{__dir__}/../../dataset/sounds/#{tag}.yml)
+
+    output_filepath = "#{__dir__}/../../dataset/sounds/#{tag}.yml"
+    %x(cp #{tmp_filepath} #{output_filepath}) unless File.exist?(output_filepath)
   end
 end
 
