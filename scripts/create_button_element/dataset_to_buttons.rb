@@ -1,7 +1,13 @@
 require 'yaml'
 
 sources = YAML.load_file("#{__dir__}/../../dataset/sources.yml")
-data = YAML.load_file("#{__dir__}/../../dataset/all.yml")
+data = []
+
+Dir.glob("#{__dir__}/../../dataset/sounds/**.yml") do |filepath|
+  data << YAML.load_file(filepath)
+end
+
+data.flatten!
 
 File.open("#{__dir__}/buttons.html", "w") do |f|
   data.sort { |a, b| a['ruby'] <=> b['ruby'] }.each do |sound|
