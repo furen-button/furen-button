@@ -89,8 +89,13 @@
 </div>
 <div>
   <button id="all-play">連続再生</button>
+  <button id="random-play">ランダム連続再生</button>
   <button id="all-stop">停止</button>
   <button id="toggle-filter"></button>
+  <div>
+    <label for="volume">音量</label>
+    <input type="range" min="0" max="1" value="1" step="0.1" id="volume">
+  </div>
 </div>
 <hr>
 <div>
@@ -181,6 +186,10 @@
     let sounds = getFilteredSounds();
     const playingAudioList = [];
 
+    function getVolume() {
+      return document.getElementById('volume').value;
+    }
+
     function toggleFilter() {
       isFilter = !isFilter;
       const button = document.getElementById('toggle-filter');
@@ -209,6 +218,7 @@
         if (file) {
           const audio = new Audio(`${directory}/${file}`);
           playingAudioList.push(audio);
+          audio.volume = getVolume();
           audio.play();
           element.classList.add('anime-object');
           audio.addEventListener('ended', () => {
@@ -260,6 +270,20 @@
       play(sounds[0], callback);
     }
 
+    function getRandomInt(min, max) {
+      const minInt = Math.ceil(min);
+      const maxInt = Math.floor(max);
+      return Math.floor(Math.random() * (maxInt - minInt) + minInt);
+    }
+
+    function randomPlay() {
+      const callback = function () {
+        const no = getRandomInt(0, sounds.length - 1);
+        play(sounds[no], callback);
+      };
+      callback();
+    }
+
     function allStop() {
       playingAudioList.forEach((audio) => {
         audio.pause();
@@ -277,10 +301,17 @@
         const index = keyboardKeys.indexOf(key);
         play(sounds[index]);
       }
+      if (key === ' ') {
+        randomPlay();
+      }
     });
 
     document.getElementById('all-play').addEventListener('click', () => {
       allPlay();
+    });
+
+    document.getElementById('random-play').addEventListener('click', () => {
+      randomPlay();
     });
 
     document.getElementById('all-stop').addEventListener('click', () => {
