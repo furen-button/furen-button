@@ -19,6 +19,6 @@ File.open("#{__dir__}/buttons.html", "w") do |f|
     source_url = source['url'] unless source.nil?
     category = sound['category'].join(',')
     clip_url = sound['clipUrl']
-    f.puts %Q{<div class="sounds" data-file="#{sound['fileName']}" data-ruby="#{sound['ruby']}" data-category="#{category}" data-title="#{source_name}" data-url="#{source_url}" data-clip="#{clip_url}">#{sound['name']}</div>}
+    f.puts %Q{  <div class="sounds" data-file="#{sound['fileName']}" data-ruby="#{sound['ruby']}" data-category="#{category}" data-title="#{source_name}" data-url="#{source_url}" data-clip="#{clip_url}">#{sound['name']}</div>}
   end
 end
