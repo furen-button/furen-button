@@ -31,10 +31,12 @@
         }
         body {
             font-family: 'Noto Sans JP', sans-serif;
-            background-image: url('img/furen-key-visual.jpeg');
-            background-size: 600px;
-            background-position: top right;
-            background-repeat: repeat-y;
+        }
+        body.initial {
+          background-image: url('img/furen-key-visual.jpeg');
+          background-size: 600px;
+          background-position: top right;
+          background-repeat: repeat-y;
         }
         hr {
             border: none;
@@ -66,10 +68,13 @@
             background-color: #ec1d2f;
             color: white;
         }
-        .anime-object {
+        .anime-button {
             animation: heartbeat 1s infinite ease-in-out;
             background-color: #ec1d2f;
             color: white;
+        }
+        .anime-clip {
+          animation: heartbeat 1s infinite ease-in-out;
         }
         .filter-on {
             color: gray;
@@ -104,9 +109,9 @@
       gtag('config', 'G-JRK3SXPLHB');
     </script>
 </head>
-<body>
+<body class="initial">
 <div>
-    <h1>フレンボタン</h1>
+    <h1><a href="." style="text-decoration:none;">フレンボタン</a></h1>
     <p><a href="https://www.youtube.com/@FurenELustario" target="_blank">コーヴァス帝国から来た女騎士フレン・E・ルスタリオさん</a>のボイス切り抜きをまとめます。</p>
     <p>このページは<a href="http://ushiumi.ichiya-boshi.net" target="_blank">宇志海ボタン</a>のオマージュです。</p>
     <p><a href="https://www.anycolor.co.jp/guidelines/" target="_blank">ANYCOLOR二次創作ガイドライン</a>に基づき、ライバーの活動に敬意を払い、創作性のあるまとめができることを目指しています。</p>
@@ -120,6 +125,8 @@
   <div>
     <label for="volume">音量</label>
     <input type="range" min="0" max="1" value="1" step="0.01" id="volume">
+    <label for="create-image">わいわいガヤガヤ</label>
+    <input type="checkbox" id="create-image" checked="checked">
   </div>
 </div>
 <hr>
@@ -236,6 +243,10 @@
       return document.getElementById('volume').value;
     }
 
+    function isCreateImage() {
+      return document.getElementById('create-image').checked;
+    }
+
     function toggleFilter() {
       isFilter = !isFilter;
       const button = document.getElementById('toggle-filter');
@@ -257,27 +268,66 @@
       sounds = getFilteredSounds();
     }
 
+    function createCategoryImage(category) {
+      if (!isCreateImage()) {
+        return null;
+      }
+      const filenames = [
+        'img/clip/binta-furikaeri.png',
+        'img/clip/binta-odoroki.png',
+        'img/clip/binta-ushiro.png',
+        'img/clip/kabotya-egao.png',
+        'img/clip/mama-game-egao.png',
+        'img/clip/monhan-odoroki.png',
+        'img/clip/outa-egao.png',
+      ];
+      let filename = filenames[Math.floor(Math.random() * filenames.length)];
+      if (category.includes('outa')) {
+        filename = 'img/clip/outa-egao.png';
+      }
+
+      const windowHeight = window.innerHeight;
+      const scroll = document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const top = (scroll / windowHeight) * 100 + Math.floor(Math.random() * 80);
+      const zIndex = Math.floor(top);
+      const img = document.createElement('img');
+      img.src = filename;
+      img.style.position = 'absolute';
+      img.height = 200;
+      img.style.left = `${Math.floor(Math.random() * 80)}%`;
+      img.style.top = `${top}%`;
+      img.style.pointerEvents = 'none';
+      img.classList.add('anime-clip');
+      img.style.zIndex = `${zIndex}`;
+      return img;
+    }
+
     function play(element, callback = () => {}) {
       try {
-        const { file } = element.dataset;
-        if (file) {
-          const audio = new Audio(`${directory}/${file}`);
-          playingAudioList.push(audio);
-          audio.volume = getVolume();
-          audio.play();
-          element.classList.add('anime-object');
-          audio.addEventListener('ended', () => {
-            element.classList.remove('anime-object');
-            audio.remove();
-            playingAudioList.splice(playingAudioList.indexOf(audio), 1);
-            callback(element);
-          });
-          // eslint-disable-next-line no-undef
-          gtag('event', 'select_content', {
-            content_type: 'sound_play',
-            content_id: file,
-          });
+        const { file, category } = element.dataset;
+        const image = createCategoryImage(category);
+        if (image) {
+          document.body.appendChild(image);
         }
+        const audio = new Audio(`${directory}/${file}`);
+        playingAudioList.push(audio);
+        audio.volume = getVolume();
+        audio.play();
+        element.classList.add('anime-button');
+        audio.addEventListener('ended', () => {
+          element.classList.remove('anime-button');
+          if (image) {
+            document.body.removeChild(image);
+          }
+          audio.remove();
+          playingAudioList.splice(playingAudioList.indexOf(audio), 1);
+          callback(element);
+        });
+        // eslint-disable-next-line no-undef
+        gtag('event', 'select_content', {
+          content_type: 'sound_play',
+          content_id: file,
+        });
       } catch (e) {
         console.log(e);
       }
@@ -361,9 +411,12 @@
         audio.remove();
       });
       for (let i = 0; i < sounds.length; i += 1) {
-        sounds[i].classList.remove('anime-object');
+        sounds[i].classList.remove('anime-button');
       }
       playingAudioList.splice(0, playingAudioList.length);
+      Array.from(document.getElementsByClassName('anime-clip')).forEach((element) => {
+        document.body.removeChild(element);
+      });
     }
 
     document.addEventListener('keydown', (event) => {
