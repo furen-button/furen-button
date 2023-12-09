@@ -329,6 +329,14 @@
       return img;
     }
 
+    function sendGtagContent(contentType, contentId) {
+      // eslint-disable-next-line no-undef
+      gtag('event', 'select_content', {
+        content_type: contentType,
+        content_id: contentId,
+      });
+    }
+
     function play(element, callback = () => {}) {
       try {
         const { file, category } = element.dataset;
@@ -350,11 +358,7 @@
           playingAudioList.splice(playingAudioList.indexOf(audio), 1);
           callback(element);
         });
-        // eslint-disable-next-line no-undef
-        gtag('event', 'select_content', {
-          content_type: 'sound_play',
-          content_id: file,
-        });
+        sendGtagContent('sound_play', file);
       } catch (e) {
         console.log(e);
       }
@@ -364,11 +368,7 @@
       // eslint-disable-next-line no-loop-func
       sounds[i].onclick = function soundsClick() {
         play(this);
-        // eslint-disable-next-line no-undef
-        gtag('event', 'select_content', {
-          content_type: 'sound_click',
-          content_id: this.dataset.file,
-        });
+        sendGtagContent('sound_click', this.dataset.file);
       };
       // eslint-disable-next-line no-loop-func
       sounds[i].oncontextmenu = function soundsRightClick(event) {
@@ -396,11 +396,7 @@
           document.getElementById('context-clip').href = this.dataset.clip;
         }
         play(this);
-        // eslint-disable-next-line no-undef
-        gtag('event', 'select_content', {
-          content_type: 'sound_context_click',
-          content_id: this.dataset.file,
-        });
+        sendGtagContent('sound_context_click', this.dataset.file);
       };
     }
 
@@ -459,16 +455,19 @@
 
     document.getElementById('all-play').addEventListener('click', () => {
       allPlay();
+      sendGtagContent('all_play', 'all_play');
     });
 
     document.getElementById('random-play').addEventListener('click', () => {
       randomPlay();
+      sendGtagContent('random_play', 'random_play');
     });
 
     document.getElementById('random-play-waiwai').addEventListener('click', () => {
       for (let i = 0; i < 5; i += 1) {
         randomPlay();
       }
+      sendGtagContent('random_play_waiwai', 'random_play_waiwai');
     });
 
     document.getElementById('all-stop').addEventListener('click', () => {
