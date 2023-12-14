@@ -37,7 +37,7 @@
   ruby: "びっくりした"
   source: "yuukai-jiken"
   fileName: "yuukai-jiken/bikkurisita.wav"
-  category: [""]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "ちかよるな"
@@ -107,7 +107,7 @@
   ruby: "ひゃくてんだな"
   source: "yuukai-jiken"
   fileName: "yuukai-jiken/hyakutendana.wav"
-  category: [""]
+  category: ["meigen"]
   clipUrl: ""
   tag: ""
 - name: "いいね"
@@ -205,7 +205,7 @@
   ruby: "もういい大人なんですけど"
   source: "yuukai-jiken"
   fileName: "yuukai-jiken/mou-iiotona-nandesukedo.wav"
-  category: [""]
+  category: ["sensitive"]
   clipUrl: ""
   tag: ""
 - name: "もう会いたくない"
@@ -338,14 +338,14 @@
   ruby: "やばくない"
   source: "yuukai-jiken"
   fileName: "yuukai-jiken/yabakunai.wav"
-  category: [""]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "やば↓くない"
   ruby: "やばくない"
   source: "yuukai-jiken"
   fileName: "yuukai-jiken/yabakunai2.wav"
-  category: [""]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "やさしいね"
