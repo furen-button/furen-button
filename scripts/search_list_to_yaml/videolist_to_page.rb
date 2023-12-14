@@ -6,12 +6,20 @@ Dir.glob("#{__dir__}/../../dataset/videolists/*.json") do |filepath|
 end
 videos.flatten!.uniq!.sort_by! { |d| d["snippet"]["publishedAt"] }
 
+# ハッシュタグ `#` が含まれない最初の行を取得する
+def description_head(description)
+  lines = description.split("\n")
+  lines.each do |line|
+    next if line.empty?
+    return line unless line.include?("#")
+  end
+  lines.first
+end
+
 data = []
 videos.each do |d|
   date = d["snippet"]["publishedAt"].split("T").first
   title = d["snippet"]["title"]
-  # i行目のみ
-  description_head = d["snippet"]["description"].split("\n").first
   url = "https://www.youtube.com/watch?v=#{d["id"]}"
   duration = d["contentDetails"]["duration"]
   viewCount = d["statistics"]["viewCount"]
@@ -21,7 +29,7 @@ videos.each do |d|
   data << {
     date: date,
     title: title,
-    description: description_head,
+    description: description_head(d["snippet"]["description"]),
     url: url,
     duration: duration,
     viewCount: viewCount,
