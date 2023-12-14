@@ -282,7 +282,7 @@
       return document.getElementById('create-image').checked;
     }
 
-    function filterCategory() {
+    function getIgnoreCategory() {
       const ignoreCategory = [];
       Array.from(document.getElementsByClassName(checkBoxClass)).forEach((element) => {
         if (element.checked) {
@@ -291,6 +291,11 @@
         const { category } = element.dataset;
         ignoreCategory.push(category);
       });
+      return ignoreCategory;
+    }
+
+    function filterCategory() {
+      const ignoreCategory = getIgnoreCategory();
 
       Array.from(document.getElementsByClassName(setClass)).forEach((element) => {
         // eslint-disable-next-line no-param-reassign
@@ -317,7 +322,6 @@
         'img/clip/kabotya-egao.png',
         'img/clip/mama-game-egao.png',
         'img/clip/monhan-odoroki.png',
-        'img/clip/outa-egao.png',
       ];
       let filename = filenames[Math.floor(Math.random() * filenames.length)];
       if (category.includes('outa')) {
@@ -375,51 +379,36 @@
       }
     }
 
-    let allCategory = [];
-
-    for (let i = 0; i < sounds.length; i += 1) {
-      // eslint-disable-next-line no-loop-func
-      sounds[i].onclick = function soundsClick() {
-        play(this);
-        sendGtagContent('sound_click', this.dataset.file);
-      };
-      // eslint-disable-next-line no-loop-func
-      sounds[i].oncontextmenu = function soundsRightClick(event) {
-        event.preventDefault();
-        const contextElement = document.getElementById('context');
-        contextElement.hidden = false;
-        contextElement.style.top = `${event.clientY + 20}px`;
-        if (window.innerWidth - event.clientX < 300) {
-          contextElement.style.left = `${event.clientX - 300}px`;
-        } else {
-          contextElement.style.left = `${event.clientX}px`;
-        }
-        document.getElementById('context-file').innerText = this.dataset.file;
-        document.getElementById('context-ruby').innerText = this.dataset.ruby;
-        document.getElementById('context-category').innerText = this.dataset.category;
-        document.getElementById('context-source').innerText = this.dataset.title;
-        document.getElementById('context-source').href = this.dataset.url;
-        if (this.dataset.clip === '') {
-          document.getElementById('context-clip').parentNode.hidden = true;
-          document.getElementById('context-clip').innerText = '';
-          document.getElementById('context-clip').href = '';
-        } else {
-          document.getElementById('context-clip').parentNode.hidden = false;
-          document.getElementById('context-clip').innerText = 'リンク';
-          document.getElementById('context-clip').href = this.dataset.clip;
-        }
-        play(this);
-        sendGtagContent('sound_context_click', this.dataset.file);
-      };
-
-      allCategory = allCategory.concat(sounds[i].dataset.category.split(','));
+    function closeContext() {
+      document.getElementById('context').hidden = true;
     }
 
-    allCategory = allCategory.filter((x, i, self) => self.indexOf(x) === i).filter((x) => x !== '');
-    allCategory.sort();
+    function viewContext(event, dataset) {
+      const contextElement = document.getElementById('context');
+      contextElement.hidden = false;
+      contextElement.style.top = `${event.clientY + 20}px`;
+      if (window.innerWidth - event.clientX < 300) {
+        contextElement.style.left = `${event.clientX - 300}px`;
+      } else {
+        contextElement.style.left = `${event.clientX}px`;
+      }
+      document.getElementById('context-file').innerText = dataset.file;
+      document.getElementById('context-ruby').innerText = dataset.ruby;
+      document.getElementById('context-category').innerText = dataset.category;
+      document.getElementById('context-source').innerText = dataset.title;
+      document.getElementById('context-source').href = dataset.url;
+      if (dataset.clip === '') {
+        document.getElementById('context-clip').parentNode.hidden = true;
+        document.getElementById('context-clip').innerText = '';
+        document.getElementById('context-clip').href = '';
+      } else {
+        document.getElementById('context-clip').parentNode.hidden = false;
+        document.getElementById('context-clip').innerText = 'リンク';
+        document.getElementById('context-clip').href = dataset.clip;
+      }
+    }
 
-    for (let i = 0; i < allCategory.length; i += 1) {
-      const category = allCategory[i];
+    function createCategoryCheckBoxElement(category) {
       const element = document.createElement('li');
       {
         const id = `category-${category}`;
@@ -438,12 +427,8 @@
         label.setAttribute('for', id);
         element.appendChild(label);
       }
-      document.getElementById('category-buttons').appendChild(element);
+      return element;
     }
-
-    document.getElementById('close-context').addEventListener('click', () => {
-      document.getElementById('context').hidden = true;
-    });
 
     function allPlay() {
       const callback = function (element) {
@@ -482,6 +467,39 @@
         document.body.removeChild(element);
       });
     }
+
+    let allCategory = [];
+
+    for (let i = 0; i < sounds.length; i += 1) {
+      // eslint-disable-next-line no-loop-func
+      sounds[i].onclick = function soundsClick() {
+        closeContext();
+        play(this);
+        sendGtagContent('sound_click', this.dataset.file);
+      };
+      // eslint-disable-next-line no-loop-func
+      sounds[i].oncontextmenu = function soundsRightClick(event) {
+        event.preventDefault();
+        viewContext(event, this.dataset);
+        play(this);
+        sendGtagContent('sound_context_click', this.dataset.file);
+      };
+
+      allCategory = allCategory.concat(sounds[i].dataset.category.split(','));
+    }
+
+    allCategory = allCategory.filter((x, i, self) => self.indexOf(x) === i).filter((x) => x !== '');
+    allCategory.sort();
+
+    for (let i = 0; i < allCategory.length; i += 1) {
+      const category = allCategory[i];
+      const element = createCategoryCheckBoxElement(category);
+      document.getElementById('category-buttons').appendChild(element);
+    }
+
+    document.getElementById('close-context').addEventListener('click', () => {
+      closeContext();
+    });
 
     document.addEventListener('keydown', (event) => {
       const { key } = event;
