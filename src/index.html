@@ -100,6 +100,10 @@
             max-width: calc(100% - 500px);
             min-width: 400px;
         }
+
+        ul#category-buttons > li{
+            display: inline;
+        }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRK3SXPLHB"></script>
@@ -128,6 +132,9 @@
   <button id="all-play" class="config-button">連続再生</button>
   <button id="random-play" class="config-button">ランダム連続再生</button>
   <button id="all-stop" class="config-button">停止</button>
+  <br>
+  <ul id="category-buttons">
+  </ul>
   <button id="toggle-filter" class="config-button"></button>
   <div>
     <label for="volume">音量</label>
@@ -265,6 +272,7 @@
     const keyboardKeys = ['1', '2', '3', 'q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c'];
     const setClass = 'sounds';
     const directory = 'sounds';
+    const checkBoxClass = 'category-checkbox';
     let isFilter = false;
     function getFilteredSounds() {
       return Array.from(document.getElementsByClassName(setClass)).filter((element) => !element.hidden);
@@ -297,6 +305,30 @@
           // eslint-disable-next-line no-param-reassign
           element.hidden = isFilter;
         }
+      });
+      sounds = getFilteredSounds();
+    }
+
+    function filterCategory() {
+      const ignoreCategory = [];
+      Array.from(document.getElementsByClassName(checkBoxClass)).forEach((element) => {
+        if (element.checked) {
+          return;
+        }
+        const { category } = element.dataset;
+        ignoreCategory.push(category);
+      });
+
+      Array.from(document.getElementsByClassName(setClass)).forEach((element) => {
+        // eslint-disable-next-line no-param-reassign
+        element.hidden = false;
+        const { category } = element.dataset;
+        ignoreCategory.forEach((targetCategory) => {
+          if (category.includes(targetCategory)) {
+            // eslint-disable-next-line no-param-reassign
+            element.hidden = true;
+          }
+        });
       });
       sounds = getFilteredSounds();
     }
@@ -370,6 +402,8 @@
       }
     }
 
+    let allCategory = [];
+
     for (let i = 0; i < sounds.length; i += 1) {
       // eslint-disable-next-line no-loop-func
       sounds[i].onclick = function soundsClick() {
@@ -404,6 +438,34 @@
         play(this);
         sendGtagContent('sound_context_click', this.dataset.file);
       };
+
+      allCategory = allCategory.concat(sounds[i].dataset.category.split(','));
+    }
+
+    allCategory = allCategory.filter((x, i, self) => self.indexOf(x) === i).filter((x) => x !== '');
+    allCategory.sort();
+
+    for (let i = 0; i < allCategory.length; i += 1) {
+      const category = allCategory[i];
+      const element = document.createElement('li');
+      {
+        const id = `category-${category}`;
+        const checkbox = document.createElement('input');
+        checkbox.id = id;
+        checkbox.classList.add(checkBoxClass);
+        checkbox.type = 'checkbox';
+        checkbox.setAttribute('data-category', category);
+        checkbox.checked = true;
+        checkbox.onchange = function categoryChange() {
+          filterCategory();
+        };
+        element.appendChild(checkbox);
+        const label = document.createElement('label');
+        label.innerText = category;
+        label.setAttribute('for', id);
+        element.appendChild(label);
+      }
+      document.getElementById('category-buttons').appendChild(element);
     }
 
     document.getElementById('close-context').addEventListener('click', () => {
