@@ -127,6 +127,9 @@
   <br>
   <ul id="category-buttons">
   </ul>
+  <button id="all-category-check" class="config-button">カテゴリー全チェック</button>
+  <button id="all-category-uncheck" class="config-button">カテゴリー全解除</button>
+  <br>
   <div>
     <label for="volume">音量</label>
     <input type="range" min="0" max="1" value="1" step="0.01" id="volume">
@@ -511,6 +514,22 @@
 
     document.getElementById('all-stop').addEventListener('click', () => {
       allStop();
+    });
+
+    document.getElementById('all-category-check').addEventListener('click', () => {
+      const checkboxes = document.getElementsByClassName(checkBoxClass);
+      for (let i = 0; i < checkboxes.length; i += 1) {
+        checkboxes[i].checked = true;
+      }
+      filterCategory();
+    });
+
+    document.getElementById('all-category-uncheck').addEventListener('click', () => {
+      const checkboxes = document.getElementsByClassName(checkBoxClass);
+      for (let i = 0; i < checkboxes.length; i += 1) {
+        checkboxes[i].checked = false;
+      }
+      filterCategory();
     });
 
     filterCategory();
