@@ -15,4 +15,4 @@ def add_text_after_string(file_path, target_string, text_to_add)
   File.write(file_path, lines.join)
 end
 
-add_text_after_string(target_filepath, 'id="sounds-list"', File.read("#{__dir__}/buttons.html"))
+add_text_after_string(target_filepath, 'id="sounds-list"', File.read("#{__dir__}/results/buttons.html"))

@@ -9,7 +9,7 @@ end
 
 data.flatten!
 
-File.open("#{__dir__}/buttons.html", "w") do |f|
+File.open("#{__dir__}/results/buttons.html", "w") do |f|
   data.sort_by { |sound| [sound['ruby'],sound['fileName']] }.each do |sound|
     source = sources['sources'].find { |s| s['tag'] == sound['source'] }
     STDERR.puts "=== source が設定されていない #{sound['source']} ===" if source.nil?
