@@ -448,7 +448,7 @@
 
     function randomPlay() {
       const callback = function () {
-        const no = getRandomInt(0, sounds.length - 1);
+        const no = getRandomInt(0, sounds.length);
         play(sounds[no], callback);
       };
       callback();
