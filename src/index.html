@@ -449,7 +449,9 @@
     function randomPlay() {
       const callback = function () {
         const no = getRandomInt(0, sounds.length);
-        play(sounds[no], callback);
+        if (no >= 0 && no < sounds.length) {
+          play(sounds[no], callback);
+        }
       };
       callback();
     }
