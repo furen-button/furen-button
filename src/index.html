@@ -273,6 +273,17 @@
     const directory = 'sounds';
     const checkBoxClass = 'category-checkbox';
     const initialIgnoreCategories = ['tikutiku', 'sensitive'];
+    const clipImageFileNames = [
+      'img/clip/binta-furikaeri.png',
+      'img/clip/binta-odoroki.png',
+      'img/clip/binta-ushiro.png',
+      'img/clip/kabotya-egao.png',
+      'img/clip/mama-game-egao.png',
+      'img/clip/monhan-odoroki.png',
+    ];
+    const outaClipImageFileNames = [
+      'img/clip/outa-egao.png',
+    ];
 
     function getFilteredSounds() {
       return Array.from(document.getElementsByClassName(setClass)).filter((element) => !element.hidden);
@@ -319,21 +330,18 @@
       sounds = getFilteredSounds();
     }
 
+    function getRandomFileName(fileNames) {
+      const index = Math.floor(Math.random() * fileNames.length);
+      return fileNames[index];
+    }
+
     function createCategoryImage(category) {
       if (!isCreateImage()) {
         return null;
       }
-      const filenames = [
-        'img/clip/binta-furikaeri.png',
-        'img/clip/binta-odoroki.png',
-        'img/clip/binta-ushiro.png',
-        'img/clip/kabotya-egao.png',
-        'img/clip/mama-game-egao.png',
-        'img/clip/monhan-odoroki.png',
-      ];
-      let filename = filenames[Math.floor(Math.random() * filenames.length)];
+      let filename = getRandomFileName(clipImageFileNames);
       if (category.includes('outa')) {
-        filename = 'img/clip/outa-egao.png';
+        filename = getRandomFileName(outaClipImageFileNames);
       }
 
       const windowHeight = window.innerHeight;
