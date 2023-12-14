@@ -266,7 +266,7 @@
     const setClass = 'sounds';
     const directory = 'sounds';
     const checkBoxClass = 'category-checkbox';
-    const initalIgnoreCategories = ['tikutiku', 'sensitive'];
+    const initialIgnoreCategories = ['tikutiku', 'sensitive'];
 
     function getFilteredSounds() {
       return Array.from(document.getElementsByClassName(setClass)).filter((element) => !element.hidden);
@@ -428,7 +428,7 @@
         checkbox.classList.add(checkBoxClass);
         checkbox.type = 'checkbox';
         checkbox.setAttribute('data-category', category);
-        checkbox.checked = !initalIgnoreCategories.includes(category);
+        checkbox.checked = !initialIgnoreCategories.includes(category);
         checkbox.onchange = function categoryChange() {
           filterCategory();
         };
