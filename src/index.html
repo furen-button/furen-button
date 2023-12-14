@@ -288,30 +288,32 @@
       return document.getElementById('create-image').checked;
     }
 
-    function getIgnoreCategory() {
-      const ignoreCategory = [];
+    function getCheckedCategory() {
+      const checkedCategory = [];
       Array.from(document.getElementsByClassName(checkBoxClass)).forEach((element) => {
         if (element.checked) {
-          return;
+          const { category } = element.dataset;
+          checkedCategory.push(category);
         }
-        const { category } = element.dataset;
-        ignoreCategory.push(category);
       });
-      return ignoreCategory;
+      return checkedCategory;
     }
 
     function filterCategory() {
-      const ignoreCategory = getIgnoreCategory();
+      const checkedCategory = getCheckedCategory();
 
       Array.from(document.getElementsByClassName(setClass)).forEach((element) => {
         // eslint-disable-next-line no-param-reassign
-        element.hidden = false;
+        element.hidden = true;
         const { category } = element.dataset;
-        ignoreCategory.forEach((targetCategory) => {
-          if (category.includes(targetCategory)) {
-            // eslint-disable-next-line no-param-reassign
-            element.hidden = true;
-          }
+        const categories = category.split(',');
+        checkedCategory.forEach((targetCategory) => {
+          categories.forEach((c) => {
+            if (c === targetCategory) {
+              // eslint-disable-next-line no-param-reassign
+              element.hidden = false;
+            }
+          });
         });
       });
       sounds = getFilteredSounds();
