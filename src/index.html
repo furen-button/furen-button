@@ -44,7 +44,9 @@
         }
         .config-button {
             font-size: 20px;
+            background-color: whitesmoke;
             font-family: 'Kiwi Maru', serif;
+            font-weight: bold;
         }
         .config-button:hover {
             cursor: pointer;
@@ -100,6 +102,16 @@
             display: inline;
             margin: 5px;
         }
+
+        #fixed-all-stop {
+          width: 100px;
+          height: 50px;
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          opacity: 0.8;
+          z-index: 300;
+        }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRK3SXPLHB"></script>
@@ -132,6 +144,7 @@
   <button id="all-play" class="config-button">連続再生</button>
   <button id="random-play" class="config-button">ランダム連続再生</button>
   <button id="all-stop" class="config-button">停止</button>
+  <button id="fixed-all-stop" class="config-button">停止</button>
   <ul id="category-buttons"></ul>
   <button id="all-category-check" class="config-button">カテゴリー全チェック</button>
   <button id="all-category-uncheck" class="config-button">カテゴリー全解除</button>
@@ -548,6 +561,10 @@
     });
 
     document.getElementById('all-stop').addEventListener('click', () => {
+      allStop();
+    });
+
+    document.getElementById('fixed-all-stop').addEventListener('click', () => {
       allStop();
     });
 
