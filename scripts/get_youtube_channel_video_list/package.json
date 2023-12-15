@@ -1,0 +1,24 @@
+{
+  "name": "get_youtube_channel_video_list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/main.js",
+    "lint": "eslint src/**/* .eslintrc.js",
+    "lint:fix": "eslint src/**/* .eslintrc.js --fix"
+  },
+  "keywords": [],
+  "author": "Junki Hiroi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.9.5"
+  }
+}
