@@ -4,7 +4,13 @@ videos = []
 Dir.glob("#{__dir__}/../../dataset/videolists/*.json") do |filepath|
   videos.push JSON.parse(File.read(filepath))
 end
-videos.flatten!.uniq!.sort_by! { |d| d["snippet"]["publishedAt"] }
+
+videos = videos.
+  flatten.
+  sort_by { |d| d["statistics"]["viewCount"] }.
+  reverse.
+  uniq { |d| d["id"]}.
+  sort_by { |d| d["snippet"]["publishedAt"] }
 
 # ハッシュタグ `#` が含まれない最初の行を取得する
 def description_head(description)
@@ -38,4 +44,13 @@ videos.each do |d|
   }
 end
 
-File.write("#{__dir__}/../../src/dataset/videos.json", JSON.dump(data))
+target_file_path = "#{__dir__}/../../src/dataset/videos.json"
+original_data = JSON.parse(File.read(target_file_path), symbolize_names: true)
+
+merged_data = original_data.push(*data).
+  sort_by { |d| d[:viewCount] }.
+  reverse.
+  uniq { |d| d[:url] }.
+  sort_by { |d| d[:date] }
+
+File.write(target_file_path, JSON.dump(merged_data))
