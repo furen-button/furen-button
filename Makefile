@@ -31,3 +31,8 @@ update_video_list:
 	./scripts/get_youtube_channel_video_list/local.sh
 
 .PHONY: update_video_list
+
+rss_push_item:
+	ruby -ryaml -rdate -e 'YAML.dump(YAML.load_file("dataset/rss.yml").push({url: "https://furen-button.github.io/furen-button/", title: "", updated: "#{Date.today}"}).map { |d| d.transform_keys(&:to_s) }, File.open("dataset/rss.yml", "w"))'
+
+.PHONY: rss_push_item
