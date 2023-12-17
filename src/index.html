@@ -371,6 +371,13 @@
       return document.getElementById('volume').value;
     }
 
+    function initializeVolume() {
+      const volume = localStorage.getItem('volume');
+      if (volume) {
+        document.getElementById('volume').value = volume;
+      }
+    }
+
     function isCreateImage() {
       return document.getElementById('create-image').checked;
     }
@@ -647,7 +654,13 @@
       filterCategory();
     });
 
+    document.getElementById('volume').addEventListener('input', () => {
+      const volume = document.getElementById('volume').value;
+      localStorage.setItem('volume', volume);
+    });
+
     filterCategory();
+    initializeVolume();
 </script>
 </body>
 </html>
