@@ -2,7 +2,7 @@
   ruby: "ぼーるをごーるにしゅーと"
   source: "sushi-universe"
   fileName: "sushi-universe/ball-goal.wav"
-  category: ["neta"]
+  category: ["meme"]
   clipUrl: ""
   tag: ""
 - name: "バグやめろ！"
@@ -44,14 +44,14 @@
   ruby: "えーーーー！！！わーーーー！！！"
   source: "sushi-universe"
   fileName: "sushi-universe/ehhhh-waaaaa.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "いくぞ"
   ruby: "いくぞ"
   source: "sushi-universe"
   fileName: "sushi-universe/ikuzo.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "いたい！ばか！ばか！"
@@ -79,7 +79,7 @@
   ruby: "きた！よっしゃ！"
   source: "sushi-universe"
   fileName: "sushi-universe/kita-yossha.wav"
-  category: ["emotion"]
+  category: ["clear"]
   clipUrl: ""
   tag: ""
 - name: "こんたりお"
@@ -100,7 +100,7 @@
   ruby: "なにこれこれなにそれなに"
   source: "sushi-universe"
   fileName: "sushi-universe/korenanikorenani.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: "https://youtube.com/clip/Ugkxe4oj1q1dcxuNkD54b51XuBR90B36UDIS?si=wot8XZYGBm6hjzAo"
   tag: ""
 - name: "Let's collect sushi soul."
@@ -121,7 +121,7 @@
   ruby: "まだかな"
   source: "sushi-universe"
   fileName: "sushi-universe/madakana.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "みんな来てくれたのか！"
@@ -135,7 +135,7 @@
   ruby: "なにそれ"
   source: "sushi-universe"
   fileName: "sushi-universe/na-ni-so-re.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "なんでこんながんばっているんだ"
@@ -149,21 +149,21 @@
   ruby: "なにをいっているの？ほんとに"
   source: "sushi-universe"
   fileName: "sushi-universe/nani-wo-itteiruno-hontoni.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "なにを言っているの？"
   ruby: "なにをいっているの？"
   source: "sushi-universe"
   fileName: "sushi-universe/nani-wo-itteru.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "▲$◯ばい！"
   ruby: "なゃぇばい！"
   source: "sushi-universe"
   fileName: "sushi-universe/nnyaebai.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "おかしいだろ！"
@@ -177,14 +177,14 @@
   ruby: "おrrrrxらぁ！"
   source: "sushi-universe"
   fileName: "sushi-universe/orrruaa.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "おわった"
   ruby: "おわった"
   source: "sushi-universe"
   fileName: "sushi-universe/owatta.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: ""
@@ -198,21 +198,21 @@
   ruby: "ぴ"
   source: "sushi-universe"
   fileName: "sushi-universe/pii.wav"
-  category: ["emotion"]
+  category: ["se"]
   clipUrl: ""
   tag: ""
-- name: "さけび"
-  ruby: "さけび001"
+- name: "あーーー！！！ははははは"
+  ruby: "あーーー！！！ははははは"
   source: "sushi-universe"
   fileName: "sushi-universe/sakebi.wav"
-  category: ["emotion"]
+  category: ["damage"]
   clipUrl: ""
   tag: ""
-- name: "さけび"
-  ruby: "さけび002"
+- name: "わーーー！！ははははは"
+  ruby: "わーーー！！ははははは"
   source: "sushi-universe"
   fileName: "sushi-universe/sakebi2-rakka.wav"
-  category: ["emotion"]
+  category: ["damage"]
   clipUrl: ""
   tag: ""
 - name: "ぱぱぱやっぽ"
@@ -254,7 +254,7 @@
   ruby: "したかったんだっきょうゆう"
   source: "sushi-universe"
   fileName: "sushi-universe/wa-sitakattanda-kyouyuu.wav"
-  category: ["neta"]
+  category: ["meme"]
   clipUrl: ""
   tag: ""
 - name: "笑い声002"
@@ -310,21 +310,21 @@
   ruby: "わっしょい"
   source: "sushi-universe"
   fileName: "sushi-universe/wasshoi.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
-- name: "やだやだ"
-  ruby: "やだやだ"
+- name: "やだやだやだやだ!"
+  ruby: "やだやだやだやだ!"
   source: "sushi-universe"
   fileName: "sushi-universe/yadayada.wav"
-  category: ["emotion"]
+  category: ["damage"]
   clipUrl: ""
   tag: ""
 - name: "やったー！"
   ruby: "やったー"
   source: "sushi-universe"
   fileName: "sushi-universe/yatta.wav"
-  category: ["emotion"]
+  category: ["clear"]
   clipUrl: ""
   tag: ""
 - name: "余裕なんですけどワロタ"
@@ -338,13 +338,13 @@
   ruby: "ずっとなにいってるのかわからない"
   source: "sushi-universe"
   fileName: "sushi-universe/zutto-nani-itteruka-wakaranai.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "ずっと何言ってるのマジで"
   ruby: "ずっとなにいってるのまじで"
   source: "sushi-universe"
   fileName: "sushi-universe/zutto-nani-wo-itteiruno-majide.wav"
-  category: ["emotion"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
