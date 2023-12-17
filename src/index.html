@@ -34,6 +34,7 @@
         }
         body {
             font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fffafa;
             background-image: url('img/furen-clips.webp');
             background-size: 200px;
             background-position: top right;
@@ -93,16 +94,18 @@
         p {
             max-width: calc(100% - 500px);
             min-width: min(400px, 100%);
+            background-color: #fffafaaa;
         }
         ul#category-buttons {
             max-width: calc(100% - 500px);
-            min-width: 400px;
+            min-width: min(400px, 100%);
             padding-left: 0px;
         }
         ul#category-buttons > li {
             display: inline;
             margin: 8px;
             white-space: pre;
+            background-color: #fffafaaa;
         }
 
         #fixed-all-stop {
@@ -110,7 +113,7 @@
           height: 50px;
           position: fixed;
           right: 0;
-          bottom: 0;
+          top: 0;
           opacity: 0.8;
           z-index: 300;
         }
@@ -422,6 +425,12 @@
       return fileNames[index];
     }
 
+    function getRandomInt(min, max) {
+      const minInt = Math.ceil(min);
+      const maxInt = Math.floor(max);
+      return Math.floor(Math.random() * (maxInt - minInt) + minInt);
+    }
+
     function createCategoryImage(category) {
       if (!isCreateImage()) {
         return null;
@@ -432,17 +441,20 @@
       }
 
       const windowHeight = window.innerHeight;
+      const windowWidth = window.innerWidth;
       const scroll = document.documentElement.scrollTop || document.body.scrollTop || 0;
-      const top = (scroll / windowHeight) * 100 + Math.floor(Math.random() * 80);
-      const zIndex = Math.floor(top);
       const img = document.createElement('img');
       img.src = filename;
       img.style.position = 'absolute';
       img.height = 200;
-      img.style.left = `${Math.floor(Math.random() * 80)}%`;
+      img.width = 200;
+      const top = (scroll / windowHeight) * 100 + (getRandomInt(0, windowHeight - img.height) / windowHeight) * 100;
       img.style.top = `${top}%`;
+      const left = (getRandomInt(0, windowWidth - img.width) / windowWidth) * 100;
+      img.style.left = `${left}%`;
       img.style.pointerEvents = 'none';
       img.classList.add('anime-clip');
+      const zIndex = Math.floor(top);
       img.style.zIndex = `${zIndex}`;
       return img;
     }
@@ -541,12 +553,6 @@
         }
       };
       play(sounds[0], callback);
-    }
-
-    function getRandomInt(min, max) {
-      const minInt = Math.ceil(min);
-      const maxInt = Math.floor(max);
-      return Math.floor(Math.random() * (maxInt - minInt) + minInt);
     }
 
     function randomPlay() {
