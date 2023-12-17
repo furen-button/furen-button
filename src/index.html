@@ -523,7 +523,7 @@
       }
     }
 
-    function createCategoryCheckBoxElement(category) {
+    function createCategoryCheckBoxElement(category, categoryCount) {
       const element = document.createElement('li');
       {
         const id = `category-${category}`;
@@ -538,7 +538,7 @@
         };
         element.appendChild(checkbox);
         const label = document.createElement('label');
-        label.innerText = category;
+        label.innerText = `${category} (${categoryCount})`;
         label.setAttribute('for', id);
         element.appendChild(label);
       }
@@ -604,7 +604,8 @@
 
     for (let i = 0; i < allCategory.length; i += 1) {
       const category = allCategory[i];
-      const element = createCategoryCheckBoxElement(category);
+      const categoryCount = sounds.filter((x) => x.dataset.category.split(',').includes(category)).length;
+      const element = createCategoryCheckBoxElement(category, categoryCount);
       document.getElementById('category-buttons').appendChild(element);
     }
 
