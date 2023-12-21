@@ -93,7 +93,7 @@
   ruby: "これでたべていこうかな"
   source: "sushi-universe"
   fileName: "sushi-universe/korede-tabeteikoukana.wav"
-  category: ["meigen"]
+  category: ["meigen", "game"]
   clipUrl: ""
   tag: ""
 - name: "なにこれこれなにそれなに"
@@ -142,7 +142,7 @@
   ruby: "なんでこんながんばっているんだ"
   source: "sushi-universe"
   fileName: "sushi-universe/nande-konna-ganbatteirunda.wav"
-  category: ["meigen"]
+  category: ["meigen", "game"]
   clipUrl: ""
   tag: ""
 - name: "なにを言っているの？ほんとに"
@@ -170,7 +170,7 @@
   ruby: "おかしいだろ！"
   source: "sushi-universe"
   fileName: "sushi-universe/okashiidaro.wav"
-  category: ["meigen"]
+  category: ["emotions"]
   clipUrl: ""
   tag: ""
 - name: "おrrrrxらぁ！"
