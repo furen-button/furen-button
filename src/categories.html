@@ -74,39 +74,38 @@
 <div id="wrapper"></div>
 <script>
     function updateTable(jsonData) {
-        const rowData = Object.keys(jsonData).map((key) => {
-            return {
-                key: key,
-                description: jsonData[key].description
-            };
-        });
+      const rowData = Object.keys(jsonData).map((key) => ({
+        key,
+        description: jsonData[key].description,
+      }));
 
-        // eslint-disable-next-line no-undef
-        new gridjs.Grid({
-            columns: [
-                { data: (row) => row.key, name: 'カテゴリ名', width: '100px' },
-                { data: (row) => gridjs.html(row.description), name: '説明' },
-            ],
-            data: rowData,
-            sort: true,
-            search: true,
-            language: {
-                search: {
-                    placeholder: '検索',
-                },
-            },
-        }).render(document.getElementById('wrapper'));
+      // eslint-disable-next-line no-undef
+      new gridjs.Grid({
+        columns: [
+          { data: (row) => row.key, name: 'カテゴリ名', width: '100px' },
+          // eslint-disable-next-line no-undef
+          { data: (row) => gridjs.html(row.description), name: '説明' },
+        ],
+        data: rowData,
+        sort: true,
+        search: true,
+        language: {
+          search: {
+            placeholder: '検索',
+          },
+        },
+      }).render(document.getElementById('wrapper'));
     }
     function main() {
-        const url = './dataset/categories.json';
-        fetch(url)
-            .then((response) => response.json())
-            .then((json) => {
-                updateTable(json);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+      const url = './dataset/categories.json';
+      fetch(url)
+        .then((response) => response.json())
+        .then((json) => {
+          updateTable(json);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     }
     main();
 </script>
