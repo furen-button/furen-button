@@ -13,6 +13,8 @@ all:
 	# 説明: 入力データを元に index.html に反映できるように整えるスクリプト
 	ruby scripts/create_button_element/dataset_to_buttons.rb
 	ruby scripts/create_button_element/update_index_html.rb
+	# 説明: 入力データを元に categories.html に反映できるように整えるスクリプト
+	ruby scripts/create_button_element/dataset_to_categories.rb
 	# 説明: dataset/rss.yml から src/feed.rss を作成するスクリプト
 	ruby scripts/make_rss/main.rb
 	npm run fixlint
