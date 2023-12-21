@@ -117,6 +117,12 @@
           opacity: 0.8;
           z-index: 300;
         }
+
+        .comment-text {
+            font-size: 30px;
+            font-family: 'Kiwi Maru', serif;
+            font-weight: bold;
+        }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRK3SXPLHB"></script>
@@ -161,6 +167,9 @@
     <br>
     <label for="create-image">画像</label>
     <input type="checkbox" id="create-image" checked="checked">
+    <br>
+    <label for="create-comment">コメント</label>
+    <input type="checkbox" id="create-comment" checked="checked">
   </div>
 </div>
 <hr>
@@ -350,7 +359,30 @@
   </script>
   <script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 <script>
+    let count = 0;
+    async function createText(text) {
+      const divElement = document.createElement('div');
+      divElement.id = `text${count}`; // アニメーション処理で対象の指定に必要なidを設定
+      count += 1;
+      divElement.classList.add('comment-text');
+      divElement.style.position = 'fixed'; // テキストのは位置を絶対位置にするための設定
+      divElement.style.whiteSpace = 'nowrap'; // 画面右端での折り返しがなく、画面外へはみ出すようにする
+      divElement.style.left = `${document.documentElement.clientWidth}px`; // 初期状態の横方向の位置は画面の右端に設定
+      const random = Math.round(Math.random() * document.documentElement.clientHeight);
+      divElement.style.top = `${random}px`; // 初期状態の縦方向の位置は画面の上端から下端の間に設定（ランダムな配置に）
+      divElement.style.zIndex = '1000'; // 画面上の最前面に表示するための設定
+      divElement.appendChild(document.createTextNode(text)); // 画面上に表示されるテキストを設定
+      document.body.appendChild(divElement); // body直下へ挿入
+
+      // ライブラリを用いたテキスト移動のアニメーション： durationはアニメーションの時間、
+      // 横方向の移動距離は「画面の横幅＋画面を流れるテキストの要素の横幅」、移動中に次の削除処理がされないようawait
+      // eslint-disable-next-line no-undef
+      await gsap.to(`#${divElement.id}`, { duration: 5, x: -1 * (document.documentElement.clientWidth + divElement.clientWidth) });
+      divElement.parentNode.removeChild(divElement); // 画面上の移動終了後に削除
+    }
+
     const keyboardKeys = ['1', '2', '3', 'q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c'];
     const setClass = 'sounds';
     const directory = 'sounds';
@@ -387,6 +419,10 @@
 
     function isCreateImage() {
       return document.getElementById('create-image').checked;
+    }
+
+    function isCreateComment() {
+      return document.getElementById('create-comment').checked;
     }
 
     function getCheckedCategory() {
@@ -478,6 +514,9 @@
         playingAudioList.push(audio);
         audio.volume = getVolume();
         audio.play();
+        if (isCreateComment()) {
+          createText(element.innerText);
+        }
         element.classList.add('anime-button');
         audio.addEventListener('ended', () => {
           element.classList.remove('anime-button');
