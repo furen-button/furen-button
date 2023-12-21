@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:title" content="フレンボタン">
+  <meta property="og:description" content="コーヴァス帝国から来た女騎士フレン・E・ルスタリオさんのボイス切り抜きをまとめます。">
+  <meta property="og:image" content="https://furen-button.github.io/furen-button/img/apple-touch-icon-180x180.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="コーヴァス帝国から来た女騎士フレン・E・ルスタリオさんのボイス切り抜きをまとめます。">
+  <title>フレンボタン : 動画一覧</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon-180x180.png" sizes="180x180">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Kiwi+Maru&family=Noto+Sans+JP&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Kiwi+Maru&family=Noto+Sans+JP&display=swap" media="print" onload="this.media='all'">
+  <link rel='stylesheet' href='https://unpkg.com/gridjs/dist/theme/mermaid.min.css'>
+  <script src='https://unpkg.com/gridjs/dist/gridjs.umd.js'></script>
+  <style>
+      body {
+          font-family: 'Noto Sans JP', sans-serif;
+          background-image: url('img/furen-clips.webp');
+          background-size: 200px;
+          background-position: top right;
+          background-repeat: repeat-y;
+      }
+      .gridjs-tbody {
+          background-color: #fff4;
+      }
+      td.gridjs-td {
+          background-color: #fff4;
+      }
+      h1 {
+          font-family: 'Mochiy Pop One', serif;
+          font-size: 50px;
+      }
+
+      #page-top {
+          width: 100px;
+          height: 50px;
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          background-color: rosybrown;
+          z-index: 100;
+          font-family: 'Kiwi Maru', serif;
+      }
+      #page-top > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          text-align: center;
+          line-height: 50px;
+      }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRK3SXPLHB"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      // eslint-disable-next-line
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JRK3SXPLHB');
+  </script>
+</head>
+<body>
+<h1>
+  <a href="." style="text-decoration:none;">フレンボタン</a>
+  <a target="_blank" href="https://furen-button.github.io/furen-button/feed.rss"><img src="img/icons8-rss-48.png" width="48px" height="48px" alt="rss"></a>
+</h1>
+<div id="page-top"><a href="#">トップへ</a></div>
+<div id="wrapper"></div>
+<script>
+    function updateTable(jsonData) {
+        const rowData = Object.keys(jsonData).map((key) => {
+            return {
+                key: key,
+                description: jsonData[key].description
+            };
+        });
+
+        // eslint-disable-next-line no-undef
+        new gridjs.Grid({
+            columns: [
+                { data: (row) => row.key, name: 'カテゴリ名', width: '100px' },
+                { data: (row) => gridjs.html(row.description), name: '説明' },
+            ],
+            data: rowData,
+            sort: true,
+            search: true,
+            language: {
+                search: {
+                    placeholder: '検索',
+                },
+            },
+        }).render(document.getElementById('wrapper'));
+    }
+    function main() {
+        const url = './dataset/categories.json';
+        fetch(url)
+            .then((response) => response.json())
+            .then((json) => {
+                updateTable(json);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+    main();
+</script>
+</body>
+</html>
