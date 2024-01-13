@@ -508,14 +508,12 @@
       const checkedCategory = getCheckedCategory();
 
       Array.from(document.getElementsByClassName(setClass)).forEach((element) => {
-        // eslint-disable-next-line no-param-reassign
         element.hidden = true;
         const { category } = element.dataset;
         const categories = category.split(',');
         checkedCategory.forEach((targetCategory) => {
           categories.forEach((c) => {
             if (c === targetCategory) {
-              // eslint-disable-next-line no-param-reassign
               element.hidden = false;
             }
           });
@@ -689,13 +687,13 @@
     let allCategory = [];
 
     for (let i = 0; i < sounds.length; i += 1) {
-      // eslint-disable-next-line no-loop-func
+
       sounds[i].onclick = function soundsClick() {
         closeContext();
         play(this);
         sendGtagContent('sound_click', this.dataset.file);
       };
-      // eslint-disable-next-line no-loop-func
+
       sounds[i].oncontextmenu = function soundsRightClick(event) {
         event.preventDefault();
         viewContext(event, this.dataset);
