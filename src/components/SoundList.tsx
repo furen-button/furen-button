@@ -3,6 +3,7 @@ import React from 'react';
 
 export interface SoundListProps {
   onClick: (event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) => void;
+  onContextMenu: (event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) => void;
   selectedCategory: string[];
 }
 
@@ -33,6 +34,7 @@ function createSoundButton(soundData: SoundData, props: SoundListProps) {
       data-category={soundData.category}
       data-clip-url={soundData.clipUrl}
       onClick={(event) => props.onClick(event, soundData)}
+      onContextMenu={(event) => props.onContextMenu(event, soundData)}
       hidden={hidden}
     >
       {soundData.name}

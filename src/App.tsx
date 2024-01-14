@@ -1,31 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SoundDataJson, SoundData } from './components/SoundData.tsx';
 import SoundList from './components/SoundList.tsx';
 import CategoryCheckList from './components/CategoryCheckList.tsx';
+import SoundContext from './components/SoundContext.tsx';
 import { gsap } from 'gsap';
 
-const initialIgnoreCategories = ['tikutiku', 'sensitive', 'collab'];
+const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
+const playingAudioList : HTMLAudioElement[] = [];
 
-function soundClick(event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) {
+function soundClick(soundData: SoundData, volume: number) {
   try {
-    const image = createCategoryImage(soundData.category);
-    if (image) {
-      document.body.appendChild(image);
-    }
     const audio = new Audio(`${directory}/${soundData.fileName}`);
     playingAudioList.push(audio);
-    audio.volume = getVolume();
+    audio.volume = volume;
     audio.play();
-    if (isCreateComment()) {
-      createText(soundData.name);
-    }
-    const target = event.target as HTMLDivElement;
-    target?.classList.add('anime-button');
     audio.addEventListener('ended', () => {
-      target?.classList.remove('anime-button');
-      if (image) {
-        document.body.removeChild(image);
-      }
       audio.remove();
       playingAudioList.splice(playingAudioList.indexOf(audio), 1);
     });
@@ -34,7 +23,7 @@ function soundClick(event: React.MouseEvent<HTMLDivElement>, soundData: SoundDat
   }
 }
 
-function getCategoryList(soundList : SoundData[]) {
+function getCategoryList(soundList: SoundData[]) {
   const allCategory: string[] = [];
   soundList.map((soundData) => soundData.category.split(','))
     .forEach((categories) => {
@@ -50,23 +39,97 @@ function getCategoryList(soundList : SoundData[]) {
 function App() {
   const soundDataList = SoundDataJson as SoundData[];
   const categoryList = getCategoryList(soundDataList);
-  const [selectedCategory, setSelectedCategory] = useState<string[]>(categoryList);
+  const initialFilteredCategoryList = categoryList.filter((category) => !initialFilterCategories.includes(category));
+  const [selectedCategory, setSelectedCategory] = useState<string[]>(initialFilteredCategoryList);
+  const [viewSoundContext, setViewSoundContext] = useState<SoundData | null>(null);
+  const [playingSoundData, setPlayingSoundData] = useState<SoundData[]>([]);
+  const [volume, setVolume] = useState<number>(loadVolume());
+  const [isCreateImage, setIsCreateImage] = useState<boolean>(loadIsCreateImage());
+  const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
 
   return (
     <>
+      <button
+        className="config-button"
+        onClick={() => {
+          return;
+        }}>
+        わいわいガヤガヤ（たくさんランダム連続再生）
+      </button>
+      <br/>
+      <button
+        className="config-button"
+        onClick={() => {
+          return;
+        }}>
+        連続再生
+      </button>
+      <button className="config-button">ランダム連続再生</button>
+      <button
+        id="all-stop"
+        className="config-button"
+        onClick={allStop}>
+        停止
+      </button>
+      <button
+        id="fixed-all-stop"
+        className="config-button"
+        onClick={allStop}>
+        停止
+      </button>
       <CategoryCheckList
         categoryList={categoryList}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
       <div>
+        <label htmlFor="volume">音量（一部端末では無効）</label>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          value={volume}
+          step="0.01"
+          id="volume"
+          onChange={(event) => {
+            setVolume(Number(event.target.value));
+            localStorage.setItem('volume', event.target.value);
+          }}/>
+        <br/>
+        <label htmlFor="create-image">画像</label>
+        <input
+          type="checkbox"
+          id="create-image"
+          checked={isCreateImage}
+          onChange={() => {
+            setIsCreateImage(!isCreateImage);
+            localStorage.setItem('createImage', (!isCreateImage).toString());
+          }}/>
+        <br/>
+        <label htmlFor="create-comment">コメント</label>
+        <input
+          type="checkbox"
+          id="create-comment"
+          checked={isCreateComment}
+          onChange={() => {
+            setIsCreateComment(!isCreateComment);
+            localStorage.setItem('createComment', (!isCreateComment).toString());
+          }}/>
+      </div>
+      <div>
         <SoundList
-          onClick={(event, soundData) => {
-            soundClick(event, soundData);
+          onClick={(_event, soundData) => {
+            soundClick(soundData, volume);
+          }}
+          onContextMenu={(event, soundData) => {
+            event.preventDefault();
+            setViewSoundContext(soundData);
           }}
           selectedCategory={selectedCategory}
         />
       </div>
+      <SoundContext
+        soundData={viewSoundContext}/>
     </>
   );
 }
@@ -96,10 +159,7 @@ async function createText(text: string) {
   divElement.remove(); // アニメーション終了後に要素を削除
 }
 
-const keyboardKeys = ['1', '2', '3', 'q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c'];
-const setClass = 'sounds';
 const directory = 'sounds';
-const checkBoxClass = 'category-checkbox';
 const clipImageFileNames = [
   'img/clip/binta-furikaeri.png',
   'img/clip/binta-odoroki.png',
@@ -112,89 +172,43 @@ const outaClipImageFileNames = [
   'img/clip/outa-egao.png',
 ];
 
-function getFilteredSounds() {
-  return Array.from(document.getElementsByClassName(setClass)).filter((element) => !element.hidden);
-}
-let sounds = getFilteredSounds();
-const playingAudioList = [];
 
-function getVolume() {
-  return document.getElementById('volume').value;
-}
-
-function initializeVolume() {
+function loadVolume() {
   const volume = localStorage.getItem('volume');
   if (volume) {
-    document.getElementById('volume').value = volume;
+    return Number(volume);
   }
+  return 1;
 }
 
-function initializeCreateImage() {
+function loadIsCreateImage() {
   const createImage = localStorage.getItem('createImage');
   if (createImage) {
-    document.getElementById('create-image').checked = createImage === 'true';
+    return createImage === 'true';
   }
+  return true;
 }
 
-function initializeCreateComment() {
+function loadIsCreateComment() {
   const createComment = localStorage.getItem('createComment');
   if (createComment) {
-    document.getElementById('create-comment').checked = createComment === 'true';
+    return createComment === 'true';
   }
+  return true;
 }
 
-function isCreateImage() {
-  return document.getElementById('create-image').checked;
-}
-
-function isCreateComment() {
-  return document.getElementById('create-comment').checked;
-}
-
-function getCheckedCategory() {
-  const checkedCategory = [];
-  Array.from(document.getElementsByClassName(checkBoxClass)).forEach((element) => {
-    if (element.checked) {
-      const { category } = element.dataset;
-      checkedCategory.push(category);
-    }
-  });
-  return checkedCategory;
-}
-
-function filterCategory() {
-  const checkedCategory = getCheckedCategory();
-
-  Array.from(document.getElementsByClassName(setClass)).forEach((element) => {
-    element.hidden = true;
-    const { category } = element.dataset;
-    const categories = category.split(',');
-    checkedCategory.forEach((targetCategory) => {
-      categories.forEach((c) => {
-        if (c === targetCategory) {
-          element.hidden = false;
-        }
-      });
-    });
-  });
-  sounds = getFilteredSounds();
-}
-
-function getRandomFileName(fileNames) {
+function getRandomFileName(fileNames : string[]) {
   const index = Math.floor(Math.random() * fileNames.length);
   return fileNames[index];
 }
 
-function getRandomInt(min, max) {
+function getRandomInt(min : number, max : number) {
   const minInt = Math.ceil(min);
   const maxInt = Math.floor(max);
   return Math.floor(Math.random() * (maxInt - minInt) + minInt);
 }
 
-function createCategoryImage(category) {
-  if (!isCreateImage()) {
-    return null;
-  }
+function createCategoryImage(category : string) {
   let filename = getRandomFileName(clipImageFileNames);
   if (category.includes('outa')) {
     filename = getRandomFileName(outaClipImageFileNames);
@@ -219,62 +233,11 @@ function createCategoryImage(category) {
   return img;
 }
 
-function sendGtagContent(contentType, contentId) {
-
+function sendGtagContent(contentType : string, contentId : string) {
   gtag('event', 'select_content', {
     content_type: contentType,
     content_id: contentId,
   });
-}
-
-
-function closeContext() {
-  document.getElementById('context').hidden = true;
-}
-
-function viewContext(event, dataset) {
-  const contextElement = document.getElementById('context');
-  contextElement.hidden = false;
-  contextElement.style.top = `${event.clientY + 20}px`;
-  if (window.innerWidth - event.clientX < 300) {
-    contextElement.style.left = `${event.clientX - 300}px`;
-  } else {
-    contextElement.style.left = `${event.clientX}px`;
-  }
-  document.getElementById('context-file').innerText = dataset.file;
-  document.getElementById('context-ruby').innerText = dataset.ruby;
-  document.getElementById('context-category').innerText = dataset.category;
-  document.getElementById('context-source').innerText = dataset.title;
-  document.getElementById('context-source').href = dataset.url;
-  if (dataset.clip === '') {
-    document.getElementById('context-clip').parentNode.hidden = true;
-    document.getElementById('context-clip').innerText = '';
-    document.getElementById('context-clip').href = '';
-  } else {
-    document.getElementById('context-clip').parentNode.hidden = false;
-    document.getElementById('context-clip').innerText = 'リンク';
-    document.getElementById('context-clip').href = dataset.clip;
-  }
-}
-
-function allPlay() {
-  const callback = function (element) {
-    const no = sounds.indexOf(element);
-    if (no >= 0 && no + 1 < sounds.length) {
-      play(sounds[no + 1], callback);
-    }
-  };
-  play(sounds[0], callback);
-}
-
-function randomPlay() {
-  const callback = function () {
-    const no = getRandomInt(0, sounds.length);
-    if (no >= 0 && no < sounds.length) {
-      play(sounds[no], callback);
-    }
-  };
-  callback();
 }
 
 function allStop() {
@@ -282,73 +245,5 @@ function allStop() {
     audio.pause();
     audio.remove();
   });
-  for (let i = 0; i < sounds.length; i += 1) {
-    sounds[i].classList.remove('anime-button');
-  }
   playingAudioList.splice(0, playingAudioList.length);
-  Array.from(document.getElementsByClassName('anime-clip')).forEach((element) => {
-    document.body.removeChild(element);
-  });
 }
-
-
-
-document.getElementById('close-context').addEventListener('click', () => {
-  closeContext();
-});
-
-document.addEventListener('keydown', (event) => {
-  const { key } = event;
-  if (keyboardKeys.includes(key)) {
-    const index = keyboardKeys.indexOf(key);
-    play(sounds[index]);
-  }
-  if (key === ' ') {
-    randomPlay();
-  }
-});
-
-document.getElementById('all-play').addEventListener('click', () => {
-  allPlay();
-  sendGtagContent('all_play', 'all_play');
-});
-
-document.getElementById('random-play').addEventListener('click', () => {
-  randomPlay();
-  sendGtagContent('random_play', 'random_play');
-});
-
-document.getElementById('random-play-waiwai').addEventListener('click', () => {
-  for (let i = 0; i < 5; i += 1) {
-    randomPlay();
-  }
-  sendGtagContent('random_play_waiwai', 'random_play_waiwai');
-});
-
-document.getElementById('all-stop').addEventListener('click', () => {
-  allStop();
-});
-
-document.getElementById('fixed-all-stop').addEventListener('click', () => {
-  allStop();
-});
-
-document.getElementById('volume').addEventListener('input', () => {
-  const volume = document.getElementById('volume').value;
-  localStorage.setItem('volume', volume);
-});
-
-document.getElementById('create-image').addEventListener('change', () => {
-  const createImage = document.getElementById('create-image').checked;
-  localStorage.setItem('createImage', createImage);
-});
-
-document.getElementById('create-comment').addEventListener('change', () => {
-  const createComment = document.getElementById('create-comment').checked;
-  localStorage.setItem('createComment', createComment);
-});
-
-filterCategory();
-initializeVolume();
-initializeCreateImage();
-initializeCreateComment();

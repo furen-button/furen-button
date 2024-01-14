@@ -1,5 +1,5 @@
 // SoundDataJson は SoundData の配列
-import SoundDataJson from '../dataset/sounds.json';
+import SoundDataJson from '../../public/dataset/sounds.json';
 
 export interface SoundData {
   name: string;
