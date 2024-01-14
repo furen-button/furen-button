@@ -1,7 +1,9 @@
+import React from 'react';
 import { SoundData} from './SoundData.tsx';
 
 export interface ContextProps {
   soundData: SoundData | null;
+  onCloseClick: () => void;
 }
 
 function SoundContext(props: ContextProps) {
@@ -10,7 +12,8 @@ function SoundContext(props: ContextProps) {
     return (<div></div>);
   }
   return (
-    <div>
+    <div
+      style={style.container}>
       <ul className="context-list">
         <li>
           <div className="context-title">ファイル:</div>
@@ -41,9 +44,20 @@ function SoundContext(props: ContextProps) {
           </a>
         </li>
       </ul>
-      <button id="close-context">閉じる</button>
+      <button onClick={props.onCloseClick}>閉じる</button>
     </div>
   );
 }
+
+const style : {[key: string]: React.CSSProperties} = {
+  container: {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    backgroundColor: '#fff',
+    border: 'solid 1px #000',
+    borderRadius: '5px',
+  }
+};
 
 export default SoundContext;

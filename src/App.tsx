@@ -131,6 +131,7 @@ function App() {
               createText(soundData.name);
             }
             sendGtagContent('sound_click', soundData.name);
+            setViewSoundContext(null);
           }}
           onContextMenu={(event, soundData) => {
             event.preventDefault();
@@ -140,7 +141,10 @@ function App() {
         />
       </div>
       <SoundContext
-        soundData={viewSoundContext}/>
+        soundData={viewSoundContext}
+        onCloseClick={() => {
+          setViewSoundContext(null);
+        }}/>
     </>
   );
 }
