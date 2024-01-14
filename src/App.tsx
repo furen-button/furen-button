@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import {useEffect, useReducer, useState} from 'react';
 import { SoundDataJson, SoundData } from './components/SoundData.tsx';
+import { isCategoryMatched } from './components/SoundDataFunctions.tsx';
 import SoundList from './components/SoundList.tsx';
 import CategoryCheckList from './components/CategoryCheckList.tsx';
 import SoundContext from './components/SoundContext.tsx';
@@ -7,21 +8,38 @@ import { gsap } from 'gsap';
 import { gtag } from 'ga-gtag';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
-const playingAudioList : HTMLAudioElement[] = [];
 
-function soundClick(soundData: SoundData, volume: number) {
+function soundPlay(soundData: SoundData, volume: number, endCallback: () => void) {
   try {
     const audio = new Audio(`${directory}/${soundData.fileName}`);
-    playingAudioList.push(audio);
     audio.volume = volume;
     audio.play();
     audio.addEventListener('ended', () => {
       audio.remove();
-      playingAudioList.splice(playingAudioList.indexOf(audio), 1);
+      endCallback();
     });
+    document.body.appendChild(audio);
   } catch (e) {
     console.log(e);
   }
+}
+
+function soundClick(soundData: SoundData, volume: number, isCreateImage: boolean, isCreateComment : boolean, soundEndCallback: (soundData : SoundData) => void) {
+  let imageEndCallback = () => {};
+  if (isCreateImage) {
+    const img = createCategoryImage(soundData.category);
+    document.body.appendChild(img);
+    imageEndCallback = () => {
+      img.remove();
+    };
+  }
+  if (isCreateComment) {
+    createText(soundData.name);
+  }
+  soundPlay(soundData, volume, () => {
+    imageEndCallback();
+    soundEndCallback(soundData);
+  });
 }
 
 function getCategoryList(soundList: SoundData[]) {
@@ -37,6 +55,71 @@ function getCategoryList(soundList: SoundData[]) {
   return uniqueCategory.sort();
 }
 
+function getRandomSoundData(soundDataList : SoundData[], selectedCategory : string[]) {
+  const filteredSoundDataList = getFilteredSoundDataList(soundDataList, selectedCategory);
+  if (filteredSoundDataList.length === 0) {
+    return null;
+  }
+  const index = Math.floor(Math.random() * filteredSoundDataList.length);
+  return filteredSoundDataList[index];
+}
+
+function getNextSoundData(soundDataList : SoundData[], selectedCategory : string[], nowSoundData : SoundData) {
+  const filteredSoundDataList = getFilteredSoundDataList(soundDataList, selectedCategory);
+  const index = filteredSoundDataList.findIndex((soundData) => {
+    return soundData === nowSoundData;
+  });
+  if (index === -1) {
+    return null;
+  }
+  if (index === filteredSoundDataList.length - 1) {
+    return null;
+  }
+  return filteredSoundDataList[index + 1];
+}
+
+function getFilteredSoundDataList(soundDataList : SoundData[], selectedCategory : string[]) {
+  return soundDataList.filter((soundData) => {
+    return isCategoryMatched(soundData, selectedCategory);
+  });
+}
+
+type ReducerAction = {
+  type : 'push' | 'pop' | 'clear';
+  soundData : SoundData | null;
+};
+
+function playingSoundListReducer(state : SoundData[], action : ReducerAction) : SoundData[] {
+  switch (action.type) {
+  case 'push':
+  {
+    if (action.soundData === null) {
+      return state;
+    }
+    return [...state, action.soundData];
+  }
+  case 'pop':
+  {
+    if (action.soundData === null) {
+      return state;
+    }
+    const index = state.findIndex((soundData) => {
+      return soundData === action.soundData;
+    });
+    if (index === -1) {
+      return state;
+    }
+    return state.slice(index, 1);
+  }
+  case 'clear':
+  {
+    return [];
+  }
+  default:
+    throw new Error();
+  }
+}
+
 function App() {
   const soundDataList = SoundDataJson as SoundData[];
   const categoryList = getCategoryList(soundDataList);
@@ -46,35 +129,103 @@ function App() {
   const [volume, setVolume] = useState<number>(loadVolume());
   const [isCreateImage, setIsCreateImage] = useState<boolean>(loadIsCreateImage());
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
+  const [playingSoundDataList, updatePlayingSoundDataList] = useReducer(playingSoundListReducer, []);
+
+  const soundEndCallback = (nowSoundData : SoundData) => {
+    updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
+  };
+  const randomSoundCallback = (nowSoundData : SoundData) => {
+    updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
+    const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
+    if (nextSoundData === null) {
+      return;
+    }
+    updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
+    soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+  };
+
+  const onAllPlayClick = () => {
+    const nextSoundCallback = (nowSoundData : SoundData) => {
+      updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
+      const nextSoundData = getNextSoundData(soundDataList, selectedCategory, nowSoundData);
+      if (nextSoundData) {
+        updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
+        soundClick(nextSoundData, volume, isCreateImage, isCreateComment, nextSoundCallback);
+      }
+    };
+    const filteredSoundDataList = getFilteredSoundDataList(soundDataList, selectedCategory);
+    if (0 < filteredSoundDataList.length) {
+      const nextSoundData = filteredSoundDataList[0];
+      updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
+      soundClick(nextSoundData, volume, isCreateImage, isCreateComment, nextSoundCallback);
+    }
+  };
+
+  const onAllStopClick = () => {
+    const audioElements = Array.from(document.getElementsByTagName('audio'));
+    for (let i = 0; i < audioElements.length; i += 1) {
+      const audioElement = audioElements[i];
+      audioElement.pause();
+      audioElement.remove();
+    }
+    const clipElements = Array.from(document.getElementsByClassName('anime-clip'));
+    for (let i = 0; i < clipElements.length; i += 1) {
+      const clipElement = clipElements[i];
+      clipElement.remove();
+    }
+    const textElements = Array.from(document.getElementsByClassName('comment-text'));
+    for (let i = 0; i < textElements.length; i += 1) {
+      const textElement = textElements[i];
+      textElement.remove();
+    }
+    updatePlayingSoundDataList({type: 'clear', soundData: null});
+  };
+
+  // NOTE: 連続再生が追従できないのでカテゴリー変更時に停止する
+  useEffect(() => {
+    onAllStopClick();
+  }, [selectedCategory]);
 
   return (
     <>
       <button
         className="config-button"
         onClick={() => {
-          return;
+          for (let i = 0; i < 5; i += 1) {
+            const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
+            if (nextSoundData === null) {
+              break;
+            }
+            updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
+            soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+          }
         }}>
         わいわいガヤガヤ（たくさんランダム連続再生）
       </button>
       <br/>
       <button
         className="config-button"
+        onClick={onAllPlayClick}>連続再生</button>
+      <button
+        className="config-button"
         onClick={() => {
-          return;
-        }}>
-        連続再生
-      </button>
-      <button className="config-button">ランダム連続再生</button>
+          const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
+          if (nextSoundData === null) {
+            return;
+          }
+          updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
+          soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+        }}>ランダム連続再生</button>
       <button
         id="all-stop"
         className="config-button"
-        onClick={allStop}>
+        onClick={onAllStopClick}>
         停止
       </button>
       <button
         id="fixed-all-stop"
         className="config-button"
-        onClick={allStop}>
+        onClick={onAllStopClick}>
         停止
       </button>
       <CategoryCheckList
@@ -90,7 +241,6 @@ function App() {
           max="1"
           value={volume}
           step="0.01"
-          id="volume"
           onChange={(event) => {
             setVolume(Number(event.target.value));
             localStorage.setItem('volume', event.target.value);
@@ -99,7 +249,6 @@ function App() {
         <label htmlFor="create-image">画像</label>
         <input
           type="checkbox"
-          id="create-image"
           checked={isCreateImage}
           onChange={() => {
             setIsCreateImage(!isCreateImage);
@@ -109,7 +258,6 @@ function App() {
         <label htmlFor="create-comment">コメント</label>
         <input
           type="checkbox"
-          id="create-comment"
           checked={isCreateComment}
           onChange={() => {
             setIsCreateComment(!isCreateComment);
@@ -119,25 +267,19 @@ function App() {
       <div>
         <SoundList
           onClick={(_event, soundData) => {
-            soundClick(soundData, volume);
-            if (isCreateImage) {
-              const img = createCategoryImage(soundData.category);
-              document.body.appendChild(img);
-              setTimeout(() => {
-                img.remove();
-              }, 5000);
-            }
-            if (isCreateComment) {
-              createText(soundData.name);
-            }
+            updatePlayingSoundDataList({type: 'push', soundData: soundData});
+            soundClick(soundData, volume, isCreateImage, isCreateComment, soundEndCallback);
             sendGtagContent('sound_click', soundData.name);
             setViewSoundContext(null);
           }}
           onContextMenu={(event, soundData) => {
             event.preventDefault();
+            sendGtagContent('sound_context_click', soundData.name);
             setViewSoundContext(soundData);
           }}
           selectedCategory={selectedCategory}
+          filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
+          playingSoundDataList={playingSoundDataList}
         />
       </div>
       <SoundContext
@@ -253,12 +395,4 @@ function sendGtagContent(contentType : string, contentId : string) {
     content_type: contentType,
     content_id: contentId,
   });
-}
-
-function allStop() {
-  playingAudioList.forEach((audio) => {
-    audio.pause();
-    audio.remove();
-  });
-  playingAudioList.splice(0, playingAudioList.length);
 }

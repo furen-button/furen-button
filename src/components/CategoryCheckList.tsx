@@ -14,7 +14,7 @@ function CategoryCheckList(props : CategoryCheckListProps) {
           props.categoryList.map((category) => {
             const id = `category-${category}`;
             return (
-              <li>
+              <li key={id}>
                 <input
                   id={id}
                   className='category-checkbox'
