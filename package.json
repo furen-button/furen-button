@@ -4,15 +4,32 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/**.html",
-    "fixlint": "eslint src/**.html --fix"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx,html,js --report-unused-disable-directives --max-warnings 0",
+    "fixlint": "eslint . --ext ts,tsx,html,js --report-unused-disable-directives --max-warnings 0 --fix"
   },
   "keywords": [],
   "author": "",
+  "dependencies": {
+    "ga-gtag": "^1.2.0",
+    "gsap": "^3.12.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.37.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }

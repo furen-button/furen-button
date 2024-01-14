@@ -1,7 +1,7 @@
 require 'yaml'
 require 'json'
 
-target_file_path = "#{__dir__}/../../src/dataset/categories.json"
+target_file_path = "#{__dir__}/../../public/dataset/categories.json"
 data = []
 
 Dir.glob("#{__dir__}/../../dataset/sounds/**.yml") do |filepath|

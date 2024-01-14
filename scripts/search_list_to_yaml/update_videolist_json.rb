@@ -44,7 +44,7 @@ videos.each do |d|
   }
 end
 
-target_file_path = "#{__dir__}/../../src/dataset/videos.json"
+target_file_path = "#{__dir__}/../../public/dataset/videos.json"
 original_data = JSON.parse(File.read(target_file_path), symbolize_names: true)
 
 merged_data = original_data.push(*data).

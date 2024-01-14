@@ -10,10 +10,9 @@ all:
 	ruby scripts/search_list_to_yaml/update_videolist_json.rb
 	# 説明: wav ファイルから入力用の yaml を dataset/sounds 以下に作成するスクリプト
 	ruby scripts/create_button_element/main.rb
-	# 説明: 入力データを元に index.html に反映できるように整えるスクリプト
+	# 説明: 入力データを元に public/dataset/sounds.json を更新するスクリプト
 	ruby scripts/create_button_element/dataset_to_buttons.rb
-	ruby scripts/create_button_element/update_index_html.rb
-	# 説明: 入力データを元に categories.html に反映できるように整えるスクリプト
+	# 説明: 入力データを元に public/dataset/categories.json を更新するスクリプト
 	ruby scripts/create_button_element/dataset_to_categories.rb
 	# 説明: dataset/rss.yml から src/feed.rss を作成するスクリプト
 	ruby scripts/make_rss/main.rb
