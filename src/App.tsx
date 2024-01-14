@@ -4,6 +4,7 @@ import SoundList from './components/SoundList.tsx';
 import CategoryCheckList from './components/CategoryCheckList.tsx';
 import SoundContext from './components/SoundContext.tsx';
 import { gsap } from 'gsap';
+import { gtag } from 'ga-gtag';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 const playingAudioList : HTMLAudioElement[] = [];
@@ -42,7 +43,6 @@ function App() {
   const initialFilteredCategoryList = categoryList.filter((category) => !initialFilterCategories.includes(category));
   const [selectedCategory, setSelectedCategory] = useState<string[]>(initialFilteredCategoryList);
   const [viewSoundContext, setViewSoundContext] = useState<SoundData | null>(null);
-  const [playingSoundData, setPlayingSoundData] = useState<SoundData[]>([]);
   const [volume, setVolume] = useState<number>(loadVolume());
   const [isCreateImage, setIsCreateImage] = useState<boolean>(loadIsCreateImage());
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
@@ -120,6 +120,17 @@ function App() {
         <SoundList
           onClick={(_event, soundData) => {
             soundClick(soundData, volume);
+            if (isCreateImage) {
+              const img = createCategoryImage(soundData.category);
+              document.body.appendChild(img);
+              setTimeout(() => {
+                img.remove();
+              }, 5000);
+            }
+            if (isCreateComment) {
+              createText(soundData.name);
+            }
+            sendGtagContent('sound_click', soundData.name);
           }}
           onContextMenu={(event, soundData) => {
             event.preventDefault();
