@@ -10,7 +10,7 @@ python3 -m venv env
 pip install -r requirements.txt
 # pip freeze > requirements.txt
 
-find ../../src/sounds | grep "\.wav$" | grep -v "\-normalized\.wav$" | sed s/\.wav// |
+find ../../public/sounds | grep "\.wav$" | grep -v "\-normalized\.wav$" | sed s/\.wav// |
   xargs -P4 -I{} bash -c 'echo {}; ./env/bin/ffmpeg-normalize {}.wav -o {}-normalized.wav -f'
 
 deactivate

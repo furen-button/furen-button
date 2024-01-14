@@ -31,4 +31,4 @@ sounds = data.sort_by { |sound| [sound['ruby'],sound['fileName']] }.map do |soun
   }
 end
 
-File.write("#{__dir__}/../../src/dataset/sounds.json", JSON.pretty_generate(sounds))
+File.write("#{__dir__}/../../public/dataset/sounds.json", JSON.pretty_generate(sounds))

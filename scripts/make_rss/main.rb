@@ -19,5 +19,5 @@ rss = RSS::Maker.make('2.0') do |maker|
   end
 end
 
-target_filepath = "#{__dir__}/../../src/feed.rss"
+target_filepath = "#{__dir__}/../../public/feed.rss"
 File.write(target_filepath, rss.to_s)
