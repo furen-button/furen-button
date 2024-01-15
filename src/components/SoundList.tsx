@@ -38,7 +38,9 @@ function SoundList(props: SoundListProps) {
 
   const soundElements = Object.keys(sectionList).map((key) => {
     return (
-      <div style={style.container}>
+      <div
+        key={key}
+        style={style.container}>
         {
           sectionList[key].map((soundData) => {
             return (
