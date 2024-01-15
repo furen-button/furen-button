@@ -12,6 +12,16 @@ export interface SoundListProps {
 const sectionIndexList = ['0', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ'];
 
 function SoundList(props: SoundListProps) {
+  if (props.filteredSoundDataList.length === 0) {
+    return (
+      <div style={style.container}>
+        <div style={style.noData}>
+          カテゴリを選択してください。
+        </div>
+      </div>
+    );
+  }
+
   const sectionList : {[key: string]: SoundData[]} = {};
 
   for (const soundData of props.filteredSoundDataList) {
@@ -91,6 +101,12 @@ const style : {[key: string]: React.CSSProperties} = {
     flexDirection: 'row',
     flexWrap: 'wrap',
     border: 'solid 10px rgba(0, 0, 0, 0)',
+  },
+  noData:{
+    width: '100%',
+    textAlign: 'center',
+    fontSize: '30px',
+    fontWeight: 'bold',
   }
 };
 
