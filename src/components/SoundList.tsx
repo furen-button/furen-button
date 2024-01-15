@@ -43,6 +43,7 @@ function SoundList(props: SoundListProps) {
           sectionList[key].map((soundData) => {
             return (
               <SoundButton
+                key={soundData.fileName}
                 soundData={soundData}
                 onClick={props.onClick}
                 onContextMenu={props.onContextMenu}
