@@ -53,7 +53,7 @@ const style : {[key: string]: React.CSSProperties} = {
   container: {
     position: 'fixed',
     top: '0',
-    left: '0',
+    right: '0',
     backgroundColor: '#fff',
     border: 'solid 1px #000',
     borderRadius: '5px',

@@ -37,20 +37,22 @@ function CategoryCheckList(props : CategoryCheckListProps) {
       <button
         id="all-category-check"
         className="config-button"
-        onClick={() => {props.setSelectedCategory(props.categoryList);}}
-      >
+        onClick={() => {
+          props.setSelectedCategory(props.categoryList);
+        }}>
         カテゴリー全チェック
       </button>
       <button
         id="all-category-uncheck"
         className="config-button"
-        onClick={() => {props.setSelectedCategory([]);}}
-      >
+        onClick={() => {
+          props.setSelectedCategory([]);
+        }}>
         カテゴリー全解除
       </button>
+      <a href="./categories.html">カテゴリ説明</a>
     </>
-  )
-  ;
+  );
 }
 
 export default CategoryCheckList;
