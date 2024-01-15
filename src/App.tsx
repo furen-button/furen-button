@@ -81,6 +81,11 @@ function getNextSoundData(soundDataList : SoundData[], selectedCategory : string
 function getFilteredSoundDataList(soundDataList : SoundData[], selectedCategory : string[]) {
   return soundDataList.filter((soundData) => {
     return isCategoryMatched(soundData, selectedCategory);
+  }).sort((a, b) => {
+    if (a.ruby === b.ruby) {
+      return a.fileName.localeCompare(b.fileName);
+    }
+    return a.ruby.localeCompare(b.ruby);
   });
 }
 

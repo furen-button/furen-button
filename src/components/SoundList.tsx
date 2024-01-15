@@ -9,20 +9,46 @@ export interface SoundListProps {
   playingSoundDataList: SoundData[];
 }
 
+const sectionIndexList = ['0', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ'];
+
 function SoundList(props: SoundListProps) {
-  const soundButtons = props.filteredSoundDataList.map((soundData) => (
-    <SoundButton
-      soundData={soundData}
-      onClick={props.onClick}
-      onContextMenu={props.onContextMenu}
-      selectedCategory={props.selectedCategory}
-      playingSoundDataList={props.playingSoundDataList}
-      key={soundData.fileName}/>
-  ));
+  const sectionList : {[key: string]: SoundData[]} = {};
+
+  for (const soundData of props.filteredSoundDataList) {
+    const sectionIndex = sectionIndexList.findIndex((value) => {
+      return value > soundData.ruby.charAt(0);
+    });
+    const section = sectionIndexList[sectionIndex];
+    if (sectionList[section] === undefined) {
+      sectionList[section] = [];
+    }
+    sectionList[section].push(soundData);
+  }
+
+  const soundElements = Object.keys(sectionList).map((key) => {
+    return (
+      <div style={style.container}>
+        {
+          sectionList[key].map((soundData) => {
+            return (
+              <SoundButton
+                soundData={soundData}
+                onClick={props.onClick}
+                onContextMenu={props.onContextMenu}
+                selectedCategory={props.selectedCategory}
+                playingSoundDataList={props.playingSoundDataList}
+              />
+            );
+          })
+        }
+      </div>
+    );
+  });
+
   return (
-    <>
-      {soundButtons}
-    </>
+    <div>
+      {soundElements}
+    </div>
   );
 }
 
@@ -56,5 +82,16 @@ function SoundButton(props: {
     </div>
   );
 }
+
+const style : {[key: string]: React.CSSProperties} = {
+  container: {
+    maxWidth: 'calc(100% - 500px)',
+    minWidth: 'min(400px, 100%)',
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    border: 'solid 10px rgba(0, 0, 0, 0)',
+  }
+};
 
 export default SoundList;
