@@ -16,12 +16,16 @@ function SoundContext(props: ContextProps) {
       style={style.container}>
       <ul className="context-list">
         <li>
-          <div className="context-title">ファイル:</div>
+          <div className="context-title">名前:</div>
           <span>{props.soundData.name}</span>
         </li>
         <li>
           <div className="context-title">ルビ:</div>
           <span>{props.soundData.ruby}</span>
+        </li>
+        <li>
+          <div className="context-title">ファイル:</div>
+          <span>{props.soundData.fileName}</span>
         </li>
         <li>
           <div className="context-title">カテゴリ:</div>
@@ -49,7 +53,7 @@ function SoundContext(props: ContextProps) {
   );
 }
 
-const style : {[key: string]: React.CSSProperties} = {
+const style : { [key: string]: React.CSSProperties } = {
   container: {
     position: 'fixed',
     top: '0',
