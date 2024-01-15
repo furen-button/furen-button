@@ -32,6 +32,17 @@
                 transform: scale(1);
             }
         }
+        @keyframes scaleOnce {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
         body {
             font-family: 'Noto Sans JP', sans-serif;
             background-color: #fffafa;
@@ -54,6 +65,9 @@
             cursor: pointer;
             background-color: #ec1d2f;
             color: white;
+        }
+        .config-button:active {
+            animation: scaleOnce 0.1s ease-in-out;
         }
         .sounds {
             float: left;
@@ -127,6 +141,10 @@
         .fixed-button:hover {
           cursor: pointer;
           opacity: 1;
+        }
+
+        .fixed-button:active {
+            animation: scaleOnce 0.1s ease-in-out;
         }
 
         .comment-text {
