@@ -115,7 +115,7 @@ function playingSoundListReducer(state : SoundData[], action : ReducerAction) : 
     if (index === -1) {
       return state;
     }
-    return state.slice(index, 1);
+    return state.splice(index, 1);
   }
   case 'clear':
   {
