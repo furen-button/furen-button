@@ -35,7 +35,7 @@ function SoundContext(props: ContextProps) {
             {props.soundData.sourceName}
           </a>
         </li>
-        <li hidden={props.soundData.clipUrl !== ''}>
+        <li hidden={props.soundData.clipUrl === ''}>
           <div className="context-title">クリップ:</div>
           <a
             target="_blank"
