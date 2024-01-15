@@ -281,6 +281,7 @@ function App() {
       <div>
         <label htmlFor="volume" style={style.optionsLabel}>音量（一部端末では無効）</label>
         <input
+          id="volume"
           type="range"
           min="0"
           max="1"
@@ -293,6 +294,7 @@ function App() {
         <br/>
         <label htmlFor="create-image" style={style.optionsLabel}>画像</label>
         <input
+          id="create-image"
           type="checkbox"
           checked={isCreateImage}
           onChange={() => {
@@ -302,6 +304,7 @@ function App() {
         <br/>
         <label htmlFor="create-comment" style={style.optionsLabel}>コメント</label>
         <input
+          id="create-comment"
           type="checkbox"
           checked={isCreateComment}
           onChange={() => {
