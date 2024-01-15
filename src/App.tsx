@@ -6,7 +6,7 @@ import CategoryCheckList from './components/CategoryCheckList.tsx';
 import SoundContext from './components/SoundContext.tsx';
 import { gsap } from 'gsap';
 import { gtag } from 'ga-gtag';
-import { FaAngleUp, FaShuffle, FaCircleStop } from 'react-icons/fa6';
+import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } from 'react-icons/fa6';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -206,12 +206,13 @@ function App() {
             soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
           }
         }}>
-        わいわいガヤガヤ（たくさんランダム連続再生）
+        <FaShuffle/><FaChildReaching/> わいわいガヤガヤ（たくさんランダム連続再生）
       </button>
       <br/>
       <button
         className="config-button"
-        onClick={onAllPlayClick}>連続再生
+        onClick={onAllPlayClick}>
+        <FaCirclePlay/> 連続再生
       </button>
       <button
         className="config-button"
@@ -222,13 +223,14 @@ function App() {
           }
           updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
           soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
-        }}>ランダム連続再生
+        }}>
+        <FaShuffle/> ランダム連続再生
       </button>
       <button
         id="all-stop"
         className="config-button"
         onClick={onAllStopClick}>
-        停止
+        <FaCircleStop/> 停止
       </button>
       <div
         className='fixed-button'

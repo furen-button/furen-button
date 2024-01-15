@@ -1,5 +1,6 @@
 import {SoundData} from './SoundData.tsx';
 import React from 'react';
+import { FaPaperclip } from "react-icons/fa6";
 
 export interface SoundListProps {
   filteredSoundDataList: SoundData[];
@@ -88,7 +89,7 @@ function SoundButton(props: {
       onClick={(event) => props.onClick(event, soundData)}
       onContextMenu={(event) => props.onContextMenu(event, soundData)}
     >
-      {soundData.name}
+      {soundData.clipUrl !== '' && <FaPaperclip style={{fontSize: '20px'}}/>} {soundData.name}
     </div>
   );
 }
