@@ -108,14 +108,25 @@
             background-color: #fffafaaa;
         }
 
-        #fixed-all-stop {
+        .fixed-button {
           width: 100px;
-          height: 50px;
+          height: 100px;
+          font-size: 50px;
           position: fixed;
           right: 0;
-          top: 0;
+          bottom: 0;
           opacity: 0.8;
-          z-index: 300;
+          z-index: 1100;
+          color: black;
+          text-align: center;
+          line-height: 100px;
+          border-radius: 50%;
+          background-color: #fffafaff;
+        }
+
+        .fixed-button:hover {
+          cursor: pointer;
+          opacity: 1;
         }
 
         .comment-text {
@@ -128,7 +139,7 @@
 </head>
 <body>
 <div>
-    <h1>
+    <h1 id="top">
       <a href="." style="text-decoration:none;">フレンボタン</a>
       <a target="_blank" href="https://furen-button.github.io/furen-button/feed.rss"><img src="img/icons8-rss-48.png" width="48px" height="48px" alt="rss"></a>
     </h1>

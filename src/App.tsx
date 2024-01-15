@@ -6,6 +6,7 @@ import CategoryCheckList from './components/CategoryCheckList.tsx';
 import SoundContext from './components/SoundContext.tsx';
 import { gsap } from 'gsap';
 import { gtag } from 'ga-gtag';
+import { FaAngleUp, FaShuffle, FaCircleStop } from 'react-icons/fa6';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -210,7 +211,8 @@ function App() {
       <br/>
       <button
         className="config-button"
-        onClick={onAllPlayClick}>連続再生</button>
+        onClick={onAllPlayClick}>連続再生
+      </button>
       <button
         className="config-button"
         onClick={() => {
@@ -220,19 +222,51 @@ function App() {
           }
           updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
           soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
-        }}>ランダム連続再生</button>
+        }}>ランダム連続再生
+      </button>
       <button
         id="all-stop"
         className="config-button"
         onClick={onAllStopClick}>
         停止
       </button>
-      <button
-        id="fixed-all-stop"
-        className="config-button"
+      <div
+        className='fixed-button'
+        style={{
+          right: '240px',
+        }}
+        onClick={() => {
+          const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
+          if (nextSoundData === null) {
+            return;
+          }
+          updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
+          soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+        }}>
+        <FaShuffle/>
+      </div>
+      <div
+        className='fixed-button'
+        style={
+          playingSoundDataList.length === 0 ?{
+            right: '120px',
+          } : {
+            right: '120px',
+            backgroundColor: '#ec1d2f',
+          }
+        }
         onClick={onAllStopClick}>
-        停止
-      </button>
+        <FaCircleStop/>
+      </div>
+      <a
+        href='#top'
+        className='fixed-button'
+        style={{
+          right: '0px',
+        }}
+        onClick={onAllStopClick}>
+        <FaAngleUp/>
+      </a>
       <CategoryCheckList
         categoryList={categoryList}
         selectedCategory={selectedCategory}
