@@ -109,13 +109,13 @@ function playingSoundListReducer(state : SoundData[], action : ReducerAction) : 
     if (action.soundData === null) {
       return state;
     }
-    const index = state.findIndex((soundData) => {
+    const findIndex = state.findIndex((soundData) => {
       return soundData === action.soundData;
     });
-    if (index === -1) {
+    if (findIndex === -1) {
       return state;
     }
-    return state.splice(index, 1);
+    return state.filter((_, index) => index !== findIndex);
   }
   case 'clear':
   {
