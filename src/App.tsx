@@ -1,4 +1,4 @@
-import {useEffect, useReducer, useState} from 'react';
+import React, {useEffect, useReducer, useState} from 'react';
 import { SoundDataJson, SoundData } from './components/SoundData.tsx';
 import { isCategoryMatched } from './components/SoundDataFunctions.tsx';
 import SoundList from './components/SoundList.tsx';
@@ -279,7 +279,7 @@ function App() {
         setSelectedCategory={setSelectedCategory}
       />
       <div>
-        <label htmlFor="volume">音量（一部端末では無効）</label>
+        <label htmlFor="volume" style={style.optionsLabel}>音量（一部端末では無効）</label>
         <input
           type="range"
           min="0"
@@ -291,7 +291,7 @@ function App() {
             localStorage.setItem('volume', event.target.value);
           }}/>
         <br/>
-        <label htmlFor="create-image">画像</label>
+        <label htmlFor="create-image" style={style.optionsLabel}>画像</label>
         <input
           type="checkbox"
           checked={isCreateImage}
@@ -300,7 +300,7 @@ function App() {
             localStorage.setItem('createImage', (!isCreateImage).toString());
           }}/>
         <br/>
-        <label htmlFor="create-comment">コメント</label>
+        <label htmlFor="create-comment" style={style.optionsLabel}>コメント</label>
         <input
           type="checkbox"
           checked={isCreateComment}
@@ -439,3 +439,10 @@ function sendGtagContent(contentType : string, contentId : string) {
     content_id: contentId,
   });
 }
+
+const style : {[key: string]: React.CSSProperties} = {
+  optionsLabel: {
+    width: '200px',
+    display: 'inline-block',
+  },
+};
