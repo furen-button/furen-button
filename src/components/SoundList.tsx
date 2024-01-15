@@ -1,6 +1,6 @@
 import {SoundData} from './SoundData.tsx';
 import React from 'react';
-import { FaPaperclip } from "react-icons/fa6";
+import { FaPaperclip } from 'react-icons/fa6';
 
 export interface SoundListProps {
   filteredSoundDataList: SoundData[];
