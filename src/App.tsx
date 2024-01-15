@@ -259,12 +259,16 @@ function App() {
         <FaCircleStop/>
       </div>
       <a
-        href='#top'
         className='fixed-button'
         style={{
           right: '0px',
         }}
-        onClick={onAllStopClick}>
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
+        }}>
         <FaAngleUp/>
       </a>
       <CategoryCheckList
