@@ -381,7 +381,7 @@ function createCategoryImage(category : string) {
   img.width = 200;
   const top = (scroll / windowHeight) * 100 + (getRandomInt(0, windowHeight - img.height) / windowHeight) * 100;
   img.style.top = `${top}%`;
-  const left = (getRandomInt(0, windowWidth - img.width) / windowWidth) * 100;
+  const left = (getRandomInt(0, windowWidth - img.width - 20) / windowWidth) * 100;
   img.style.left = `${left}%`;
   img.style.pointerEvents = 'none';
   img.classList.add('anime-clip');
