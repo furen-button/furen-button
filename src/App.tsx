@@ -309,24 +309,22 @@ function App() {
             localStorage.setItem('createComment', (!isCreateComment).toString());
           }}/>
       </div>
-      <div>
-        <SoundList
-          onClick={(_event, soundData) => {
-            updatePlayingSoundDataList({type: 'push', soundData: soundData});
-            soundClick(soundData, volume, isCreateImage, isCreateComment, soundEndCallback);
-            sendGtagContent('sound_click', soundData.name);
-            setViewSoundContext(null);
-          }}
-          onContextMenu={(event, soundData) => {
-            event.preventDefault();
-            sendGtagContent('sound_context_click', soundData.name);
-            setViewSoundContext(soundData);
-          }}
-          selectedCategory={selectedCategory}
-          filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
-          playingSoundDataList={playingSoundDataList}
-        />
-      </div>
+      <SoundList
+        onClick={(_event, soundData) => {
+          updatePlayingSoundDataList({type: 'push', soundData: soundData});
+          soundClick(soundData, volume, isCreateImage, isCreateComment, soundEndCallback);
+          sendGtagContent('sound_click', soundData.name);
+          setViewSoundContext(null);
+        }}
+        onContextMenu={(event, soundData) => {
+          event.preventDefault();
+          sendGtagContent('sound_context_click', soundData.name);
+          setViewSoundContext(soundData);
+        }}
+        selectedCategory={selectedCategory}
+        filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
+        playingSoundDataList={playingSoundDataList}
+      />
       <SoundContext
         soundData={viewSoundContext}
         onCloseClick={() => {
