@@ -3,11 +3,6 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 cd $SCRIPT_DIR
 
-set +x
-# YOUTUBE_API_KEY が環境変数にないときは終了
-[ -z "$YOUTUBE_API_KEY" ] && echo "YOUTUBE_API_KEY is not set" && exit 1
-set -x
-
 npm install
 
 # 検索結果が500を超えると抜けが発生するので1年ごとに取得する。
