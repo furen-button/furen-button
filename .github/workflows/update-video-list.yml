@@ -6,8 +6,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  release:
-    name: Deploy updates
+  update-video-list:
+    name: チャンネルの動画一覧を取得し更新する
+    environment: Update Video List
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
