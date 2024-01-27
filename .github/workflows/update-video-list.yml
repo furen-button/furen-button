@@ -40,6 +40,9 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add .
-          git commit --author=. -m 'generated'
+          git commit --author=. -m '[skip ci] update video list'
           git push
+        if: steps.diff.outcome == 'failure'
+      - name: Deploy to GitHub Pages
+        uses: .github/workflows/deploy-page.yml
         if: steps.diff.outcome == 'failure'
