@@ -44,5 +44,5 @@ jobs:
           git push
         if: steps.diff.outcome == 'failure'
       - name: Deploy to GitHub Pages
-        uses: .github/workflows/deploy-page.yml
+        uses: ./.github/workflows/deploy-page.yml
         if: steps.diff.outcome == 'failure'
