@@ -43,6 +43,3 @@ jobs:
           git commit --author=. -m '[skip ci] update video list'
           git push
         if: steps.diff.outcome == 'failure'
-      - name: Deploy to GitHub Pages
-        uses: ./.github/workflows/deploy-page
-        if: steps.diff.outcome == 'failure'
