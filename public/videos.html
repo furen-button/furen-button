@@ -53,6 +53,10 @@
             text-align: center;
             line-height: 50px;
         }
+
+        td[data-kirinuki-exist="true"] {
+            background-color: #ffaa;
+        }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRK3SXPLHB"></script>
@@ -125,6 +129,21 @@
           { data: (row) => row.viewCount, name: '再生回数', sort: { compare: (a, b) => compareNumber(a, b) } },
           { data: (row) => row.likeCount, name: '高評価', sort: { compare: (a, b) => compareNumber(a, b) } },
           { data: (row) => row.commentCount, name: 'コメント数', sort: { compare: (a, b) => compareNumber(a, b) } },
+          {
+            data: (row) => {
+              if ('kirinukiCount' in row) {
+                return row.kirinukiCount;
+              }
+              return 0;
+            },
+            name: 'ボタン数',
+            sort: { compare: (a, b) => compareNumber(a, b) },
+            attributes: (cell) => {
+              return {
+                'data-kirinuki-exist': (cell > 0)
+              };
+            },
+          },
           { data: (row) => row.description, name: '概要欄' },
         ],
         data: jsonData,

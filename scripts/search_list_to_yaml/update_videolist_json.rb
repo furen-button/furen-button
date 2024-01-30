@@ -1,4 +1,37 @@
 require 'json'
+require 'yaml'
+
+SOURCE_FILE_PATH = "#{__dir__}/../../dataset/sources.yml"
+
+SOUNDS_SOURCE_DIRECTORY_PATH = "#{__dir__}/../../dataset/sounds/"
+
+def load_url_count_map
+  tagSounds = Dir.glob("#{SOUNDS_SOURCE_DIRECTORY_PATH}/*.yml").map do |filepath|
+    YAML.load_file(filepath)
+  end.
+    flatten
+
+  tag_sound_count = tagSounds.map { |d| d["source"] }.uniq.map do |tag|
+    {
+      tag: tag,
+      count: tagSounds.count { |d| d["source"] == tag },
+    }
+  end.to_h { |d| [d[:tag], d[:count]] }
+
+  urlCountMap = YAML.load_file(SOURCE_FILE_PATH)["sources"].map do |data|
+    tag = data["tag"]
+    count = 0
+    count = tag_sound_count[tag] if tag_sound_count.has_key?(tag)
+    {
+      tag: tag,
+      url: data["url"],
+      count: count
+    }
+  end.to_h { |d| [d[:url], d[:count]] }
+  return urlCountMap
+end
+
+urlCountMap = load_url_count_map
 
 videos = []
 Dir.glob("#{__dir__}/../../dataset/videolists/*.json") do |filepath|
@@ -32,6 +65,9 @@ videos.each do |d|
   likeCount = d["statistics"]["likeCount"]
   commentCount = d["statistics"]["commentCount"]
 
+  kirinukiCount = 0
+  kirinukiCount = urlCountMap[url] if urlCountMap.has_key?(url)
+
   data << {
     date: date,
     title: title,
@@ -40,7 +76,8 @@ videos.each do |d|
     duration: duration,
     viewCount: viewCount,
     likeCount: likeCount,
-    commentCount: commentCount
+    commentCount: commentCount,
+    kirinukiCount: kirinukiCount,
   }
 end
 
