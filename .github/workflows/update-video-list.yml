@@ -2,7 +2,8 @@ name: Update video list
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    # 日本時間(UTC+9) 3時
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 jobs:
