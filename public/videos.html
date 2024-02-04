@@ -109,6 +109,11 @@
       return a - b;
     }
 
+    function aboutCount(count) {
+      const milion = Math.round(count / 1000) / 10;
+      return `${milion}万回(${count})`;
+    }
+
     function updateTable(jsonData) {
       // eslint-disable-next-line no-undef
       new gridjs.Grid({
@@ -126,7 +131,12 @@
               compare: (a, b) => compareDuration(a, b),
             },
           },
-          { data: (row) => row.viewCount, name: '再生回数', sort: { compare: (a, b) => compareNumber(a, b) } },
+          {
+            data: (row) => row.viewCount,
+            name: '再生回数',
+            sort: { compare: (a, b) => compareNumber(a, b) },
+            formatter: (cell) => `${aboutCount(cell)}`
+          },
           { data: (row) => row.likeCount, name: '高評価', sort: { compare: (a, b) => compareNumber(a, b) } },
           { data: (row) => row.commentCount, name: 'コメント数', sort: { compare: (a, b) => compareNumber(a, b) } },
           {
