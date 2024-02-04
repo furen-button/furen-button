@@ -12,7 +12,8 @@ videos = videos.
   sort_by { |d| d["statistics"]["viewCount"] }.
   reverse.
   uniq { |d| d["id"]}.
-  sort_by { |d| d["snippet"]["publishedAt"] }
+  sort_by { |d| d["snippet"]["publishedAt"] }.
+  sort_by { |d| d["snippet"]["url"] }
 
 data = []
 videos.each do |d|
