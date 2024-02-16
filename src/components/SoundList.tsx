@@ -8,9 +8,10 @@ export interface SoundListProps {
   onContextMenu: (event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) => void;
   selectedCategory: string[];
   playingSoundDataList: SoundData[];
+  sectionPattern: 'ruby' | 'source';
 }
 
-const sectionIndexList = ['0', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ'];
+const sectionIndexList = ['0', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ', '他'];
 
 function SoundList(props: SoundListProps) {
   if (props.filteredSoundDataList.length === 0) {
@@ -25,22 +26,37 @@ function SoundList(props: SoundListProps) {
 
   const sectionList : {[key: string]: SoundData[]} = {};
 
-  for (const soundData of props.filteredSoundDataList) {
-    const sectionIndex = sectionIndexList.findIndex((value) => {
-      return value > soundData.ruby.charAt(0);
-    });
-    const section = sectionIndexList[sectionIndex];
-    if (sectionList[section] === undefined) {
-      sectionList[section] = [];
+  if (props.sectionPattern === 'ruby') {
+    for (const soundData of props.filteredSoundDataList) {
+      const sectionIndex = sectionIndexList.findIndex((value) => {
+        return value > soundData.ruby.charAt(0);
+      });
+      const section = sectionIndexList[sectionIndex - 1];
+      if (sectionList[section] === undefined) {
+        sectionList[section] = [];
+      }
+      sectionList[section].push(soundData);
     }
-    sectionList[section].push(soundData);
+  } else {
+    for (const soundData of props.filteredSoundDataList) {
+      const section = soundData.sourceName;
+      if (sectionList[section] === undefined) {
+        sectionList[section] = [];
+      }
+      sectionList[section].push(soundData);
+    }
   }
+
 
   const soundElements = Object.keys(sectionList).map((key) => {
     return (
       <div
         key={key}
         style={style.container}>
+        <div style={style.sectionLabel}>
+          {key}
+        </div>
+        <hr/>
         {
           sectionList[key].map((soundData) => {
             return (
@@ -107,6 +123,12 @@ const style : {[key: string]: React.CSSProperties} = {
     border: 'solid 10px rgba(0, 0, 0, 0)',
   },
   noData:{
+    width: '100%',
+    textAlign: 'center',
+    fontSize: '30px',
+    fontWeight: 'bold',
+  },
+  sectionLabel: {
     width: '100%',
     textAlign: 'center',
     fontSize: '30px',

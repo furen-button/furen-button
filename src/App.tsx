@@ -7,6 +7,8 @@ import SoundContext from './components/SoundContext.tsx';
 import { gsap } from 'gsap';
 import { gtag } from 'ga-gtag';
 import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } from 'react-icons/fa6';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -136,6 +138,7 @@ function App() {
   const [isCreateImage, setIsCreateImage] = useState<boolean>(loadIsCreateImage());
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
   const [playingSoundDataList, updatePlayingSoundDataList] = useReducer(playingSoundListReducer, []);
+  const [sectionPattern, setSectionPattern] = useState<'ruby'|'source'>('ruby');
 
   const soundEndCallback = (nowSoundData : SoundData) => {
     updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
@@ -311,6 +314,19 @@ function App() {
             setIsCreateComment(!isCreateComment);
             localStorage.setItem('createComment', (!isCreateComment).toString());
           }}/>
+        <br/>
+        <label style={style.optionsLabel}>並び</label>
+        <ToggleButtonGroup
+          value={sectionPattern}
+          exclusive
+          onChange={(
+            _ : React.MouseEvent<HTMLElement>,
+            newSectionPattern : 'ruby'|'source') => {
+            setSectionPattern(newSectionPattern);
+          }}>
+          <ToggleButton value="ruby">よみ</ToggleButton>
+          <ToggleButton value="source">ビデオ</ToggleButton>
+        </ToggleButtonGroup>
       </div>
       <SoundList
         onClick={(_event, soundData) => {
@@ -327,6 +343,7 @@ function App() {
         selectedCategory={selectedCategory}
         filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
         playingSoundDataList={playingSoundDataList}
+        sectionPattern={sectionPattern}
       />
       <SoundContext
         soundData={viewSoundContext}
