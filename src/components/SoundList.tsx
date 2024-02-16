@@ -1,6 +1,7 @@
 import {SoundData} from './SoundData.tsx';
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import { FaPaperclip } from 'react-icons/fa6';
+const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
 
 export interface SoundListProps {
   filteredSoundDataList: SoundData[];
@@ -49,14 +50,20 @@ function SoundList(props: SoundListProps) {
 
 
   const soundElements = Object.keys(sectionList).map((key) => {
+    let label = <>{key}</>;
+    if (props.sectionPattern === 'source') {
+      label = <Suspense fallback="loading">
+        <VideoSourceLabel videoTitle={key}></VideoSourceLabel>
+      </Suspense>;
+    }
+
     return (
       <div
         key={key}
         style={style.container}>
         <div style={style.sectionLabel}>
-          {key}
+          {label}
         </div>
-        <hr/>
         {
           sectionList[key].map((soundData) => {
             return (
