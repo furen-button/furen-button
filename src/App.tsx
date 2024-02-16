@@ -248,7 +248,7 @@ function App() {
           updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
           soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
         }}>
-        <FaShuffle/>
+        <FaShuffle style={style.fixedButtonInnerIcon}/>
       </div>
       <div
         className='fixed-button'
@@ -261,7 +261,7 @@ function App() {
           }
         }
         onClick={onAllStopClick}>
-        <FaCircleStop/>
+        <FaCircleStop style={style.fixedButtonInnerIcon}/>
       </div>
       <a
         className='fixed-button'
@@ -274,7 +274,7 @@ function App() {
             behavior: 'smooth',
           });
         }}>
-        <FaAngleUp/>
+        <FaAngleUp style={style.fixedButtonInnerIcon}/>
       </a>
       <CategoryCheckList
         categoryList={categoryList}
@@ -464,5 +464,16 @@ const style : {[key: string]: React.CSSProperties} = {
   optionsLabel: {
     width: '200px',
     display: 'inline-block',
+  },
+  fixedButtonInnerIcon: {
+    // NOTE: inner 要素の上下左右中央揃え
+    // https://www.granfairs.com/blog/staff/centering-by-css
+    // https://hyper-text.org/archives/2014/08/position_absolute_center_layout/
+    position: 'absolute',
+    top: '0',
+    left: '0',
+    right: '0',
+    bottom: '0',
+    margin: 'auto',
   },
 };
