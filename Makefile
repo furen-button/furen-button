@@ -1,7 +1,7 @@
 # ローカル用のスクリプト実行手順書
 
 all:
-	# 手順1: src/sounds 以下に wav ファイルを置く。
+	# 手順1: public/sounds 以下に wav ファイルを置く。
 	# 手順2: dataset/sounds 以下のファイルを編集する。
 	# 手順3: dataset/sources.yml の該当動画のタグを編集する。
 	# 説明: チャンネルの動画情報から dataset/sources.yml を作成するスクリプト

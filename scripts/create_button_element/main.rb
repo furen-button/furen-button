@@ -32,4 +32,4 @@ def create_button_element(directory)
   end
 end
 
-create_button_element(__dir__ + "/../../src/sounds")
+create_button_element(__dir__ + "/../../public/sounds")
