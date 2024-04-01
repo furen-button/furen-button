@@ -17,14 +17,14 @@ videos = videos.
 
 data = []
 videos.each do |d|
-  date = d["snippet"]["publishedAt"].split("T").first
+  publishedAt = d["snippet"]["publishedAt"]
   title = d["snippet"]["title"]
   url = "https://www.youtube.com/watch?v=#{d["id"]}"
 
   data << {
     tag: "",
     title: title,
-    publishedAt: date,
+    publishedAt: publishedAt,
     url: url,
     note: ""
   }
@@ -39,7 +39,7 @@ merged_data = original_data.push(*data).
   sort_by { |d| d[:tag] }.
   reverse.
   uniq { |d| d[:url] }.
-  sort_by { |d| [d[:publishedAt], d[:title]] }
+  sort_by { |d| d[:publishedAt] }
 
 output_data = {
   "sources" => merged_data.map { |d| d.transform_keys(&:to_s) }
