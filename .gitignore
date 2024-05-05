@@ -1,2 +1,6 @@
 node_modules
 dist
+
+public/sounds/**/*-crop-*
+public/sounds/**/*-scale-*
+public/sounds/**/*-merge-*
