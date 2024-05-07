@@ -58,6 +58,7 @@ end
 data = []
 videos.each do |d|
   date = d["snippet"]["publishedAt"].split("T").first
+  rawDate = d["snippet"]["publishedAt"]
   title = d["snippet"]["title"]
   url = "https://www.youtube.com/watch?v=#{d["id"]}"
   duration = d["contentDetails"]["duration"]
@@ -71,6 +72,7 @@ videos.each do |d|
   data << {
     id: d["id"],
     date: date,
+    rawDate: rawDate,
     title: title,
     description: description_head(d["snippet"]["description"]),
     url: url,
@@ -89,6 +91,6 @@ merged_data = original_data.push(*data).
   sort_by { |d| d[:viewCount] }.
   reverse.
   uniq { |d| d[:url] }.
-  sort_by { |d| d[:date] }
+  sort_by { |d| [d[:date], d[:id]] }
 
 File.write(target_file_path, JSON.dump(merged_data))
