@@ -69,6 +69,7 @@ videos.each do |d|
   kirinukiCount = urlCountMap[url] if urlCountMap.has_key?(url)
 
   data << {
+    id: d["id"],
     date: date,
     title: title,
     description: description_head(d["snippet"]["description"]),
