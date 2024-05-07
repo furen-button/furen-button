@@ -9,6 +9,40 @@ import { gtag } from 'ga-gtag';
 import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } from 'react-icons/fa6';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import FeedData from '../public/feed.json';
+
+interface Feed {
+  url: string;
+  title: string;
+  source_url: string | null;
+  updated: string;
+}
+
+function LatestFeed() {
+  const feeds = FeedData as Feed[];
+
+  // feeds から最後の5つのデータを取得
+  const latestFeeds = feeds.slice(-5).reverse().map((data) => {
+    return <li>
+      {
+        (data.source_url !== null) ?
+          <a
+            href={data.source_url}
+            target={'_blank'}>
+            {data.updated} : {data.title}
+          </a>
+          :
+          <div>{data.updated} : {data.title}</div>
+      }
+    </li>;
+  });
+
+  return (
+    <ul>
+      {latestFeeds}
+    </ul>
+  );
+}
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -197,6 +231,7 @@ function App() {
 
   return (
     <>
+      <LatestFeed/>
       <button
         className="config-button"
         onClick={() => {
