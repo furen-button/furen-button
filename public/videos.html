@@ -110,8 +110,8 @@
     }
 
     function aboutCount(count) {
-      const milion = Math.round(count / 1000) / 10;
-      return `${milion}万回(${count})`;
+      const million = Math.round(count / 1000) / 10;
+      return `${million}万回(${count})`;
     }
 
     function updateTable(jsonData) {
@@ -121,7 +121,7 @@
           { data: (row) => row.date, name: '公開日' },
           {
             // eslint-disable-next-line no-undef
-            data: (row) => gridjs.html(`<a href="${row.url}" target="_blank">${row.title}</a>`),
+            data: (row) => gridjs.html(`<a href="${row.url}" target="_blank">${row.title}</a><br><div>${row.id}</div>`),
             name: 'タイトル',
           },
           {
