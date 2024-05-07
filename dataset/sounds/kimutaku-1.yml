@@ -1,0 +1,30 @@
+- name: "はい、こんタリオ〜"
+  ruby: "はいこんたりお"
+  source: "kimutaku-1"
+  fileName: "kimutaku-1/hi.wav"
+  category: ["emotions"]
+  clipUrl: ""
+- name: "見てるよ〜"
+  ruby: "みてるよ"
+  source: "kimutaku-1"
+  fileName: "kimutaku-1/miteruyo.wav"
+  category: ["emotions"]
+  clipUrl: ""
+- name: "はいニコ〜"
+  ruby: "はいにこ"
+  source: "kimutaku-1"
+  fileName: "kimutaku-1/nico.wav"
+  category: ["emotions"]
+  clipUrl: "https://youtube.com/clip/UgkxKpgbybr1B-KQ2Aw32sOFgNf6VpCW05AY?si=KQUWV1r4N1Gw6NI0"
+- name: "only my railgun"
+  ruby: "only my railgun"
+  source: "kimutaku-1"
+  fileName: "kimutaku-1/only-my-railgun.wav"
+  category: ["outa"]
+  clipUrl: "https://youtube.com/clip/Ugkx3gTD_xn-0hr7i645LdbxlsuVbaSfRyVi?si=rgTtAeowr0rWSoLC"
+- name: "おれは無力だ"
+  ruby: "おれはむりょくだ"
+  source: "kimutaku-1"
+  fileName: "kimutaku-1/ore-ha-muryokuda.wav"
+  category: ["emotions"]
+  clipUrl: ""
