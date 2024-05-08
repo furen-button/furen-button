@@ -10,6 +10,7 @@ import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } fro
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import LatestFeeds from './components/LatestFeeds.tsx';
+import { getCategoryCountList, getCategoryList } from './lib/CategoryFunctions.tsx';
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
 function soundPlay(soundData: SoundData, volume: number, endCallback: () => void) {
@@ -45,18 +46,6 @@ function soundClick(soundData: SoundData, volume: number, isCreateImage: boolean
   });
 }
 
-function getCategoryList(soundList: SoundData[]) {
-  const allCategory: string[] = [];
-  soundList.map((soundData) => soundData.category.split(','))
-    .forEach((categories) => {
-      categories.forEach((category) => {
-        allCategory.push(category);
-      });
-    });
-
-  const uniqueCategory = allCategory.filter((x, i, self) => self.indexOf(x) === i).filter((x) => x !== '');
-  return uniqueCategory.sort();
-}
 
 function getRandomSoundData(soundDataList : SoundData[], selectedCategory : string[]) {
   const filteredSoundDataList = getFilteredSoundDataList(soundDataList, selectedCategory);
@@ -130,7 +119,8 @@ function playingSoundListReducer(state : SoundData[], action : ReducerAction) : 
 
 function App() {
   const soundDataList = SoundDataJson as SoundData[];
-  const categoryList = getCategoryList(soundDataList);
+  const categoryCountList = getCategoryCountList(soundDataList);
+  const categoryList = getCategoryList(categoryCountList);
   const initialFilteredCategoryList = categoryList.filter((category) => !initialFilterCategories.includes(category));
   const [selectedCategory, setSelectedCategory] = useState<string[]>(initialFilteredCategoryList);
   const [viewSoundContext, setViewSoundContext] = useState<SoundData | null>(null);
@@ -278,7 +268,7 @@ function App() {
         <FaAngleUp style={style.fixedButtonInnerIcon}/>
       </a>
       <CategoryCheckList
-        categoryList={categoryList}
+        categoryCountList={categoryCountList}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />

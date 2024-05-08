@@ -1,17 +1,19 @@
+import {getCategoryList} from '../lib/CategoryFunctions.tsx';
 
 export interface CategoryCheckListProps {
-  categoryList: string[];
+  categoryCountList: {[key: string]: number};
   selectedCategory: string[];
   setSelectedCategory: (categories: string[]) => void;
 }
 
 function CategoryCheckList(props : CategoryCheckListProps) {
+  const {categoryCountList, selectedCategory, setSelectedCategory} = props;
   return (
     <>
       <ul
         id='category-buttons'>
         {
-          props.categoryList.map((category) => {
+          getCategoryList(categoryCountList).map((category) => {
             const id = `category-${category}`;
             return (
               <li key={id}>
@@ -19,16 +21,16 @@ function CategoryCheckList(props : CategoryCheckListProps) {
                   id={id}
                   className='category-checkbox'
                   type="checkbox"
-                  checked={props.selectedCategory.includes(category)}
+                  checked={selectedCategory.includes(category)}
                   onChange={() => {
-                    if (props.selectedCategory.includes(category)) {
-                      props.setSelectedCategory(props.selectedCategory.filter((c) => c !== category));
+                    if (selectedCategory.includes(category)) {
+                      setSelectedCategory(selectedCategory.filter((c) => c !== category));
                     } else {
-                      props.setSelectedCategory([...props.selectedCategory, category]);
+                      setSelectedCategory([...selectedCategory, category]);
                     }
                   }}
                 />
-                <label htmlFor={id}>{category}</label>
+                <label htmlFor={id}>{category} ({categoryCountList[category]})</label>
               </li>
             );
           })
@@ -38,7 +40,7 @@ function CategoryCheckList(props : CategoryCheckListProps) {
         id="all-category-check"
         className="config-button"
         onClick={() => {
-          props.setSelectedCategory(props.categoryList);
+          setSelectedCategory(getCategoryList(categoryCountList));
         }}>
         カテゴリー全チェック
       </button>
@@ -46,7 +48,7 @@ function CategoryCheckList(props : CategoryCheckListProps) {
         id="all-category-uncheck"
         className="config-button"
         onClick={() => {
-          props.setSelectedCategory([]);
+          setSelectedCategory([]);
         }}>
         カテゴリー全解除
       </button>
