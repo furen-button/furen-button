@@ -1,6 +1,6 @@
 import {SoundData} from './SoundData.tsx';
 import React, {lazy, Suspense} from 'react';
-import { FaPaperclip } from 'react-icons/fa6';
+import { FaPaperclip, FaVideo } from 'react-icons/fa6';
 const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
 
 export interface SoundListProps {
@@ -12,7 +12,7 @@ export interface SoundListProps {
   sectionPattern: 'ruby' | 'source';
 }
 
-const sectionIndexList = ['0', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ', '他'];
+const sectionIndexList = ['0,A', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ', '他'];
 
 function SoundList(props: SoundListProps) {
   if (props.filteredSoundDataList.length === 0) {
@@ -108,6 +108,7 @@ function SoundButton(props: {
       data-name={soundData.name}
       data-ruby={soundData.ruby}
       data-file={soundData.fileName}
+      data-movie-file={soundData.movieFileName}
       data-source={soundData.sourceName}
       data-source-url={soundData.sourceUrl}
       data-category={soundData.category}
@@ -115,7 +116,7 @@ function SoundButton(props: {
       onClick={(event) => props.onClick(event, soundData)}
       onContextMenu={(event) => props.onContextMenu(event, soundData)}
     >
-      {soundData.clipUrl !== '' && <FaPaperclip style={{fontSize: '20px'}}/>} {soundData.name}
+      {soundData.movieFileName !== '' && <FaVideo style={{fontSize: '20px'}}/>} {soundData.clipUrl !== '' && <FaPaperclip style={{fontSize: '20px'}}/>} {soundData.name}
     </div>
   );
 }
