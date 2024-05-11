@@ -15,7 +15,8 @@ const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
 function soundPlay(soundData: SoundData, volume: number, endCallback: () => void) {
   try {
-    const audio = new Audio(`${directory}/${soundData.fileName}`);
+    const audioFileName = (soundData.normalizedFileName === '') ? soundData.fileName : soundData.normalizedFileName;
+    const audio = new Audio(`${directory}/${audioFileName}`);
     audio.volume = volume;
     audio.play();
     audio.addEventListener('ended', () => {
