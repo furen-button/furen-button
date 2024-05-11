@@ -11,8 +11,8 @@ function LatestFeeds() {
   const feeds = FeedData as Feed[];
 
   // feeds から最後の5つのデータを取得
-  const latestFeeds = feeds.slice(-5).reverse().map((data) => {
-    return <li>
+  const latestFeeds = feeds.slice(-5).reverse().map((data, index) => {
+    return <li key={index}>
       {
         (data.source_url !== null) ?
           <a
