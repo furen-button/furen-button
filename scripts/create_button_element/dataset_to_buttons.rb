@@ -19,11 +19,13 @@ sounds = data.sort_by { |sound| [sound['ruby'],sound['fileName']] }.map do |soun
   source_url = source['url'] unless source.nil?
   category = sound['category'].join(',')
   clip_url = sound['clipUrl']
-
+  movie_file_name = sound['fileName'].gsub(/\.wav$/, '.mp4')
+  movie_file_name = "" unless File.exist?("#{__dir__}/../../public/sounds/#{movie_file_name}")
   {
     name: sound['name'],
     ruby: sound['ruby'],
     fileName: sound['fileName'],
+    movieFileName: movie_file_name,
     sourceName: source_name,
     sourceUrl: source_url,
     category: category,
