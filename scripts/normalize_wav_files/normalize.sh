@@ -10,7 +10,11 @@ python3 -m venv env
 pip install -r requirements.txt
 # pip freeze > requirements.txt
 
-find ../../public/sounds | grep "\.wav$" | grep -v "\-normalized\.wav$" | sed s/\.wav// |
-  xargs -P4 -I{} bash -c 'echo {}; ./env/bin/ffmpeg-normalize {}.wav -o {}-normalized.wav -f'
+find ../../public/sounds | grep "\.wav$" | grep -v "\-normalized\.wav$" | sed s/\.wav// > list.txt
+
+for file in `cat list.txt`
+do
+  ./env/bin/ffmpeg-normalize --keep-lra-above-loudness-range-target "${file}.wav" -o "${file}-normalized.wav" -f
+done
 
 deactivate
