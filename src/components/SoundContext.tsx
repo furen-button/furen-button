@@ -1,6 +1,8 @@
 import React from 'react';
 import { SoundData} from './SoundData.tsx';
 
+const directory = 'sounds';
+
 export interface ContextProps {
   soundData: SoundData | null;
   onCloseClick: () => void;
@@ -25,7 +27,11 @@ function SoundContext(props: ContextProps) {
         </li>
         <li>
           <div className="context-title">ファイル:</div>
-          <span>{props.soundData.fileName}</span>
+          <span><a href={`${directory}/${props.soundData.fileName}`}>{props.soundData.fileName}</a></span>
+        </li>
+        <li hidden={props.soundData.movieFileName === ''}>
+          <div className="context-title">動画ファイル:</div>
+          <span><a href={`${directory}/${props.soundData.movieFileName}`}>{props.soundData.movieFileName}</a></span>
         </li>
         <li>
           <div className="context-title">カテゴリ:</div>
