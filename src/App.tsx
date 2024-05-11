@@ -31,11 +31,19 @@ function soundPlay(soundData: SoundData, volume: number, endCallback: () => void
 function soundClick(soundData: SoundData, volume: number, isCreateImage: boolean, isCreateComment : boolean, soundEndCallback: (soundData : SoundData) => void) {
   let imageEndCallback = () => {};
   if (isCreateImage) {
-    const img = createCategoryImage(soundData.category);
-    document.body.appendChild(img);
-    imageEndCallback = () => {
-      img.remove();
-    };
+    if (soundData.movieFileName !== '') {
+      const movie = createVideo(`${directory}/${soundData.movieFileName}`);
+      document.body.appendChild(movie);
+      imageEndCallback = () => {
+        movie.remove();
+      };
+    } else {
+      const img = createCategoryImage(soundData.category);
+      document.body.appendChild(img);
+      imageEndCallback = () => {
+        img.remove();
+      };
+    }
   }
   if (isCreateComment) {
     createText(soundData.name);
@@ -442,6 +450,28 @@ function createCategoryImage(category : string) {
   const zIndex = Math.floor(top);
   img.style.zIndex = `${zIndex}`;
   return img;
+}
+
+function createVideo(movieFilePath : string) {
+  const windowHeight = window.innerHeight;
+  const windowWidth = window.innerWidth;
+  const scroll = document.documentElement.scrollTop || document.body.scrollTop || 0;
+  const movie = document.createElement('video');
+  movie.src = movieFilePath;
+  movie.style.position = 'absolute';
+  const height = 200;
+  movie.height = height;
+  movie.width = height * 16 / 9;
+  const top = (scroll / windowHeight) * 100 + (getRandomInt(0, windowHeight - height) / windowHeight) * 100;
+  movie.style.top = `${top}%`;
+  const left = (getRandomInt(0, windowWidth - movie.width - 20) / windowWidth) * 100;
+  movie.style.left = `${left}%`;
+  movie.style.pointerEvents = 'none';
+  const zIndex = Math.floor(top);
+  movie.style.zIndex = `${zIndex}`;
+  movie.muted = true;
+  movie.autoplay = true;
+  return movie;
 }
 
 function sendGtagContent(contentType : string, contentId : string) {

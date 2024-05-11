@@ -5,6 +5,7 @@ export interface SoundData {
   name: string;
   ruby: string;
   fileName: string;
+  movieFileName: string;
   sourceName: string;
   sourceUrl: string;
   category: string;
