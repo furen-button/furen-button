@@ -180,6 +180,12 @@ function App() {
       const clipElement = clipElements[i];
       clipElement.remove();
     }
+    const videoElements = Array.from(document.getElementsByTagName('video'));
+    for (let i = 0; i < videoElements.length; i += 1) {
+      const videoElement = videoElements[i];
+      videoElement.pause();
+      videoElement.remove();
+    }
     const textElements = Array.from(document.getElementsByClassName('comment-text'));
     for (let i = 0; i < textElements.length; i += 1) {
       const textElement = textElements[i];
