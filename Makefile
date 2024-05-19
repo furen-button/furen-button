@@ -37,3 +37,6 @@ rss_push_item:
 	ruby -ryaml -rdate -e 'YAML.dump(YAML.load_file("dataset/rss.yml").push({url: "https://furen-button.github.io/furen-button/", title: "", source_url: "https://www.youtube.com/watch?v=", updated: "#{Date.today}"}).map { |d| d.transform_keys(&:to_s) }, File.open("dataset/rss.yml", "w"))'
 
 .PHONY: rss_push_item
+
+normalize_wav:
+	./scripts/normalize_wav_files/normalize.sh

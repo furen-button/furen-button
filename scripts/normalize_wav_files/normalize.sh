@@ -14,7 +14,9 @@ find ../../public/sounds | grep "\.wav$" | grep -v "\-normalized\.wav$" | sed s/
 
 for file in `cat list.txt`
 do
-  ./env/bin/ffmpeg-normalize --keep-lra-above-loudness-range-target "${file}.wav" -o "${file}-normalized.wav" -f
+  if [ ! -e "${file}-normalized.wav" ]; then
+    ./env/bin/ffmpeg-normalize --keep-lra-above-loudness-range-target "${file}.wav" -o "${file}-normalized.wav" -f
+  fi
 done
 
 deactivate
