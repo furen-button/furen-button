@@ -352,3 +352,9 @@
   fileName: "crazy-pizza/meikakuna-satsui.wav"
   category: ["game"]
   clipUrl: "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=1997"
+- name: "クラクションサンタBGM"
+  ruby: "くらくしょんさんたBGM"
+  source: "crazy-pizza"
+  fileName: "crazy-pizza/santa-se.wav"
+  category: ["se"]
+  clipUrl: "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=3579"
