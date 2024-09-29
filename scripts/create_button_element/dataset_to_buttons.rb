@@ -19,9 +19,9 @@ sounds = data.sort_by { |sound| [sound['ruby'],sound['fileName']] }.map do |soun
   source_url = source['url'] unless source.nil?
   category = sound['category'].join(',')
   clip_url = sound['clipUrl']
-  movie_file_name = sound['fileName'].gsub(/\.wav$/, '.mp4')
+  movie_file_name = sound['fileName'].gsub(/\.mp3$/, '-scaled.mp4')
   movie_file_name = "" unless File.exist?("#{__dir__}/../../public/sounds/#{movie_file_name}")
-  normalize_file_name = sound['fileName'].gsub(/\.wav$/, '-normalized.wav')
+  normalize_file_name = sound['fileName'].gsub(/\.mp3$/, '-normalized.mp3')
   normalize_file_name = "" unless File.exist?("#{__dir__}/../../public/sounds/#{normalize_file_name}")
   {
     name: sound['name'],
