@@ -1,4 +1,12 @@
-# トリミングの途中ファイルは無視
-**/*-crop-*
-**/*-scale-*
-**/*-merge-*
+# 動画はスケールされているファイルだけをコミットする
+**/*.mp4
+!**/*-scaled.mp4
+!**/*-complete.mp4
+## トリミング・クロップの途中ファイルは無視
+**/*-crop.mp4
+**/*-crop-*.mp4
+**/*-scale.mp4
+**/*-scale-*.mp4
+**/*-merge.mp4
+**/*-merge-*.mp4
+**/*-complete-scaled.mp4
