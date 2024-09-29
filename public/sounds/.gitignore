@@ -1,0 +1,17 @@
+# 音声は mp3 だけをコミットする (wav は無視)
+**/*.wav
+
+# 動画はスケールされているファイルだけをコミットする
+**/*.mp4
+!**/*-scaled.mp4
+!**/*-complete.mp4
+## トリミング・クロップの途中ファイルは無視
+**/*-crop.mp4
+**/*-crop-*.mp4
+**/*-scale.mp4
+**/*-scale-*.mp4
+**/*-merge.mp4
+**/*-merge-*.mp4
+**/*-complete-scaled.mp4
+**/base.mp4
+**/base-scaled.mp4
