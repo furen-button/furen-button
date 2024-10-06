@@ -165,6 +165,17 @@
     "clipUrl": ""
   },
   {
+    "name": "アシカの鳴き声",
+    "ruby": "あしか",
+    "fileName": "koemane/asika.mp3",
+    "normalizedFileName": "koemane/asika-normalized.mp3",
+    "movieFileName": "koemane/asika-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3938"
+  },
+  {
     "name": "足が速いね",
     "ruby": "あしがはやいね",
     "fileName": "yuukai-jiken/ashigahayaine.mp3",
@@ -385,6 +396,28 @@
     "clipUrl": "https://www.youtube.com/watch?v=5wAzbEHtskU&t=9610"
   },
   {
+    "name": "犬が吠える",
+    "ruby": "いぬがほえる",
+    "fileName": "koemane/dog-bow.mp3",
+    "normalizedFileName": "koemane/dog-bow-normalized.mp3",
+    "movieFileName": "koemane/dog-bow-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4369"
+  },
+  {
+    "name": "犬の鳴き声",
+    "ruby": "いぬのなきごえ",
+    "fileName": "koemane/dog.mp3",
+    "normalizedFileName": "koemane/dog-normalized.mp3",
+    "movieFileName": "koemane/dog-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4516"
+  },
+  {
     "name": "今わたしのこと殺そうとしてたよね！？",
     "ruby": "いまわたしのこところそうとしてたよね",
     "fileName": "crazy-pizza/target.mp3",
@@ -394,6 +427,28 @@
     "sourceUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE",
     "category": "game",
     "clipUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=1335"
+  },
+  {
+    "name": "岩が割れる",
+    "ruby": "いわがわれる",
+    "fileName": "koemane/break-rock.mp3",
+    "normalizedFileName": "koemane/break-rock-normalized.mp3",
+    "movieFileName": "koemane/break-rock-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2549"
+  },
+  {
+    "name": "インドクジャク",
+    "ruby": "いんどくじゃく",
+    "fileName": "koemane/kujaku.mp3",
+    "normalizedFileName": "koemane/kujaku-normalized.mp3",
+    "movieFileName": "koemane/kujaku-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3303"
   },
   {
     "name": "うおおおーきたー！ 鮮やかなプレイすごくない？",
@@ -418,6 +473,28 @@
     "clipUrl": "https://www.youtube.com/watch?v=5wAzbEHtskU&t=417"
   },
   {
+    "name": "ウグイスのさえずり",
+    "ruby": "うぐいすのさえずり",
+    "fileName": "koemane/uguisu.mp3",
+    "normalizedFileName": "koemane/uguisu-normalized.mp3",
+    "movieFileName": "koemane/uguisu-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3364"
+  },
+  {
+    "name": "ウグイスのさえずり2",
+    "ruby": "うぐいすのさえずり2",
+    "fileName": "koemane/uguisu2.mp3",
+    "normalizedFileName": "koemane/uguisu2-normalized.mp3",
+    "movieFileName": "koemane/uguisu2-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3402"
+  },
+  {
     "name": "うざい",
     "ruby": "うざい",
     "fileName": "yuukai-jiken/uzai.mp3",
@@ -427,6 +504,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=yE-dCFzOZn8",
     "category": "tikutiku",
     "clipUrl": ""
+  },
+  {
+    "name": "ウミネコの鳴き声",
+    "ruby": "うみねこ",
+    "fileName": "koemane/umineko.mp3",
+    "normalizedFileName": "koemane/umineko-normalized.mp3",
+    "movieFileName": "koemane/umineko-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3454"
   },
   {
     "name": "うるうるおめめ",
@@ -462,6 +550,17 @@
     "clipUrl": ""
   },
   {
+    "name": "エアーホーン",
+    "ruby": "えあーほーん",
+    "fileName": "koemane/air-horn.mp3",
+    "normalizedFileName": "koemane/air-horn-normalized.mp3",
+    "movieFileName": "koemane/air-horn-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=755"
+  },
+  {
     "name": "映画の撮影かなんかやってんの",
     "ruby": "えいがのさつえいかなんかやってんの",
     "fileName": "crazy-pizza/eiga.mp3",
@@ -471,6 +570,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE",
     "category": "game",
     "clipUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=717"
+  },
+  {
+    "name": "映画のパンチ音",
+    "ruby": "えいがのぱんちおん",
+    "fileName": "koemane/punch.mp3",
+    "normalizedFileName": "koemane/punch-normalized.mp3",
+    "movieFileName": "koemane/punch-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2745"
   },
   {
     "name": "エモい音楽と出会い頭",
@@ -526,6 +636,28 @@
     "sourceUrl": "https://www.youtube.com/watch?v=xC4hyAFk7ls",
     "category": "emotions",
     "clipUrl": ""
+  },
+  {
+    "name": "オオカミの遠吠え",
+    "ruby": "おおかみのとおぼえ",
+    "fileName": "koemane/wolf.mp3",
+    "normalizedFileName": "koemane/wolf-normalized.mp3",
+    "movieFileName": "koemane/wolf-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3266"
+  },
+  {
+    "name": "オオルリのさえずり",
+    "ruby": "おおるり",
+    "fileName": "koemane/ooruri.mp3",
+    "normalizedFileName": "koemane/ooruri-normalized.mp3",
+    "movieFileName": "koemane/ooruri-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3537"
   },
   {
     "name": "おかしいだろ！",
@@ -704,6 +836,17 @@
     "clipUrl": ""
   },
   {
+    "name": "怪獣の足音",
+    "ruby": "かいじゅうのあしおと",
+    "fileName": "koemane/kaiju.mp3",
+    "normalizedFileName": "koemane/kaiju-normalized.mp3",
+    "movieFileName": "koemane/kaiju-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2308"
+  },
+  {
     "name": "貝も寿司になるの？",
     "ruby": "かいもすしになるの？",
     "fileName": "sushi-universe/kai-mo-sushi-ni-naruno.mp3",
@@ -748,6 +891,17 @@
     "clipUrl": ""
   },
   {
+    "name": "硬い物を落とす",
+    "ruby": "かたいものをおとす",
+    "fileName": "koemane/coin.mp3",
+    "normalizedFileName": "koemane/coin-normalized.mp3",
+    "movieFileName": "koemane/coin-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2804"
+  },
+  {
     "name": "かっこいいね",
     "ruby": "かっこいいね",
     "fileName": "yuukai-jiken/kakkoiine.mp3",
@@ -757,6 +911,39 @@
     "sourceUrl": "https://www.youtube.com/watch?v=yE-dCFzOZn8",
     "category": "fuwafuwa",
     "clipUrl": ""
+  },
+  {
+    "name": "カッコウの鳴き声",
+    "ruby": "かっこう",
+    "fileName": "koemane/kakkou.mp3",
+    "normalizedFileName": "koemane/kakkou-normalized.mp3",
+    "movieFileName": "koemane/kakkou-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3635"
+  },
+  {
+    "name": "紙を破く",
+    "ruby": "かみをやぶく",
+    "fileName": "koemane/brake-paper.mp3",
+    "normalizedFileName": "koemane/brake-paper-normalized.mp3",
+    "movieFileName": "koemane/brake-paper-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2888"
+  },
+  {
+    "name": "カラスの鳴き声",
+    "ruby": "からす",
+    "fileName": "koemane/crow.mp3",
+    "normalizedFileName": "koemane/crow-normalized.mp3",
+    "movieFileName": "koemane/crow-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3996"
   },
   {
     "name": "かわいいが最強ってこと！",
@@ -803,6 +990,17 @@
     "clipUrl": ""
   },
   {
+    "name": "ガラスが割れる",
+    "ruby": "がらすがわれる",
+    "fileName": "koemane/glass-brake.mp3",
+    "normalizedFileName": "koemane/glass-brake-normalized.mp3",
+    "movieFileName": "koemane/glass-brake-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=896"
+  },
+  {
     "name": "がんばってね",
     "ruby": "がんばってね",
     "fileName": "yuukai-jiken/ganbattene.mp3",
@@ -845,6 +1043,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=5wAzbEHtskU",
     "category": "game",
     "clipUrl": "https://youtube.com/clip/Ugkxkgq8xhyse3Bpcj5OG0aTyTyNwtk20qlx?si=IrutXPbLstLjNNBv"
+  },
+  {
+    "name": "キジバトの鳴き声",
+    "ruby": "きじばと",
+    "fileName": "koemane/kijibato.mp3",
+    "normalizedFileName": "koemane/kijibato-normalized.mp3",
+    "movieFileName": "koemane/kijibato-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2083"
   },
   {
     "name": "きたきたきたきた",
@@ -935,6 +1144,17 @@
     "clipUrl": ""
   },
   {
+    "name": "金額は！？",
+    "ruby": "きんがくは",
+    "fileName": "koemane/kingaku.mp3",
+    "normalizedFileName": "koemane/kingaku-normalized.mp3",
+    "movieFileName": "koemane/kingaku-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2675"
+  },
+  {
     "name": "義務クラクションやめろ",
     "ruby": "ぎむくらくしょんやめろ",
     "fileName": "crazy-pizza/gimu.mp3",
@@ -944,6 +1164,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE",
     "category": "game",
     "clipUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=1447"
+  },
+  {
+    "name": "クイズ出題音",
+    "ruby": "くいずしゅつだいおん",
+    "fileName": "koemane/quiz.mp3",
+    "normalizedFileName": "koemane/quiz-normalized.mp3",
+    "movieFileName": "koemane/quiz-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=996"
   },
   {
     "name": "くそやろう",
@@ -1199,6 +1430,17 @@
     "clipUrl": ""
   },
   {
+    "name": "ゴリラの鳴き声",
+    "ruby": "ごりら",
+    "fileName": "koemane/gorilla.mp3",
+    "normalizedFileName": "koemane/gorilla-normalized.mp3",
+    "movieFileName": "koemane/gorilla-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=5040"
+  },
+  {
     "name": "最悪借金おけーい！",
     "ruby": "さいあくしゃっきんおけーい",
     "fileName": "4shunen/saiaku-syakkin-okay.mp3",
@@ -1241,6 +1483,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE",
     "category": "emotions",
     "clipUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=393"
+  },
+  {
+    "name": "試合終了のゴング",
+    "ruby": "しあいしゅうりょうのごんぐ",
+    "fileName": "koemane/gong.mp3",
+    "normalizedFileName": "koemane/gong-normalized.mp3",
+    "movieFileName": "koemane/gong-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2999"
   },
   {
     "name": "したかったんだッ「共有」",
@@ -1287,6 +1540,17 @@
     "clipUrl": ""
   },
   {
+    "name": "尺八",
+    "ruby": "しゃくはち",
+    "fileName": "koemane/shakuhachi.mp3",
+    "normalizedFileName": "koemane/shakuhachi-normalized.mp3",
+    "movieFileName": "koemane/shakuhachi-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3139"
+  },
+  {
     "name": "しゃべらないで",
     "ruby": "しゃべらないで",
     "fileName": "yuukai-jiken/syaberanaide.mp3",
@@ -1307,6 +1571,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=mzrL3cruaMw",
     "category": "se",
     "clipUrl": "https://www.youtube.com/clip/UgkxEhP_LLJB1CwAAQ_tN3kcM_8yW5Yjgiov"
+  },
+  {
+    "name": "ショック",
+    "ruby": "しょっく",
+    "fileName": "koemane/shock.mp3",
+    "normalizedFileName": "koemane/shock-normalized.mp3",
+    "movieFileName": "koemane/shock-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1297"
   },
   {
     "name": "親衛隊のみんな！",
@@ -1373,6 +1648,28 @@
     "sourceUrl": "https://www.youtube.com/watch?v=yE-dCFzOZn8",
     "category": "tikutiku",
     "clipUrl": ""
+  },
+  {
+    "name": "時代劇・カ〜〜！",
+    "ruby": "じだいげきか",
+    "fileName": "koemane/kaa.mp3",
+    "normalizedFileName": "koemane/kaa-normalized.mp3",
+    "movieFileName": "koemane/kaa-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3074"
+  },
+  {
+    "name": "ジャジャーン",
+    "ruby": "じゃじゃーん",
+    "fileName": "koemane/jaja-n.mp3",
+    "normalizedFileName": "koemane/jaja-n-normalized.mp3",
+    "movieFileName": "koemane/jaja-n-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1239"
   },
   {
     "name": "上手だね",
@@ -1474,6 +1771,17 @@
     "clipUrl": ""
   },
   {
+    "name": "スズメの鳴き声",
+    "ruby": "すずめ",
+    "fileName": "koemane/suzume.mp3",
+    "normalizedFileName": "koemane/suzume-normalized.mp3",
+    "movieFileName": "koemane/suzume-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3809"
+  },
+  {
     "name": "素敵だね（おうた）",
     "ruby": "すてきだね",
     "fileName": "outa-20230630/sutekidane_hanauta-normalized.mp3",
@@ -1494,6 +1802,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=yE-dCFzOZn8",
     "category": "fuwafuwa",
     "clipUrl": ""
+  },
+  {
+    "name": "スポッ",
+    "ruby": "すぽ",
+    "fileName": "koemane/supo.mp3",
+    "normalizedFileName": "koemane/supo-normalized.mp3",
+    "movieFileName": "koemane/supo-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1169"
   },
   {
     "name": "ずっと何言ってるのかわからない",
@@ -1562,6 +1881,17 @@
     "clipUrl": ""
   },
   {
+    "name": "ゾウの鳴き声",
+    "ruby": "ぞう",
+    "fileName": "koemane/zou.mp3",
+    "normalizedFileName": "koemane/zou-normalized.mp3",
+    "movieFileName": "koemane/zou-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3689"
+  },
+  {
     "name": "たすけてたすけて",
     "ruby": "たすけて",
     "fileName": "crazy-pizza/tasukete.mp3",
@@ -1571,6 +1901,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE",
     "category": "game",
     "clipUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=1005"
+  },
+  {
+    "name": "盾で防ぐ",
+    "ruby": "たてでふせぐ",
+    "fileName": "koemane/shiled.mp3",
+    "normalizedFileName": "koemane/shiled-normalized.mp3",
+    "movieFileName": "koemane/shiled-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=3179"
   },
   {
     "name": "たのしいね",
@@ -1727,6 +2068,17 @@
     "clipUrl": "https://youtube.com/clip/Ugkxv3qUv-CKARiivbTuRPHXohe_XOXQsQJP?si=T9y_qklHbfNC2voQ"
   },
   {
+    "name": "つっこみ",
+    "ruby": "つっこみ",
+    "fileName": "koemane/tsukkomi.mp3",
+    "normalizedFileName": "koemane/tsukkomi-normalized.mp3",
+    "movieFileName": "koemane/tsukkomi-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1641"
+  },
+  {
     "name": "常に前後左右警戒して走り続けろ",
     "ruby": "つねにぜんごさゆうけいかいしてはしりつづけろ",
     "fileName": "crazy-pizza/tuneni.mp3",
@@ -1848,6 +2200,17 @@
     "clipUrl": ""
   },
   {
+    "name": "トンビの鳴き声",
+    "ruby": "とんび",
+    "fileName": "koemane/tonbi.mp3",
+    "normalizedFileName": "koemane/tonbi-normalized.mp3",
+    "movieFileName": "koemane/tonbi-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4111"
+  },
+  {
     "name": "どけ",
     "ruby": "どけ",
     "fileName": "yuukai-jiken/doke.mp3",
@@ -1901,6 +2264,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=mzrL3cruaMw",
     "category": "se",
     "clipUrl": "https://www.youtube.com/clip/UgkxEhP_LLJB1CwAAQ_tN3kcM_8yW5Yjgiov"
+  },
+  {
+    "name": "ドラを鳴らす",
+    "ruby": "どら",
+    "fileName": "koemane/dora.mp3",
+    "normalizedFileName": "koemane/dora-normalized.mp3",
+    "movieFileName": "koemane/dora-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1579"
   },
   {
     "name": "どんなときでもかわいいからわたし",
@@ -2068,6 +2442,17 @@
     "clipUrl": ""
   },
   {
+    "name": "にわとりの鳴き声",
+    "ruby": "にわとり",
+    "fileName": "koemane/chiken.mp3",
+    "normalizedFileName": "koemane/chiken-normalized.mp3",
+    "movieFileName": "koemane/chiken-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1522"
+  },
+  {
     "name": "ねえーもうちょっとだったのぉ",
     "ruby": "ねえーもうちょっとだったのぉ",
     "fileName": "crazy-pizza/nee.mp3",
@@ -2077,6 +2462,28 @@
     "sourceUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE",
     "category": "game",
     "clipUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=3016"
+  },
+  {
+    "name": "ねこの威嚇",
+    "ruby": "ねこのいかく",
+    "fileName": "koemane/neko-mew.mp3",
+    "normalizedFileName": "koemane/neko-mew-normalized.mp3",
+    "movieFileName": "koemane/neko-mew-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4821"
+  },
+  {
+    "name": "ねこの鳴き声",
+    "ruby": "ねこのなきごえ",
+    "fileName": "koemane/neko-melow.mp3",
+    "normalizedFileName": "koemane/neko-melow-normalized.mp3",
+    "movieFileName": "koemane/neko-melow-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4882"
   },
   {
     "name": "はい、こんタリオ〜",
@@ -2132,6 +2539,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=6dh2TTlvBdY",
     "category": "se",
     "clipUrl": "https://youtube.com/clip/Ugkx9iZJzDZW4KkOgIWkX40e41O4wM9Zx9l2?si=0-rQO9y_wa9vEt85"
+  },
+  {
+    "name": "ハトの鳴き声",
+    "ruby": "はと",
+    "fileName": "koemane/hato.mp3",
+    "normalizedFileName": "koemane/hato-normalized.mp3",
+    "movieFileName": "koemane/hato-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4182"
   },
   {
     "name": "腹抱えて笑いました",
@@ -2233,6 +2651,17 @@
     "clipUrl": "https://youtube.com/clip/UgkxVJBsGjyEjJJDIP0DozmOYutlH-e_BPtZ?si=DQUui6G-QzZm8HbO"
   },
   {
+    "name": "羊の鳴き声",
+    "ruby": "ひつじのなきごえ",
+    "fileName": "koemane/sheep.mp3",
+    "normalizedFileName": "koemane/sheep-normalized.mp3",
+    "movieFileName": "koemane/sheep-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1102"
+  },
+  {
     "name": "人の心がない",
     "ruby": "ひとのこころがない",
     "fileName": "saikyou/hito-no.mp3",
@@ -2255,6 +2684,28 @@
     "clipUrl": ""
   },
   {
+    "name": "ひよこの鳴き声",
+    "ruby": "ひよこ",
+    "fileName": "koemane/hiyoko.mp3",
+    "normalizedFileName": "koemane/hiyoko-normalized.mp3",
+    "movieFileName": "koemane/hiyoko-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4255"
+  },
+  {
+    "name": "ひらめき",
+    "ruby": "ひらめき",
+    "fileName": "koemane/hirameki.mp3",
+    "normalizedFileName": "koemane/hirameki-normalized.mp3",
+    "movieFileName": "koemane/hirameki-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1722"
+  },
+  {
     "name": "びっくりした",
     "ruby": "びっくりした",
     "fileName": "yuukai-jiken/bikkurisita.mp3",
@@ -2264,6 +2715,39 @@
     "sourceUrl": "https://www.youtube.com/watch?v=yE-dCFzOZn8",
     "category": "emotions",
     "clipUrl": ""
+  },
+  {
+    "name": "ビヨヨヨ〜ン",
+    "ruby": "びよよよーん",
+    "fileName": "koemane/biyoyoyon.mp3",
+    "normalizedFileName": "koemane/biyoyoyon-normalized.mp3",
+    "movieFileName": "koemane/biyoyoyon-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2607"
+  },
+  {
+    "name": "ビヨ〜〜ン",
+    "ruby": "びよーん",
+    "fileName": "koemane/biyon.mp3",
+    "normalizedFileName": "koemane/biyon-normalized.mp3",
+    "movieFileName": "koemane/biyon-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2365"
+  },
+  {
+    "name": "ビヨ〜〜ン（ヨッシー）",
+    "ruby": "びよーん2",
+    "fileName": "koemane/biyon2.mp3",
+    "normalizedFileName": "koemane/biyon2-normalized.mp3",
+    "movieFileName": "koemane/biyon2-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2419"
   },
   {
     "name": "ビリー今までありがとう。儚く散ってくれ。",
@@ -2352,6 +2836,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=gutSPL4knIg",
     "category": "waraigoe",
     "clipUrl": "https://www.youtube.com/clip/UgkxjrZC5GoYGqaQp7FL69KSabJKHC36fx_V"
+  },
+  {
+    "name": "ファンファーレ",
+    "ruby": "ふぁんふぁーれ",
+    "fileName": "koemane/fanfare.mp3",
+    "normalizedFileName": "koemane/fanfare-normalized.mp3",
+    "movieFileName": "koemane/fanfare-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2255"
   },
   {
     "name": "フレン",
@@ -2475,6 +2970,50 @@
     "clipUrl": "https://www.youtube.com/watch?v=SpsS5X_DUjE&t=1891"
   },
   {
+    "name": "ほら貝",
+    "ruby": "ほらがい",
+    "fileName": "koemane/horagai.mp3",
+    "normalizedFileName": "koemane/horagai-normalized.mp3",
+    "movieFileName": "koemane/horagai-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2204"
+  },
+  {
+    "name": "ホラーのタイトル",
+    "ruby": "ほらーのたいとる",
+    "fileName": "koemane/horror.mp3",
+    "normalizedFileName": "koemane/horror-normalized.mp3",
+    "movieFileName": "koemane/horror-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1979"
+  },
+  {
+    "name": "ホワンホワン",
+    "ruby": "ほわんほわん",
+    "fileName": "koemane/howan.mp3",
+    "normalizedFileName": "koemane/howan-normalized.mp3",
+    "movieFileName": "koemane/howan-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=2489"
+  },
+  {
+    "name": "本日のニュース",
+    "ruby": "ほんじつのにゅーす",
+    "fileName": "koemane/news.mp3",
+    "normalizedFileName": "koemane/news-normalized.mp3",
+    "movieFileName": "koemane/news-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1803"
+  },
+  {
     "name": "本日はですね",
     "ruby": "ほんじつはですね",
     "fileName": "crazy-pizza/honjitsuha.mp3",
@@ -2495,6 +3034,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=gutSPL4knIg",
     "category": "se",
     "clipUrl": ""
+  },
+  {
+    "name": "ボイ〜ン！",
+    "ruby": "ぼいーん",
+    "fileName": "koemane/boiin.mp3",
+    "normalizedFileName": "koemane/boiin-normalized.mp3",
+    "movieFileName": "koemane/boiin-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=593"
   },
   {
     "name": "ぼくも帰ろうおうちへ帰ろう（おうた）",
@@ -2651,6 +3201,28 @@
     "clipUrl": ""
   },
   {
+    "name": "水が一滴",
+    "ruby": "みずがいってき",
+    "fileName": "koemane/water-drop.mp3",
+    "normalizedFileName": "koemane/water-drop-normalized.mp3",
+    "movieFileName": "koemane/water-drop-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=1400"
+  },
+  {
+    "name": "水に飛び込む",
+    "ruby": "みずにとびこむ",
+    "fileName": "koemane/fall-in-water.mp3",
+    "normalizedFileName": "koemane/fall-in-water-normalized.mp3",
+    "movieFileName": "koemane/fall-in-water-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=528"
+  },
+  {
     "name": "道が私の言うことを聞いてくれないだけで",
     "ruby": "みちがわたしのいうことをきいてくれないだけで",
     "fileName": "furen-first/miti-ga-watashi-no-iukoto.mp3",
@@ -2748,6 +3320,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=xC4hyAFk7ls",
     "category": "emotions",
     "clipUrl": "https://youtube.com/clip/UgkxyOM52NguYY6sAQf-brzyKvnKvZfejEHf?si=MFayfrZN6tbZpxgW"
+  },
+  {
+    "name": "ミンミンゼミの鳴き声",
+    "ruby": "みんみんぜみ",
+    "fileName": "koemane/semi.mp3",
+    "normalizedFileName": "koemane/semi-normalized.mp3",
+    "movieFileName": "koemane/semi-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4594"
   },
   {
     "name": "胸にブルマ草",
@@ -2891,6 +3474,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=xC4hyAFk7ls",
     "category": "damage",
     "clipUrl": "https://www.youtube.com/clip/Ugkxl_BQ9HelJmv7ytahiTvZmXK8fSa_IYaH"
+  },
+  {
+    "name": "ヤギの鳴き声",
+    "ruby": "やぎ",
+    "fileName": "koemane/yagi.mp3",
+    "normalizedFileName": "koemane/yagi-normalized.mp3",
+    "movieFileName": "koemane/yagi-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4634"
   },
   {
     "name": "やさしいね",
@@ -3045,6 +3639,17 @@
     "sourceUrl": "https://www.youtube.com/live/3PeRvqJj-c8?si=Uvj6LolI0yA5cgB9",
     "category": "sokuochi",
     "clipUrl": "https://youtube.com/clip/Ugkxn-QxTtgB6Ess8gEvqgrO54wTzgwTANcw?si=0fK8L-TLE_98TePP"
+  },
+  {
+    "name": "ライオンの鳴き声",
+    "ruby": "らいおん",
+    "fileName": "koemane/lion.mp3",
+    "normalizedFileName": "koemane/lion-normalized.mp3",
+    "movieFileName": "koemane/lion-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4712"
   },
   {
     "name": "ライバル！（おうた）",
@@ -3232,6 +3837,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=6dh2TTlvBdY",
     "category": "se",
     "clipUrl": "https://youtube.com/clip/Ugkx9iZJzDZW4KkOgIWkX40e41O4wM9Zx9l2?si=0-rQO9y_wa9vEt85"
+  },
+  {
+    "name": "ワシの鳴き声",
+    "ruby": "わし",
+    "fileName": "koemane/washi.mp3",
+    "normalizedFileName": "koemane/washi-normalized.mp3",
+    "movieFileName": "koemane/washi-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4786"
   },
   {
     "name": "わたし頭いいから",
@@ -3595,6 +4211,17 @@
     "sourceUrl": "https://www.youtube.com/watch?v=gutSPL4knIg",
     "category": "waraigoe",
     "clipUrl": ""
+  },
+  {
+    "name": "笑うチンパンジー",
+    "ruby": "わらうちんぱんじー",
+    "fileName": "koemane/monkey.mp3",
+    "normalizedFileName": "koemane/monkey-normalized.mp3",
+    "movieFileName": "koemane/monkey-scaled.mp4",
+    "sourceName": "【声マネキング】完全復活！声マネの瞬発力ならだれにも負けません【にじさんじ】",
+    "sourceUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4",
+    "category": "koemane",
+    "clipUrl": "https://www.youtube.com/watch?v=Hd0o35yBCP4&t=4990"
   },
   {
     "name": "わんちゃんある",
