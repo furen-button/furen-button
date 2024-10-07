@@ -10,6 +10,8 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import LatestFeeds from './components/LatestFeeds.tsx';
 import { getCategoryCountList, getCategoryList } from './lib/CategoryFunctions.tsx';
+import {login, getClapData, NullClapData, ClapData} from './lib/FirebaseFunctions.ts';
+
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
 function soundPlay(soundData: SoundData, volume: number, endCallback: () => void) {
@@ -136,6 +138,7 @@ function App() {
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
   const [playingSoundDataList, updatePlayingSoundDataList] = useReducer(playingSoundListReducer, []);
   const [sectionPattern, setSectionPattern] = useState<'ruby'|'source'>('ruby');
+  const [clapData, setClapData] = useState<ClapData>(NullClapData);
 
   const soundEndCallback = (nowSoundData : SoundData) => {
     updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
@@ -197,6 +200,13 @@ function App() {
   useEffect(() => {
     onAllStopClick();
   }, [selectedCategory]);
+
+  useEffect(() => {
+    (async () => {
+      await login();
+      setClapData(await getClapData());
+    })();
+  }, []);
 
   return (
     <>
@@ -342,6 +352,7 @@ function App() {
         filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
         playingSoundDataList={playingSoundDataList}
         sectionPattern={sectionPattern}
+        clapData={clapData}
       />
     </>
   );

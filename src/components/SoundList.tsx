@@ -2,19 +2,19 @@ import {SoundData} from './SoundData.tsx';
 import React, {lazy, Suspense} from 'react';
 import { FaVideo, FaPlay, FaThumbsUp } from 'react-icons/fa6';
 import {Button, ButtonGroup, IconButton, Popover} from '@mui/material';
+import {ClapData, soundFileNameToTargetId, updateClap} from '../lib/FirebaseFunctions.ts';
 const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
-
-export interface SoundListProps {
-  filteredSoundDataList: SoundData[];
-  onClick: (event: React.MouseEvent<HTMLElement>, soundData: SoundData) => void;
-  selectedCategory: string[];
-  playingSoundDataList: SoundData[];
-  sectionPattern: 'ruby' | 'source';
-}
 
 const sectionIndexList = ['0,A', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ', '他'];
 
-function SoundList(props: SoundListProps) {
+function SoundList(props: {
+    filteredSoundDataList: SoundData[];
+    onClick: (event: React.MouseEvent<HTMLElement>, soundData: SoundData) => void;
+    selectedCategory: string[];
+    playingSoundDataList: SoundData[];
+    sectionPattern: 'ruby' | 'source';
+    clapData: ClapData;
+}) {
   if (props.filteredSoundDataList.length === 0) {
     return (
       <div style={style.container}>
@@ -73,6 +73,7 @@ function SoundList(props: SoundListProps) {
                 onClick={props.onClick}
                 selectedCategory={props.selectedCategory}
                 playingSoundDataList={props.playingSoundDataList}
+                clapData={props.clapData}
               />
             );
           })
@@ -93,6 +94,7 @@ function SoundButton(props: {
   onClick: (event: React.MouseEvent<HTMLElement>, soundData: SoundData) => void;
   selectedCategory: string[];
   playingSoundDataList: SoundData[];
+  clapData: ClapData;
 }) {
   const soundData = props.soundData;
   const found = props.playingSoundDataList.find((soundData) => {
@@ -100,6 +102,9 @@ function SoundButton(props: {
   });
   const isPlaying = found !== undefined;
   const className = isPlaying ? 'sounds anime-button' : 'sounds';
+  const targetId = soundFileNameToTargetId(soundData.fileName);
+  const likeCount = props.clapData.allClaps[targetId] ?? 0;
+  const localLikeCount = props.clapData.userClaps[targetId] ?? 0;
 
   return (
     <ButtonGroup className={className}>
@@ -114,7 +119,10 @@ function SoundButton(props: {
           {soundData.name}
         </span>
       </Button>
-      <LikeButton targetId={soundData.fileName} likeCount={1000} localLikeCount={0} />
+      <LikeButton
+        targetId={targetId}
+        likeCount={likeCount}
+        localLikeCount={localLikeCount} />
       <DetailPopupButton soundData={soundData}/>
     </ButtonGroup>
   );
@@ -199,18 +207,31 @@ function DetailPopupButton(props: { soundData: SoundData }) {
  */
 function LikeButton(props: { targetId: string, likeCount: number, localLikeCount: number }) {
   const MAX_LIKE_COUNT = 3;
-  const likeCountReducer = (state: number, action: 'clap') => {
+  const likeCountReducer = (state: {count: number, updated: boolean}, action: 'clap' | 'update') => {
     switch (action) {
-    case 'clap':
-      if (state >= MAX_LIKE_COUNT) {
+    case 'clap': {
+      if (state.count >= MAX_LIKE_COUNT) {
+        return {count: state.count, updated: false};
+      }
+      const newCount = state.count + 1;
+      updateClap(props.targetId, newCount);
+      return {count: newCount, updated: true};
+    }
+    case 'update': {
+      if (state.updated) {
         return state;
       }
-      return state + 1;
+      return {count: props.localLikeCount, updated: true};
+    }
     }
   };
-  const [localLikeCount, updateLike] = React.useReducer(likeCountReducer, props.localLikeCount);
+  const [localLikeState, updateLike] = React.useReducer(likeCountReducer, {count: props.localLikeCount, updated: false});
+  const localLikeCount = localLikeState.count;
   const color = localLikeCount === 0 ? '#1976d2' :
     localLikeCount >= MAX_LIKE_COUNT ? 'red' : 'crimson';
+  if (!localLikeState.updated && localLikeCount !== props.localLikeCount) {
+    updateLike('update');
+  }
   return (
     <Button
       onClick={() => {
