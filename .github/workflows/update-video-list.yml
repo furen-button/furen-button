@@ -29,6 +29,7 @@ jobs:
         run: |
           ./scripts/get_youtube_channel_video_list/main.sh
           ruby scripts/search_list_to_yaml/update_videolist_json.rb
+          ruby scripts/search_list_to_yaml/update_sources_yaml.rb
       - name: Diff
         id: diff
         run: |
