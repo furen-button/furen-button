@@ -1,6 +1,6 @@
-import { FirebaseApp, initializeApp } from 'firebase/app';
-import { Auth, getAuth, signInAnonymously } from 'firebase/auth';
-import { getDatabase, ref, get, set } from 'firebase/database';
+import {FirebaseApp, initializeApp} from 'firebase/app';
+import {Auth, getAuth, signInAnonymously} from 'firebase/auth';
+import {get, getDatabase, ref, set} from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyA9Lsj7FTia1FLxlFxqx5h55dN293Kqick',
@@ -60,12 +60,10 @@ async function getClapData() : Promise<ClapData> {
     }
   }
 
-  const data : ClapData = {
+  return {
     userClaps,
     allClaps,
   };
-  console.log(data);
-  return data;
 }
 
 async function updateClap(targetId : string, clapCount : number) {
