@@ -108,7 +108,9 @@ function SoundButton(props: {
 
   return (
     <ButtonGroup className={className}>
-      <Button onClick={(event) => props.onClick(event, soundData)}>
+      <Button
+        variant={'contained'}
+        onClick={(event) => props.onClick(event, soundData)}>
         {soundData.movieFileName !== '' ? <FaVideo style={style.iconInButton}/> : <FaPlay style={style.iconInButton}/>}
         <span style={{
           fontSize: '20px',
@@ -141,6 +143,7 @@ function DetailPopupButton(props: { soundData: SoundData }) {
   return (
     <>
       <Button
+        color={'info'}
         onClick={handleClick}>詳細</Button>
       <Popover
         id={soundData.fileName}
@@ -225,13 +228,14 @@ function LikeButton(props: { targetId: string, likeCount: number, localLikeCount
   };
   const [localLikeState, updateLike] = React.useReducer(likeCountReducer, {count: props.localLikeCount, updated: false});
   const localLikeCount = localLikeState.count;
-  const color = localLikeCount === 0 ? '#1976d2' :
+  const color = localLikeCount === 0 ? '#0288d1' :
     localLikeCount >= MAX_LIKE_COUNT ? 'red' : 'crimson';
   if (!localLikeState.updated && localLikeCount !== props.localLikeCount) {
     updateLike('update');
   }
   return (
     <Button
+      color={'info'}
       onClick={() => {
         updateLike('clap');
       }}
