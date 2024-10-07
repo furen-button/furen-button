@@ -3,7 +3,6 @@ import { SoundDataJson, SoundData } from './components/SoundData.tsx';
 import { isCategoryMatched } from './components/SoundDataFunctions.tsx';
 import SoundList from './components/SoundList.tsx';
 import CategoryCheckList from './components/CategoryCheckList.tsx';
-import SoundContext from './components/SoundContext.tsx';
 import { gsap } from 'gsap';
 import { gtag } from 'ga-gtag';
 import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } from 'react-icons/fa6';
@@ -132,7 +131,6 @@ function App() {
   const categoryList = getCategoryList(categoryCountList);
   const initialFilteredCategoryList = categoryList.filter((category) => !initialFilterCategories.includes(category));
   const [selectedCategory, setSelectedCategory] = useState<string[]>(initialFilteredCategoryList);
-  const [viewSoundContext, setViewSoundContext] = useState<SoundData | null>(null);
   const [volume, setVolume] = useState<number>(loadVolume());
   const [isCreateImage, setIsCreateImage] = useState<boolean>(loadIsCreateImage());
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
@@ -339,18 +337,12 @@ function App() {
           updatePlayingSoundDataList({type: 'push', soundData: soundData});
           soundClick(soundData, volume, isCreateImage, isCreateComment, soundEndCallback);
           sendGtagContent('sound_click', soundData.name);
-          setViewSoundContext(null);
         }}
         selectedCategory={selectedCategory}
         filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
         playingSoundDataList={playingSoundDataList}
         sectionPattern={sectionPattern}
       />
-      <SoundContext
-        soundData={viewSoundContext}
-        onCloseClick={() => {
-          setViewSoundContext(null);
-        }}/>
     </>
   );
 }
