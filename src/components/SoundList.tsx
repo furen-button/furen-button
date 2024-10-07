@@ -6,7 +6,6 @@ const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
 export interface SoundListProps {
   filteredSoundDataList: SoundData[];
   onClick: (event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) => void;
-  onContextMenu: (event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) => void;
   selectedCategory: string[];
   playingSoundDataList: SoundData[];
   sectionPattern: 'ruby' | 'source';
@@ -71,7 +70,6 @@ function SoundList(props: SoundListProps) {
                 key={soundData.fileName}
                 soundData={soundData}
                 onClick={props.onClick}
-                onContextMenu={props.onContextMenu}
                 selectedCategory={props.selectedCategory}
                 playingSoundDataList={props.playingSoundDataList}
               />
@@ -92,7 +90,6 @@ function SoundList(props: SoundListProps) {
 function SoundButton(props: {
   soundData: SoundData;
   onClick: (event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) => void;
-  onContextMenu: (event: React.MouseEvent<HTMLDivElement>, soundData: SoundData) => void;
   selectedCategory: string[];
   playingSoundDataList: SoundData[];
 }) {
@@ -102,26 +99,77 @@ function SoundButton(props: {
   });
   const isPlaying = found !== undefined;
   const className = isPlaying ? 'sounds anime-button' : 'sounds';
-  return (
-    <div
-      className={className}
-      data-name={soundData.name}
-      data-ruby={soundData.ruby}
-      data-file={soundData.fileName}
-      data-movie-file={soundData.movieFileName}
-      data-source={soundData.sourceName}
-      data-source-url={soundData.sourceUrl}
-      data-category={soundData.category}
-      data-clip-url={soundData.clipUrl}
-      onClick={(event) => props.onClick(event, soundData)}
-      onContextMenu={(event) => props.onContextMenu(event, soundData)}
-    >
-      {soundData.movieFileName !== '' && <FaVideo style={{fontSize: '20px'}}/>} {soundData.clipUrl !== '' && <FaPaperclip style={{fontSize: '20px'}}/>} {soundData.name}
+
+  const directory = 'sounds';
+
+  const details = <details>
+    <summary>詳細</summary>
+    <div style={style.detail}>
+      <ul className="context-list">
+        <li>
+          <div className="context-title">名前:</div>
+          <span>{soundData.name}</span>
+        </li>
+        <li>
+          <div className="context-title">ルビ:</div>
+          <span>{soundData.ruby}</span>
+        </li>
+        <li>
+          <div className="context-title">ファイル:</div>
+          <span><a href={`${directory}/${soundData.fileName}`}>{soundData.fileName}</a></span>
+        </li>
+        <li hidden={soundData.movieFileName === ''}>
+          <div className="context-title">動画ファイル:</div>
+          <span><a href={`${directory}/${soundData.movieFileName}`}>{soundData.movieFileName}</a></span>
+        </li>
+        <li>
+          <div className="context-title">カテゴリ:</div>
+          <span>{soundData.category}</span>
+        </li>
+        <li>
+          <div className="context-title">元動画:</div>
+          <a
+            target="_blank"
+            href={soundData.sourceUrl}>
+            {soundData.sourceName}
+          </a>
+        </li>
+        <li hidden={soundData.clipUrl === ''}>
+          <div className="context-title">クリップ:</div>
+          <a
+            target="_blank"
+            href={soundData.clipUrl}>
+            クリップリンク
+          </a>
+        </li>
+      </ul>
     </div>
+  </details>;
+
+  return (
+    <>
+      <div
+        className={className}
+        data-name={soundData.name}
+        data-ruby={soundData.ruby}
+        data-file={soundData.fileName}
+        data-movie-file={soundData.movieFileName}
+        data-source={soundData.sourceName}
+        data-source-url={soundData.sourceUrl}
+        data-category={soundData.category}
+        data-clip-url={soundData.clipUrl}
+        onClick={(event) => props.onClick(event, soundData)}
+      >
+        {soundData.movieFileName !== '' && <FaVideo style={{fontSize: '20px'}}/>}
+        {soundData.clipUrl !== '' && <FaPaperclip style={{fontSize: '20px'}}/>}
+        {soundData.name}
+      </div>
+      {details}
+    </>
   );
 }
 
-const style : {[key: string]: React.CSSProperties} = {
+const style: { [key: string]: React.CSSProperties } = {
   container: {
     maxWidth: 'calc(100% - 500px)',
     minWidth: 'min(400px, 100%)',
@@ -130,7 +178,7 @@ const style : {[key: string]: React.CSSProperties} = {
     flexWrap: 'wrap',
     border: 'solid 10px rgba(0, 0, 0, 0)',
   },
-  noData:{
+  noData: {
     width: '100%',
     textAlign: 'center',
     fontSize: '30px',
@@ -141,7 +189,11 @@ const style : {[key: string]: React.CSSProperties} = {
     textAlign: 'center',
     fontSize: '30px',
     fontWeight: 'bold',
-  }
+  },
+  detail: {
+    border: 'solid 1px #aaa',
+    borderRadius: '4px',
+  },
 };
 
 export default SoundList;

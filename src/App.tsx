@@ -341,11 +341,6 @@ function App() {
           sendGtagContent('sound_click', soundData.name);
           setViewSoundContext(null);
         }}
-        onContextMenu={(event, soundData) => {
-          event.preventDefault();
-          sendGtagContent('sound_context_click', soundData.name);
-          setViewSoundContext(soundData);
-        }}
         selectedCategory={selectedCategory}
         filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
         playingSoundDataList={playingSoundDataList}
