@@ -137,6 +137,12 @@
             background-color: #fffafaaa;
         }
     </style>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdpiloqAAAAAN5_-in8PdTJTrt9oGfzxHwf6QP5"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById('demo-form').submit();
+        }
+    </script>
 </head>
 <body>
 <div>
@@ -177,6 +183,13 @@
   </script>
   <script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
 </div>
+<button class="g-recaptcha"
+        data-sitekey="6LdpiloqAAAAAN5_-in8PdTJTrt9oGfzxHwf6QP5"
+        data-callback='onSubmit'
+        data-action='submit'
+        style="visibility: hidden">
+    Submit
+</button>
 <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
