@@ -1,7 +1,7 @@
 import {SoundData} from './SoundData.tsx';
 import React, {lazy, Suspense} from 'react';
 import { FaVideo, FaPlay, FaThumbsUp } from 'react-icons/fa6';
-import {Button, ButtonGroup, IconButton, Popover} from '@mui/material';
+import {Button, ButtonGroup, Popover} from '@mui/material';
 import {ClapData, soundFileNameToTargetId, updateClap} from '../lib/FirebaseFunctions.ts';
 const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
 
@@ -109,9 +109,7 @@ function SoundButton(props: {
   return (
     <ButtonGroup className={className}>
       <Button onClick={(event) => props.onClick(event, soundData)}>
-        <IconButton style={{color: '#1976d2'}}>
-          {soundData.movieFileName !== '' ? <FaVideo/> : <FaPlay/>}
-        </IconButton>
+        {soundData.movieFileName !== '' ? <FaVideo style={style.iconInButton}/> : <FaPlay style={style.iconInButton}/>}
         <span style={{
           fontSize: '20px',
           fontWeight: 'bold',
@@ -211,7 +209,7 @@ function LikeButton(props: { targetId: string, likeCount: number, localLikeCount
     switch (action) {
     case 'clap': {
       if (state.count >= MAX_LIKE_COUNT) {
-        return {count: state.count, updated: false};
+        return state;
       }
       const newCount = state.count + 1;
       updateClap(props.targetId, newCount);
@@ -238,11 +236,10 @@ function LikeButton(props: { targetId: string, likeCount: number, localLikeCount
         updateLike('clap');
       }}
     >
-      <IconButton
-        style={{color: color}}
-      >
-        <FaThumbsUp/>
-      </IconButton>
+      <FaThumbsUp style={{
+        color: color,
+        ...style.iconInButton
+      }}/>
       <div style={{
         lineHeight: '1',
         color: color,
@@ -277,6 +274,9 @@ const style: { [key: string]: React.CSSProperties } = {
     fontSize: '30px',
     fontWeight: 'bold',
   },
+  iconInButton: {
+    fontSize: '24px',
+  }
 };
 
 export default SoundList;
