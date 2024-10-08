@@ -202,10 +202,32 @@ function App() {
   }, [selectedCategory]);
 
   useEffect(() => {
+    let ignore = false;
     (async () => {
+      if (ignore) {
+        return;
+      }
       await login();
-      setClapData(await getClapData());
+      await getClapData(
+        (userClaps) => {
+          setClapData((prevClapData) => {
+            return {
+              ...prevClapData,
+              userClaps: userClaps,
+            };
+          });
+        }, (allClaps) => {
+          setClapData((prevClapData) => {
+            return {
+              ...prevClapData,
+              allClaps: allClaps,
+            };
+          });
+        });
     })();
+    return () => {
+      ignore = true;
+    };
   }, []);
 
   return (

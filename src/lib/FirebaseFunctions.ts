@@ -1,6 +1,6 @@
 import {FirebaseApp, initializeApp} from 'firebase/app';
 import {Auth, getAuth, signInAnonymously} from 'firebase/auth';
-import {get, getDatabase, ref, set} from 'firebase/database';
+import {getDatabase, ref, onValue, set} from 'firebase/database';
 import {getAnalytics} from 'firebase/analytics';
 
 const firebaseConfig = {
@@ -38,7 +38,8 @@ async function login() {
   await signInAnonymously(auth);
 }
 
-async function getClapData() : Promise<ClapData> {
+async function getClapData(setUserClaps : (userClaps : {[targetId: string]: number}) => void,
+  setAllClaps : (allClaps : {[targetId: string]: number}) => void) {
   if (app === null) {
     return NullClapData;
   }
@@ -50,28 +51,28 @@ async function getClapData() : Promise<ClapData> {
   }
   const database = getDatabase(app);
   const userClapRef = ref(database, `claps/${auth.currentUser.uid}`);
-  const clapSnapshot = await get(userClapRef);
-  const clapData = clapSnapshot.val() as {[targetId: string]: {count: number}};
-  const userClaps : {[targetId: string]: number} = {};
-  if (clapData !== null) {
-    for (const targetId in clapData) {
-      userClaps[targetId] = clapData[targetId].count;
+  onValue(userClapRef, (clapSnapshot) => {
+    const clapData = clapSnapshot.val() as {[targetId: string]: {count: number}};
+    const userClaps : {[targetId: string]: number} = {};
+    if (clapData !== null) {
+      for (const targetId in clapData) {
+        userClaps[targetId] = clapData[targetId].count;
+      }
     }
-  }
-  const allClapRef = ref(database, 'counts');
-  const allClapSnapshot = await get(allClapRef);
-  const allClapData = allClapSnapshot.val() as {[targetId: string]: {count: number}};
-  const allClaps : {[targetId: string]: number} = {};
-  if (allClapData !== null) {
-    for (const targetId in allClapData) {
-      allClaps[targetId] = allClapData[targetId].count;
-    }
-  }
+    setUserClaps(userClaps);
+  });
 
-  return {
-    userClaps,
-    allClaps,
-  };
+  const allClapRef = ref(database, 'counts');
+  onValue(allClapRef, (clapSnapshot) => {
+    const clapData = clapSnapshot.val() as {[targetId: string]: {count: number}};
+    const allClaps : {[targetId: string]: number} = {};
+    if (clapData !== null) {
+      for (const targetId in clapData) {
+        allClaps[targetId] = clapData[targetId].count;
+      }
+    }
+    setAllClaps(allClaps);
+  });
 }
 
 async function updateClap(targetId : string, clapCount : number) {
