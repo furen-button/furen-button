@@ -1,6 +1,6 @@
 import {SoundData} from './SoundData.tsx';
 import React, {lazy, Suspense} from 'react';
-import { FaVideo, FaPlay, FaThumbsUp } from 'react-icons/fa6';
+import {FaVideo, FaPlay, FaThumbsUp, FaInfo} from 'react-icons/fa6';
 import {Button, ButtonGroup, Popover} from '@mui/material';
 import {ClapData, soundFileNameToTargetId, updateClap} from '../lib/FirebaseFunctions.ts';
 const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
@@ -113,6 +113,7 @@ function SoundButton(props: {
         onClick={(event) => props.onClick(event, soundData)}>
         {soundData.movieFileName !== '' ? <FaVideo style={style.iconInButton}/> : <FaPlay style={style.iconInButton}/>}
         <span style={{
+          marginLeft: '5px',
           fontSize: '20px',
           fontWeight: 'bold',
         }}>
@@ -144,7 +145,7 @@ function DetailPopupButton(props: { soundData: SoundData }) {
     <>
       <Button
         color={'info'}
-        onClick={handleClick}>詳細</Button>
+        onClick={handleClick}><FaInfo/></Button>
       <Popover
         id={soundData.fileName}
         open={open}
@@ -155,7 +156,9 @@ function DetailPopupButton(props: { soundData: SoundData }) {
           horizontal: 'right',
         }}
       >
-        <ul>
+        <ul style={{
+          backgroundColor: '#eeeeee',
+        }}>
           <li>
             <div className="context-title">名前:</div>
             <span>{soundData.name}</span>
@@ -228,14 +231,14 @@ function LikeButton(props: { targetId: string, likeCount: number, localLikeCount
   };
   const [localLikeState, updateLike] = React.useReducer(likeCountReducer, {count: props.localLikeCount, updated: false});
   const localLikeCount = localLikeState.count;
-  const color = localLikeCount === 0 ? '#0288d1' :
-    localLikeCount >= MAX_LIKE_COUNT ? 'red' : 'crimson';
+  const color = localLikeCount === 0 ? '#ffffff' :
+    localLikeCount >= MAX_LIKE_COUNT ? '#ffaaaa' : '#ffcccc';
   if (!localLikeState.updated && localLikeCount !== props.localLikeCount) {
     updateLike('update');
   }
   return (
     <Button
-      color={'info'}
+      variant={'contained'}
       onClick={() => {
         updateLike('clap');
       }}
@@ -245,6 +248,7 @@ function LikeButton(props: { targetId: string, likeCount: number, localLikeCount
         ...style.iconInButton
       }}/>
       <div style={{
+        marginLeft: '5px',
         lineHeight: '1',
         color: color,
       }}>
