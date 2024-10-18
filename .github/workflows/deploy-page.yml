@@ -40,9 +40,8 @@ jobs:
       - name: Build
         run: npm ci && npm run build
         env:
-          VITE_FIREBASE_API_KEY: ${{ env.VITE_FIREBASE_API_KEY }}
-          VITE_RECAPTCHA_SITE_KEY: ${{ env.VITE_RECAPTCHA_SITE_KEY }}
-          VITE_TEST: "test"
+          VITE_FIREBASE_API_KEY: ${{ vars.VITE_FIREBASE_API_KEY }}
+          VITE_RECAPTCHA_SITE_KEY: ${{ vars.VITE_RECAPTCHA_SITE_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
