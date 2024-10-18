@@ -2,9 +2,12 @@ import {FirebaseApp, initializeApp} from 'firebase/app';
 import {Auth, getAuth, signInAnonymously} from 'firebase/auth';
 import {getDatabase, ref, onValue, set} from 'firebase/database';
 import {getAnalytics} from 'firebase/analytics';
+import {initializeAppCheck, AppCheckOptions, ReCaptchaEnterpriseProvider} from 'firebase/app-check';
+const apiKey = import.meta.env.VITE_FIREBASE_API_KEY || '';
+const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA9Lsj7FTia1FLxlFxqx5h55dN293Kqick',
+  apiKey: apiKey,
   authDomain: 'furen-button.firebaseapp.com',
   databaseURL: 'https://furen-button-default-rtdb.asia-southeast1.firebasedatabase.app',
   projectId: 'furen-button',
@@ -12,6 +15,11 @@ const firebaseConfig = {
   messagingSenderId: '58854415568',
   appId: '1:58854415568:web:0b6925f559f4b9b59712d5',
   measurementId: 'G-HBG03F74B0'
+};
+
+const firebaseAppCheckConfig : AppCheckOptions = {
+  provider: new ReCaptchaEnterpriseProvider(siteKey),
+  isTokenAutoRefreshEnabled: true
 };
 
 let app : FirebaseApp | null = null;
@@ -32,7 +40,11 @@ export const NullClapData : ClapData = {
 };
 
 async function login() {
+  if (apiKey === '') {
+    return;
+  }
   app = initializeApp(firebaseConfig);
+  initializeAppCheck(app, firebaseAppCheckConfig);
   auth = getAuth(app);
   getAnalytics(app);
   await signInAnonymously(auth);
@@ -41,13 +53,13 @@ async function login() {
 async function getClapData(setUserClaps : (userClaps : {[targetId: string]: number}) => void,
   setAllClaps : (allClaps : {[targetId: string]: number}) => void) {
   if (app === null) {
-    return NullClapData;
+    return;
   }
   if (auth === null) {
-    return NullClapData;
+    return;
   }
   if (auth.currentUser === null) {
-    return NullClapData;
+    return;
   }
   const database = getDatabase(app);
   const userClapRef = ref(database, `claps/${auth.currentUser.uid}`);
