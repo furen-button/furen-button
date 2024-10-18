@@ -42,7 +42,7 @@ jobs:
         env:
           VITE_FIREBASE_API_KEY: ${{ env.VITE_FIREBASE_API_KEY }}
           VITE_RECAPTCHA_SITE_KEY: ${{ env.VITE_RECAPTCHA_SITE_KEY }}
-          VITE_TEST: ${{ env.VITE_TEST }}
+          VITE_TEST: "test"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
