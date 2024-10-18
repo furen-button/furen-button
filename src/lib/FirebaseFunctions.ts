@@ -40,6 +40,8 @@ export const NullClapData : ClapData = {
 };
 
 async function login() {
+  const test = import.meta.env.VITE_TEST || 'test key is not set';
+  console.log(test);
   if (apiKey === '') {
     return;
   }
