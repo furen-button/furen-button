@@ -42,6 +42,10 @@ function DetailPopupButton(props: { soundData: SoundData }) {
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
   const soundData = props.soundData;
   const directory = 'sounds';
+  const targetId = soundFileNameToTargetId(soundData.fileName);
+  const clapData = useContext(ClapContext);
+  const likeCount = clapData.allClaps[targetId] ?? 0;
+  const userLikeCount = clapData.userClaps[targetId] ?? 0;
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -103,8 +107,16 @@ function DetailPopupButton(props: { soundData: SoundData }) {
             <a
               target="_blank"
               href={soundData.clipUrl}>
-                            クリップリンク
+              クリップリンク
             </a>
+          </li>
+          <li>
+            <div className="context-title">再生回数:</div>
+            <span>{likeCount}</span>
+          </li>
+          <li>
+            <div className="context-title">あなたの再生回数:</div>
+            <span>{userLikeCount}</span>
           </li>
         </ul>
       </Popover>
