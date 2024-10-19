@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer, useState} from 'react';
+import React, {useEffect, useReducer, useState, useContext} from 'react';
 import { SoundDataJson, SoundData } from './components/SoundData.tsx';
 import { isCategoryMatched } from './components/SoundDataFunctions.tsx';
 import SoundList from './components/SoundList.tsx';
@@ -8,9 +8,9 @@ import { gtag } from 'ga-gtag';
 import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } from 'react-icons/fa6';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import LatestFeeds from './components/LatestFeeds.tsx';
 import { getCategoryCountList, getCategoryList } from './lib/CategoryFunctions.tsx';
-import {login, getClapData, NullClapData, ClapData} from './lib/FirebaseFunctions.ts';
+import { updateClap, soundFileNameToTargetId } from './lib/FirebaseFunctions.ts';
+import { ClapContext } from './components/ClapContext.tsx';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -29,33 +29,6 @@ function soundPlay(soundData: SoundData, volume: number, endCallback: () => void
     console.log(e);
   }
 }
-
-function soundClick(soundData: SoundData, volume: number, isCreateImage: boolean, isCreateComment : boolean, soundEndCallback: (soundData : SoundData) => void) {
-  let imageEndCallback = () => {};
-  if (isCreateImage) {
-    if (soundData.movieFileName !== '') {
-      const movie = createVideo(`${directory}/${soundData.movieFileName}`);
-      document.body.appendChild(movie);
-      imageEndCallback = () => {
-        movie.remove();
-      };
-    } else {
-      const img = createCategoryImage(soundData.category);
-      document.body.appendChild(img);
-      imageEndCallback = () => {
-        img.remove();
-      };
-    }
-  }
-  if (isCreateComment) {
-    createText(soundData.name);
-  }
-  soundPlay(soundData, volume, () => {
-    imageEndCallback();
-    soundEndCallback(soundData);
-  });
-}
-
 
 function getRandomSoundData(soundDataList : SoundData[], selectedCategory : string[]) {
   const filteredSoundDataList = getFilteredSoundDataList(soundDataList, selectedCategory);
@@ -138,7 +111,38 @@ function App() {
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
   const [playingSoundDataList, updatePlayingSoundDataList] = useReducer(playingSoundListReducer, []);
   const [sectionPattern, setSectionPattern] = useState<'ruby'|'source'>('ruby');
-  const [clapData, setClapData] = useState<ClapData>(NullClapData);
+  const clapData = useContext(ClapContext);
+
+  const soundClick = (soundData: SoundData, soundEndCallback: (soundData : SoundData) => void) => {
+    updatePlayingSoundDataList({type: 'push', soundData: soundData});
+    const targetId = soundFileNameToTargetId(soundData.fileName);
+    const nowClap = clapData.userClaps[targetId] ?? 0;
+    updateClap(targetId, nowClap + 1);
+
+    let imageEndCallback = () => {};
+    if (isCreateImage) {
+      if (soundData.movieFileName !== '') {
+        const movie = createVideo(`${directory}/${soundData.movieFileName}`);
+        document.body.appendChild(movie);
+        imageEndCallback = () => {
+          movie.remove();
+        };
+      } else {
+        const img = createCategoryImage(soundData.category);
+        document.body.appendChild(img);
+        imageEndCallback = () => {
+          img.remove();
+        };
+      }
+    }
+    if (isCreateComment) {
+      createText(soundData.name);
+    }
+    soundPlay(soundData, volume, () => {
+      imageEndCallback();
+      soundEndCallback(soundData);
+    });
+  };
 
   const soundEndCallback = (nowSoundData : SoundData) => {
     updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
@@ -146,52 +150,48 @@ function App() {
   const randomSoundCallback = (nowSoundData : SoundData) => {
     updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
     const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
-    if (nextSoundData === null) {
-      return;
+    if (nextSoundData) {
+      soundClick(nextSoundData, randomSoundCallback);
     }
-    updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
-    soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+  };
+  const nextSoundCallback = (nowSoundData : SoundData) => {
+    updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
+    const nextSoundData = getNextSoundData(soundDataList, selectedCategory, nowSoundData);
+    if (nextSoundData) {
+      soundClick(nextSoundData, nextSoundCallback);
+    }
   };
 
   const onAllPlayClick = () => {
-    const nextSoundCallback = (nowSoundData : SoundData) => {
-      updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
-      const nextSoundData = getNextSoundData(soundDataList, selectedCategory, nowSoundData);
-      if (nextSoundData) {
-        updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
-        soundClick(nextSoundData, volume, isCreateImage, isCreateComment, nextSoundCallback);
-      }
-    };
     const filteredSoundDataList = getFilteredSoundDataList(soundDataList, selectedCategory);
     if (0 < filteredSoundDataList.length) {
       const nextSoundData = filteredSoundDataList[0];
-      updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
-      soundClick(nextSoundData, volume, isCreateImage, isCreateComment, nextSoundCallback);
+      soundClick(nextSoundData, nextSoundCallback);
+    }
+  };
+
+  const onRandomPlayClick = () => {
+    const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
+    if (nextSoundData) {
+      soundClick(nextSoundData, randomSoundCallback);
     }
   };
 
   const onAllStopClick = () => {
-    const audioElements = Array.from(document.getElementsByTagName('audio'));
+    const audioElements = [
+      ...document.getElementsByTagName('audio'),
+      ...document.getElementsByTagName('video')];
     for (let i = 0; i < audioElements.length; i += 1) {
       const audioElement = audioElements[i];
       audioElement.pause();
       audioElement.remove();
     }
-    const clipElements = Array.from(document.getElementsByClassName('anime-clip'));
+    const clipElements = [
+      ...document.getElementsByClassName('anime-clip'),
+      ...document.getElementsByClassName('comment-text')];
     for (let i = 0; i < clipElements.length; i += 1) {
       const clipElement = clipElements[i];
       clipElement.remove();
-    }
-    const videoElements = Array.from(document.getElementsByTagName('video'));
-    for (let i = 0; i < videoElements.length; i += 1) {
-      const videoElement = videoElements[i];
-      videoElement.pause();
-      videoElement.remove();
-    }
-    const textElements = Array.from(document.getElementsByClassName('comment-text'));
-    for (let i = 0; i < textElements.length; i += 1) {
-      const textElement = textElements[i];
-      textElement.remove();
     }
     updatePlayingSoundDataList({type: 'clear', soundData: null});
   };
@@ -201,48 +201,14 @@ function App() {
     onAllStopClick();
   }, [selectedCategory]);
 
-  useEffect(() => {
-    let ignore = false;
-    (async () => {
-      if (ignore) {
-        return;
-      }
-      await login();
-      await getClapData(
-        (userClaps) => {
-          setClapData((prevClapData) => {
-            return {
-              ...prevClapData,
-              userClaps: userClaps,
-            };
-          });
-        }, (allClaps) => {
-          setClapData((prevClapData) => {
-            return {
-              ...prevClapData,
-              allClaps: allClaps,
-            };
-          });
-        });
-    })();
-    return () => {
-      ignore = true;
-    };
-  }, []);
 
   return (
     <>
-      <LatestFeeds/>
       <button
         className="config-button"
         onClick={() => {
           for (let i = 0; i < 5; i += 1) {
-            const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
-            if (nextSoundData === null) {
-              break;
-            }
-            updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
-            soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+            onRandomPlayClick();
           }
         }}>
         <FaShuffle/><FaChildReaching/> わいわいガヤガヤ（たくさんランダム連続再生）
@@ -256,12 +222,7 @@ function App() {
       <button
         className="config-button"
         onClick={() => {
-          const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
-          if (nextSoundData === null) {
-            return;
-          }
-          updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
-          soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+          onRandomPlayClick();
         }}>
         <FaShuffle/> ランダム連続再生
       </button>
@@ -277,12 +238,7 @@ function App() {
           right: '240px',
         }}
         onClick={() => {
-          const nextSoundData = getRandomSoundData(soundDataList, selectedCategory);
-          if (nextSoundData === null) {
-            return;
-          }
-          updatePlayingSoundDataList({type: 'push', soundData: nextSoundData});
-          soundClick(nextSoundData, volume, isCreateImage, isCreateComment, randomSoundCallback);
+          onRandomPlayClick();
         }}>
         <FaShuffle style={style.fixedButtonInnerIcon}/>
       </div>
@@ -366,15 +322,13 @@ function App() {
       </div>
       <SoundList
         onClick={(_event, soundData) => {
-          updatePlayingSoundDataList({type: 'push', soundData: soundData});
-          soundClick(soundData, volume, isCreateImage, isCreateComment, soundEndCallback);
+          soundClick(soundData, soundEndCallback);
           sendGtagContent('sound_click', soundData.name);
         }}
         selectedCategory={selectedCategory}
         filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
         playingSoundDataList={playingSoundDataList}
         sectionPattern={sectionPattern}
-        clapData={clapData}
       />
     </>
   );

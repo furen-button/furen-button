@@ -1,4 +1,5 @@
 import {getCategoryList} from '../lib/CategoryFunctions.tsx';
+import {Checkbox, FormControlLabel} from '@mui/material';
 
 export interface CategoryCheckListProps {
   categoryCountList: {[key: string]: number};
@@ -15,22 +16,25 @@ function CategoryCheckList(props : CategoryCheckListProps) {
         {
           getCategoryList(categoryCountList).map((category) => {
             const id = `category-${category}`;
+            const label = `${category} (${categoryCountList[category]})`;
             return (
               <li key={id}>
-                <input
+                <FormControlLabel
                   id={id}
-                  className='category-checkbox'
-                  type="checkbox"
-                  checked={selectedCategory.includes(category)}
-                  onChange={() => {
-                    if (selectedCategory.includes(category)) {
-                      setSelectedCategory(selectedCategory.filter((c) => c !== category));
-                    } else {
-                      setSelectedCategory([...selectedCategory, category]);
-                    }
-                  }}
+                  control={
+                    <Checkbox
+                      checked={selectedCategory.includes(category)}
+                      onChange={() => {
+                        if (selectedCategory.includes(category)) {
+                          setSelectedCategory(selectedCategory.filter((c) => c !== category));
+                        } else {
+                          setSelectedCategory([...selectedCategory, category]);
+                        }
+                      }}
+                    />
+                  }
+                  label={label}
                 />
-                <label htmlFor={id}>{category} ({categoryCountList[category]})</label>
               </li>
             );
           })

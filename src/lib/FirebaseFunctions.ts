@@ -1,24 +1,23 @@
-import {FirebaseApp, initializeApp} from 'firebase/app';
+import {FirebaseApp, initializeApp, FirebaseOptions} from 'firebase/app';
 import {Auth, getAuth, signInAnonymously} from 'firebase/auth';
 import {getDatabase, ref, onValue, set} from 'firebase/database';
 import {getAnalytics} from 'firebase/analytics';
 import {initializeAppCheck, AppCheckOptions, ReCaptchaEnterpriseProvider} from 'firebase/app-check';
 const apiKey = import.meta.env.VITE_FIREBASE_API_KEY || '';
-const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '';
 
-const firebaseConfig = {
+const firebaseConfig : FirebaseOptions = {
   apiKey: apiKey,
-  authDomain: 'furen-button.firebaseapp.com',
-  databaseURL: 'https://furen-button-default-rtdb.asia-southeast1.firebasedatabase.app',
-  projectId: 'furen-button',
-  storageBucket: 'furen-button.appspot.com',
-  messagingSenderId: '58854415568',
-  appId: '1:58854415568:web:0b6925f559f4b9b59712d5',
-  measurementId: 'G-HBG03F74B0'
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const firebaseAppCheckConfig : AppCheckOptions = {
-  provider: new ReCaptchaEnterpriseProvider(siteKey),
+  provider: new ReCaptchaEnterpriseProvider(import.meta.env.VITE_RECAPTCHA_SITE_KEY),
   isTokenAutoRefreshEnabled: true
 };
 
@@ -44,6 +43,11 @@ async function login() {
     return;
   }
   app = initializeApp(firebaseConfig);
+  if (import.meta.env.DEV) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+  }
   initializeAppCheck(app, firebaseAppCheckConfig);
   auth = getAuth(app);
   getAnalytics(app);
