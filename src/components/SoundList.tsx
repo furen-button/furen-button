@@ -88,7 +88,7 @@ function SoundList(props: {
 
 const style: { [key: string]: React.CSSProperties } = {
   container: {
-    maxWidth: 'calc(100% - 500px)',
+    maxWidth: 'calc(100% - 200px)',
     minWidth: 'min(400px, 100%)',
     display: 'flex',
     flexDirection: 'row',

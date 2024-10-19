@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import {soundFileNameToTargetId} from '../lib/FirebaseFunctions.ts';
 import {Button, ButtonGroup, Popover} from '@mui/material';
 import {FaInfo, FaPlay, FaThumbsUp, FaVideo} from 'react-icons/fa6';
-import {updateClap} from '../lib/FirebaseFunctions.ts';
 import {ClapContext} from './ClapContext.tsx';
 
 function SoundButton(props: {
@@ -17,25 +16,24 @@ function SoundButton(props: {
     return soundData.fileName === props.soundData.fileName;
   });
   const isPlaying = found !== undefined;
-  const className = isPlaying ? 'sounds anime-button' : 'sounds';
+  const className = isPlaying ? 'anime-button' : '';
   const targetId = soundFileNameToTargetId(soundData.fileName);
 
   return (
-    <ButtonGroup className={className}>
+    <ButtonGroup className={className}
+      style={style.button}>
       <Button
         variant={'contained'}
         onClick={(event) => props.onClick(event, soundData)}>
         {soundData.movieFileName !== '' ? <FaVideo style={style.iconInButton}/> : <FaPlay style={style.iconInButton}/>}
-        <span style={{
-          marginLeft: '5px',
-          fontSize: '20px',
-          fontWeight: 'bold',
-        }}>
+        <span style={
+          style.buttonText
+        }>
           {soundData.name}
         </span>
+        <PlayCount
+          targetId={targetId} />
       </Button>
-      <LikeButton
-        targetId={targetId} />
       <DetailPopupButton soundData={soundData}/>
     </ButtonGroup>
   );
@@ -56,7 +54,9 @@ function DetailPopupButton(props: { soundData: SoundData }) {
     <>
       <Button
         color={'info'}
-        onClick={handleClick}><FaInfo/></Button>
+        onClick={handleClick}>
+        <FaInfo style={style.iconInButton}/>
+      </Button>
       <Popover
         id={soundData.fileName}
         open={open}
@@ -112,48 +112,43 @@ function DetailPopupButton(props: { soundData: SoundData }) {
 }
 
 /**
- * いいねボタン
+ * 再生回数を表示するコンポーネント
  *
  * @param props
  * @param {string} props.targetId ターゲットのID
  * @constructor
  */
-function LikeButton(props: { targetId: string }) {
+function PlayCount(props: { targetId: string }) {
   const targetId = props.targetId;
   const clapData = useContext(ClapContext);
   const likeCount = clapData.allClaps[targetId] ?? 0;
-  const localLikeCount = clapData.userClaps[targetId] ?? 0;
-  const MAX_LIKE_COUNT = 3;
-  const color = localLikeCount === 0 ? '#ffffff' :
-    localLikeCount >= MAX_LIKE_COUNT ? '#ffaaaa' : '#ffcccc';
   return (
-    <Button
-      variant={'contained'}
-      onClick={() => {
-        if (localLikeCount >= MAX_LIKE_COUNT) {
-          return;
-        }
-        updateClap(targetId, localLikeCount + 1);
-      }}
-    >
-      <FaThumbsUp style={{
-        color: color,
-        ...style.iconInButton
-      }}/>
+    <>
       <div style={{
-        marginLeft: '5px',
+        marginLeft: '30px',
         lineHeight: '1',
-        color: color,
       }}>
-        <span>{localLikeCount}/{MAX_LIKE_COUNT}</span>
+        <FaThumbsUp style={{
+          ...style.iconInButton
+        }}/>
         <br/>
-        <span>({likeCount})</span>
+        <span>{likeCount}</span>
       </div>
-    </Button>
+    </>
   );
 }
 
-const style: { [key: string]: React.CSSProperties } = {
+const style: {[key: string]: React.CSSProperties} = {
+  button: {
+    margin: '5px',
+  },
+  buttonText: {
+    textTransform: 'none',
+    marginLeft: '5px',
+    fontSize: '20px',
+    fontFamily: 'Noto Sans JP',
+    fontWeight: 'bold',
+  },
   iconInButton: {
     fontSize: '24px',
   }
