@@ -1,6 +1,5 @@
 import {SoundData} from './SoundData.tsx';
 import React, {lazy, Suspense} from 'react';
-import {ClapData} from '../lib/FirebaseFunctions.ts';
 import SoundButton from './SoundButton.tsx';
 
 const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
@@ -13,7 +12,6 @@ function SoundList(props: {
     selectedCategory: string[];
     playingSoundDataList: SoundData[];
     sectionPattern: 'ruby' | 'source';
-    clapData: ClapData;
 }) {
   if (props.filteredSoundDataList.length === 0) {
     return (
@@ -73,7 +71,6 @@ function SoundList(props: {
                 onClick={props.onClick}
                 selectedCategory={props.selectedCategory}
                 playingSoundDataList={props.playingSoundDataList}
-                clapData={props.clapData}
               />
             );
           })

@@ -1,16 +1,16 @@
 import {SoundData} from './SoundData.tsx';
-import React from 'react';
-import {ClapData, soundFileNameToTargetId} from '../lib/FirebaseFunctions.ts';
+import React, { useContext } from 'react';
+import {soundFileNameToTargetId} from '../lib/FirebaseFunctions.ts';
 import {Button, ButtonGroup, Popover} from '@mui/material';
 import {FaInfo, FaPlay, FaThumbsUp, FaVideo} from 'react-icons/fa6';
 import {updateClap} from '../lib/FirebaseFunctions.ts';
+import {ClapContext} from './ClapContext.tsx';
 
 function SoundButton(props: {
     soundData: SoundData;
     onClick: (event: React.MouseEvent<HTMLElement>, soundData: SoundData) => void;
     selectedCategory: string[];
     playingSoundDataList: SoundData[];
-    clapData: ClapData;
 }) {
   const soundData = props.soundData;
   const found = props.playingSoundDataList.find((soundData) => {
@@ -19,8 +19,6 @@ function SoundButton(props: {
   const isPlaying = found !== undefined;
   const className = isPlaying ? 'sounds anime-button' : 'sounds';
   const targetId = soundFileNameToTargetId(soundData.fileName);
-  const likeCount = props.clapData.allClaps[targetId] ?? 0;
-  const localLikeCount = props.clapData.userClaps[targetId] ?? 0;
 
   return (
     <ButtonGroup className={className}>
@@ -37,9 +35,7 @@ function SoundButton(props: {
         </span>
       </Button>
       <LikeButton
-        targetId={targetId}
-        likeCount={likeCount}
-        localLikeCount={localLikeCount} />
+        targetId={targetId} />
       <DetailPopupButton soundData={soundData}/>
     </ButtonGroup>
   );
@@ -120,42 +116,24 @@ function DetailPopupButton(props: { soundData: SoundData }) {
  *
  * @param props
  * @param {string} props.targetId ターゲットのID
- * @param {number} props.likeCount 累計いいねの数
- * @param {number} props.localLikeCount 自分のいいねの数
  * @constructor
  */
-function LikeButton(props: { targetId: string, likeCount: number, localLikeCount: number }) {
+function LikeButton(props: { targetId: string }) {
+  const targetId = props.targetId;
+  const clapData = useContext(ClapContext);
+  const likeCount = clapData.allClaps[targetId] ?? 0;
+  const localLikeCount = clapData.userClaps[targetId] ?? 0;
   const MAX_LIKE_COUNT = 3;
-  const likeCountReducer = (state: {count: number, updated: boolean}, action: 'clap' | 'update') => {
-    switch (action) {
-    case 'clap': {
-      if (state.count >= MAX_LIKE_COUNT) {
-        return state;
-      }
-      const newCount = state.count + 1;
-      updateClap(props.targetId, newCount);
-      return {count: newCount, updated: true};
-    }
-    case 'update': {
-      if (state.updated) {
-        return state;
-      }
-      return {count: props.localLikeCount, updated: true};
-    }
-    }
-  };
-  const [localLikeState, updateLike] = React.useReducer(likeCountReducer, {count: props.localLikeCount, updated: false});
-  const localLikeCount = localLikeState.count;
   const color = localLikeCount === 0 ? '#ffffff' :
     localLikeCount >= MAX_LIKE_COUNT ? '#ffaaaa' : '#ffcccc';
-  if (!localLikeState.updated && localLikeCount !== props.localLikeCount) {
-    updateLike('update');
-  }
   return (
     <Button
       variant={'contained'}
       onClick={() => {
-        updateLike('clap');
+        if (localLikeCount >= MAX_LIKE_COUNT) {
+          return;
+        }
+        updateClap(targetId, localLikeCount + 1);
       }}
     >
       <FaThumbsUp style={{
@@ -169,7 +147,7 @@ function LikeButton(props: { targetId: string, likeCount: number, localLikeCount
       }}>
         <span>{localLikeCount}/{MAX_LIKE_COUNT}</span>
         <br/>
-        <span>({props.likeCount + localLikeCount})</span>
+        <span>({likeCount})</span>
       </div>
     </Button>
   );

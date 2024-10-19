@@ -9,7 +9,6 @@ import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } fro
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { getCategoryCountList, getCategoryList } from './lib/CategoryFunctions.tsx';
-import {login, getClapData, NullClapData, ClapData} from './lib/FirebaseFunctions.ts';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -137,7 +136,6 @@ function App() {
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
   const [playingSoundDataList, updatePlayingSoundDataList] = useReducer(playingSoundListReducer, []);
   const [sectionPattern, setSectionPattern] = useState<'ruby'|'source'>('ruby');
-  const [clapData, setClapData] = useState<ClapData>(NullClapData);
 
   const soundEndCallback = (nowSoundData : SoundData) => {
     updatePlayingSoundDataList({type: 'pop', soundData: nowSoundData});
@@ -200,34 +198,6 @@ function App() {
     onAllStopClick();
   }, [selectedCategory]);
 
-  useEffect(() => {
-    let ignore = false;
-    (async () => {
-      if (ignore) {
-        return;
-      }
-      await login();
-      await getClapData(
-        (userClaps) => {
-          setClapData((prevClapData) => {
-            return {
-              ...prevClapData,
-              userClaps: userClaps,
-            };
-          });
-        }, (allClaps) => {
-          setClapData((prevClapData) => {
-            return {
-              ...prevClapData,
-              allClaps: allClaps,
-            };
-          });
-        });
-    })();
-    return () => {
-      ignore = true;
-    };
-  }, []);
 
   return (
     <>
@@ -372,7 +342,6 @@ function App() {
         filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
         playingSoundDataList={playingSoundDataList}
         sectionPattern={sectionPattern}
-        clapData={clapData}
       />
     </>
   );
