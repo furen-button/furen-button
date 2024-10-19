@@ -8,7 +8,6 @@ import { gtag } from 'ga-gtag';
 import { FaCirclePlay, FaAngleUp, FaShuffle, FaCircleStop, FaChildReaching } from 'react-icons/fa6';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import LatestFeeds from './components/LatestFeeds.tsx';
 import { getCategoryCountList, getCategoryList } from './lib/CategoryFunctions.tsx';
 import {login, getClapData, NullClapData, ClapData} from './lib/FirebaseFunctions.ts';
 
@@ -232,7 +231,6 @@ function App() {
 
   return (
     <>
-      <LatestFeeds/>
       <button
         className="config-button"
         onClick={() => {
