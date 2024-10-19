@@ -3,6 +3,7 @@ import {Auth, getAuth, signInAnonymously} from 'firebase/auth';
 import {getDatabase, ref, onValue, set} from 'firebase/database';
 import {getAnalytics} from 'firebase/analytics';
 import {initializeAppCheck, AppCheckOptions, ReCaptchaEnterpriseProvider} from 'firebase/app-check';
+import {SoundData, SoundDataJson} from '../components/SoundData.tsx';
 const apiKey = import.meta.env.VITE_FIREBASE_API_KEY || '';
 
 const firebaseConfig : FirebaseOptions = {
@@ -54,8 +55,8 @@ async function login() {
   await signInAnonymously(auth);
 }
 
-async function getClapData(setUserClaps : (userClaps : {[targetId: string]: number}) => void,
-  setAllClaps : (allClaps : {[targetId: string]: number}) => void) {
+async function getClapData(updateUserClap : (targetId: string, count: number) => void,
+  updateAllClap : (targetId: string, count: number) => void) {
   if (app === null) {
     return;
   }
@@ -66,29 +67,30 @@ async function getClapData(setUserClaps : (userClaps : {[targetId: string]: numb
     return;
   }
   const database = getDatabase(app);
-  const userClapRef = ref(database, `claps/${auth.currentUser.uid}`);
-  onValue(userClapRef, (clapSnapshot) => {
-    const clapData = clapSnapshot.val() as {[targetId: string]: {count: number}};
-    const userClaps : {[targetId: string]: number} = {};
-    if (clapData !== null) {
-      for (const targetId in clapData) {
-        userClaps[targetId] = clapData[targetId].count;
-      }
-    }
-    setUserClaps(userClaps);
-  });
 
-  const allClapRef = ref(database, 'counts');
-  onValue(allClapRef, (clapSnapshot) => {
-    const clapData = clapSnapshot.val() as {[targetId: string]: {count: number}};
-    const allClaps : {[targetId: string]: number} = {};
-    if (clapData !== null) {
-      for (const targetId in clapData) {
-        allClaps[targetId] = clapData[targetId].count;
+  const soundData = SoundDataJson as SoundData[];
+  const targetIds = soundData.map((soundData) => soundFileNameToTargetId(soundData.fileName));
+
+  for (const targetId of targetIds) {
+    const userClapRef = ref(database, `claps/${auth.currentUser.uid}/${targetId}`);
+    onValue(userClapRef, (clapSnapshot) => {
+      const clapData = clapSnapshot.val() as {count: number};
+      if (clapData === null) {
+        updateUserClap(targetId, 0);
+      } else {
+        updateUserClap(targetId, clapData.count);
       }
-    }
-    setAllClaps(allClaps);
-  });
+    });
+    const allClapRef = ref(database, `counts/${targetId}`);
+    onValue(allClapRef, (clapSnapshot) => {
+      const clapData = clapSnapshot.val() as {count: number};
+      if (clapData === null) {
+        updateAllClap(targetId, 0);
+      } else {
+        updateAllClap(targetId, clapData.count);
+      }
+    });
+  }
 }
 
 async function updateClap(targetId : string, clapCount : number) {

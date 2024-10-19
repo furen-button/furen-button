@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext } from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import {getClapData, login} from './lib/FirebaseFunctions.ts';
 import {ClapContext} from './components/ClapContext.tsx';
 
@@ -13,14 +13,18 @@ export function Login({children}: {children: React.ReactNode}) {
       }
       await login();
       await getClapData(
-        (userClaps) => {
+        (targetId, count) => {
+          const userClaps = clapData.userClaps;
+          userClaps[targetId] = count;
           setClapData((prevClapData) => {
             return {
               ...prevClapData,
               userClaps: userClaps,
             };
           });
-        }, (allClaps) => {
+        }, (targetId, count) => {
+          const allClaps = clapData.allClaps;
+          allClaps[targetId] = count;
           setClapData((prevClapData) => {
             return {
               ...prevClapData,
