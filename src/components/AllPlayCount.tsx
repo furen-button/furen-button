@@ -43,5 +43,6 @@ const style: {[key: string]: React.CSSProperties} = {
   },
   clapCountValue: {
     fontSize: '3em',
+    fontFamily: ['Mochiy Pop One', 'Noto Sans JP', 'sans-serif'].join(','),
   },
 };

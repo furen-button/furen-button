@@ -158,7 +158,7 @@ const style: {[key: string]: React.CSSProperties} = {
     textTransform: 'none',
     marginLeft: '5px',
     fontSize: '20px',
-    fontFamily: 'Noto Sans JP',
+    fontFamily: ['Noto Sans JP', 'sans-serif'].join(','),
     fontWeight: 'bold',
   },
   iconInButton: {
