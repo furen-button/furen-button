@@ -11,6 +11,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { getCategoryCountList, getCategoryList } from './lib/CategoryFunctions.tsx';
 import { updateClap, soundFileNameToTargetId } from './lib/FirebaseFunctions.ts';
 import { ClapContext } from './components/ClapContext.tsx';
+import PonButton from './components/PonButton.tsx';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -329,6 +330,12 @@ function App() {
         filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
         playingSoundDataList={playingSoundDataList}
         sectionPattern={sectionPattern}
+      />
+      <PonButton
+        soundDataList={soundDataList}
+        onClick={(soundData) => {
+          soundClick(soundData, soundEndCallback);
+        }}
       />
     </>
   );
