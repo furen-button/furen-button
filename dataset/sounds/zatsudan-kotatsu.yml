@@ -16,3 +16,21 @@
   fileName: "zatsudan-kotatsu/prince.mp3"
   category: ["emotions"]
   clipUrl: "https://www.youtube.com/watch?v=20m5OtnskxE&t=5098"
+- name: "ばぁ"
+  ruby: "ばぁ"
+  source: "zatsudan-kotatsu"
+  fileName: "zatsudan-kotatsu/baa.mp3"
+  category: ["se"]
+  clipUrl: "https://www.youtube.com/watch?v=20m5OtnskxE&t=68"
+- name: "見てるよ"
+  ruby: "みてるよ"
+  source: "zatsudan-kotatsu"
+  fileName: "zatsudan-kotatsu/miteruyo.mp3"
+  category: ["miteruyo"]
+  clipUrl: "https://www.youtube.com/watch?v=20m5OtnskxE&t=64"
+- name: "やっほー"
+  ruby: "やっほー"
+  source: "zatsudan-kotatsu"
+  fileName: "zatsudan-kotatsu/yahho.mp3"
+  category: ["emotions"]
+  clipUrl: "https://www.youtube.com/watch?v=20m5OtnskxE&t=79"
