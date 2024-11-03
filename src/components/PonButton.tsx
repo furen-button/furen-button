@@ -2,6 +2,10 @@ import {SoundData} from './SoundData';
 import Grid from '@mui/material/Grid2';
 import React, {useEffect, useReducer} from 'react';
 import {Button, MenuItem, Select} from '@mui/material';
+import {TbSquareNumber1, TbSquareNumber2, TbSquareNumber3,
+  TbSquareLetterQ, TbSquareLetterW, TbSquareLetterE,
+  TbSquareLetterA,TbSquareLetterS,TbSquareLetterD,
+  TbSquareLetterZ,TbSquareLetterX,TbSquareLetterC} from 'react-icons/tb';
 
 interface PonSetting {
     key: string;
@@ -41,8 +45,13 @@ function PonButton(props: {
             if (soundData) {
               props.onClick(soundData);
             }
+          }}
+          style={{
+            // 中身の左寄せ
+            justifyContent: 'flex-start',
           }}>
-          {ponSetting.key} : {soundData?.name}
+          {keyToIconMappings(ponSetting.key)}
+          <span style={{fontSize: '2em'}}>: {soundData?.name}</span>
         </Button>
         <Select variant={'outlined'} value={ponSetting.soundDataFileName} onChange={(e) => {
           updatePonSettings({key: ponSetting.key, soundDataFileName: e.target.value as string});
@@ -74,8 +83,8 @@ function PonButton(props: {
   return <div style={style.container}>
     <h2>ポン出しボタンコーナー</h2>
     <ul>
-      <li>キーボードのキーを押すと音声が鳴ります</li>
-      <li>対応する音声は変更できます</li>
+      <li>キーボードの対応するキーを押すと音声が鳴ります</li>
+      <li>音声は変更できます</li>
       <li>デフォルト設定に戻すには<a onClick={() => {
         defaultPonSettings.forEach((ponSetting) => {
           updatePonSettings(ponSetting);
@@ -111,6 +120,36 @@ function loadPonSettings() {
 
 function savePonSettings(ponSettings: PonSetting[]) {
   localStorage.setItem('pon-setting', JSON.stringify(ponSettings));
+}
+
+function keyToIconMappings(key: string) {
+  const iconStyle = {fontSize: '3em'};
+  switch (key) {
+  case '1':
+    return <TbSquareNumber1 style={iconStyle}/>;
+  case '2':
+    return <TbSquareNumber2 style={iconStyle}/>;
+  case '3':
+    return <TbSquareNumber3 style={iconStyle}/>;
+  case 'q':
+    return <TbSquareLetterQ style={iconStyle}/>;
+  case 'w':
+    return <TbSquareLetterW style={iconStyle}/>;
+  case 'e':
+    return <TbSquareLetterE style={iconStyle}/>;
+  case 'a':
+    return <TbSquareLetterA style={iconStyle}/>;
+  case 's':
+    return <TbSquareLetterS style={iconStyle}/>;
+  case 'd':
+    return <TbSquareLetterD style={iconStyle}/>;
+  case 'z':
+    return <TbSquareLetterZ style={iconStyle}/>;
+  case 'x':
+    return <TbSquareLetterX style={iconStyle}/>;
+  case 'c':
+    return <TbSquareLetterC style={iconStyle}/>;
+  }
 }
 
 const style: { [key: string]: React.CSSProperties } = {
