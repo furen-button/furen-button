@@ -37,7 +37,7 @@ function PonButton(props: {
   const grid = <Grid container spacing={2}>
     {ponSettings.map((ponSetting) => {
       const soundData = soundDataList.find((soundData) => soundData.fileName === ponSetting.soundDataFileName);
-      return <Grid size={4}>
+      return <Grid size={4} key={ponSetting.key}>
         <Button
           fullWidth={true}
           variant={'contained'}
@@ -57,7 +57,7 @@ function PonButton(props: {
           updatePonSettings({key: ponSetting.key, soundDataFileName: e.target.value as string});
         }}>
           {soundDataList.map((soundData) => {
-            return <MenuItem value={soundData.fileName}>{soundData.name}</MenuItem>;
+            return <MenuItem key={soundData.fileName} value={soundData.fileName}>{soundData.name}</MenuItem>;
           })}
         </Select>
       </Grid>;
