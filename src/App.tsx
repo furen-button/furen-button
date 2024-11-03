@@ -14,7 +14,7 @@ import { ClapContext } from './components/ClapContext.tsx';
 import PonButton from './components/PonButton.tsx';
 import {Button} from '@mui/material';
 
-const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
+const initialFilterCategories : string[] = ['collab', 'episode', 'sensitive', 'tikutiku'];
 
 function soundPlay(soundData: SoundData, volume: number, endCallback: () => void) {
   try {
