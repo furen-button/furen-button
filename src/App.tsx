@@ -1,7 +1,7 @@
 import React, {useEffect, useReducer, useState, useContext} from 'react';
 import { SoundDataJson, SoundData } from './components/SoundData.tsx';
 import { isCategoryMatched } from './components/SoundDataFunctions.tsx';
-import SoundList from './components/SoundList.tsx';
+import SoundList, {SectionPattern} from './components/SoundList.tsx';
 import CategoryCheckList from './components/CategoryCheckList.tsx';
 import { gsap } from 'gsap';
 import { gtag } from 'ga-gtag';
@@ -112,7 +112,7 @@ function App() {
   const [isCreateImage, setIsCreateImage] = useState<boolean>(loadIsCreateImage());
   const [isCreateComment, setIsCreateComment] = useState<boolean>(loadIsCreateComment());
   const [playingSoundDataList, updatePlayingSoundDataList] = useReducer(playingSoundListReducer, []);
-  const [sectionPattern, setSectionPattern] = useState<'ruby'|'source'>('ruby');
+  const [sectionPattern, setSectionPattern] = useState<SectionPattern>('ruby');
   const clapData = useContext(ClapContext);
 
   const soundClick = (soundData: SoundData, soundEndCallback: (soundData : SoundData) => void) => {
@@ -318,11 +318,12 @@ function App() {
         <ToggleButtonGroup
           value={sectionPattern}
           exclusive
-          onChange={(_event, newSectionPattern : 'ruby'|'source') => {
+          onChange={(_event, newSectionPattern : SectionPattern) => {
             setSectionPattern(newSectionPattern);
           }}>
           <ToggleButton value="ruby">読み順</ToggleButton>
           <ToggleButton value="source">配信別</ToggleButton>
+          <ToggleButton value="count">再生数順</ToggleButton>
         </ToggleButtonGroup>
       </div>
       <SoundList

@@ -22,4 +22,5 @@ function getVideoDate(videoTitle: string): number {
   return 0;
 }
 
-export {VideoSourceLabel, getVideoDate};
+export default VideoSourceLabel;
+export {getVideoDate};

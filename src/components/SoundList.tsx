@@ -1,17 +1,22 @@
 import {SoundData} from './SoundData.tsx';
-import React from 'react';
+import React, {useContext} from 'react';
 import SoundButton from './SoundButton.tsx';
-import {getVideoDate, VideoSourceLabel} from './VideoSourceLabel.tsx';
+import VideoSourceLabel, {getVideoDate} from './VideoSourceLabel.tsx';
+import {ClapContext} from './ClapContext.tsx';
+import {soundFileNameToTargetId} from '../lib/FirebaseFunctions.ts';
 
 const sectionIndexList = ['0,A', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ', '他'];
+
+export type SectionPattern = 'ruby' | 'source' | 'count';
 
 function SoundList(props: {
     filteredSoundDataList: SoundData[];
     onClick: (event: React.MouseEvent<HTMLElement>, soundData: SoundData) => void;
     selectedCategory: string[];
     playingSoundDataList: SoundData[];
-    sectionPattern: 'ruby' | 'source';
+    sectionPattern: SectionPattern;
 }) {
+  const clapData = useContext(ClapContext);
   if (props.filteredSoundDataList.length === 0) {
     return (
       <div style={style.container}>
@@ -37,7 +42,7 @@ function SoundList(props: {
       sectionList[section].push(soundData);
     }
     sectionKeys = Object.keys(sectionList);
-  } else {
+  } else if (props.sectionPattern === 'source') {
     for (const soundData of props.filteredSoundDataList) {
       const section = soundData.sourceName;
       if (sectionList[section] === undefined) {
@@ -50,6 +55,23 @@ function SoundList(props: {
       const bDateNumber = getVideoDate(b);
       return bDateNumber - aDateNumber;
     });
+  } else if (props.sectionPattern === 'count') {
+    const soundDataList = props.filteredSoundDataList.slice();
+    soundDataList.sort((a, b) => {
+      const aTargetId = soundFileNameToTargetId(a.fileName);
+      const bTargetId = soundFileNameToTargetId(b.fileName);
+      const aLikeCount = clapData.allClaps[aTargetId] ?? 0;
+      const bLikeCount = clapData.allClaps[bTargetId] ?? 0;
+      return bLikeCount - aLikeCount;
+    });
+    for (const soundData of soundDataList) {
+      const section = '再生数';
+      if (sectionList[section] === undefined) {
+        sectionList[section] = [];
+      }
+      sectionList[section].push(soundData);
+    }
+    sectionKeys = Object.keys(sectionList);
   }
 
   const soundElements = sectionKeys.map((key) => {
