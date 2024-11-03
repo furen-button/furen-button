@@ -1,5 +1,6 @@
 import {getCategoryList} from '../lib/CategoryFunctions.tsx';
-import {Checkbox, FormControlLabel} from '@mui/material';
+import {Button, Checkbox, FormControlLabel} from '@mui/material';
+import React from 'react';
 
 export interface CategoryCheckListProps {
   categoryCountList: {[key: string]: number};
@@ -9,56 +10,64 @@ export interface CategoryCheckListProps {
 
 function CategoryCheckList(props : CategoryCheckListProps) {
   const {categoryCountList, selectedCategory, setSelectedCategory} = props;
+
+  const liElements = getCategoryList(categoryCountList).map((category) => {
+    const id = `category-${category}`;
+    const label = `${category} (${categoryCountList[category]})`;
+    return (
+      <li key={id}>
+        <FormControlLabel
+          id={id}
+          control={
+            <Checkbox
+              checked={selectedCategory.includes(category)}
+              onChange={() => {
+                if (selectedCategory.includes(category)) {
+                  setSelectedCategory(selectedCategory.filter((c) => c !== category));
+                } else {
+                  setSelectedCategory([...selectedCategory, category]);
+                }
+              }}
+            />
+          }
+          label={label}
+        />
+      </li>
+    );
+  });
+
   return (
     <>
-      <ul
-        id='category-buttons'>
-        {
-          getCategoryList(categoryCountList).map((category) => {
-            const id = `category-${category}`;
-            const label = `${category} (${categoryCountList[category]})`;
-            return (
-              <li key={id}>
-                <FormControlLabel
-                  id={id}
-                  control={
-                    <Checkbox
-                      checked={selectedCategory.includes(category)}
-                      onChange={() => {
-                        if (selectedCategory.includes(category)) {
-                          setSelectedCategory(selectedCategory.filter((c) => c !== category));
-                        } else {
-                          setSelectedCategory([...selectedCategory, category]);
-                        }
-                      }}
-                    />
-                  }
-                  label={label}
-                />
-              </li>
-            );
-          })
-        }
+      <ul id='category-buttons'>
+        {liElements}
       </ul>
-      <button
-        id="all-category-check"
-        className="config-button"
+      <Button
+        variant={'contained'}
         onClick={() => {
           setSelectedCategory(getCategoryList(categoryCountList));
-        }}>
+        }}
+        style={style.configButton}>
         カテゴリー全チェック
-      </button>
-      <button
-        id="all-category-uncheck"
-        className="config-button"
+      </Button>
+      <Button
+        variant={'contained'}
         onClick={() => {
           setSelectedCategory([]);
-        }}>
+        }}
+        style={style.configButton}>
         カテゴリー全解除
-      </button>
+      </Button>
       <a href="./categories.html">カテゴリ説明</a>
     </>
   );
 }
+
+const style : {[key: string]: React.CSSProperties} = {
+  configButton: {
+    margin: '8px',
+    fontFamily: ['Notosans JP', 'sans-serif'].join(','),
+    fontSize: '20px',
+  }
+};
 
 export default CategoryCheckList;

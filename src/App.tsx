@@ -12,6 +12,7 @@ import { getCategoryCountList, getCategoryList } from './lib/CategoryFunctions.t
 import { updateClap, soundFileNameToTargetId } from './lib/FirebaseFunctions.ts';
 import { ClapContext } from './components/ClapContext.tsx';
 import PonButton from './components/PonButton.tsx';
+import {Button} from '@mui/material';
 
 const initialFilterCategories : string[] = ['tikutiku', 'sensitive', 'collab'];
 
@@ -205,34 +206,39 @@ function App() {
 
   return (
     <>
-      <button
-        className="config-button"
+      <Button
+        variant={'contained'}
         onClick={() => {
           for (let i = 0; i < 5; i += 1) {
             onRandomPlayClick();
           }
-        }}>
+        }}
+        style={style.configButton}>
         <FaShuffle/><FaChildReaching/> わいわいガヤガヤ（たくさんランダム連続再生）
-      </button>
+      </Button>
       <br/>
-      <button
-        className="config-button"
-        onClick={onAllPlayClick}>
+      <Button
+        variant={'contained'}
+        onClick={onAllPlayClick}
+        style={style.configButton}>
         <FaCirclePlay/> 連続再生
-      </button>
-      <button
-        className="config-button"
+      </Button>
+      <Button
+        variant={'contained'}
         onClick={() => {
           onRandomPlayClick();
-        }}>
+        }}
+        style={style.configButton}>
         <FaShuffle/> ランダム連続再生
-      </button>
-      <button
+      </Button>
+      <Button
+        variant={'contained'}
         id="all-stop"
         className="config-button"
-        onClick={onAllStopClick}>
+        onClick={onAllStopClick}
+        style={style.configButton}>
         <FaCircleStop/> 停止
-      </button>
+      </Button>
       <div
         className='fixed-button'
         style={{
@@ -246,7 +252,7 @@ function App() {
       <div
         className='fixed-button'
         style={
-          playingSoundDataList.length === 0 ?{
+          playingSoundDataList.length === 0 ? {
             right: '120px',
           } : {
             right: '120px',
@@ -312,13 +318,11 @@ function App() {
         <ToggleButtonGroup
           value={sectionPattern}
           exclusive
-          onChange={(
-            _ : React.MouseEvent<HTMLElement>,
-            newSectionPattern : 'ruby'|'source') => {
+          onChange={(_event, newSectionPattern : 'ruby'|'source') => {
             setSectionPattern(newSectionPattern);
           }}>
-          <ToggleButton value="ruby">よみ</ToggleButton>
-          <ToggleButton value="source">ビデオ</ToggleButton>
+          <ToggleButton value="ruby">読み順</ToggleButton>
+          <ToggleButton value="source">配信別</ToggleButton>
         </ToggleButtonGroup>
       </div>
       <SoundList
@@ -485,4 +489,9 @@ const style : {[key: string]: React.CSSProperties} = {
     bottom: '0',
     margin: 'auto',
   },
+  configButton: {
+    margin: '8px',
+    fontFamily: ['Notosans JP', 'sans-serif'].join(','),
+    fontSize: '20px',
+  }
 };
