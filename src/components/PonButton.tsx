@@ -1,6 +1,6 @@
 import {SoundData} from './SoundData';
 import Grid from '@mui/material/Grid2';
-import {useEffect, useReducer} from 'react';
+import React, {useEffect, useReducer} from 'react';
 import {Button, MenuItem, Select} from '@mui/material';
 
 interface PonSetting {
@@ -71,40 +71,54 @@ function PonButton(props: {
     };
   }, [ponSettings]);
 
-  return <div
-    style={{
-      border: '1px solid black',
-    }}>
+  return <div style={style.container}>
     <h2>ポン出しボタンコーナー</h2>
+    <ul>
+      <li>キーボードのキーを押すと音声が鳴ります</li>
+      <li>対応する音声は変更できます</li>
+      <li>デフォルト設定に戻すには<a onClick={() => {
+        defaultPonSettings.forEach((ponSetting) => {
+          updatePonSettings(ponSetting);
+        });
+      }} style={{color: 'blue'}}>こちら</a>をクリック</li>
+    </ul>
     {grid}
   </div>;
 }
 
-
+const defaultPonSettings: PonSetting[] = [
+  {key: '1', soundDataFileName: 'crazy-pizza/waraigoe-3241.mp3'},
+  {key: '2', soundDataFileName: 'crazy-pizza/waraigoe-4.mp3'},
+  {key: '3', soundDataFileName: 'crazy-pizza/waraigoe.mp3'},
+  {key: 'q', soundDataFileName: '4shunen/luckey.mp3'},
+  {key: 'w', soundDataFileName: 'pokemon-sword/pokemon1-luckey5.mp3'},
+  {key: 'e', soundDataFileName: 'pokemon-sword/pokemon1-luckey6.mp3'},
+  {key: 'a', soundDataFileName: 'fren-pokemon-20231228/kawaii-ha-saikyo-dakarana.mp3'},
+  {key: 's', soundDataFileName: '4shunen/kawaii-desyo.mp3'},
+  {key: 'd', soundDataFileName: 'yuukai-jiken/kawaiine.mp3'},
+  {key: 'z', soundDataFileName: 'furen-first/furen.mp3'},
+  {key: 'x', soundDataFileName: 'furen-first/e.mp3'},
+  {key: 'c', soundDataFileName: 'furen-first/rusutario.mp3'},
+];
 
 function loadPonSettings() {
   const rawPonSetting = localStorage.getItem('pon-setting');
   if (rawPonSetting) {
     return JSON.parse(rawPonSetting) as PonSetting[];
   }
-  return [
-    {key: '1', soundDataFileName: 'crazy-pizza/waraigoe-3241.mp3'},
-    {key: '2', soundDataFileName: 'crazy-pizza/waraigoe-4.mp3'},
-    {key: '3', soundDataFileName: 'crazy-pizza/waraigoe.mp3'},
-    {key: 'q', soundDataFileName: '4shunen/luckey.mp3'},
-    {key: 'w', soundDataFileName: 'pokemon-sword/pokemon1-luckey5.mp3'},
-    {key: 'e', soundDataFileName: 'pokemon-sword/pokemon1-luckey6.mp3'},
-    {key: 'a', soundDataFileName: 'fren-pokemon-20231228/kawaii-ha-saikyo-dakarana.mp3'},
-    {key: 's', soundDataFileName: '4shunen/kawaii-desyo.mp3'},
-    {key: 'd', soundDataFileName: 'yuukai-jiken/kawaiine.mp3'},
-    {key: 'z', soundDataFileName: 'furen-first/furen.mp3'},
-    {key: 'x', soundDataFileName: 'furen-first/e.mp3'},
-    {key: 'c', soundDataFileName: 'furen-first/rusutario.mp3'},
-  ];
+  return defaultPonSettings;
 }
 
 function savePonSettings(ponSettings: PonSetting[]) {
   localStorage.setItem('pon-setting', JSON.stringify(ponSettings));
 }
+
+const style: { [key: string]: React.CSSProperties } = {
+  container: {
+    maxWidth: 'calc(100% - 200px)',
+    minWidth: 'min(400px, 100%)',
+    border: '1px solid black',
+  },
+};
 
 export default PonButton;
