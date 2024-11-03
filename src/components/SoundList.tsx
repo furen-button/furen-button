@@ -1,8 +1,7 @@
 import {SoundData} from './SoundData.tsx';
-import React, {lazy, Suspense} from 'react';
+import React from 'react';
 import SoundButton from './SoundButton.tsx';
-
-const VideoSourceLabel = lazy(() => import('./VideoSourceLabel.tsx'));
+import {getVideoDate, VideoSourceLabel} from './VideoSourceLabel.tsx';
 
 const sectionIndexList = ['0,A', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ', '他'];
 
@@ -24,6 +23,7 @@ function SoundList(props: {
   }
 
   const sectionList : {[key: string]: SoundData[]} = {};
+  let sectionKeys : string[] = [];
 
   if (props.sectionPattern === 'ruby') {
     for (const soundData of props.filteredSoundDataList) {
@@ -36,6 +36,7 @@ function SoundList(props: {
       }
       sectionList[section].push(soundData);
     }
+    sectionKeys = Object.keys(sectionList);
   } else {
     for (const soundData of props.filteredSoundDataList) {
       const section = soundData.sourceName;
@@ -44,15 +45,17 @@ function SoundList(props: {
       }
       sectionList[section].push(soundData);
     }
+    sectionKeys = Object.keys(sectionList).sort((a, b) => {
+      const aDateNumber = getVideoDate(a);
+      const bDateNumber = getVideoDate(b);
+      return bDateNumber - aDateNumber;
+    });
   }
 
-
-  const soundElements = Object.keys(sectionList).map((key) => {
+  const soundElements = sectionKeys.map((key) => {
     let label = <>{key}</>;
     if (props.sectionPattern === 'source') {
-      label = <Suspense fallback="loading">
-        <VideoSourceLabel videoTitle={key}></VideoSourceLabel>
-      </Suspense>;
+      label = <VideoSourceLabel videoTitle={key}></VideoSourceLabel>;
     }
 
     return (

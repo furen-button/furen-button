@@ -1,10 +1,8 @@
 import VideoDataJson from '../../public/dataset/videos.json';
 
-export interface VideoSourceLabelProps {
+function VideoSourceLabel(props: {
   videoTitle: string;
-}
-
-function VideoSourceLabel(props: VideoSourceLabelProps) {
+}) {
   const found = VideoDataJson.find((d) => {
     return d.title === props.videoTitle;
   });
@@ -14,4 +12,14 @@ function VideoSourceLabel(props: VideoSourceLabelProps) {
   return <>{props.videoTitle}</>;
 }
 
-export default VideoSourceLabel;
+function getVideoDate(videoTitle: string): number {
+  const found = VideoDataJson.find((d) => {
+    return d.title === videoTitle;
+  });
+  if (found !== undefined) {
+    return new Date(found.date).getTime();
+  }
+  return 0;
+}
+
+export {VideoSourceLabel, getVideoDate};
