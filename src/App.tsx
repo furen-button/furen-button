@@ -16,6 +16,7 @@ import PonButton from './components/PonButton.tsx';
 import {Button} from '@mui/material';
 
 const initialFilterCategories : string[] = ['collab', 'episode', 'sensitive', 'tikutiku'];
+const RouterBaseName = import.meta.env.VITE_ROUTER_BASE_NAME || '';
 
 function soundPlay(soundData: SoundData, volume: number, endCallback: () => void) {
   try {
@@ -205,7 +206,7 @@ function App() {
   }, [selectedCategory]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={RouterBaseName}>
       <Link to="/"><Button variant={'outlined'} style={{margin: '5px'}}>全ボタン</Button></Link>
       <Link to="/pon"><Button variant={'outlined'} style={{margin: '5px'}}>ポン出しボタン</Button></Link>
       <Routes>
