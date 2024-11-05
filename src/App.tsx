@@ -207,7 +207,7 @@ function App() {
 
   return (
     <BrowserRouter basename={RouterBaseName}>
-      <Link to="/"><Button variant={'outlined'} style={{margin: '5px'}}>全ボタン</Button></Link>
+      <Link to="/./"><Button variant={'outlined'} style={{margin: '5px'}}>全ボタン</Button></Link>
       <Link to="/pon"><Button variant={'outlined'} style={{margin: '5px'}}>ポン出しボタン</Button></Link>
       <Routes>
         <Route
