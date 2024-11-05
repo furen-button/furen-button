@@ -81,10 +81,10 @@ function PonButton(props: {
   }, [ponSettings]);
 
   return <div style={style.container}>
-    <h2>ポン出しボタンコーナー</h2>
+    <h2 style={style.title}>ポン出しボタンコーナー</h2>
     <ul>
-      <li>キーボードの対応するキーを押すと音声が鳴ります</li>
-      <li>音声は変更できます</li>
+      <li>ボタンかキーボードの対応するキーを押すと音声が鳴ります</li>
+      <li>音声は設定できます</li>
       <li>デフォルト設定に戻すには<a onClick={() => {
         defaultPonSettings.forEach((ponSetting) => {
           updatePonSettings(ponSetting);
@@ -157,6 +157,10 @@ const style: { [key: string]: React.CSSProperties } = {
     maxWidth: 'calc(100% - 200px)',
     minWidth: 'min(400px, 100%)',
     border: '1px solid black',
+  },
+  title: {
+    textAlign: 'center',
+    fontFamily: ['Notosans JP', 'sans-serif'].join(','),
   },
 };
 

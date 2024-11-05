@@ -1,4 +1,5 @@
 import React, {useEffect, useReducer, useState, useContext} from 'react';
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import { SoundDataJson, SoundData } from './components/SoundData.tsx';
 import { isCategoryMatched } from './components/SoundDataFunctions.tsx';
 import SoundList, {SectionPattern} from './components/SoundList.tsx';
@@ -203,146 +204,163 @@ function App() {
     onAllStopClick();
   }, [selectedCategory]);
 
-
   return (
-    <>
-      <Button
-        variant={'contained'}
-        onClick={() => {
-          for (let i = 0; i < 5; i += 1) {
-            onRandomPlayClick();
-          }
-        }}
-        style={style.configButton}>
-        <FaShuffle/><FaChildReaching/> わいわいガヤガヤ（たくさんランダム連続再生）
-      </Button>
-      <br/>
-      <Button
-        variant={'contained'}
-        onClick={onAllPlayClick}
-        style={style.configButton}>
-        <FaCirclePlay/> 連続再生
-      </Button>
-      <Button
-        variant={'contained'}
-        onClick={() => {
-          onRandomPlayClick();
-        }}
-        style={style.configButton}>
-        <FaShuffle/> ランダム連続再生
-      </Button>
-      <Button
-        variant={'contained'}
-        id="all-stop"
-        className="config-button"
-        onClick={onAllStopClick}
-        style={style.configButton}>
-        <FaCircleStop/> 停止
-      </Button>
-      <div
-        className='fixed-button'
-        style={{
-          right: '240px',
-        }}
-        onClick={() => {
-          onRandomPlayClick();
-        }}>
-        <FaShuffle style={style.fixedButtonInnerIcon}/>
-      </div>
-      <div
-        className='fixed-button'
-        style={
-          playingSoundDataList.length === 0 ? {
-            right: '120px',
-          } : {
-            right: '120px',
-            backgroundColor: '#ec1d2f',
-          }
-        }
-        onClick={onAllStopClick}>
-        <FaCircleStop style={style.fixedButtonInnerIcon}/>
-      </div>
-      <a
-        className='fixed-button'
-        style={{
-          right: '0px',
-        }}
-        onClick={() => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
-        }}>
-        <FaAngleUp style={style.fixedButtonInnerIcon}/>
-      </a>
-      <CategoryCheckList
-        categoryCountList={categoryCountList}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-      />
-      <div>
-        <label htmlFor="volume" style={style.optionsLabel}>音量（一部端末では無効）</label>
-        <input
-          id="volume"
-          type="range"
-          min="0"
-          max="1"
-          value={volume}
-          step="0.01"
-          onChange={(event) => {
-            setVolume(Number(event.target.value));
-            localStorage.setItem('volume', event.target.value);
-          }}/>
-        <br/>
-        <label htmlFor="create-image" style={style.optionsLabel}>画像</label>
-        <input
-          id="create-image"
-          type="checkbox"
-          checked={isCreateImage}
-          onChange={() => {
-            setIsCreateImage(!isCreateImage);
-            localStorage.setItem('createImage', (!isCreateImage).toString());
-          }}/>
-        <br/>
-        <label htmlFor="create-comment" style={style.optionsLabel}>コメント</label>
-        <input
-          id="create-comment"
-          type="checkbox"
-          checked={isCreateComment}
-          onChange={() => {
-            setIsCreateComment(!isCreateComment);
-            localStorage.setItem('createComment', (!isCreateComment).toString());
-          }}/>
-        <br/>
-        <label style={style.optionsLabel}>並び</label>
-        <ToggleButtonGroup
-          value={sectionPattern}
-          exclusive
-          onChange={(_event, newSectionPattern : SectionPattern) => {
-            setSectionPattern(newSectionPattern);
-          }}>
-          <ToggleButton value="ruby">読み順</ToggleButton>
-          <ToggleButton value="source">配信別</ToggleButton>
-          <ToggleButton value="count">再生数順</ToggleButton>
-        </ToggleButtonGroup>
-      </div>
-      <SoundList
-        onClick={(_event, soundData) => {
-          soundClick(soundData, soundEndCallback);
-          sendGtagContent('sound_click', soundData.name);
-        }}
-        selectedCategory={selectedCategory}
-        filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
-        playingSoundDataList={playingSoundDataList}
-        sectionPattern={sectionPattern}
-      />
-      <PonButton
-        soundDataList={soundDataList}
-        onClick={(soundData) => {
-          soundClick(soundData, soundEndCallback);
-        }}
-      />
-    </>
+    <BrowserRouter>
+      <Link to="/"><Button variant={'outlined'} style={{margin: '5px'}}>全ボタン</Button></Link>
+      <Link to="/pon"><Button variant={'outlined'} style={{margin: '5px'}}>ポン出しボタン</Button></Link>
+      <Routes>
+        <Route
+          path={'/'}
+          element={<div>
+            <Button
+              variant={'contained'}
+              onClick={() => {
+                for (let i = 0; i < 5; i += 1) {
+                  onRandomPlayClick();
+                }
+              }}
+              style={style.configButton}>
+              <FaShuffle/><FaChildReaching/> わいわいガヤガヤ（たくさんランダム連続再生）
+            </Button>
+            <br/>
+            <Button
+              variant={'contained'}
+              onClick={onAllPlayClick}
+              style={style.configButton}>
+              <FaCirclePlay/> 連続再生
+            </Button>
+            <Button
+              variant={'contained'}
+              onClick={() => {
+                onRandomPlayClick();
+              }}
+              style={style.configButton}>
+              <FaShuffle/> ランダム連続再生
+            </Button>
+            <Button
+              variant={'contained'}
+              id="all-stop"
+              className="config-button"
+              onClick={onAllStopClick}
+              style={style.configButton}>
+              <FaCircleStop/> 停止
+            </Button>
+            <div
+              className='fixed-button'
+              style={{
+                right: '240px',
+              }}
+              onClick={() => {
+                onRandomPlayClick();
+              }}>
+              <FaShuffle style={style.fixedButtonInnerIcon}/>
+            </div>
+            <div
+              className='fixed-button'
+              style={
+                playingSoundDataList.length === 0 ? {
+                  right: '120px',
+                } : {
+                  right: '120px',
+                  backgroundColor: '#ec1d2f',
+                }
+              }
+              onClick={onAllStopClick}>
+              <FaCircleStop style={style.fixedButtonInnerIcon}/>
+            </div>
+            <a
+              className='fixed-button'
+              style={{
+                right: '0px',
+              }}
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth',
+                });
+              }}>
+              <FaAngleUp style={style.fixedButtonInnerIcon}/>
+            </a>
+            <CategoryCheckList
+              categoryCountList={categoryCountList}
+              selectedCategory={selectedCategory}
+              setSelectedCategory={setSelectedCategory}
+            />
+            <div>
+              <label htmlFor="volume" style={style.optionsLabel}>音量（一部端末では無効）</label>
+              <input
+                id="volume"
+                type="range"
+                min="0"
+                max="1"
+                value={volume}
+                step="0.01"
+                onChange={(event) => {
+                  setVolume(Number(event.target.value));
+                  localStorage.setItem('volume', event.target.value);
+                }}/>
+              <br/>
+              <label htmlFor="create-image" style={style.optionsLabel}>画像</label>
+              <input
+                id="create-image"
+                type="checkbox"
+                checked={isCreateImage}
+                onChange={() => {
+                  setIsCreateImage(!isCreateImage);
+                  localStorage.setItem('createImage', (!isCreateImage).toString());
+                }}/>
+              <br/>
+              <label htmlFor="create-comment" style={style.optionsLabel}>コメント</label>
+              <input
+                id="create-comment"
+                type="checkbox"
+                checked={isCreateComment}
+                onChange={() => {
+                  setIsCreateComment(!isCreateComment);
+                  localStorage.setItem('createComment', (!isCreateComment).toString());
+                }}/>
+              <br/>
+              <label style={style.optionsLabel}>並び</label>
+              <ToggleButtonGroup
+                value={sectionPattern}
+                exclusive
+                onChange={(_event, newSectionPattern : SectionPattern) => {
+                  setSectionPattern(newSectionPattern);
+                }}>
+                <ToggleButton value="ruby">読み順</ToggleButton>
+                <ToggleButton value="source">配信別</ToggleButton>
+                <ToggleButton value="count">再生数順</ToggleButton>
+              </ToggleButtonGroup>
+            </div>
+            <SoundList
+              onClick={(_event, soundData) => {
+                soundClick(soundData, soundEndCallback);
+                sendGtagContent('sound_click', soundData.name);
+              }}
+              selectedCategory={selectedCategory}
+              filteredSoundDataList={getFilteredSoundDataList(soundDataList, selectedCategory)}
+              playingSoundDataList={playingSoundDataList}
+              sectionPattern={sectionPattern}
+            />
+            <PonButton
+              soundDataList={soundDataList}
+              onClick={(soundData) => {
+                soundClick(soundData, soundEndCallback);
+              }}
+            />
+          </div>}/>
+        <Route
+          path={'/pon'}
+          element={
+            <PonButton
+              soundDataList={soundDataList}
+              onClick={(soundData) => {
+                soundClick(soundData, soundEndCallback);
+              }}
+            />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
