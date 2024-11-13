@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "tsc app.ts && node app.js"
+    "start": "tsc app.ts && node app.js",
+    "execute": "node app.js"
   },
   "dependencies": {
     "tsc": "^2.0.4",
