@@ -1,14 +1,10 @@
 {
   "name": "twitter_post_bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "tsc app.ts && node app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "tsc": "^2.0.4",
     "twitter-api-v2": "^1.18.2",
