@@ -2,8 +2,8 @@ name: Post Twitter
 
 on:
   schedule:
-    # 日本時間(UTC+9) 7時
-    - cron: "0 22 * * *"
+    # 日本時間(UTC+9) 7,12,18,22時
+    - cron: "0 22,3,9,13 * * *"
   workflow_dispatch:
 
 jobs:
