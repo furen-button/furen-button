@@ -1,5 +1,6 @@
 require 'yaml'
 require 'json'
+require 'date'
 
 sources = YAML.load_file("#{__dir__}/../../dataset/sources.yml")
 data = []
@@ -15,6 +16,7 @@ sounds = data.sort_by { |sound| [sound['ruby'],sound['fileName']] }.map do |soun
   puts "=== source が設定されていない #{sound['source']} ===" if source.nil?
   source_name = ''
   source_url = ''
+  source_date = Date.parse(source['publishedAt']).to_s unless source.nil?
   source_name = source['title'] unless source.nil?
   source_url = source['url'] unless source.nil?
   category = sound['category'].join(',')
@@ -29,6 +31,7 @@ sounds = data.sort_by { |sound| [sound['ruby'],sound['fileName']] }.map do |soun
     fileName: sound['fileName'],
     normalizedFileName: normalize_file_name,
     movieFileName: movie_file_name,
+    sourceDate: source_date,
     sourceName: source_name,
     sourceUrl: source_url,
     category: category,

@@ -44,16 +44,16 @@ var client = new twitter_api_v2_1.TwitterApi({
     accessToken: process.env.TWITTER_ACCESS_TOKEN,
     accessSecret: process.env.TWITTER_ACCESS_SECRET
 });
-var dataFile = '../../public/dataset/sounds.json';
 var relativeFilePath = '../../public/sounds/';
+var soundDataList = JSON.parse(fs.readFileSync('../../public/dataset/sounds.json', 'utf-8'));
 /**
  * ランダムでサウンドデータを取得する
  */
 function getSoundData() {
-    var rawData = fs.readFileSync(dataFile, 'utf-8');
-    var data = JSON.parse(rawData);
-    var filteredData = data.filter(function (soundData) {
-        return soundData.movieFileName !== '';
+    var filteredData = soundDataList.filter(function (soundData) {
+        var hasMovie = soundData.movieFileName !== '';
+        var hasSource = soundData.sourceDate !== '';
+        return hasMovie && hasSource;
     });
     var randomIndex = Math.floor(Math.random() * filteredData.length);
     return filteredData[randomIndex];
@@ -74,7 +74,7 @@ function postTweet(soundData) {
                         return [2 /*return*/];
                     }
                     sourceUrl = soundData.clipUrl !== '' ? soundData.clipUrl : soundData.sourceUrl;
-                    text = "".concat(soundData.name, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n\u300C").concat(soundData.sourceName, "\u300D \u3088\u308A ").concat(sourceUrl);
+                    text = "".concat(soundData.name, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n").concat(soundData.sourceDate, "\u300C").concat(soundData.sourceName, "\u300D \u3088\u308A ").concat(sourceUrl);
                     console.log(text);
                     return [4 /*yield*/, client.v1.uploadMedia(mediaFilePath)];
                 case 1:
