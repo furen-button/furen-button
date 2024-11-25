@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Set up ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: twitterに投稿する
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}

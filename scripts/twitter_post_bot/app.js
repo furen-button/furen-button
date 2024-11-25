@@ -35,8 +35,19 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var twitter_api_v2_1 = require("twitter-api-v2");
+var node_util_1 = require("node:util");
+var node_child_process_1 = require("node:child_process");
 var fs = require("node:fs");
 var client = new twitter_api_v2_1.TwitterApi({
     appKey: process.env.TWITTER_API_KEY,
@@ -93,14 +104,66 @@ function postTweet(soundData) {
         });
     });
 }
-function main() {
+/**
+ * 動画付きツイートを投稿する
+ * @param soundDataList サウンドデータ
+ */
+function postTweetThread(soundDataList) {
     return __awaiter(this, void 0, void 0, function () {
-        var soundData;
+        var execAwait, inputFileList, inputFilePath, outputFilePath, soundNames, text, mediaId, postParams, treePostParams, params;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    soundData = getSoundData();
-                    return [4 /*yield*/, postTweet(soundData)];
+                    console.log(soundDataList);
+                    execAwait = (0, node_util_1.promisify)(node_child_process_1.exec);
+                    inputFileList = soundDataList.map(function (soundData) {
+                        return "file '".concat(relativeFilePath).concat(soundData.movieFileName, "'");
+                    }).join('\n');
+                    inputFilePath = "input_list.txt";
+                    fs.writeFileSync(inputFilePath, inputFileList);
+                    outputFilePath = "output.mp4";
+                    return [4 /*yield*/, execAwait("ffmpeg -f concat -safe 0 -i ".concat(inputFilePath, " -c copy -y ").concat(outputFilePath))];
+                case 1:
+                    _a.sent();
+                    soundNames = soundDataList.map(function (soundData) {
+                        return "\u300C".concat(soundData.name, "\u300D");
+                    }).join('');
+                    text = "".concat(soundNames, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n\u51FA\u5178\u306F\u30C4\u30EA\u30FC\u306B\u3066");
+                    return [4 /*yield*/, client.v1.uploadMedia(outputFilePath)];
+                case 2:
+                    mediaId = _a.sent();
+                    postParams = {
+                        text: text,
+                        media: {
+                            media_ids: [mediaId]
+                        }
+                    };
+                    treePostParams = soundDataList.map(function (soundData) {
+                        var sourceUrl = soundData.clipUrl !== '' ? soundData.clipUrl : soundData.sourceUrl;
+                        var text = "".concat(soundData.name, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n").concat(soundData.sourceDate, "\u300C").concat(soundData.sourceName, "\u300D \u3088\u308A ").concat(sourceUrl);
+                        return {
+                            text: text,
+                        };
+                    });
+                    params = __spreadArray([postParams], treePostParams, true);
+                    return [4 /*yield*/, client.v2.tweetThread(params)];
+                case 3:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+function main() {
+    return __awaiter(this, void 0, void 0, function () {
+        var soundDataList;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    soundDataList = Array.from(Array(7)).map(function () {
+                        return getSoundData();
+                    });
+                    return [4 /*yield*/, postTweetThread(soundDataList)];
                 case 1:
                     _a.sent();
                     return [2 /*return*/];

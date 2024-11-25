@@ -1,4 +1,6 @@
 import { TwitterApi, SendTweetV2Params } from 'twitter-api-v2';
+import { promisify } from 'node:util';
+import { exec } from 'node:child_process';
 import * as fs from 'node:fs';
 
 const client = new TwitterApi({
@@ -58,9 +60,49 @@ async function postTweet(soundData: SoundData) {
     await client.v2.tweet(postParams);
 }
 
+/**
+ * 動画付きツイートを投稿する
+ * @param soundDataList サウンドデータ
+ */
+async function postTweetThread(soundDataList: SoundData[]) {
+    console.log(soundDataList);
+    const execAwait = promisify(exec);
+    const inputFileList = soundDataList.map((soundData) => {
+        return `file '${relativeFilePath}${soundData.movieFileName}'`;
+    }).join('\n');
+    const inputFilePath = `input_list.txt`;
+    fs.writeFileSync(inputFilePath, inputFileList);
+    const outputFilePath = `output.mp4`;
+    await execAwait(`ffmpeg -f concat -safe 0 -i ${inputFilePath} -c copy -y ${outputFilePath}`);
+    const soundNames = soundDataList.map((soundData) => {
+        return `「${soundData.name}」`;
+    }).join('');
+    const text = `${soundNames}\n#フレンボタン\n出典はツリーにて`;
+    const mediaId = await client.v1.uploadMedia(outputFilePath);
+    const postParams : SendTweetV2Params = {
+        text: text,
+        media: {
+            media_ids: [mediaId]
+        }
+    };
+    const treePostParams : SendTweetV2Params[] = soundDataList.map((soundData) => {
+        const sourceUrl = soundData.clipUrl !== '' ? soundData.clipUrl : soundData.sourceUrl;
+        const text = `${soundData.name}\n#フレンボタン\n${soundData.sourceDate}「${soundData.sourceName}」 より ${sourceUrl}`;
+        return {
+            text: text,
+        }
+    });
+    const params = [postParams, ...treePostParams];
+    await client.v2.tweetThread(params);
+}
+
 async function main() {
-    const soundData = getSoundData();
-    await postTweet(soundData);
+    // const soundData = getSoundData();
+    // await postTweet(soundData);
+    const soundDataList = Array.from(Array(7)).map(() => {
+        return getSoundData();
+    });
+    await postTweetThread(soundDataList);
 }
 
 main();
