@@ -49,12 +49,13 @@ var twitter_api_v2_1 = require("twitter-api-v2");
 var node_util_1 = require("node:util");
 var node_child_process_1 = require("node:child_process");
 var fs = require("node:fs");
-var client = new twitter_api_v2_1.TwitterApi({
+var tokens = {
     appKey: process.env.TWITTER_API_KEY,
     appSecret: process.env.TWITTER_API_SECRET,
     accessToken: process.env.TWITTER_ACCESS_TOKEN,
     accessSecret: process.env.TWITTER_ACCESS_SECRET
-});
+};
+var client = new twitter_api_v2_1.TwitterApi(tokens);
 var relativeFilePath = '../../public/sounds/';
 var soundDataList = JSON.parse(fs.readFileSync('../../public/dataset/sounds.json', 'utf-8'));
 /**
@@ -192,4 +193,4 @@ function main() {
         });
     });
 }
-main();
+// main();

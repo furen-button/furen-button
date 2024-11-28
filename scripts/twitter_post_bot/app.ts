@@ -1,14 +1,25 @@
-import { TwitterApi, SendTweetV2Params, TweetV2PostTweetResult } from 'twitter-api-v2';
+import { TwitterApi, TwitterApiTokens, SendTweetV2Params, TweetV2PostTweetResult } from 'twitter-api-v2';
 import { promisify } from 'node:util';
 import { exec } from 'node:child_process';
 import * as fs from 'node:fs';
 
-const client = new TwitterApi({
+declare const process : {
+    env: {
+        TWITTER_API_KEY: string,
+        TWITTER_API_SECRET: string,
+        TWITTER_ACCESS_TOKEN: string,
+        TWITTER_ACCESS_SECRET: string
+    }
+}
+
+const tokens : TwitterApiTokens = {
     appKey: process.env.TWITTER_API_KEY,
     appSecret: process.env.TWITTER_API_SECRET,
     accessToken: process.env.TWITTER_ACCESS_TOKEN,
     accessSecret: process.env.TWITTER_ACCESS_SECRET
-});
+};
+
+const client = new TwitterApi(tokens);
 
 const relativeFilePath = '../../public/sounds/';
 
