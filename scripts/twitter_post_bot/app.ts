@@ -1,4 +1,4 @@
-import { TwitterApi, SendTweetV2Params } from 'twitter-api-v2';
+import { TwitterApi, SendTweetV2Params, TweetV2PostTweetResult } from 'twitter-api-v2';
 import { promisify } from 'node:util';
 import { exec } from 'node:child_process';
 import * as fs from 'node:fs';
@@ -93,7 +93,19 @@ async function postTweetThread(soundDataList: SoundData[]) {
         }
     });
     const params = [postParams, ...treePostParams];
-    await client.v2.tweetThread(params);
+    const postedTweets : TweetV2PostTweetResult[] = [];
+    for (let i = 0; i < params.length; i++) {
+        const param = params[i];
+        const lastTweet = postedTweets.length ? postedTweets[postedTweets.length - 1] : null;
+        if (lastTweet) {
+            param.reply = {
+                in_reply_to_tweet_id: lastTweet.data?.id
+            };
+        }
+        const tweet = await client.v2.tweet(param);
+        postedTweets.push(tweet);
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+    }
 }
 
 async function main() {

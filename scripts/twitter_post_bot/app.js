@@ -110,9 +110,10 @@ function postTweet(soundData) {
  */
 function postTweetThread(soundDataList) {
     return __awaiter(this, void 0, void 0, function () {
-        var execAwait, inputFileList, inputFilePath, outputFilePath, soundNames, text, mediaId, postParams, treePostParams, params;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
+        var execAwait, inputFileList, inputFilePath, outputFilePath, soundNames, text, mediaId, postParams, treePostParams, params, postedTweets, i, param, lastTweet, tweet;
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0:
                     console.log(soundDataList);
                     execAwait = (0, node_util_1.promisify)(node_child_process_1.exec);
@@ -124,14 +125,14 @@ function postTweetThread(soundDataList) {
                     outputFilePath = "output.mp4";
                     return [4 /*yield*/, execAwait("ffmpeg -f concat -safe 0 -i ".concat(inputFilePath, " -c copy -y ").concat(outputFilePath))];
                 case 1:
-                    _a.sent();
+                    _b.sent();
                     soundNames = soundDataList.map(function (soundData) {
                         return "\u300C".concat(soundData.name, "\u300D");
                     }).join('');
                     text = "".concat(soundNames, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n\u51FA\u5178\u306F\u30C4\u30EA\u30FC\u306B\u3066");
                     return [4 /*yield*/, client.v1.uploadMedia(outputFilePath)];
                 case 2:
-                    mediaId = _a.sent();
+                    mediaId = _b.sent();
                     postParams = {
                         text: text,
                         media: {
@@ -146,10 +147,30 @@ function postTweetThread(soundDataList) {
                         };
                     });
                     params = __spreadArray([postParams], treePostParams, true);
-                    return [4 /*yield*/, client.v2.tweetThread(params)];
+                    postedTweets = [];
+                    i = 0;
+                    _b.label = 3;
                 case 3:
-                    _a.sent();
-                    return [2 /*return*/];
+                    if (!(i < params.length)) return [3 /*break*/, 7];
+                    param = params[i];
+                    lastTweet = postedTweets.length ? postedTweets[postedTweets.length - 1] : null;
+                    if (lastTweet) {
+                        param.reply = {
+                            in_reply_to_tweet_id: (_a = lastTweet.data) === null || _a === void 0 ? void 0 : _a.id
+                        };
+                    }
+                    return [4 /*yield*/, client.v2.tweet(param)];
+                case 4:
+                    tweet = _b.sent();
+                    postedTweets.push(tweet);
+                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, 5000); })];
+                case 5:
+                    _b.sent();
+                    _b.label = 6;
+                case 6:
+                    i++;
+                    return [3 /*break*/, 3];
+                case 7: return [2 /*return*/];
             }
         });
     });
