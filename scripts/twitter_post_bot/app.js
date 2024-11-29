@@ -58,6 +58,7 @@ var tokens = {
 var client = new twitter_api_v2_1.TwitterApi(tokens);
 var relativeFilePath = '../../public/sounds/';
 var soundDataList = JSON.parse(fs.readFileSync('../../public/dataset/sounds.json', 'utf-8'));
+var WAIT_TIME = 20000;
 /**
  * ランダムでサウンドデータを取得する
  */
@@ -164,7 +165,7 @@ function postTweetThread(soundDataList) {
                             in_reply_to_tweet_id: (_a = lastTweet.data) === null || _a === void 0 ? void 0 : _a.id
                         };
                     }
-                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, 5000); })];
+                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, WAIT_TIME); })];
                 case 5:
                     _b.sent();
                     return [4 /*yield*/, client.v2.tweet(param)];
