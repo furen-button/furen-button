@@ -83,8 +83,12 @@ async function postTweetThread(soundDataList: SoundData[]) {
     }).join('\n');
     const inputFilePath = `input_list.txt`;
     fs.writeFileSync(inputFilePath, inputFileList);
+    // 結合
+    const concatFilePath = `concat.mp4`;
+    await execAwait(`ffmpeg -f concat -safe 0 -i ${inputFilePath} -c copy -y ${concatFilePath}`);
+    // アップコンバート
     const outputFilePath = `output.mp4`;
-    await execAwait(`ffmpeg -f concat -safe 0 -i ${inputFilePath} -c copy -y ${outputFilePath}`);
+    await execAwait(`ffmpeg -i ${concatFilePath} -vf xbr=n=2 -pix_fmt yuv420p -y ${outputFilePath}`);
     const soundNames = soundDataList.map((soundData) => {
         return `「${soundData.name}」`;
     }).join('');
@@ -113,9 +117,9 @@ async function postTweetThread(soundDataList: SoundData[]) {
                 in_reply_to_tweet_id: lastTweet.data?.id
             };
         }
+        await new Promise((resolve) => setTimeout(resolve, 5000));
         const tweet = await client.v2.tweet(param);
         postedTweets.push(tweet);
-        await new Promise((resolve) => setTimeout(resolve, 5000));
     }
 }
 
