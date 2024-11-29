@@ -33,7 +33,6 @@ interface SoundData {
 }
 
 const soundDataList : SoundData[] = JSON.parse(fs.readFileSync('../../public/dataset/sounds.json', 'utf-8'));
-const WAIT_TIME = 20000;
 
 /**
  * ランダムでサウンドデータを取得する
@@ -118,7 +117,7 @@ async function postTweetThread(soundDataList: SoundData[]) {
                 in_reply_to_tweet_id: lastTweet.data?.id
             };
         }
-        await new Promise((resolve) => setTimeout(resolve, WAIT_TIME));
+        await new Promise((resolve) => setTimeout(resolve, 5000));
         const tweet = await client.v2.tweet(param);
         postedTweets.push(tweet);
     }
