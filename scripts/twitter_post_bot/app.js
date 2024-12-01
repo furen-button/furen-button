@@ -142,7 +142,7 @@ function postTweetThread(soundDataList) {
                     };
                     treePostParams = soundDataList.map(function (soundData) {
                         var sourceUrl = soundData.clipUrl !== '' ? soundData.clipUrl : soundData.sourceUrl;
-                        var text = "".concat(soundData.name, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n").concat(soundData.sourceDate, "\u300C").concat(soundData.sourceName, "\u300D \u3088\u308A ").concat(sourceUrl);
+                        var text = "".concat(soundData.name, "\n").concat(soundData.sourceDate, "\u300C").concat(soundData.sourceName, "\u300D \u3088\u308A ").concat(sourceUrl);
                         return {
                             text: text,
                         };
@@ -178,14 +178,14 @@ function postTweetThread(soundDataList) {
 }
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var soundDataList;
+        var selectedSoundDataList;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    soundDataList = Array.from(Array(7)).map(function () {
+                    selectedSoundDataList = Array.from(Array(7)).map(function () {
                         return getSoundData();
                     });
-                    return [4 /*yield*/, postTweetThread(soundDataList)];
+                    return [4 /*yield*/, postTweetThread(selectedSoundDataList)];
                 case 1:
                     _a.sent();
                     return [2 /*return*/];

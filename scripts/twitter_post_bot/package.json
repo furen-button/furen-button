@@ -4,7 +4,8 @@
   "main": "app.js",
   "scripts": {
     "start": "tsc app.ts && node app.js",
-    "execute": "node app.js"
+    "execute": "node app.js",
+    "compile": "tsc app.ts"
   },
   "dependencies": {
     "tsc": "^2.0.4",

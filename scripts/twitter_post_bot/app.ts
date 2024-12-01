@@ -98,7 +98,7 @@ async function postTweetThread(soundDataList: SoundData[]) {
     };
     const treePostParams : SendTweetV2Params[] = soundDataList.map((soundData) => {
         const sourceUrl = soundData.clipUrl !== '' ? soundData.clipUrl : soundData.sourceUrl;
-        const text = `${soundData.name}\n#フレンボタン\n${soundData.sourceDate}「${soundData.sourceName}」 より ${sourceUrl}`;
+        const text = `${soundData.name}\n${soundData.sourceDate}「${soundData.sourceName}」 より ${sourceUrl}`;
         return {
             text: text,
         }
@@ -122,10 +122,10 @@ async function postTweetThread(soundDataList: SoundData[]) {
 async function main() {
     // const soundData = getSoundData();
     // await postTweet(soundData);
-    const soundDataList = Array.from(Array(7)).map(() => {
+    const selectedSoundDataList = Array.from(Array(7)).map(() => {
         return getSoundData();
     });
-    await postTweetThread(soundDataList);
+    await postTweetThread(selectedSoundDataList);
 }
 
 main();
