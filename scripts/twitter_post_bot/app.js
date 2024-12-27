@@ -49,6 +49,7 @@ var twitter_api_v2_1 = require("twitter-api-v2");
 var node_util_1 = require("node:util");
 var node_child_process_1 = require("node:child_process");
 var fs = require("node:fs");
+var sharp = require('sharp');
 var tokens = {
     appKey: process.env.TWITTER_API_KEY,
     appSecret: process.env.TWITTER_API_SECRET,
@@ -57,6 +58,8 @@ var tokens = {
 };
 var client = new twitter_api_v2_1.TwitterApi(tokens);
 var relativeFilePath = '../../public/sounds/';
+var outputDirectoryPath = './outputs';
+var WaitTime = 3000;
 var soundDataList = JSON.parse(fs.readFileSync('../../public/dataset/sounds.json', 'utf-8'));
 /**
  * ランダムでサウンドデータを取得する
@@ -111,7 +114,7 @@ function postTweet(soundData) {
  */
 function postTweetThread(soundDataList) {
     return __awaiter(this, void 0, void 0, function () {
-        var execAwait, inputFileList, inputFilePath, outputFilePath, soundNames, text, mediaId, postParams, treePostParams, params, postedTweets, i, param, lastTweet, tweet;
+        var execAwait, inputFileList, inputFilePath, outputFilePath, soundNames, text, mediaId, outputImageFilePath, imageMediaId, postParams, treePostParams, params, postedTweets, i, param, lastTweet, tweet;
         var _a;
         return __generator(this, function (_b) {
             switch (_b.label) {
@@ -123,7 +126,7 @@ function postTweetThread(soundDataList) {
                     }).join('\n');
                     inputFilePath = "input_list.txt";
                     fs.writeFileSync(inputFilePath, inputFileList);
-                    outputFilePath = "output.mp4";
+                    outputFilePath = "".concat(outputDirectoryPath, "/output.mp4");
                     return [4 /*yield*/, execAwait("ffmpeg -f concat -safe 0 -i ".concat(inputFilePath, " -c copy -y ").concat(outputFilePath))];
                 case 1:
                     _b.sent();
@@ -134,10 +137,14 @@ function postTweetThread(soundDataList) {
                     return [4 /*yield*/, client.v1.uploadMedia(outputFilePath)];
                 case 2:
                     mediaId = _b.sent();
+                    outputImageFilePath = "".concat(outputDirectoryPath, "/output.jpg");
+                    return [4 /*yield*/, client.v1.uploadMedia(outputImageFilePath)];
+                case 3:
+                    imageMediaId = _b.sent();
                     postParams = {
                         text: text,
                         media: {
-                            media_ids: [mediaId]
+                            media_ids: [mediaId, imageMediaId]
                         }
                     };
                     treePostParams = soundDataList.map(function (soundData) {
@@ -150,9 +157,9 @@ function postTweetThread(soundDataList) {
                     params = __spreadArray([postParams], treePostParams, true);
                     postedTweets = [];
                     i = 0;
-                    _b.label = 3;
-                case 3:
-                    if (!(i < params.length)) return [3 /*break*/, 7];
+                    _b.label = 4;
+                case 4:
+                    if (!(i < params.length)) return [3 /*break*/, 8];
                     param = params[i];
                     lastTweet = postedTweets.length ? postedTweets[postedTweets.length - 1] : null;
                     if (lastTweet) {
@@ -161,33 +168,173 @@ function postTweetThread(soundDataList) {
                         };
                     }
                     return [4 /*yield*/, client.v2.tweet(param)];
-                case 4:
+                case 5:
                     tweet = _b.sent();
                     postedTweets.push(tweet);
-                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, 5000); })];
-                case 5:
-                    _b.sent();
-                    _b.label = 6;
+                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, WaitTime); })];
                 case 6:
+                    _b.sent();
+                    _b.label = 7;
+                case 7:
                     i++;
-                    return [3 /*break*/, 3];
-                case 7: return [2 /*return*/];
+                    return [3 /*break*/, 4];
+                case 8: return [2 /*return*/];
+            }
+        });
+    });
+}
+function unique(array) {
+    return Array.from(new Set(array));
+}
+/**
+ * YouTubeのURLから動画IDを取得する
+ * @param url
+ */
+function getYoutubeId(url) {
+    var match = url.match(/v=([^&]+)/);
+    return match ? match[1] : null;
+}
+/**
+ * YouTubeのサムネイルをダウンロードする
+ * @param videoId
+ */
+function downloadYoutubeThumbnail(videoId) {
+    return __awaiter(this, void 0, void 0, function () {
+        var thumbnailUrl, response, buffer, array, filePath;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    thumbnailUrl = "https://img.youtube.com/vi/".concat(videoId, "/maxresdefault.jpg");
+                    return [4 /*yield*/, fetch(thumbnailUrl)];
+                case 1:
+                    response = _a.sent();
+                    return [4 /*yield*/, response.arrayBuffer()];
+                case 2:
+                    buffer = _a.sent();
+                    array = new Uint8Array(buffer);
+                    filePath = "".concat(outputDirectoryPath, "/").concat(videoId, ".jpg");
+                    fs.writeFileSync(filePath, array);
+                    console.log("Downloaded: ".concat(filePath));
+                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, WaitTime); })];
+                case 3:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+/**
+ * 画像を指定サイズにリサイズして合成する
+ * @param imagePaths 画像のパス
+ * @param outputPath 出力先のパス
+ */
+function mergeImagesToSquare(imagePaths, outputPath) {
+    return __awaiter(this, void 0, void 0, function () {
+        var targetWidth, targetHeight, backgroundColor, resizedImages, rowLength, rows, i, totalWidth, totalHeight;
+        var _this = this;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    targetWidth = 640;
+                    targetHeight = 360;
+                    backgroundColor = '#ffffff';
+                    return [4 /*yield*/, Promise.all(imagePaths.map(function (path) { return __awaiter(_this, void 0, void 0, function () {
+                            return __generator(this, function (_a) {
+                                // Resizing images: https://sharp.pixelplumbing.com/api-resize
+                                return [2 /*return*/, sharp(path).resize({
+                                        width: targetWidth,
+                                        height: targetHeight,
+                                        fit: "contain",
+                                        background: backgroundColor
+                                    }).toBuffer()];
+                            });
+                        }); }))];
+                case 1:
+                    resizedImages = _a.sent();
+                    rowLength = Math.ceil(Math.sqrt(resizedImages.length));
+                    rows = [];
+                    for (i = 0; i < resizedImages.length; i += rowLength) {
+                        rows.push(resizedImages.slice(i, i + rowLength));
+                    }
+                    totalWidth = rowLength * targetWidth;
+                    totalHeight = Math.ceil(resizedImages.length / rowLength) * targetHeight;
+                    return [4 /*yield*/, sharp({
+                            create: {
+                                width: totalWidth,
+                                height: totalHeight,
+                                channels: 3,
+                                background: backgroundColor
+                            }
+                        })
+                            .flatten()
+                            .composite(rows.flatMap(function (row, rowIndex) { return row.map(function (image, colIndex) { return ({
+                            input: image,
+                            left: colIndex * targetWidth,
+                            top: rowIndex * targetHeight,
+                        }); }); }))
+                            .toFile(outputPath)];
+                case 2:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+function mergeImages(videoIds) {
+    return __awaiter(this, void 0, void 0, function () {
+        var inputFilePaths, outputFilePath;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    console.log(videoIds);
+                    inputFilePaths = videoIds.map(function (videoId) {
+                        return "".concat(outputDirectoryPath, "/").concat(videoId, ".jpg");
+                    });
+                    outputFilePath = "".concat(outputDirectoryPath, "/output.jpg");
+                    return [4 /*yield*/, mergeImagesToSquare(inputFilePaths, outputFilePath)];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
             }
         });
     });
 }
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var selectedSoundDataList;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
+        var selectedSoundDataList, videoIds, _i, _a, videoId;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0:
+                    fs.rmSync(outputDirectoryPath, { recursive: true, force: true });
+                    fs.mkdirSync(outputDirectoryPath, { recursive: true });
                     selectedSoundDataList = Array.from(Array(7)).map(function () {
                         return getSoundData();
                     });
-                    return [4 /*yield*/, postTweetThread(selectedSoundDataList)];
+                    videoIds = selectedSoundDataList.map(function (soundData) {
+                        return getYoutubeId(soundData.sourceUrl);
+                    }).filter(function (videoId) { return videoId !== null; });
+                    _i = 0, _a = unique(videoIds);
+                    _b.label = 1;
                 case 1:
-                    _a.sent();
+                    if (!(_i < _a.length)) return [3 /*break*/, 4];
+                    videoId = _a[_i];
+                    if (!videoId) return [3 /*break*/, 3];
+                    return [4 /*yield*/, downloadYoutubeThumbnail(videoId)];
+                case 2:
+                    _b.sent();
+                    _b.label = 3;
+                case 3:
+                    _i++;
+                    return [3 /*break*/, 1];
+                case 4: return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, WaitTime); })];
+                case 5:
+                    _b.sent();
+                    return [4 /*yield*/, mergeImages(videoIds)];
+                case 6:
+                    _b.sent();
+                    return [4 /*yield*/, postTweetThread(selectedSoundDataList)];
+                case 7:
+                    _b.sent();
                     return [2 /*return*/];
             }
         });

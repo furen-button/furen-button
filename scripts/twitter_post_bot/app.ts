@@ -2,6 +2,8 @@ import { TwitterApi, TwitterApiTokens, SendTweetV2Params, TweetV2PostTweetResult
 import { promisify } from 'node:util';
 import { exec } from 'node:child_process';
 import * as fs from 'node:fs';
+import {Metadata} from "sharp";
+const sharp = require('sharp');
 
 declare const process : {
     env: {
@@ -22,6 +24,8 @@ const tokens : TwitterApiTokens = {
 const client = new TwitterApi(tokens);
 
 const relativeFilePath = '../../public/sounds/';
+const outputDirectoryPath = './outputs';
+const WaitTime = 3000;
 
 interface SoundData {
     name: string;
@@ -83,17 +87,19 @@ async function postTweetThread(soundDataList: SoundData[]) {
     }).join('\n');
     const inputFilePath = `input_list.txt`;
     fs.writeFileSync(inputFilePath, inputFileList);
-    const outputFilePath = `output.mp4`;
+    const outputFilePath = `${outputDirectoryPath}/output.mp4`;
     await execAwait(`ffmpeg -f concat -safe 0 -i ${inputFilePath} -c copy -y ${outputFilePath}`);
     const soundNames = soundDataList.map((soundData) => {
         return `「${soundData.name}」`;
     }).join('');
     const text = `${soundNames}\n#フレンボタン\n出典はツリーにて`;
     const mediaId = await client.v1.uploadMedia(outputFilePath);
+    const outputImageFilePath = `${outputDirectoryPath}/output.jpg`;
+    const imageMediaId = await client.v1.uploadMedia(outputImageFilePath);
     const postParams : SendTweetV2Params = {
         text: text,
         media: {
-            media_ids: [mediaId]
+            media_ids: [mediaId, imageMediaId]
         }
     };
     const treePostParams : SendTweetV2Params[] = soundDataList.map((soundData) => {
@@ -115,16 +121,112 @@ async function postTweetThread(soundDataList: SoundData[]) {
         }
         const tweet = await client.v2.tweet(param);
         postedTweets.push(tweet);
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, WaitTime));
     }
 }
 
+function unique<T>(array: T[]) {
+    return Array.from(new Set(array));
+}
+
+/**
+ * YouTubeのURLから動画IDを取得する
+ * @param url
+ */
+function getYoutubeId(url: string) {
+    const match = url.match(/v=([^&]+)/);
+    return match ? match[1] : null;
+}
+
+/**
+ * YouTubeのサムネイルをダウンロードする
+ * @param videoId
+ */
+async function downloadYoutubeThumbnail(videoId: string) {
+    const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+    const response = await fetch(thumbnailUrl);
+    const buffer = await response.arrayBuffer();
+    const array = new Uint8Array(buffer);
+    const filePath = `${outputDirectoryPath}/${videoId}.jpg`
+    fs.writeFileSync(filePath, array);
+    console.log(`Downloaded: ${filePath}`);
+    await new Promise((resolve) => setTimeout(resolve, WaitTime));
+}
+
+/**
+ * 画像を指定サイズにリサイズして合成する
+ * @param imagePaths 画像のパス
+ * @param outputPath 出力先のパス
+ */
+async function mergeImagesToSquare(imagePaths : string[], outputPath: string) {
+    const targetWidth = 640;
+    const targetHeight = 360;
+    const backgroundColor = '#ffffff'; // 背景色
+
+    // 画像を読み込み、リサイズする
+    const resizedImages = await Promise.all(imagePaths.map(async (path) => {
+        // Resizing images: https://sharp.pixelplumbing.com/api-resize
+        return sharp(path).resize({
+            width: targetWidth,
+            height: targetHeight,
+            fit: "contain",
+            background: backgroundColor
+        }).toBuffer();
+    }));
+
+    // 画像の配置を計算する
+    const rowLength = Math.ceil(Math.sqrt(resizedImages.length));
+    const rows = [];
+    for (let i = 0; i < resizedImages.length; i += rowLength) {
+        rows.push(resizedImages.slice(i, i + rowLength));
+    }
+
+    // 新しい画像を作成し、画像を合成する
+    const totalWidth = rowLength * targetWidth;
+    const totalHeight = Math.ceil(resizedImages.length / rowLength) * targetHeight;
+    await sharp({
+        create: {
+            width: totalWidth,
+            height: totalHeight,
+            channels: 3,
+            background: backgroundColor
+        }
+    })
+        .flatten()
+        .composite(rows.flatMap((row, rowIndex) => row.map((image, colIndex) => ({
+            input: image,
+            left: colIndex * targetWidth,
+            top: rowIndex * targetHeight,
+        }))))
+        .toFile(outputPath);
+}
+
+async function mergeImages(videoIds: string[]) {
+    console.log(videoIds);
+    const inputFilePaths = videoIds.map((videoId) => {
+        return `${outputDirectoryPath}/${videoId}.jpg`;
+    });
+    const outputFilePath = `${outputDirectoryPath}/output.jpg`;
+    await mergeImagesToSquare(inputFilePaths, outputFilePath);
+}
+
 async function main() {
-    // const soundData = getSoundData();
-    // await postTweet(soundData);
+    fs.rmSync(outputDirectoryPath, { recursive: true, force: true });
+    fs.mkdirSync(outputDirectoryPath, { recursive: true });
     const selectedSoundDataList = Array.from(Array(7)).map(() => {
         return getSoundData();
     });
+
+    const videoIds = selectedSoundDataList.map((soundData) => {
+        return getYoutubeId(soundData.sourceUrl);
+    }).filter((videoId) => { return videoId !== null; }) as string[];
+    for (const videoId of unique(videoIds)) {
+        if (videoId) {
+            await downloadYoutubeThumbnail(videoId);
+        }
+    }
+    await new Promise((resolve) => setTimeout(resolve, WaitTime));
+    await mergeImages(videoIds);
     await postTweetThread(selectedSoundDataList);
 }
 
