@@ -1131,8 +1131,8 @@ EOF
 
 # waraigoe3
 mkdir -p ../../public/sounds/kirby64-1
-ffmpeg -y -ss 0:41:11.227 -i ../../scripts/video-clip-tool/public/movies/kirby64-1.mp4 -t 0:00:12.182 ../../public/sounds/kirby64-1/waraigoe3.mp4
-ffmpeg -y -i ../../public/sounds/kirby64-1/waraigoe3.mp4 -vn ../../public/sounds/kirby64-1/waraigoe3.wav
+ffmpeg -y -ss 0:41:11.227 -i ../../scripts/video-clip-tool/public/movies/kirby64-1.mp4 -t 0:00:12.182 ../../public/sounds/kirby64-1/waraigoe4.mp4
+ffmpeg -y -i ../../public/sounds/kirby64-1/waraigoe4.mp4 -vn ../../public/sounds/kirby64-1/waraigoe4.wav
 ffmpeg -y -f lavfi -i 'color=c=black:s=1080x1920:r=30000/1001:d=12.18295100000023' -f lavfi -i 'aevalsrc=0|0:c=stereo:s=44100:d=12.18295100000023' ../../public/sounds/kirby64-1/base.mp4
 
 
@@ -1146,7 +1146,7 @@ cat <<EOF >> ./kirby64-1.yml
 - name: "わらいごえ"
   ruby: "わらいごえ"
   source: "kirby64-1"
-  fileName: "kirby64-1/waraigoe3.mp3"
+  fileName: "kirby64-1/waraigoe4.mp3"
   category: ["game","waraigoe"]
   clipUrl: "https://www.youtube.com/watch?v=5ll4BW31L_8&t=2471"
 EOF
