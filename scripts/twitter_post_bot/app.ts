@@ -26,6 +26,7 @@ const client = new TwitterApi(tokens);
 const relativeFilePath = '../../public/sounds/';
 const outputDirectoryPath = './outputs';
 const WaitTime = 3000;
+const MergeNum = 9;
 
 interface SoundData {
     name: string;
@@ -213,7 +214,7 @@ async function mergeImages(videoIds: string[]) {
 async function main() {
     fs.rmSync(outputDirectoryPath, { recursive: true, force: true });
     fs.mkdirSync(outputDirectoryPath, { recursive: true });
-    const selectedSoundDataList = Array.from(Array(7)).map(() => {
+    const selectedSoundDataList = Array.from(Array(MergeNum)).map(() => {
         return getSoundData();
     });
 

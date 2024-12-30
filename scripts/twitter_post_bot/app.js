@@ -60,6 +60,7 @@ var client = new twitter_api_v2_1.TwitterApi(tokens);
 var relativeFilePath = '../../public/sounds/';
 var outputDirectoryPath = './outputs';
 var WaitTime = 3000;
+var MergeNum = 9;
 var soundDataList = JSON.parse(fs.readFileSync('../../public/dataset/sounds.json', 'utf-8'));
 /**
  * ランダムでサウンドデータを取得する
@@ -307,7 +308,7 @@ function main() {
                 case 0:
                     fs.rmSync(outputDirectoryPath, { recursive: true, force: true });
                     fs.mkdirSync(outputDirectoryPath, { recursive: true });
-                    selectedSoundDataList = Array.from(Array(7)).map(function () {
+                    selectedSoundDataList = Array.from(Array(MergeNum)).map(function () {
                         return getSoundData();
                     });
                     videoIds = selectedSoundDataList.map(function (soundData) {
