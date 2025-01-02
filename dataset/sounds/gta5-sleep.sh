@@ -16,7 +16,7 @@ ffmpeg -y -f lavfi -i 'color=c=black:s=1080x1920:r=30000/1001:d=2.00000000000136
 # 
 touch ../../dataset/sounds/gta5-sleep.yml
 cat <<EOF >> ../../dataset/sounds/gta5-sleep.yml
-- name: "変態ども見るんじゃない"
+- name: "へんたいども みるんじゃない"
   ruby: "へんたいどもみるんじゃない"
   source: "gta5-sleep"
   fileName: "gta5-sleep/heitai.wav"
