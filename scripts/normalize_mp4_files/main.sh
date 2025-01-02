@@ -3,7 +3,7 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 cd $SCRIPT_DIR
 
-find ../../public/sounds | grep "\.mp4$" | grep -v "\-scaled\.mp4$" | sed s/\.mp4// > list.txt
+find ../../public/sounds | grep "\.mp4$" | grep -v "\-scaled\.mp4$" | sed s/\.mp4// | grep -E '(/.+){5}$' | sort | uniq > list.txt
 
 for file in `cat list.txt`
 do

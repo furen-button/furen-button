@@ -1,0 +1,15 @@
+{
+  "name": "create-clip-by-data",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
