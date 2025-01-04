@@ -39,16 +39,18 @@ const options = {
         default: '',
         description: 'Exclude categories (includeCategories より優先されます)',
     },
+    outputFileName: {
+        type: 'string',
+        short: 'o',
+        default: '',
+        description: 'Output file name',
+    }
 }
 
 const args = process.argv.slice(2);
 const parsedOptions = parseArgs({options, args});
 const {
     help,
-    force,
-    targetSource,
-    includeCategories,
-    excludeCategories,
 } = parsedOptions.values;
 
 if (help) {
@@ -124,8 +126,11 @@ function executeConvert(data, force) {
         // fontsize は文字サイズ
         // x は文字のx座標
         // y は文字のy座標
+        // bordercolor は文字アウトラインの色
+        // borderw は文字アウトラインの太さ
+        // text_align は文字の配置
         const text = name.replaceAll(' ', '\n');
-        const drawTextOption = `text='${text}':box=1:boxcolor=white@0.7:boxborderw=10|20:fontcolor=red:fontfile=${fontPath}:fontsize=80:x=(w-text_w)/2:y=(h-120-text_h)`;
+        const drawTextOption = `text='${text}':box=1:boxcolor=black@0.7:boxborderw=10|20:fontcolor=red:fontfile=${fontPath}:fontsize=80:x=(w-text_w)/2:y=(h-120-text_h):bordercolor=white:borderw=5:text_align=L+M`;
         const videoOption = `[0:v]${scaleFilter}[v0];[v0]drawtext=${drawTextOption}[v];`;
         // サンプリングレートを 44100Hz に変換
         const audioOption = `[0:a]aformat=sample_rates=44100[a];`;
@@ -198,22 +203,35 @@ function isTargetClipData(clipData, targetSource, includeCategories, excludeCate
     if (targetSource !== '' && clipData.source !== targetSource) {
         return false;
     }
-    if (includeCategories !== '') {
-        const includeCategoryList = includeCategories.split(',');
-        if (!includeCategoryList.includes(clipData.category)) {
-            return false;
-        }
-    }
+    const categoryList = clipData.category;
     if (excludeCategories !== '') {
         const excludeCategoryList = excludeCategories.split(',');
-        if (excludeCategoryList.includes(clipData.category)) {
-            return false;
+        for (const category of categoryList) {
+            if (excludeCategoryList.includes(category)) {
+                return false;
+            }
         }
+    }
+    if (includeCategories !== '') {
+        const includeCategoryList = includeCategories.split(',');
+        for (const category of categoryList) {
+            if (includeCategoryList.includes(category)) {
+                return true;
+            }
+        }
+        return false;
     }
     return true;
 }
 
-function main(force, targetSource, includeCategories, excludeCategories) {
+function main(parsedArgs) {
+    const {
+        force,
+        targetSource,
+        includeCategories,
+        excludeCategories,
+        outputFileName,
+    } = parsedArgs;
     // yamlファイルのリストを取得
     const foundYamlFiles = extractYamlFiles(targetDirectory);
     console.log(foundYamlFiles);
@@ -244,11 +262,14 @@ function main(force, targetSource, includeCategories, excludeCategories) {
     }
     const concatTxtFilePath = path.join(outputDirectory, 'concat.txt');
     const concatTxt = concatList.map((filePath) => `file '${filePath}'`).join('\n');
-    const concatMovieFilePath = path.join(outputDirectory, 'concat.mp4');
+
+    const resultMovieFilePath = outputFileName === '' ?
+        path.join(outputDirectory, 'result.mp4') :
+        outputFileName;
     fs.writeFileSync(concatTxtFilePath, concatTxt);
-    const concatCommand = `ffmpeg -y -f concat -safe 0 -i ${concatTxtFilePath} -c:v libx264 -c:a aac -map 0:v -map 0:a ${concatMovieFilePath}`;
+    const concatCommand = `ffmpeg -y -f concat -safe 0 -i ${concatTxtFilePath} -c:v libx264 -c:a aac -map 0:v -map 0:a ${resultMovieFilePath}`;
     console.log(concatCommand);
     childProcess.execSync(concatCommand);
 }
 
-main(force, targetSource, includeCategories, excludeCategories);
+main(parsedOptions.values);
