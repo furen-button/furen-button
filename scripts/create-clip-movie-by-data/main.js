@@ -6,10 +6,67 @@ const { parseArgs } = require("node:util");
 
 // 抽出したいディレクトリのパス
 const targetDirectory = path.join(__dirname, '../../dataset/sounds');
+// ソースデータのパス
+const sourceDataFilePath = path.join(__dirname, '../../dataset/sources.yml');
 // 出力するディレクトリのパス
 const outputDirectory = path.join(__dirname, './outputs');
 // フォントのパス
 const fontPath = path.join(__dirname, './keifont.ttf');
+
+// drawtext のオプション
+// text は表示する文字列
+// box は文字背景
+// boxcolor は文字背景の色 @ 以降は透過度
+// boxborderw は文字の周りの余白(縦|横)
+// fontcolor は文字色
+// fontfile はフォントファイルのパス
+// fontsize は文字サイズ
+// x は文字のx座標
+// y は文字のy座標
+// bordercolor は文字アウトラインの色
+// borderw は文字アウトラインの太さ
+// text_align は文字の配置
+const textParameter = {
+    box: 1,
+    boxColor: 'white@0.8',
+    boxBorderW: '20|30',
+    fontColor: 'red',
+    fontFile: fontPath,
+    fontSize: 80,
+    x: '(w-text_w)/2',
+    y: '(h-120-text_h)',
+    borderColor: 'black',
+    borderW: 3,
+    textAlign: 'L+M',
+}
+
+const titleTextParameter = {
+    box: 1,
+    boxColor: 'black@0.7',
+    boxBorderW: '10|10',
+    fontColor: 'red',
+    fontFile: fontPath,
+    fontSize: 30,
+    x: 10,
+    y: '15',
+    borderColor: 'white',
+    borderW: 2,
+    textAlign: 'L+M',
+}
+
+const dateTextParameter = {
+    box: 1,
+    boxColor: 'black@0.7',
+    boxBorderW: '12|20',
+    fontColor: 'red',
+    fontFile: fontPath,
+    fontSize: 50,
+    x: 10,
+    y: '70',
+    borderColor: 'white',
+    borderW: 2,
+    textAlign: 'L+M',
+};
 
 const options = {
     help: {
@@ -86,6 +143,10 @@ function createBlankMovieFile() {
     return blankMovieFilePath;
 }
 
+function createDrawTextOption(text, parameter) {
+    return `drawtext=text='${text}':box=${parameter.box}:boxcolor=${parameter.boxColor}:boxborderw=${parameter.boxBorderW}:fontcolor=${parameter.fontColor}:fontfile=${parameter.fontFile}:fontsize=${parameter.fontSize}:x=${parameter.x}:y=${parameter.y}:bordercolor=${parameter.borderColor}:borderw=${parameter.borderW}:text_align=${parameter.textAlign}`;
+}
+
 function executeConvert(data, force) {
     const {
         name,
@@ -94,6 +155,8 @@ function executeConvert(data, force) {
         videoId,
         startTime,
         durationTime,
+        title,
+        publishedAt,
     } = data;
 
     if (!videoId || !startTime || !durationTime) {
@@ -116,22 +179,13 @@ function executeConvert(data, force) {
     // 動画の切り出しをする
     if (!fs.existsSync(outputMp4FilePath) || force) {
         const scaleFilter = 'scale=1980:1080';
-        // drawtext のオプション
-        // text は表示する文字列
-        // box は文字背景
-        // boxcolor は文字背景の色 @ 以降は透過度
-        // boxborderw は文字の周りの余白(縦横)
-        // fontcolor は文字色
-        // fontfile はフォントファイルのパス
-        // fontsize は文字サイズ
-        // x は文字のx座標
-        // y は文字のy座標
-        // bordercolor は文字アウトラインの色
-        // borderw は文字アウトラインの太さ
-        // text_align は文字の配置
+        // NOTE: 半角スペースを改行に変換
         const text = name.replaceAll(' ', '\n');
-        const drawTextOption = `text='${text}':box=1:boxcolor=black@0.7:boxborderw=10|20:fontcolor=red:fontfile=${fontPath}:fontsize=80:x=(w-text_w)/2:y=(h-120-text_h):bordercolor=white:borderw=5:text_align=L+M`;
-        const videoOption = `[0:v]${scaleFilter}[v0];[v0]drawtext=${drawTextOption}[v];`;
+        const drawTextOption = createDrawTextOption(text, textParameter);
+        const dateText = publishedAt.split('T')[0];
+        const drawDateOption = createDrawTextOption(dateText, dateTextParameter);
+        const drawTitleOption = createDrawTextOption(title, titleTextParameter);
+        const videoOption = `[0:v]${scaleFilter}[v0];[v0]${drawTextOption}[v1];[v1]${drawDateOption}[v2];[v2]${drawTitleOption}[video_out];`;
         // サンプリングレートを 44100Hz に変換
         const audioOption = `[0:a]aformat=sample_rates=44100[a];`;
         const complexFilter = [
@@ -142,7 +196,7 @@ function executeConvert(data, force) {
             // ビットレートを128kbps に変換
             '-b:a 128k',
             `-filter_complex "${complexFilter}"`,
-            '-map "[v]"',
+            '-map "[video_out]"',
             '-map "[a]"',
             '-c:v libx264',
         ].join(' ');
@@ -179,17 +233,31 @@ function createConcatCommand(originalVideoData, addVideoData, outputFilePath) {
  * 'H:MM:SS.SSS' 形式の文字列をミリ秒に変換する,
  * @param timeStr 'H:MM:SS.SSS' 形式の文字列
  */
-function calcTime(timeStr) {
+function parseTimeStr(timeStr) {
     const [hour, minute, second] = timeStr.split(':').map(Number);
     return ((hour * 60 + minute) * 60 + second) * 1000;
 }
 
+/**
+ * YYYY-MM-DDTHH:MM:SS.SSSZ 形式の文字列を Date オブジェクトに変換する
+ * @param timeStr 'YYYY-MM-DDTHH:MM:SS.SSSZ' 形式の文字列
+ */
+function parsePublishedAt(timeStr) {
+    return new Date(timeStr);
+}
+
+/**
+ * ClipData の startTime で比較する
+ * @param a
+ * @param b
+ * @returns {number}
+ */
 function compareClipDataTime(a, b) {
     if (!a.startTime || !b.startTime) {
         return 0;
     }
-    const aStartTime = calcTime(a.startTime);
-    const bStartTime = calcTime(b.startTime);
+    const aStartTime = parseTimeStr(a.startTime);
+    const bStartTime = parseTimeStr(b.startTime);
     if (aStartTime < bStartTime) {
         return -1;
     }
@@ -197,6 +265,27 @@ function compareClipDataTime(a, b) {
         return 1;
     }
     return 0;
+}
+
+/**
+ * ClipData の publishedAt で比較する
+ * @param a
+ * @param b
+ * @returns {number}
+ */
+function compareClipDataPublishedAt(a, b) {
+    if (!a.publishedAt || !b.publishedAt) {
+        return 0;
+    }
+    const aPublishedAt = parsePublishedAt(a.publishedAt);
+    const bPublishedAt = parsePublishedAt(b.publishedAt);
+    if (aPublishedAt < bPublishedAt) {
+        return -1;
+    }
+    if (aPublishedAt > bPublishedAt) {
+        return 1;
+    }
+    return compareClipDataTime(a, b);
 }
 
 function isTargetClipData(clipData, targetSource, includeCategories, excludeCategories) {
@@ -224,6 +313,16 @@ function isTargetClipData(clipData, targetSource, includeCategories, excludeCate
     return true;
 }
 
+function updateClipDataBySourceDataList(clipData, sourceDataList) {
+    const sourceData = sourceDataList.find((data) => data.tag === clipData.source);
+    if (!sourceData) {
+        return clipData;
+    }
+    clipData.title = sourceData.title;
+    clipData.publishedAt = sourceData.publishedAt;
+    return clipData;
+}
+
 function main(parsedArgs) {
     const {
         force,
@@ -234,7 +333,8 @@ function main(parsedArgs) {
     } = parsedArgs;
     // yamlファイルのリストを取得
     const foundYamlFiles = extractYamlFiles(targetDirectory);
-    console.log(foundYamlFiles);
+    const sourceDataList = jsYaml.load(fs.readFileSync(sourceDataFilePath, 'utf-8')).sources;
+    console.log(sourceDataList);
     // yamlファイルの中身を取得
     const allClipData = [];
     for (const filePath of foundYamlFiles) {
@@ -245,10 +345,13 @@ function main(parsedArgs) {
             if (!isTargetClipData(clipData, targetSource, includeCategories, excludeCategories)) {
                 continue;
             }
-            executeConvert(clipData, force);
-            allClipData.push(clipData);
+            const updatedClipData = updateClipDataBySourceDataList(clipData, sourceDataList);
+            executeConvert(updatedClipData, force);
+            allClipData.push(updatedClipData);
         }
     }
+    allClipData.sort(compareClipDataPublishedAt);
+    console.log(allClipData);
     const concatList = [];
     for (const clipData of allClipData) {
         const {
