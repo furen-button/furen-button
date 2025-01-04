@@ -38,7 +38,7 @@ const textParameter = {
     borderColor: 'black',
     borderW: 3,
     textAlign: 'L+M',
-}
+};
 
 const titleTextParameter = {
     box: 1,
@@ -52,7 +52,7 @@ const titleTextParameter = {
     borderColor: 'white',
     borderW: 2,
     textAlign: 'L+M',
-}
+};
 
 const dateTextParameter = {
     box: 1,
@@ -102,7 +102,7 @@ const options = {
         default: '',
         description: 'Output file name',
     }
-}
+};
 
 const args = process.argv.slice(2);
 const parsedOptions = parseArgs({options, args});
