@@ -93,7 +93,7 @@ async function postTweetThread(soundDataList: SoundData[]) {
     const soundNames = soundDataList.map((soundData) => {
         return `「${soundData.name}」`;
     }).join('');
-    const text = `${soundNames}\n#フレンボタン\n出典はツリーにて`;
+    const text = `${soundNames}\n#フレンボタン\n出典はサイトにて`;
     const mediaId = await client.v1.uploadMedia(outputFilePath);
     const outputImageFilePath = `${outputDirectoryPath}/output.jpg`;
     const imageMediaId = await client.v1.uploadMedia(outputImageFilePath);
@@ -123,6 +123,8 @@ async function postTweetThread(soundDataList: SoundData[]) {
         const tweet = await client.v2.tweet(param);
         postedTweets.push(tweet);
         await new Promise((resolve) => setTimeout(resolve, WaitTime));
+        // ツリーをやめる
+        break;
     }
 }
 

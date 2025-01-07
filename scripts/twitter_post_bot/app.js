@@ -134,7 +134,7 @@ function postTweetThread(soundDataList) {
                     soundNames = soundDataList.map(function (soundData) {
                         return "\u300C".concat(soundData.name, "\u300D");
                     }).join('');
-                    text = "".concat(soundNames, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n\u51FA\u5178\u306F\u30C4\u30EA\u30FC\u306B\u3066");
+                    text = "".concat(soundNames, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n\u51FA\u5178\u306F\u30B5\u30A4\u30C8\u306B\u3066");
                     return [4 /*yield*/, client.v1.uploadMedia(outputFilePath)];
                 case 2:
                     mediaId = _b.sent();
@@ -175,7 +175,8 @@ function postTweetThread(soundDataList) {
                     return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, WaitTime); })];
                 case 6:
                     _b.sent();
-                    _b.label = 7;
+                    // ツリーをやめる
+                    return [3 /*break*/, 8];
                 case 7:
                     i++;
                     return [3 /*break*/, 4];
