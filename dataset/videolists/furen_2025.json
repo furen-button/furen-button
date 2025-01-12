@@ -1,7 +1,112 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "au3SW8VGqlHslwINbYORFqhFR8I",
+    "etag": "qKYO7VGD5u_-6RWFe2a-4xNiijg",
+    "id": "uDsh-vacD2M",
+    "snippet": {
+      "publishedAt": "2025-01-12T08:52:24Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【#にじさんじ麻雀杯2025】予選S卓！今年も麻雀楽しむぞ～～！【フレン/にじさんじ】",
+      "description": "【提供：雀魂-じゃんたま-】\n\n✨S卓のみなさま\n@Gaon \n@DeremKado \n@MorinakaKazaki \n\n◆サムネイル作成\n⇒つくよさん(@Tsukuyo_De)\n\n＋＋＋\n\n✨メンバー登録はこちら\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n(スマホの方はこちらのURLをコピーしてブラウザで飛んでください)\n\n※未成年者の視聴者の方々は、下記リンク先の注意事項もご覧ください。\nhttps://www.anycolor.co.jp/notice-for-minors\n\n＋＋＋",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/uDsh-vacD2M/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/uDsh-vacD2M/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/uDsh-vacD2M/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/uDsh-vacD2M/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/uDsh-vacD2M/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "ふれん・いー・るすたりお",
+        "furenelustario",
+        "にじさんじ",
+        "nijisanji",
+        "Vtuber",
+        "anime",
+        "アニメ",
+        "japan",
+        "切り抜き",
+        "雑談",
+        "game",
+        "ゲーム",
+        "実況",
+        "歌ってみた",
+        "カバー",
+        "ふれん",
+        "バーチャルライバー",
+        "フレン",
+        "女性",
+        "女性ライバー",
+        "エンターテインメント",
+        "バーチャルYouTuber",
+        "配信",
+        "Furen・E・Lustario",
+        "japanese",
+        "Nintendo",
+        "完全初見",
+        "初見プレイ",
+        "会話",
+        "Free talk",
+        "steam",
+        "雀魂",
+        "麻雀",
+        "麻雀大会",
+        "にじさんじ麻雀杯",
+        "Gaon",
+        "Derem kado",
+        "森中花咲"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "localized": {
+        "title": "【#にじさんじ麻雀杯2025】予選S卓！今年も麻雀楽しむぞ～～！【フレン/にじさんじ】",
+        "description": "【提供：雀魂-じゃんたま-】\n\n✨S卓のみなさま\n@Gaon \n@DeremKado \n@MorinakaKazaki \n\n◆サムネイル作成\n⇒つくよさん(@Tsukuyo_De)\n\n＋＋＋\n\n✨メンバー登録はこちら\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n(スマホの方はこちらのURLをコピーしてブラウザで飛んでください)\n\n※未成年者の視聴者の方々は、下記リンク先の注意事項もご覧ください。\nhttps://www.anycolor.co.jp/notice-for-minors\n\n＋＋＋"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT39M42S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "40789",
+      "likeCount": "1889",
+      "favoriteCount": "0",
+      "commentCount": "28"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/uDsh-vacD2M\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "cg3a3w6nuNb5nX09PHTEOYlxrlc",
     "id": "wnI2wCCzPgY",
     "snippet": {
       "publishedAt": "2025-01-10T15:00:13Z",
@@ -94,10 +199,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "60166",
-      "likeCount": "2074",
+      "viewCount": "62026",
+      "likeCount": "2107",
       "favoriteCount": "0",
-      "commentCount": "14"
+      "commentCount": "15"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/wnI2wCCzPgY\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -105,7 +210,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BBkSLFoy_sx4MS5xo7x4dsObB0E",
+    "etag": "mTKLL4UTAGb5P2nIyrp-55cJFrs",
     "id": "u73kJG7KuCI",
     "snippet": {
       "publishedAt": "2025-01-09T15:13:11Z",
@@ -194,10 +299,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "93125",
-      "likeCount": "3492",
+      "viewCount": "99239",
+      "likeCount": "3670",
       "favoriteCount": "0",
-      "commentCount": "52"
+      "commentCount": "59"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/u73kJG7KuCI\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -205,7 +310,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "y2Co9nqA7uN9lXENfdguy5RjMq0",
+    "etag": "zVzm2dR0c4H6q3oyk1VmxxkecyY",
     "id": "pfvsyHDbxeY",
     "snippet": {
       "publishedAt": "2025-01-08T14:58:47Z",
@@ -298,8 +403,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "85931",
-      "likeCount": "3094",
+      "viewCount": "88487",
+      "likeCount": "3132",
       "favoriteCount": "0",
       "commentCount": "28"
     },
@@ -309,7 +414,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_bkGQE2GhLVBq4cGhKS2xaIdwz8",
+    "etag": "UmF4Fjt6IVBeMOb_Bjsf5X9cLlY",
     "id": "vBBT7ALYaW8",
     "snippet": {
       "publishedAt": "2025-01-05T14:48:38Z",
@@ -400,8 +505,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "174186",
-      "likeCount": "3715",
+      "viewCount": "175463",
+      "likeCount": "3725",
       "favoriteCount": "0",
       "commentCount": "45"
     },
@@ -411,7 +516,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KkEcLyY_MtUoZN4O_-S-wv8Wthc",
+    "etag": "2ElGjykkCPGVXUQeYLPUVNYlnrE",
     "id": "zP98WEkZv6k",
     "snippet": {
       "publishedAt": "2025-01-03T12:19:00Z",
@@ -464,8 +569,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "163178",
-      "likeCount": "16892",
+      "viewCount": "165481",
+      "likeCount": "17035",
       "favoriteCount": "0",
       "commentCount": "234"
     },
@@ -475,7 +580,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "S6IFqyYHdXH4tQqJnciqareA8PM",
+    "etag": "6ZCtaCaFPWHMsYHCzIrNMLyHGes",
     "id": "eevd_MQ3-lg",
     "snippet": {
       "publishedAt": "2024-12-31T16:56:38Z",
@@ -560,19 +665,13 @@
       "dimension": "2d",
       "definition": "hd",
       "caption": "false",
-      "licensedContent": false,
-      "regionRestriction": {
-        "blocked": [
-          "BY",
-          "RU"
-        ]
-      },
+      "licensedContent": true,
       "contentRating": {},
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "325851",
-      "likeCount": "7366",
+      "viewCount": "327240",
+      "likeCount": "7380",
       "favoriteCount": "0",
       "commentCount": "42"
     },
@@ -582,7 +681,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Hx2qm_jQBYmyzyg-5PMSRxVvwts",
+    "etag": "r553VhDMf1i3p2p9kMbU-ld4J6Y",
     "id": "0iU1snp0E44",
     "snippet": {
       "publishedAt": "2024-12-31T13:28:43Z",
@@ -678,8 +777,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "164268",
-      "likeCount": "8082",
+      "viewCount": "164714",
+      "likeCount": "8095",
       "favoriteCount": "0",
       "commentCount": "47"
     },
@@ -689,7 +788,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "byzlf1rjhTwhn1QQJqG3X8mzQ2U",
+    "etag": "diUxRm-5NnHBlMPFCaFIiXmwNjs",
     "id": "Rp9inBFbsdU",
     "snippet": {
       "publishedAt": "2024-12-29T16:25:13Z",
@@ -780,8 +879,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "168617",
-      "likeCount": "3620",
+      "viewCount": "169558",
+      "likeCount": "3629",
       "favoriteCount": "0",
       "commentCount": "54"
     },
@@ -791,7 +890,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "eWft2R2XusydwPgi1ptT7rmXPF0",
+    "etag": "cVtEldDWBRJG1o8mcAFg80ACUGo",
     "id": "5ll4BW31L_8",
     "snippet": {
       "publishedAt": "2024-12-28T06:19:39Z",
@@ -882,8 +981,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "167431",
-      "likeCount": "4488",
+      "viewCount": "169498",
+      "likeCount": "4530",
       "favoriteCount": "0",
       "commentCount": "65"
     },
