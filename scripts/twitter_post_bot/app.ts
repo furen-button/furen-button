@@ -88,13 +88,15 @@ async function postTweetThread(soundDataList: SoundData[]) {
     }).join('\n');
     const inputFilePath = `input_list.txt`;
     fs.writeFileSync(inputFilePath, inputFileList);
-    const outputFilePath = `${outputDirectoryPath}/output.mp4`;
-    await execAwait(`ffmpeg -f concat -safe 0 -i ${inputFilePath} -c copy -y ${outputFilePath}`);
+    const outputMovieFilePath = `${outputDirectoryPath}/output.mp4`;
+    const outputAudioFilePath = `${outputDirectoryPath}/output.mp3`;
+    await execAwait(`ffmpeg -y -f concat -safe 0 -i ${inputFilePath} -c copy ${outputMovieFilePath}`);
+    await execAwait(`ffmpeg -y -i ${outputMovieFilePath} ${outputAudioFilePath}`);
     const soundNames = soundDataList.map((soundData) => {
         return `「${soundData.name}」`;
     }).join('');
     const text = `${soundNames}\n#フレンボタン\n出典はサイトにて`;
-    const mediaId = await client.v1.uploadMedia(outputFilePath);
+    const mediaId = await client.v1.uploadMedia(outputAudioFilePath);
     const outputImageFilePath = `${outputDirectoryPath}/output.jpg`;
     const imageMediaId = await client.v1.uploadMedia(outputImageFilePath);
     const postParams : SendTweetV2Params = {
@@ -123,8 +125,6 @@ async function postTweetThread(soundDataList: SoundData[]) {
         const tweet = await client.v2.tweet(param);
         postedTweets.push(tweet);
         await new Promise((resolve) => setTimeout(resolve, WaitTime));
-        // ツリーをやめる
-        break;
     }
 }
 

@@ -115,7 +115,7 @@ function postTweet(soundData) {
  */
 function postTweetThread(soundDataList) {
     return __awaiter(this, void 0, void 0, function () {
-        var execAwait, inputFileList, inputFilePath, outputFilePath, soundNames, text, mediaId, outputImageFilePath, imageMediaId, postParams, treePostParams, params, postedTweets, i, param, lastTweet, tweet;
+        var execAwait, inputFileList, inputFilePath, outputMovieFilePath, outputAudioFilePath, soundNames, text, mediaId, outputImageFilePath, imageMediaId, postParams, treePostParams, params, postedTweets, i, param, lastTweet, tweet;
         var _a;
         return __generator(this, function (_b) {
             switch (_b.label) {
@@ -127,20 +127,24 @@ function postTweetThread(soundDataList) {
                     }).join('\n');
                     inputFilePath = "input_list.txt";
                     fs.writeFileSync(inputFilePath, inputFileList);
-                    outputFilePath = "".concat(outputDirectoryPath, "/output.mp4");
-                    return [4 /*yield*/, execAwait("ffmpeg -f concat -safe 0 -i ".concat(inputFilePath, " -c copy -y ").concat(outputFilePath))];
+                    outputMovieFilePath = "".concat(outputDirectoryPath, "/output.mp4");
+                    outputAudioFilePath = "".concat(outputDirectoryPath, "/output.mp3");
+                    return [4 /*yield*/, execAwait("ffmpeg -y -f concat -safe 0 -i ".concat(inputFilePath, " -c copy ").concat(outputMovieFilePath))];
                 case 1:
+                    _b.sent();
+                    return [4 /*yield*/, execAwait("ffmpeg -y -i ".concat(outputMovieFilePath, " ").concat(outputAudioFilePath))];
+                case 2:
                     _b.sent();
                     soundNames = soundDataList.map(function (soundData) {
                         return "\u300C".concat(soundData.name, "\u300D");
                     }).join('');
                     text = "".concat(soundNames, "\n#\u30D5\u30EC\u30F3\u30DC\u30BF\u30F3\n\u51FA\u5178\u306F\u30B5\u30A4\u30C8\u306B\u3066");
-                    return [4 /*yield*/, client.v1.uploadMedia(outputFilePath)];
-                case 2:
+                    return [4 /*yield*/, client.v1.uploadMedia(outputAudioFilePath)];
+                case 3:
                     mediaId = _b.sent();
                     outputImageFilePath = "".concat(outputDirectoryPath, "/output.jpg");
                     return [4 /*yield*/, client.v1.uploadMedia(outputImageFilePath)];
-                case 3:
+                case 4:
                     imageMediaId = _b.sent();
                     postParams = {
                         text: text,
@@ -158,9 +162,9 @@ function postTweetThread(soundDataList) {
                     params = __spreadArray([postParams], treePostParams, true);
                     postedTweets = [];
                     i = 0;
-                    _b.label = 4;
-                case 4:
-                    if (!(i < params.length)) return [3 /*break*/, 8];
+                    _b.label = 5;
+                case 5:
+                    if (!(i < params.length)) return [3 /*break*/, 9];
                     param = params[i];
                     lastTweet = postedTweets.length ? postedTweets[postedTweets.length - 1] : null;
                     if (lastTweet) {
@@ -169,18 +173,17 @@ function postTweetThread(soundDataList) {
                         };
                     }
                     return [4 /*yield*/, client.v2.tweet(param)];
-                case 5:
+                case 6:
                     tweet = _b.sent();
                     postedTweets.push(tweet);
                     return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, WaitTime); })];
-                case 6:
-                    _b.sent();
-                    // ツリーをやめる
-                    return [3 /*break*/, 8];
                 case 7:
+                    _b.sent();
+                    _b.label = 8;
+                case 8:
                     i++;
-                    return [3 /*break*/, 4];
-                case 8: return [2 /*return*/];
+                    return [3 /*break*/, 5];
+                case 9: return [2 /*return*/];
             }
         });
     });
