@@ -1,0 +1,27 @@
+name: Backup FirebaseRealtimeDatabase Counts
+
+on:
+  schedule:
+    # 日本時間(UTC+9) 22時
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+jobs:
+  backup-counts:
+    name: FirebaseRealtimeDatabaseのバックアップを取得する
+    environment: Backup FirebaseRealtimeDatabase Counts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GH_PAT || github.token }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: counts を更新する
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          npm install && node ./node_modules/.bin/firebase database:get -o counts.json /counts && echo "$(date '+%F'),$(jq '[.[] | .count] | add' counts.json)" >> dataset/firebase/counts.csv
