@@ -1,7 +1,71 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "ifdiKgV0tsfr8lclw0Ww2UI26rg",
+    "etag": "j9EPhgnwM2JkLDh3UP6NejpNFs8",
+    "id": "Qqix0n-9WHw",
+    "snippet": {
+      "publishedAt": "2025-06-03T11:17:59Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "✨DeLuLu 踊ってみた #チクタクしてみた #vtuber #shorts",
+      "description": "雨にも風にも負けないくらい〜♪(なぜか大雨)\n\n✨本家はこちら\nhttps://youtu.be/IY-rMEJXWUs?si=CJ_OcjYTENkugllc\n\n#にじさんじ #フレンeルスタリオ #shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Qqix0n-9WHw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Qqix0n-9WHw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Qqix0n-9WHw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/Qqix0n-9WHw/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/Qqix0n-9WHw/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "localized": {
+        "title": "✨DeLuLu 踊ってみた #チクタクしてみた #vtuber #shorts",
+        "description": "雨にも風にも負けないくらい〜♪(なぜか大雨)\n\n✨本家はこちら\nhttps://youtu.be/IY-rMEJXWUs?si=CJ_OcjYTENkugllc\n\n#にじさんじ #フレンeルスタリオ #shorts"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT32S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "105046",
+      "likeCount": "9857",
+      "favoriteCount": "0",
+      "commentCount": "183"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/Qqix0n-9WHw\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "aPmutabTcOU6U5fYCE-nk1iKslY",
     "id": "UhPHjVMvJn0",
     "snippet": {
       "publishedAt": "2025-05-31T13:43:02Z",
@@ -97,10 +161,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "151602",
-      "likeCount": "3703",
+      "viewCount": "153838",
+      "likeCount": "3730",
       "favoriteCount": "0",
-      "commentCount": "48"
+      "commentCount": "49"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/UhPHjVMvJn0\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -108,7 +172,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "iLCydR4HDRLzeVkOqZtlqS92bRk",
+    "etag": "QwX1UG0s2QyaIm4N1ryJrLNxs10",
     "id": "d65EPe948vU",
     "snippet": {
       "publishedAt": "2025-05-30T15:41:14Z",
@@ -207,8 +271,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "80806",
-      "likeCount": "2504",
+      "viewCount": "81774",
+      "likeCount": "2525",
       "favoriteCount": "0",
       "commentCount": "40"
     },
@@ -218,7 +282,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "D45O5nyBzD9-epuodI9D1zz5uxE",
+    "etag": "QvPov9-gT2o-z5T93gbZKyKHXtc",
     "id": "H1EKf6VMSzY",
     "snippet": {
       "publishedAt": "2025-05-26T15:43:34Z",
@@ -314,8 +378,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "164967",
-      "likeCount": "4183",
+      "viewCount": "165659",
+      "likeCount": "4192",
       "favoriteCount": "0",
       "commentCount": "52"
     },
@@ -325,7 +389,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "WMfeLFishK9Ij0zI-dBkSdb95Ec",
+    "etag": "kvTLgu1a15g6qHWbLbRJGHGBwKs",
     "id": "fWPOqHKJiHE",
     "snippet": {
       "publishedAt": "2025-05-24T13:29:52Z",
@@ -421,8 +485,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "194077",
-      "likeCount": "4699",
+      "viewCount": "195198",
+      "likeCount": "4709",
       "favoriteCount": "0",
       "commentCount": "72"
     },
@@ -432,7 +496,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "xG7szpghh1pWF4hmtdSFCemL1I0",
+    "etag": "in7l5hlGLFSZt_FEnQcJU7sRW0Y",
     "id": "wyPXZWNdQJU",
     "snippet": {
       "publishedAt": "2025-05-23T16:04:28Z",
@@ -527,8 +591,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "93582",
-      "likeCount": "3297",
+      "viewCount": "93792",
+      "likeCount": "3301",
       "favoriteCount": "0",
       "commentCount": "34"
     },
@@ -538,7 +602,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yIoIBLeJ721477_XeFelVl-Jfbg",
+    "etag": "VKfMQS913JF4bQ8eS4FhHDhN4Lo",
     "id": "4kAeScPDvJs",
     "snippet": {
       "publishedAt": "2025-05-22T11:37:29Z",
@@ -591,10 +655,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "476211",
-      "likeCount": "20072",
+      "viewCount": "480955",
+      "likeCount": "20177",
       "favoriteCount": "0",
-      "commentCount": "261"
+      "commentCount": "262"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/4kAeScPDvJs\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -602,7 +666,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VUh77w2XKNSstzGpZvIdwBwn-sg",
+    "etag": "CblVs6qJ2wNSGWWLs9O9-xslfQE",
     "id": "NuLz69xVlGc",
     "snippet": {
       "publishedAt": "2025-05-19T15:50:30Z",
@@ -695,8 +759,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "130619",
-      "likeCount": "4080",
+      "viewCount": "130895",
+      "likeCount": "4082",
       "favoriteCount": "0",
       "commentCount": "43"
     },
@@ -706,7 +770,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "3noA4YrgYHonwkgK0StH7vwQj1A",
+    "etag": "Bmj2oDp9SoWVBA72TDvqaPCohxk",
     "id": "rzt72nRhBS8",
     "snippet": {
       "publishedAt": "2025-05-17T14:09:24Z",
@@ -765,10 +829,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "419707",
-      "likeCount": "21171",
+      "viewCount": "422222",
+      "likeCount": "21237",
       "favoriteCount": "0",
-      "commentCount": "242"
+      "commentCount": "243"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/rzt72nRhBS8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -776,7 +840,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "73xYPid4a1RbdmEKMZ-6x2pE200",
+    "etag": "5huRMYqw2ORDhNdkyR_OqklNY_w",
     "id": "Nic2ZCGyvok",
     "snippet": {
       "publishedAt": "2025-05-15T15:06:55Z",
@@ -867,8 +931,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "77731",
-      "likeCount": "2910",
+      "viewCount": "77898",
+      "likeCount": "2914",
       "favoriteCount": "0",
       "commentCount": "39"
     },
@@ -878,7 +942,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "toA5U9s9_D2aHTwBzrmJEQOS3xc",
+    "etag": "ldQx3v4SzVqVbEw9jqeG8DWWrcg",
     "id": "Le6z64anWgQ",
     "snippet": {
       "publishedAt": "2025-05-14T15:07:59Z",
@@ -971,7 +1035,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "72157",
+      "viewCount": "72328",
       "likeCount": "2735",
       "favoriteCount": "0",
       "commentCount": "27"
@@ -982,7 +1046,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "EkLmHLZCmPJ_mvyk43U2eXCYbMY",
+    "etag": "NAtdo2tYKTDwSzY1qghpK3Gx4iM",
     "id": "kDmjvdSUNPw",
     "snippet": {
       "publishedAt": "2025-05-12T17:16:56Z",
@@ -1073,8 +1137,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "97681",
-      "likeCount": "3828",
+      "viewCount": "97779",
+      "likeCount": "3829",
       "favoriteCount": "0",
       "commentCount": "46"
     },
@@ -1084,7 +1148,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "o9jFb9UegaVB5wNHa2uST_p5zHA",
+    "etag": "Lkt0cRED1_6GNdfCpaivGuX4dyQ",
     "id": "5VSzgMeqDak",
     "snippet": {
       "publishedAt": "2025-05-09T11:49:47Z",
@@ -1137,8 +1201,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "2102716",
-      "likeCount": "83369",
+      "viewCount": "2118813",
+      "likeCount": "83752",
       "favoriteCount": "0",
       "commentCount": "426"
     },
@@ -1148,7 +1212,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "po-vAdoWV9zaTHg9b9IdlnD_HXk",
+    "etag": "LOQYs_1fQGJS1AolBEXQgXrDSKk",
     "id": "M0Ue25WlPv8",
     "snippet": {
       "publishedAt": "2025-05-08T14:20:03Z",
@@ -1201,8 +1265,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "448469",
-      "likeCount": "20434",
+      "viewCount": "450877",
+      "likeCount": "20496",
       "favoriteCount": "0",
       "commentCount": "170"
     },
@@ -1212,7 +1276,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "x4AqeJ3ic6P4wXKP6_WqvHjCLBc",
+    "etag": "QLwKAsT2AovVfEk4_Moim1836o4",
     "id": "g3X0Wq2hD4c",
     "snippet": {
       "publishedAt": "2025-05-07T16:13:08Z",
@@ -1313,8 +1377,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "133974",
-      "likeCount": "3425",
+      "viewCount": "134129",
+      "likeCount": "3426",
       "favoriteCount": "0",
       "commentCount": "48"
     },
@@ -1324,7 +1388,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fD34mUaMwe8UznsPPOjIKHKxbKI",
+    "etag": "oCw3gKWmxPBcNYfnKMB1Ty6YKhY",
     "id": "_a_pVtShE1w",
     "snippet": {
       "publishedAt": "2025-05-06T13:12:45Z",
@@ -1382,8 +1446,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1269663",
-      "likeCount": "52090",
+      "viewCount": "1273909",
+      "likeCount": "52226",
       "favoriteCount": "0",
       "commentCount": "459"
     },
@@ -1393,7 +1457,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sTTphsDC_D9tblttODm_b3zvH4c",
+    "etag": "0wZhVFb9djYOUvQIpSX-KFIMgjw",
     "id": "9WaMBTJx_8A",
     "snippet": {
       "publishedAt": "2025-05-05T12:31:52Z",
@@ -1487,7 +1551,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "186941",
+      "viewCount": "187008",
       "likeCount": "5487",
       "favoriteCount": "0",
       "commentCount": "101"
@@ -1498,7 +1562,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5KE_17elIy3KREdB6y4zqwfBEB8",
+    "etag": "CDR6Xzz9Q4A2GwrxgJarHwzbzs0",
     "id": "Ueb7Jvuo5Uw",
     "snippet": {
       "publishedAt": "2025-05-04T18:53:14Z",
@@ -1592,7 +1656,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "94289",
+      "viewCount": "94309",
       "likeCount": "2196",
       "favoriteCount": "0",
       "commentCount": "22"
@@ -1603,7 +1667,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vY99c1y0s-cTUgBphfIQk2kwiko",
+    "etag": "J37DKKyZHT1nDwEdt8CcHGVWFT4",
     "id": "OqrUyiadkjE",
     "snippet": {
       "publishedAt": "2025-05-03T19:18:12Z",
@@ -1697,8 +1761,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "130375",
-      "likeCount": "2570",
+      "viewCount": "130417",
+      "likeCount": "2571",
       "favoriteCount": "0",
       "commentCount": "23"
     },
@@ -1708,7 +1772,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "h7IZk0EhYdil0pLWSKRoUBdbfio",
+    "etag": "fCn_gb0TX-lyqRaWINDuMXP4gs8",
     "id": "ieBexcF_ksI",
     "snippet": {
       "publishedAt": "2025-05-02T19:43:53Z",
@@ -1802,7 +1866,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "114059",
+      "viewCount": "114074",
       "likeCount": "2482",
       "favoriteCount": "0",
       "commentCount": "18"
@@ -1813,7 +1877,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gH3TU6MtUMg_I4YAQYD7oYT0rLI",
+    "etag": "FqncojXqVoaWf16z2s3y6PRITGU",
     "id": "DJ4cvdaSm0k",
     "snippet": {
       "publishedAt": "2025-04-30T16:50:54Z",
@@ -1902,7 +1966,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "91110",
+      "viewCount": "91121",
       "likeCount": "2199",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -1913,7 +1977,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "uaQQCvKUZdezWd3D5AwQcs-kOGM",
+    "etag": "gPwXK42cteakfPQlEjlPe2uf3-w",
     "id": "lXOn-xzNCrc",
     "snippet": {
       "publishedAt": "2025-04-27T07:46:53Z",
@@ -2007,7 +2071,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "95649",
+      "viewCount": "95665",
       "likeCount": "3141",
       "favoriteCount": "0",
       "commentCount": "44"
@@ -2018,7 +2082,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cUrceR8BXp4dE-O5XdU578Amd98",
+    "etag": "pxEvW_VMMTLDEQ_3uIsap4YWCFE",
     "id": "DkGIBuIM2BY",
     "snippet": {
       "publishedAt": "2025-04-26T19:21:37Z",
@@ -2107,7 +2171,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "176488",
+      "viewCount": "176516",
       "likeCount": "3446",
       "favoriteCount": "0",
       "commentCount": "33"
@@ -2118,7 +2182,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sx-TaTXrnIAbhDOz_1stzbY--ts",
+    "etag": "s4G8BnC2BHapqElLYn10N4zYSfA",
     "id": "AY2K1ngi6eE",
     "snippet": {
       "publishedAt": "2025-04-25T19:07:10Z",
@@ -2212,7 +2276,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "74115",
+      "viewCount": "74124",
       "likeCount": "1936",
       "favoriteCount": "0",
       "commentCount": "26"
@@ -2223,7 +2287,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "blZQ5ac815P5WWGggZgRqYK1aXs",
+    "etag": "nyTsVQ2gr0Q9LdqprSeejj42SXo",
     "id": "9atsZOgzGeg",
     "snippet": {
       "publishedAt": "2025-04-25T02:03:56Z",
@@ -2294,8 +2358,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "49313",
-      "likeCount": "3702",
+      "viewCount": "49455",
+      "likeCount": "3713",
       "favoriteCount": "0",
       "commentCount": "264"
     },
@@ -2305,7 +2369,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Xn9faOZDTg7SbxdfPinErd-tCvY",
+    "etag": "GCfhSeSPAIHG63HO3WuuMFnYlco",
     "id": "V3xnFZX6SaM",
     "snippet": {
       "publishedAt": "2025-04-24T16:48:32Z",
@@ -2399,7 +2463,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "113246",
+      "viewCount": "113259",
       "likeCount": "2292",
       "favoriteCount": "0",
       "commentCount": "26"
@@ -2410,7 +2474,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "p5MvtdecYQRSRNHAgzzCmZVEpLo",
+    "etag": "_z6WEycWHCRXhBKxKpBl1pW1YDs",
     "id": "PTruQnsQ9Z4",
     "snippet": {
       "publishedAt": "2025-04-24T12:27:30Z",
@@ -2504,7 +2568,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "33614",
+      "viewCount": "33620",
       "likeCount": "1039",
       "favoriteCount": "0",
       "commentCount": "7"
@@ -2515,7 +2579,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "zbduZqAHCZPBj7DZVU7CR2wJK8o",
+    "etag": "0xdiAShknuNtQzN30V4n1Kvu4B4",
     "id": "5t3-KIo3b5w",
     "snippet": {
       "publishedAt": "2025-04-22T16:00:39Z",
@@ -2609,7 +2673,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "96696",
+      "viewCount": "96710",
       "likeCount": "2554",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -2620,7 +2684,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Jz_4UK9PIQ8rXh-gLMEHQASJeD4",
+    "etag": "cvetErsHPAQedIsc0_qfJRACUXs",
     "id": "LJF14cULumY",
     "snippet": {
       "publishedAt": "2025-04-21T15:35:13Z",
@@ -2714,7 +2778,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "93244",
+      "viewCount": "93267",
       "likeCount": "2442",
       "favoriteCount": "0",
       "commentCount": "27"
@@ -2725,7 +2789,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yKYtvaMh3_aFQyEqNUJtsPOowUU",
+    "etag": "SceX6gkwN6_aTfbVqjMzMBO0hy4",
     "id": "3-32-vtrhfc",
     "snippet": {
       "publishedAt": "2025-04-20T14:29:00Z",
@@ -2830,7 +2894,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "60520",
+      "viewCount": "60551",
       "likeCount": "1912",
       "favoriteCount": "0",
       "commentCount": "19"
@@ -2841,7 +2905,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "GqTmDIQeSEhrcnM6zec9sQ27FCQ",
+    "etag": "6lT81Tjsz2nvbEXQ-FqY4KSgsC0",
     "id": "xR-fM_uwwiQ",
     "snippet": {
       "publishedAt": "2025-04-20T10:43:05Z",
@@ -2933,8 +2997,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "111954",
-      "likeCount": "2821",
+      "viewCount": "112002",
+      "likeCount": "2822",
       "favoriteCount": "0",
       "commentCount": "41"
     },
@@ -2944,7 +3008,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Uz578GEk1s5GIcXfEKcH_Okjn6U",
+    "etag": "s7fwcuBebN5u6WxTPKkalTjoh-o",
     "id": "hiNbZGKO6mY",
     "snippet": {
       "publishedAt": "2025-04-18T15:56:28Z",
@@ -3038,7 +3102,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "77332",
+      "viewCount": "77337",
       "likeCount": "2520",
       "favoriteCount": "0",
       "commentCount": "31"
@@ -3049,7 +3113,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "85a8gyPFGwAMBA9yNUJaQkKdH1Q",
+    "etag": "CdBnSHXDIFwmuyUWpicPvFEVHy4",
     "id": "jLdJ6HXYw5o",
     "snippet": {
       "publishedAt": "2025-04-16T15:21:12Z",
@@ -3142,8 +3206,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "80082",
-      "likeCount": "2651",
+      "viewCount": "80130",
+      "likeCount": "2652",
       "favoriteCount": "0",
       "commentCount": "32"
     },
@@ -3153,7 +3217,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "-TxON6ylAVJuGkiBuDECbX_aEkE",
+    "etag": "eKg8-7By7YwkyVlgg_IAXqUhnug",
     "id": "NasXLA5vfoQ",
     "snippet": {
       "publishedAt": "2025-04-15T12:52:32Z",
@@ -3206,8 +3270,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "154662",
-      "likeCount": "10009",
+      "viewCount": "155676",
+      "likeCount": "10034",
       "favoriteCount": "0",
       "commentCount": "160"
     },
@@ -3217,7 +3281,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Q0Na7LNdT6n0fzEge9HaGQc3vgo",
+    "etag": "JMo3rko8NpVGpQqPPxjvdMVvvkg",
     "id": "sUHkrRiYUCk",
     "snippet": {
       "publishedAt": "2025-04-14T12:10:41Z",
@@ -3270,8 +3334,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "500352",
-      "likeCount": "22436",
+      "viewCount": "501438",
+      "likeCount": "22455",
       "favoriteCount": "0",
       "commentCount": "249"
     },
@@ -3281,7 +3345,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bkGH-RERwrG7A9HkoQJvYEJk0J0",
+    "etag": "Vj3QILQ3Gr19T9TKrAdB91O6v2g",
     "id": "rLj2Q7juAPI",
     "snippet": {
       "publishedAt": "2025-04-13T15:03:56Z",
@@ -3373,7 +3437,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "123712",
+      "viewCount": "123730",
       "likeCount": "3002",
       "favoriteCount": "0",
       "commentCount": "45"
@@ -3384,7 +3448,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sOqxeKKX_W9C-H5nz4cO5drVJZ0",
+    "etag": "50n9cuOthyqrAUdkfa6NaujA1qs",
     "id": "M7FaRDVxZ54",
     "snippet": {
       "publishedAt": "2025-04-11T14:49:15Z",
@@ -3478,8 +3542,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "224056",
-      "likeCount": "6616",
+      "viewCount": "224187",
+      "likeCount": "6618",
       "favoriteCount": "0",
       "commentCount": "57"
     },
@@ -3489,7 +3553,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Fwua15fNQVVUeLWxUn5L6Fe2jTo",
+    "etag": "v8HB4Zul-zvDI5c2lIFF_ZW1LNA",
     "id": "viEfVVBRGA4",
     "snippet": {
       "publishedAt": "2025-04-10T15:39:26Z",
@@ -3581,7 +3645,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "87740",
+      "viewCount": "87754",
       "likeCount": "2412",
       "favoriteCount": "0",
       "commentCount": "35"
@@ -3592,7 +3656,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DD5KefzmcYEHtcXAnSpjHewBMo4",
+    "etag": "8adQcddHcIaQKj2K5JUzsOUSkjw",
     "id": "_JWZ6EODS3A",
     "snippet": {
       "publishedAt": "2025-04-09T15:58:29Z",
@@ -3686,8 +3750,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "78078",
-      "likeCount": "2496",
+      "viewCount": "78113",
+      "likeCount": "2497",
       "favoriteCount": "0",
       "commentCount": "19"
     },
@@ -3697,7 +3761,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0iA4qmBK2y5Zi_IxuBY5XsDp8fw",
+    "etag": "0mVKdFdim6uwpU3Ye-9ndxDxpHg",
     "id": "vQOBzwz34Ms",
     "snippet": {
       "publishedAt": "2025-04-07T17:30:14Z",
@@ -3790,7 +3854,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "114373",
+      "viewCount": "114419",
       "likeCount": "3175",
       "favoriteCount": "0",
       "commentCount": "24"
@@ -3801,7 +3865,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "npt4oQyA6yxJ0M1v3Ag9PCaWbkM",
+    "etag": "tuScB7emCm90_uHZgrgEAK2yy0o",
     "id": "LvrOmPQr5w0",
     "snippet": {
       "publishedAt": "2025-04-05T16:21:41Z",
@@ -3893,7 +3957,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "109035",
+      "viewCount": "109050",
       "likeCount": "2815",
       "favoriteCount": "0",
       "commentCount": "42"
@@ -3904,7 +3968,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lFshqsnhrzFptomuzSnZ0mspgxo",
+    "etag": "zHV4PyJGSiYuwT7mdORS49sTByg",
     "id": "hXQbOrtcihE",
     "snippet": {
       "publishedAt": "2025-04-04T08:46:02Z",
@@ -3957,8 +4021,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "576105",
-      "likeCount": "29015",
+      "viewCount": "576791",
+      "likeCount": "29027",
       "favoriteCount": "0",
       "commentCount": "427"
     },
@@ -3968,7 +4032,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4zcnT8IserUe2kzgJLpcHQiGadQ",
+    "etag": "SHCpyGaW6qWrfKAyY7zA-KJrT08",
     "id": "mOYv0rsUC1Y",
     "snippet": {
       "publishedAt": "2025-04-02T14:21:58Z",
@@ -4068,7 +4132,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "114832",
+      "viewCount": "114874",
       "likeCount": "2761",
       "favoriteCount": "0",
       "commentCount": "48"
@@ -4079,7 +4143,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ZwTGDvcqz1neiTuGhdG4vchzgfI",
+    "etag": "CA6n4Mv3WM8brxDJEojb62TAv-8",
     "id": "9ZPsq37p0Ls",
     "snippet": {
       "publishedAt": "2025-04-01T14:14:16Z",
@@ -4168,7 +4232,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "203997",
+      "viewCount": "204021",
       "likeCount": "8226",
       "favoriteCount": "0",
       "commentCount": "62"
@@ -4179,7 +4243,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cUTkgVd3kyziuCklRfscp7t6mKA",
+    "etag": "CgvQeFLgco_GYn8l0HdB5Z0zqHM",
     "id": "ShhSKkBwcD4",
     "snippet": {
       "publishedAt": "2025-04-01T13:00:06Z",
@@ -4256,8 +4320,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1481172",
-      "likeCount": "42758",
+      "viewCount": "1493813",
+      "likeCount": "42878",
       "favoriteCount": "0",
       "commentCount": "683"
     },
@@ -4267,7 +4331,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "1XAR4-DfCyo2zWEo4wixR17RpeI",
+    "etag": "e0JR5sK5S8nOqpDSEmWgL4gIsqE",
     "id": "fy98x-v-D7g",
     "snippet": {
       "publishedAt": "2025-03-30T12:12:55Z",
@@ -4359,7 +4423,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "184267",
+      "viewCount": "184302",
       "likeCount": "4612",
       "favoriteCount": "0",
       "commentCount": "51"
@@ -4370,7 +4434,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QJ210G3bbxEMdCqJkmKjdrQRkjE",
+    "etag": "q5pV8JneTZQXle1qzJNHDrwUOiE",
     "id": "tiEsEvIfQHc",
     "snippet": {
       "publishedAt": "2025-03-27T13:10:02Z",
@@ -4458,8 +4522,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "66303",
-      "likeCount": "2947",
+      "viewCount": "66370",
+      "likeCount": "2948",
       "favoriteCount": "0",
       "commentCount": "24"
     },
@@ -4469,7 +4533,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YYRhVhSgLZ02Kjr6yj1Czsf8ROQ",
+    "etag": "h7WUYYKxRVHyskuMzOxxdNOpV0Y",
     "id": "CONn0EZXQ7o",
     "snippet": {
       "publishedAt": "2025-03-26T16:12:54Z",
@@ -4561,8 +4625,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "84904",
-      "likeCount": "2278",
+      "viewCount": "84951",
+      "likeCount": "2279",
       "favoriteCount": "0",
       "commentCount": "73"
     },
@@ -4572,7 +4636,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ht4DMIWu32FOdzGm5aS-gKa7vJg",
+    "etag": "NlBJn_mIRQnAiIN6p1vOdDoQoIc",
     "id": "oK5WXqr2K7U",
     "snippet": {
       "publishedAt": "2025-03-25T11:34:02Z",
@@ -4620,8 +4684,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "442352",
-      "likeCount": "28218",
+      "viewCount": "443426",
+      "likeCount": "28235",
       "favoriteCount": "0",
       "commentCount": "231"
     },
@@ -4631,7 +4695,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0rhiegevo4WRyWWNDJKhx3g1mmE",
+    "etag": "xmbg3wX9kRU2PEGoP7h8D88Bjbo",
     "id": "ax-_qRqeGZs",
     "snippet": {
       "publishedAt": "2025-03-24T14:50:33Z",
@@ -4721,8 +4785,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "70339",
-      "likeCount": "2187",
+      "viewCount": "70357",
+      "likeCount": "2188",
       "favoriteCount": "0",
       "commentCount": "30"
     },
@@ -4732,7 +4796,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "A-mVuUm6wEwNbev5ew2lIKgHo4g",
+    "etag": "sxzWmHyNbW8Q4BwXPqzvbuAxQi8",
     "id": "DIcVCvD33Hs",
     "snippet": {
       "publishedAt": "2025-03-23T11:48:26Z",
@@ -4824,7 +4888,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "108116",
+      "viewCount": "108177",
       "likeCount": "2318",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -4835,7 +4899,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "WfMy7m0e7wNZl3qtnAXjasqmecY",
+    "etag": "uypgHpuKU8TdbZH97hnguGz3UZ4",
     "id": "UpZjKneu32E",
     "snippet": {
       "publishedAt": "2025-03-22T13:32:23Z",
@@ -4927,7 +4991,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "108421",
+      "viewCount": "108477",
       "likeCount": "2267",
       "favoriteCount": "0",
       "commentCount": "38"
@@ -4938,7 +5002,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "K8xYCSAMF8SH7tWNecrcTH9DinI",
+    "etag": "TH6NettaVIoONmqbCIIaZbmHZfs",
     "id": "GqVdP0gWjyE",
     "snippet": {
       "publishedAt": "2025-03-21T17:27:14Z",
@@ -5030,7 +5094,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "98410",
+      "viewCount": "98445",
       "likeCount": "2314",
       "favoriteCount": "0",
       "commentCount": "37"
@@ -5041,7 +5105,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_-W040pxxUPs9E5AfDic3krhk5I",
+    "etag": "GzJPxE19yx7sZBWdc3EvPXngHPg",
     "id": "YFZDSYaszsA",
     "snippet": {
       "publishedAt": "2025-03-16T07:02:22Z",
@@ -5094,8 +5158,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "539995",
-      "likeCount": "32843",
+      "viewCount": "540679",
+      "likeCount": "32851",
       "favoriteCount": "0",
       "commentCount": "225"
     },
@@ -5105,7 +5169,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wF3AXIEQZQGwsddfe3gVmSdMwsE",
+    "etag": "RGvPWJ5s3yEFRjBD3SnrOhRriXk",
     "id": "0IFLg96aBMo",
     "snippet": {
       "publishedAt": "2025-03-15T12:26:06Z",
@@ -5197,8 +5261,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "140399",
-      "likeCount": "2807",
+      "viewCount": "140448",
+      "likeCount": "2806",
       "favoriteCount": "0",
       "commentCount": "35"
     },
@@ -5208,7 +5272,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NNYCTGB6VPSjQVMk7cTERuO35bo",
+    "etag": "7YfY8MyG2ONWhvJw2HRdUB-DUeI",
     "id": "PYRwb2n1EwA",
     "snippet": {
       "publishedAt": "2025-03-14T17:29:29Z",
@@ -5300,7 +5364,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "100397",
+      "viewCount": "100437",
       "likeCount": "2454",
       "favoriteCount": "0",
       "commentCount": "32"
@@ -5311,7 +5375,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "oC5nw68d_jjhAilX9lWjSIMkbuE",
+    "etag": "ws1QsqBxKU_UxkMri_AGrS12s_I",
     "id": "HmcVvvoW4sE",
     "snippet": {
       "publishedAt": "2025-03-12T14:45:28Z",
@@ -5399,8 +5463,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "83651",
-      "likeCount": "2446",
+      "viewCount": "83683",
+      "likeCount": "2447",
       "favoriteCount": "0",
       "commentCount": "34"
     },
@@ -5410,7 +5474,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "aQ6xbpxBgx1HTimmSmuLtmaGJpE",
+    "etag": "Id0vGsqdon40gH07eRXk4qGbcsU",
     "id": "Ji3ES5yAaqg",
     "snippet": {
       "publishedAt": "2025-03-11T13:00:35Z",
@@ -5463,8 +5527,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "612389",
-      "likeCount": "39039",
+      "viewCount": "613251",
+      "likeCount": "39059",
       "favoriteCount": "0",
       "commentCount": "372"
     },
@@ -5474,7 +5538,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QB9QowIrYV16DXBtRcvzrwYtRF4",
+    "etag": "SbkkHN1Txvds3HAddkB7_Hp3VqE",
     "id": "lK2UenDCIXI",
     "snippet": {
       "publishedAt": "2025-03-10T16:40:54Z",
@@ -5565,8 +5629,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "355670",
-      "likeCount": "9935",
+      "viewCount": "356299",
+      "likeCount": "9946",
       "favoriteCount": "0",
       "commentCount": "104"
     },
@@ -5576,7 +5640,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "A-hlw5DUyAxnJ-6dPl_Ezd0av5M",
+    "etag": "ALGpjyaCHICDqt2sf83Rf8ZXpqw",
     "id": "tCSXG8Mad4I",
     "snippet": {
       "publishedAt": "2025-03-09T16:28:21Z",
@@ -5668,7 +5732,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "147690",
+      "viewCount": "147752",
       "likeCount": "3162",
       "favoriteCount": "0",
       "commentCount": "49"
@@ -5679,7 +5743,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "235OkxIBQfHOJZH1yU1qzywjn18",
+    "etag": "55Bm2cCjWlWsIUxWLj8xjK1ZRAc",
     "id": "STxQcnFIheY",
     "snippet": {
       "publishedAt": "2025-03-08T15:00:21Z",
@@ -5771,8 +5835,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "212441",
-      "likeCount": "4005",
+      "viewCount": "212563",
+      "likeCount": "4006",
       "favoriteCount": "0",
       "commentCount": "70"
     },
@@ -5782,7 +5846,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5zflyCiaZjAUJwSbE-o4rdV5rFE",
+    "etag": "u2uhd-WALypYYG8Gv7b68lBQXnk",
     "id": "flQau7wvgIE",
     "snippet": {
       "publishedAt": "2025-03-07T15:09:42Z",
@@ -5874,7 +5938,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "87894",
+      "viewCount": "87931",
       "likeCount": "3193",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -5885,7 +5949,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8zrGwKdGvJkQsEyn8HGyenOix0E",
+    "etag": "EKDjpSfmomzvp02kYjXnuGcwGIo",
     "id": "KkYWZxIPoSU",
     "snippet": {
       "publishedAt": "2025-03-06T14:42:08Z",
@@ -5978,7 +6042,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "48063",
+      "viewCount": "48073",
       "likeCount": "1965",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -5989,7 +6053,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "WrRQuQsCMsIhi04LPTRhl_l5ikQ",
+    "etag": "se4K4FHihW9D6ksc8VG9p4PatAw",
     "id": "Zx6SDQsjZE8",
     "snippet": {
       "publishedAt": "2025-03-04T15:12:31Z",
@@ -6082,8 +6146,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "103098",
-      "likeCount": "2992",
+      "viewCount": "103134",
+      "likeCount": "2993",
       "favoriteCount": "0",
       "commentCount": "46"
     },
@@ -6093,7 +6157,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "C8_dH_awryrR3njHDBhrbpd88XE",
+    "etag": "9sdE8bynyzw75EAaAsi3vLb0DLA",
     "id": "YuxE-Pz3gkQ",
     "snippet": {
       "publishedAt": "2025-03-01T15:25:19Z",
@@ -6192,7 +6256,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "82154",
+      "viewCount": "82185",
       "likeCount": "2312",
       "favoriteCount": "0",
       "commentCount": "32"
@@ -6203,7 +6267,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "oM7iB812EVBxB8DTWfiGxqF5ky4",
+    "etag": "JjhWLhjxiasdZUq__ImPAYksrbE",
     "id": "-93Y590ogCE",
     "snippet": {
       "publishedAt": "2025-02-26T15:21:24Z",
@@ -6294,7 +6358,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "83492",
+      "viewCount": "83529",
       "likeCount": "2413",
       "favoriteCount": "0",
       "commentCount": "26"
@@ -6305,7 +6369,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5lT_xGn59yHFtobKA9Xpdb8mUtM",
+    "etag": "HzCrIZ8jMXfAAq3xoeDeAtMNtlg",
     "id": "ACMX-hVSLx4",
     "snippet": {
       "publishedAt": "2025-02-25T14:49:46Z",
@@ -6401,7 +6465,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "70786",
+      "viewCount": "70796",
       "likeCount": "2834",
       "favoriteCount": "0",
       "commentCount": "29"
@@ -6412,7 +6476,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "N_pjRptX2RdWpzglCOcKX-0YtWE",
+    "etag": "C-U6Ivss_BTONIJgrUlH-Msfgyc",
     "id": "GYCnLveJJwo",
     "snippet": {
       "publishedAt": "2025-02-23T10:05:40Z",
@@ -6465,8 +6529,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "140103",
-      "likeCount": "12844",
+      "viewCount": "140582",
+      "likeCount": "12856",
       "favoriteCount": "0",
       "commentCount": "193"
     },
@@ -6476,7 +6540,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "2vnlEa0zjxIx_ed7sxYA0AA2ykA",
+    "etag": "4_noiz5nxoRdkkAuAxjQJyClZ6Q",
     "id": "upShkuKqvn4",
     "snippet": {
       "publishedAt": "2025-02-21T07:04:45Z",
@@ -6529,8 +6593,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "170384",
-      "likeCount": "13185",
+      "viewCount": "170800",
+      "likeCount": "13198",
       "favoriteCount": "0",
       "commentCount": "150"
     },
@@ -6540,7 +6604,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ds9OFwbruF69S8X3mGjnQpFoHhU",
+    "etag": "yx7Bd2q32jp3wQe5AgYuNgKy4yw",
     "id": "kQ_WNbZWM-4",
     "snippet": {
       "publishedAt": "2025-02-19T06:51:58Z",
@@ -6599,8 +6663,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "494742",
-      "likeCount": "35359",
+      "viewCount": "495163",
+      "likeCount": "35369",
       "favoriteCount": "0",
       "commentCount": "288"
     },
@@ -6610,7 +6674,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ovVyPdH7ELxTzjGVeWH3v82ol84",
+    "etag": "nev3QZGGI464M7BoD5DeSvbZEQA",
     "id": "KP5wQ7WK1tQ",
     "snippet": {
       "publishedAt": "2025-02-18T15:41:36Z",
@@ -6699,7 +6763,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "98050",
+      "viewCount": "98098",
       "likeCount": "3156",
       "favoriteCount": "0",
       "commentCount": "31"
@@ -6710,7 +6774,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LYRf5CiCBLVwEprg6--leR5aE1I",
+    "etag": "t7ambIIwEWgC9dT6UeelJcQ7jSU",
     "id": "wrjfz_Zqmug",
     "snippet": {
       "publishedAt": "2025-02-17T15:28:33Z",
@@ -6806,7 +6870,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "68145",
+      "viewCount": "68178",
       "likeCount": "2571",
       "favoriteCount": "0",
       "commentCount": "23"
@@ -6817,7 +6881,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "c4ugGNuvCtt_YcvgvbX55e4Jxr4",
+    "etag": "yljdRlUuvXLL7RO_ZulP5hC6on4",
     "id": "H5Hb702zozw",
     "snippet": {
       "publishedAt": "2025-02-16T15:32:53Z",
@@ -6909,10 +6973,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "147074",
-      "likeCount": "3756",
+      "viewCount": "147130",
+      "likeCount": "3758",
       "favoriteCount": "0",
-      "commentCount": "30"
+      "commentCount": "33"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/H5Hb702zozw\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -6920,7 +6984,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YN12lL3iq5BOby3FNuryAAUoE-c",
+    "etag": "xH3DUA48SwGINDo_eSriHq0ZfPE",
     "id": "Yit6zWu6XeQ",
     "snippet": {
       "publishedAt": "2025-02-14T15:03:20Z",
@@ -7011,7 +7075,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "47938",
+      "viewCount": "47945",
       "likeCount": "2245",
       "favoriteCount": "0",
       "commentCount": "28"
@@ -7022,7 +7086,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Nm9sQrGwSzwFSuSnqHJCUv7jApc",
+    "etag": "HeOFCLZSo8mL1CvkpDInSnQ0Wbo",
     "id": "6fjMcYPOkaA",
     "snippet": {
       "publishedAt": "2025-02-13T15:26:35Z",
@@ -7113,8 +7177,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "167354",
-      "likeCount": "6848",
+      "viewCount": "167408",
+      "likeCount": "6852",
       "favoriteCount": "0",
       "commentCount": "104"
     },
@@ -7124,109 +7188,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "68kE7mfeQImIHOpY8WQwpmk-GwM",
-    "id": "lYnucdMutSQ",
-    "snippet": {
-      "publishedAt": "2025-02-12T16:18:25Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【Minecraft】死んだら最初から！？ワンブロックから家を建てたい！【にじさんじ】",
-      "description": "ハッシュタグ：#ルスタリオンエア\n\nこれだけは言っておくが確実にみんなの力をかりる\n頼んだみんな\n\nマップ: OneBlock by IJAMinecraft\nダウンロード： https: //ijaminecraft.com/map/oneblock/\n\n＋＋＋\n\n✨メンバー登録はこちら\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n(スマホの方はこちらのURLをコピーしてブラウザで飛んでください)\n\n※未成年者の視聴者の方々は、下記リンク先の注意事項もご覧ください。\nhttps://www.anycolor.co.jp/notice-for-minors\n\n＋＋＋",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/lYnucdMutSQ/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/lYnucdMutSQ/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/lYnucdMutSQ/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/lYnucdMutSQ/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/lYnucdMutSQ/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "ふれん・いー・るすたりお",
-        "furenelustario",
-        "にじさんじ",
-        "nijisanji",
-        "Vtuber",
-        "anime",
-        "アニメ",
-        "japan",
-        "切り抜き",
-        "雑談",
-        "game",
-        "ゲーム",
-        "実況",
-        "歌ってみた",
-        "カバー",
-        "ふれん",
-        "バーチャルライバー",
-        "フレン",
-        "女性",
-        "女性ライバー",
-        "エンターテインメント",
-        "バーチャルYouTuber",
-        "配信",
-        "Furen・E・Lustario",
-        "japanese",
-        "完全初見",
-        "初見プレイ",
-        "会話",
-        "Free talk",
-        "steam",
-        "マイクラ",
-        "マインクラフト",
-        "Minecraft",
-        "ワンブロック",
-        "one block"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "localized": {
-        "title": "【Minecraft】死んだら最初から！？ワンブロックから家を建てたい！【にじさんじ】",
-        "description": "ハッシュタグ：#ルスタリオンエア\n\nこれだけは言っておくが確実にみんなの力をかりる\n頼んだみんな\n\nマップ: OneBlock by IJAMinecraft\nダウンロード： https: //ijaminecraft.com/map/oneblock/\n\n＋＋＋\n\n✨メンバー登録はこちら\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n(スマホの方はこちらのURLをコピーしてブラウザで飛んでください)\n\n※未成年者の視聴者の方々は、下記リンク先の注意事項もご覧ください。\nhttps://www.anycolor.co.jp/notice-for-minors\n\n＋＋＋"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT2H59M57S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "142129",
-      "likeCount": "3898",
-      "favoriteCount": "0",
-      "commentCount": "28"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/lYnucdMutSQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "2RsSW4EAF-YJ6fRyUnZVHWm9qks",
+    "etag": "XI6jIckpOME-35CFGTuYw6YuGIY",
     "id": "hJ-kul8gjkk",
     "snippet": {
       "publishedAt": "2025-02-10T14:45:16Z",
@@ -7317,8 +7279,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "80544",
-      "likeCount": "3025",
+      "viewCount": "80555",
+      "likeCount": "3026",
       "favoriteCount": "0",
       "commentCount": "41"
     },
@@ -7328,7 +7290,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "n7Zic90pyi73qPrr6p-UMERi63w",
+    "etag": "ZpgnqtWuUoRSuq43ExhnfQfhkM0",
     "id": "IJuGPRPc868",
     "snippet": {
       "publishedAt": "2025-02-08T14:08:40Z",
@@ -7420,8 +7382,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "91774",
-      "likeCount": "2204",
+      "viewCount": "91794",
+      "likeCount": "2203",
       "favoriteCount": "0",
       "commentCount": "27"
     },
@@ -7431,7 +7393,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yJhEb7hfhxPGY6nUZHtv4HBJaXg",
+    "etag": "2jzlHdGzlIrBUqBP9PRWTxGMetw",
     "id": "10Tl4d1Vtfo",
     "snippet": {
       "publishedAt": "2025-02-07T15:27:55Z",
@@ -7529,8 +7491,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "111364",
-      "likeCount": "2769",
+      "viewCount": "111380",
+      "likeCount": "2770",
       "favoriteCount": "0",
       "commentCount": "30"
     },
@@ -7540,7 +7502,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "T-vPp5RXAUoYz7zwbu6QZx3WvwQ",
+    "etag": "2tg3ovYkxp5LFykPlNExuj4rj3w",
     "id": "EU8Ckc9HiMw",
     "snippet": {
       "publishedAt": "2025-02-03T15:01:49Z",
@@ -7629,7 +7591,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "94197",
+      "viewCount": "94210",
       "likeCount": "3539",
       "favoriteCount": "0",
       "commentCount": "46"
@@ -7640,7 +7602,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fgDUB8E0utUBrqkfY6VIygNVTtE",
+    "etag": "D-HUVh5cLljcJm3_8hO_1qHfzGM",
     "id": "nUo2cc0V3do",
     "snippet": {
       "publishedAt": "2025-02-01T11:40:23Z",
@@ -7732,8 +7694,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "102050",
-      "likeCount": "2364",
+      "viewCount": "102064",
+      "likeCount": "2363",
       "favoriteCount": "0",
       "commentCount": "28"
     },
@@ -7743,7 +7705,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ddi_YB-3ihQoXktuliChPMZsCoQ",
+    "etag": "I2mu__FXyxe6nNjWXjGHD5gkDIw",
     "id": "SbmDC5eg00M",
     "snippet": {
       "publishedAt": "2025-01-31T16:05:23Z",
@@ -7841,7 +7803,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "106950",
+      "viewCount": "106977",
       "likeCount": "2660",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -7852,7 +7814,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "qzz6-yOgRc5F7rNCzMAq20OTCio",
+    "etag": "NfDW1RKpo9rZZ3iesYWR0JWp8Bo",
     "id": "a7YzRgNduy4",
     "snippet": {
       "publishedAt": "2025-01-30T13:40:06Z",
@@ -7931,8 +7893,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "687293",
-      "likeCount": "19908",
+      "viewCount": "690159",
+      "likeCount": "19929",
       "favoriteCount": "0",
       "commentCount": "414"
     },
@@ -7942,7 +7904,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5nkClZLGW5LktQIIy5UhBQNQW2M",
+    "etag": "SUrlgmF5g0V0HommYhWPfATyvyA",
     "id": "WMKG8sPuZOQ",
     "snippet": {
       "publishedAt": "2025-01-27T15:38:50Z",
@@ -8034,8 +7996,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "100515",
-      "likeCount": "2543",
+      "viewCount": "100538",
+      "likeCount": "2542",
       "favoriteCount": "0",
       "commentCount": "38"
     },
@@ -8045,7 +8007,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "OXtp9-0K8roPgDuP9ESNlvWJRlc",
+    "etag": "P0IE4lqcnEoNLwmGfrue2JdnpaQ",
     "id": "U8JP8-NpAhc",
     "snippet": {
       "publishedAt": "2025-01-26T15:46:50Z",
@@ -8141,7 +8103,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "78710",
+      "viewCount": "78720",
       "likeCount": "2978",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -8152,7 +8114,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Eh4_9eYQMKenTfzOLmkeS5qrmHw",
+    "etag": "Xe04C84PrFgPBhDGUqcyYhxwXXE",
     "id": "1FvYUfEPD24",
     "snippet": {
       "publishedAt": "2025-01-24T15:21:04Z",
@@ -8245,7 +8207,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "83018",
+      "viewCount": "83031",
       "likeCount": "2856",
       "favoriteCount": "0",
       "commentCount": "26"
@@ -8256,7 +8218,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HBB6Id4r4zNH5rp8qaxFHIhoEdM",
+    "etag": "RIhy36XQJphyNeZrVO0URQa9bEw",
     "id": "5LeQBagGaWk",
     "snippet": {
       "publishedAt": "2025-01-22T11:52:24Z",
@@ -8343,7 +8305,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "347079",
+      "viewCount": "347096",
       "likeCount": "11626",
       "favoriteCount": "0",
       "commentCount": "79"
@@ -8354,7 +8316,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "2YVEP8KLzexmJ81BCqwL8LBQp1U",
+    "etag": "tuoDDOwm4fAQoGgOi3IcgaaQDqo",
     "id": "OmZrytugo9Q",
     "snippet": {
       "publishedAt": "2025-01-21T15:30:07Z",
@@ -8446,8 +8408,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "109768",
-      "likeCount": "2708",
+      "viewCount": "109791",
+      "likeCount": "2707",
       "favoriteCount": "0",
       "commentCount": "28"
     },
@@ -8457,7 +8419,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fhBjOCKIvQ8RNZzYOCD4PwhdqTk",
+    "etag": "zD-GY0b1pLEbsK-ZroiGd8MP23c",
     "id": "hFfx8kZW9Jk",
     "snippet": {
       "publishedAt": "2025-01-19T12:55:33Z",
@@ -8549,8 +8511,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "235555",
-      "likeCount": "4931",
+      "viewCount": "235600",
+      "likeCount": "4930",
       "favoriteCount": "0",
       "commentCount": "57"
     },
@@ -8560,7 +8522,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LQx8UHrvfRHWci6AS0sm3KkOk04",
+    "etag": "SYdlg8m9aufN3_hR7KnKtEezEWw",
     "id": "55dr2y2naZg",
     "snippet": {
       "publishedAt": "2025-01-18T12:24:58Z",
@@ -8663,7 +8625,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "118634",
+      "viewCount": "118638",
       "likeCount": "3011",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -8674,7 +8636,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "b2vrRCQ9i22BCvQVKjLCrfQ5foc",
+    "etag": "oKccM03vZ01kyd-LhWscPz5JHKU",
     "id": "8lDdt0QMwxs",
     "snippet": {
       "publishedAt": "2025-01-18T01:05:28Z",
@@ -8761,8 +8723,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "405893",
-      "likeCount": "11732",
+      "viewCount": "406023",
+      "likeCount": "11736",
       "favoriteCount": "0",
       "commentCount": "118"
     },
@@ -8772,7 +8734,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "U5n3IRYFKpC7G-Y9wmnTQiq4Cyc",
+    "etag": "exXDa7Efmf_1drRJkEY71XO2R3A",
     "id": "wKfQF2xg0WI",
     "snippet": {
       "publishedAt": "2025-01-16T15:31:03Z",
@@ -8865,7 +8827,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "113449",
+      "viewCount": "113473",
       "likeCount": "3916",
       "favoriteCount": "0",
       "commentCount": "51"
@@ -8876,7 +8838,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NdbNoqhkp5o9DE0f5DxXaXlpqNE",
+    "etag": "we1ciNRHkvLP5VvfeXgGTxR0kSE",
     "id": "v7tH_ggHCJo",
     "snippet": {
       "publishedAt": "2025-01-13T09:37:47Z",
@@ -8970,7 +8932,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "52168",
+      "viewCount": "52169",
       "likeCount": "1863",
       "favoriteCount": "0",
       "commentCount": "23"
@@ -8981,7 +8943,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Y4IMPNcDPBzalsQSAtMQw61th7o",
+    "etag": "0q-8L-Om9oZU9n4XnUbK-Nt7kz8",
     "id": "Htgocgvvb-Y",
     "snippet": {
       "publishedAt": "2025-01-13T04:56:40Z",
@@ -9075,7 +9037,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "46311",
+      "viewCount": "46318",
       "likeCount": "1840",
       "favoriteCount": "0",
       "commentCount": "23"
@@ -9086,7 +9048,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5tAZYEBO37Rge__1Lw91UhAen60",
+    "etag": "FB5m_NN_1-_CnRYu98RERgkd8d8",
     "id": "uDsh-vacD2M",
     "snippet": {
       "publishedAt": "2025-01-12T08:52:24Z",
@@ -9179,7 +9141,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "41771",
+      "viewCount": "41772",
       "likeCount": "1987",
       "favoriteCount": "0",
       "commentCount": "29"
@@ -9190,7 +9152,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lXSp-qJAWyltxEWqgS5W_v5Pn34",
+    "etag": "OB2Qyjvy0kNElNIdhJzgzDqIF-w",
     "id": "wnI2wCCzPgY",
     "snippet": {
       "publishedAt": "2025-01-10T15:00:13Z",
@@ -9282,7 +9244,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "72959",
+      "viewCount": "72993",
       "likeCount": "2204",
       "favoriteCount": "0",
       "commentCount": "15"
@@ -9293,7 +9255,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "lbEaN2Kbhfx3TG4kzQ-i3DUBU9U",
+    "etag": "-no68MxRPoSVkDv-xZL8IKUV840",
     "id": "u73kJG7KuCI",
     "snippet": {
       "publishedAt": "2025-01-09T15:13:11Z",
@@ -9381,7 +9343,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "124688",
+      "viewCount": "124707",
       "likeCount": "4147",
       "favoriteCount": "0",
       "commentCount": "62"
@@ -9392,7 +9354,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JJIth0ncCyLPqISvEUgF2JPWBYg",
+    "etag": "EAEelnQ60IF0au0cbP8z8a--Pgo",
     "id": "pfvsyHDbxeY",
     "snippet": {
       "publishedAt": "2025-01-08T14:58:47Z",
@@ -9484,8 +9446,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "109681",
-      "likeCount": "3414",
+      "viewCount": "109717",
+      "likeCount": "3416",
       "favoriteCount": "0",
       "commentCount": "27"
     },
@@ -9495,7 +9457,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4f-8wH4F4-EdZOXsGHA-2Ib3EqE",
+    "etag": "nTa6uDbs65GKTRbbO9q3nuPiWtw",
     "id": "vBBT7ALYaW8",
     "snippet": {
       "publishedAt": "2025-01-05T14:48:38Z",
@@ -9586,8 +9548,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "199702",
-      "likeCount": "3979",
+      "viewCount": "199770",
+      "likeCount": "3980",
       "favoriteCount": "0",
       "commentCount": "54"
     },
@@ -9597,7 +9559,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "01B1Yu78jhEo9E13foM1OqSryLs",
+    "etag": "JSHHt4bm0gCtcwuPs9L86EVKLNA",
     "id": "zP98WEkZv6k",
     "snippet": {
       "publishedAt": "2025-01-03T12:19:00Z",
@@ -9650,8 +9612,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "317369",
-      "likeCount": "26401",
+      "viewCount": "317748",
+      "likeCount": "26413",
       "favoriteCount": "0",
       "commentCount": "262"
     },
@@ -9661,7 +9623,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LupnXUmWPkovfODjT21-8wELdIA",
+    "etag": "SnJUEW7deTo-0AVbkG_YQ89fUHs",
     "id": "eevd_MQ3-lg",
     "snippet": {
       "publishedAt": "2024-12-31T16:56:38Z",
@@ -9757,8 +9719,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "398830",
-      "likeCount": "8007",
+      "viewCount": "399102",
+      "likeCount": "8008",
       "favoriteCount": "0",
       "commentCount": "42"
     },
@@ -9768,7 +9730,114 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cryYPXlx4w5vqxXBHw78TPYoMjI",
+    "etag": "SnJUEW7deTo-0AVbkG_YQ89fUHs",
+    "id": "eevd_MQ3-lg",
+    "snippet": {
+      "publishedAt": "2024-12-31T16:56:38Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "#にじさんじカウントダウンライブ 同時視聴するぞ～～～！！！【にじさんじ】",
+      "description": "ハッシュタグ：#ルスタリオンエア\n\n※運営さんからミラーOKいただいてます！\n\n✨本配信\nhttps://www.youtube.com/watch?v=Ip0bQfyoqgs\n\n＋＋＋\n\n✨メンバー登録はこちら\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n(スマホの方はこちらのURLをコピーしてブラウザで飛んでください)\n\n※未成年者の視聴者の方々は、下記リンク先の注意事項もご覧ください。\nhttps://www.anycolor.co.jp/notice-for-minors\n\n＋＋＋",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/eevd_MQ3-lg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/eevd_MQ3-lg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/eevd_MQ3-lg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/eevd_MQ3-lg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/eevd_MQ3-lg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "ふれん・いー・るすたりお",
+        "furenelustario",
+        "にじさんじ",
+        "nijisanji",
+        "Vtuber",
+        "anime",
+        "アニメ",
+        "japan",
+        "切り抜き",
+        "雑談",
+        "game",
+        "ゲーム",
+        "実況",
+        "歌ってみた",
+        "カバー",
+        "ふれん",
+        "バーチャルライバー",
+        "フレン",
+        "女性",
+        "女性ライバー",
+        "エンターテインメント",
+        "バーチャルYouTuber",
+        "配信",
+        "Furen・E・Lustario",
+        "japanese",
+        "完全初見",
+        "初見プレイ",
+        "会話",
+        "Free talk",
+        "歌枠",
+        "歌",
+        "楽曲カバー",
+        "流行曲",
+        "紅白歌合戦"
+      ],
+      "categoryId": "10",
+      "liveBroadcastContent": "none",
+      "localized": {
+        "title": "#にじさんじカウントダウンライブ 同時視聴するぞ～～～！！！【にじさんじ】",
+        "description": "ハッシュタグ：#ルスタリオンエア\n\n※運営さんからミラーOKいただいてます！\n\n✨本配信\nhttps://www.youtube.com/watch?v=Ip0bQfyoqgs\n\n＋＋＋\n\n✨メンバー登録はこちら\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n(スマホの方はこちらのURLをコピーしてブラウザで飛んでください)\n\n※未成年者の視聴者の方々は、下記リンク先の注意事項もご覧ください。\nhttps://www.anycolor.co.jp/notice-for-minors\n\n＋＋＋"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT3H11M18S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "regionRestriction": {
+        "blocked": [
+          "BY",
+          "RU"
+        ]
+      },
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "399102",
+      "likeCount": "8008",
+      "favoriteCount": "0",
+      "commentCount": "42"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/eevd_MQ3-lg\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "K7wSBrw67VPBskhcSwZ7uZqzIgU",
     "id": "0iU1snp0E44",
     "snippet": {
       "publishedAt": "2024-12-31T13:28:43Z",
@@ -9864,8 +9933,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "173304",
-      "likeCount": "8189",
+      "viewCount": "173340",
+      "likeCount": "8188",
       "favoriteCount": "0",
       "commentCount": "48"
     },
@@ -9875,7 +9944,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "RScvsgdUPs1Qha-Ngwp-jA_2GCo",
+    "etag": "NQHkyj7cjHgOazyt1-kEAV8ZR_c",
     "id": "Rp9inBFbsdU",
     "snippet": {
       "publishedAt": "2024-12-29T16:25:13Z",
@@ -9966,7 +10035,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "192360",
+      "viewCount": "192465",
       "likeCount": "3837",
       "favoriteCount": "0",
       "commentCount": "62"
@@ -9977,7 +10046,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KKV1jMXWFfkDFp5bSPv3QJXouFw",
+    "etag": "Sog5gTypGZGrT4YBJWFg7leb3gA",
     "id": "5ll4BW31L_8",
     "snippet": {
       "publishedAt": "2024-12-28T06:19:39Z",
@@ -10068,7 +10137,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "194038",
+      "viewCount": "194180",
       "likeCount": "4839",
       "favoriteCount": "0",
       "commentCount": "73"
