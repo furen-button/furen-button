@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && cp dist/index.html dist/404.html",
-    "lint": "eslint . --report-unused-disable-directives --max-warnings 5",
-    "fixlint": "eslint . --report-unused-disable-directives --max-warnings 5 --fix"
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
