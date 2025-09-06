@@ -15,7 +15,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^6.1.6",
-    "firebase": "^10.14.0",
+    "firebase": "^12.2.1",
     "firebase-tools": "^13.20.2",
     "ga-gtag": "^1.2.0",
     "gsap": "^3.12.4",
@@ -37,6 +37,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
-    "vite": "^5.0.12"
+    "vite": "^7.1.4"
   }
 }
