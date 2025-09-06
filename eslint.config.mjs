@@ -1,5 +1,6 @@
 import js from '@eslint/js';
 import globals from 'globals';
+import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
@@ -23,6 +24,7 @@ export default tseslint.config(
             },
         },
         plugins: {
+            "react": react,
             "react-hooks": reactHooks,
             "react-refresh": reactRefresh,
         },
@@ -32,7 +34,6 @@ export default tseslint.config(
                 "warn",
                 { allowConstantExport: true },
             ],
-            "indent": ["error", 2],
             "linebreak-style": ["error", "unix"],
             "quotes": ["error", "single"],
             "semi": ["error", "always"],
@@ -45,4 +46,17 @@ export default tseslint.config(
             "no-unused-vars": "off",
         },
     },
+    {
+        files: ["src/**/*.{jsx,tsx}"],
+        rules: {
+            "react/jsx-indent": ["error", 2],
+            "react/jsx-indent-props": ["error", 2],
+        },
+    },
+    {
+        files: ["src/**/*.{js,ts}"],
+        rules: {
+            "indent": ["error", 2],
+        },
+    }
 );
