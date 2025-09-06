@@ -8,8 +8,6 @@ all:
 	ruby scripts/search_list_to_yaml/update_sources_yaml.rb
 	# 説明: チャンネルの動画情報から動画一覧ページのデータを作成するスクリプト
 	ruby scripts/search_list_to_yaml/update_videolist_json.rb
-	# 説明: wav ファイルから入力用の yaml を dataset/sounds 以下に作成するスクリプト
-	ruby scripts/create_button_element/main.rb
 	# 説明: 入力データを元に public/dataset/sounds.json を更新するスクリプト
 	ruby scripts/create_button_element/dataset_to_buttons.rb
 	# 説明: 入力データを元に public/dataset/categories.json を更新するスクリプト
