@@ -1,5 +1,5 @@
 import {SoundData} from './SoundData';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import React, {useEffect, useReducer} from 'react';
 import {Button, MenuItem, Select} from '@mui/material';
 import {TbSquareNumber1, TbSquareNumber2, TbSquareNumber3,
@@ -37,7 +37,7 @@ function PonButton(props: {
   const grid = <Grid container spacing={2}>
     {ponSettings.map((ponSetting) => {
       const soundData = soundDataList.find((soundData) => soundData.fileName === ponSetting.soundDataFileName);
-      return <Grid size={4} key={ponSetting.key}>
+      return <Grid item xs={4} key={ponSetting.key}>
         <Button
           fullWidth={true}
           variant={'contained'}
