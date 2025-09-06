@@ -1,12 +1,12 @@
-import {FirebaseApp, initializeApp, FirebaseOptions} from 'firebase/app';
-import {Auth, getAuth, signInAnonymously} from 'firebase/auth';
-import {getDatabase, ref, onValue, set} from 'firebase/database';
-import {getAnalytics} from 'firebase/analytics';
-import {initializeAppCheck, AppCheckOptions, ReCaptchaEnterpriseProvider} from 'firebase/app-check';
-import {SoundData, SoundDataJson} from '../components/SoundData.tsx';
+import { FirebaseApp, initializeApp, FirebaseOptions } from 'firebase/app';
+import { Auth, getAuth, signInAnonymously } from 'firebase/auth';
+import { getDatabase, ref, onValue, set } from 'firebase/database';
+import { getAnalytics } from 'firebase/analytics';
+import { initializeAppCheck, AppCheckOptions, ReCaptchaEnterpriseProvider } from 'firebase/app-check';
+import { SoundData, SoundDataJson } from '../components/SoundData.tsx';
 const apiKey = import.meta.env.VITE_FIREBASE_API_KEY || '';
 
-const firebaseConfig : FirebaseOptions = {
+const firebaseConfig: FirebaseOptions = {
   apiKey: apiKey,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
@@ -17,24 +17,24 @@ const firebaseConfig : FirebaseOptions = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-const firebaseAppCheckConfig : AppCheckOptions = {
+const firebaseAppCheckConfig: AppCheckOptions = {
   provider: new ReCaptchaEnterpriseProvider(import.meta.env.VITE_RECAPTCHA_SITE_KEY),
   isTokenAutoRefreshEnabled: true
 };
 
-let app : FirebaseApp | null = null;
-let auth : Auth | null = null;
+let app: FirebaseApp | null = null;
+let auth: Auth | null = null;
 
 export interface ClapData {
-    userClaps: {
-        [targetId: string]: number;
-    },
-    allClaps: {
-        [targetId: string]: number;
-    }
+  userClaps: {
+    [targetId: string]: number;
+  },
+  allClaps: {
+    [targetId: string]: number;
+  }
 }
 
-export const NullClapData : ClapData = {
+export const NullClapData: ClapData = {
   userClaps: {},
   allClaps: {},
 };
@@ -45,8 +45,8 @@ async function login() {
   }
   app = initializeApp(firebaseConfig);
   if (import.meta.env.DEV) {
-     
-    // @ts-expect-error
+
+    // @ts-expect-error - Firebase App Check debug token is set on window.self in development
     self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
   }
   initializeAppCheck(app, firebaseAppCheckConfig);
@@ -55,8 +55,8 @@ async function login() {
   await signInAnonymously(auth);
 }
 
-async function getClapData(updateUserClap : (targetId: string, count: number) => void,
-  updateAllClap : (targetId: string, count: number) => void) {
+async function getClapData(updateUserClap: (targetId: string, count: number) => void,
+  updateAllClap: (targetId: string, count: number) => void) {
   if (app === null) {
     return;
   }
@@ -74,7 +74,7 @@ async function getClapData(updateUserClap : (targetId: string, count: number) =>
   for (const targetId of targetIds) {
     const userClapRef = ref(database, `claps/${auth.currentUser.uid}/${targetId}`);
     onValue(userClapRef, (clapSnapshot) => {
-      const clapData = clapSnapshot.val() as {count: number};
+      const clapData = clapSnapshot.val() as { count: number };
       if (clapData === null) {
         updateUserClap(targetId, 0);
       } else {
@@ -83,7 +83,7 @@ async function getClapData(updateUserClap : (targetId: string, count: number) =>
     });
     const allClapRef = ref(database, `counts/${targetId}`);
     onValue(allClapRef, (clapSnapshot) => {
-      const clapData = clapSnapshot.val() as {count: number};
+      const clapData = clapSnapshot.val() as { count: number };
       if (clapData === null) {
         updateAllClap(targetId, 0);
       } else {
@@ -93,7 +93,7 @@ async function getClapData(updateUserClap : (targetId: string, count: number) =>
   }
 }
 
-async function updateClap(targetId : string, clapCount : number) {
+async function updateClap(targetId: string, clapCount: number) {
   if (app === null) {
     return;
   }
@@ -111,7 +111,7 @@ async function updateClap(targetId : string, clapCount : number) {
   });
 }
 
-function soundFileNameToTargetId(soundFileName : string) {
+function soundFileNameToTargetId(soundFileName: string) {
   return soundFileName.replace('.mp3', '').replace('/', '_');
 }
 
