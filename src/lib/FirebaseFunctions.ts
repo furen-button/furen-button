@@ -45,7 +45,7 @@ async function login() {
   }
   app = initializeApp(firebaseConfig);
   if (import.meta.env.DEV) {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+     
     // @ts-expect-error
     self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
   }
