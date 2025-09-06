@@ -1,22 +1,22 @@
-import {getCategoryList} from '../lib/CategoryFunctions.tsx';
-import {Button, Checkbox, FormControlLabel, Popover} from '@mui/material';
+import { getCategoryList } from '../lib/CategoryFunctions.tsx';
+import { Button, Checkbox, FormControlLabel, Popover } from '@mui/material';
 import React from 'react';
 import CategoriesDataJson from '../../public/dataset/categories.json';
 
 interface CategoriesData {
-    [key: string]: {
-        description: string;
-    }
+  [key: string]: {
+    description: string;
+  }
 }
 
 export interface CategoryCheckListProps {
-  categoryCountList: {[key: string]: number};
+  categoryCountList: { [key: string]: number };
   selectedCategory: string[];
   setSelectedCategory: (categories: string[]) => void;
 }
 
-function CategoryCheckList(props : CategoryCheckListProps) {
-  const {categoryCountList, selectedCategory, setSelectedCategory} = props;
+function CategoryCheckList(props: CategoryCheckListProps) {
+  const { categoryCountList, selectedCategory, setSelectedCategory } = props;
 
   const liElements = getCategoryList(categoryCountList).map((category) => {
     const categoryCount = categoryCountList[category];
@@ -25,7 +25,8 @@ function CategoryCheckList(props : CategoryCheckListProps) {
       category={category}
       categoryCount={categoryCount}
       selectedCategory={selectedCategory}
-      setSelectedCategory={setSelectedCategory}/>;
+      setSelectedCategory={setSelectedCategory}
+    />;
   });
 
   return (
@@ -39,7 +40,7 @@ function CategoryCheckList(props : CategoryCheckListProps) {
           setSelectedCategory(getCategoryList(categoryCountList));
         }}
         style={style.configButton}>
-              カテゴリー全チェック
+        カテゴリー全チェック
       </Button>
       <Button
         variant={'contained'}
@@ -47,7 +48,7 @@ function CategoryCheckList(props : CategoryCheckListProps) {
           setSelectedCategory([]);
         }}
         style={style.configButton}>
-              カテゴリー全解除
+        カテゴリー全解除
       </Button>
       <a href="./categories.html">カテゴリ説明</a>
     </>
@@ -55,17 +56,17 @@ function CategoryCheckList(props : CategoryCheckListProps) {
 }
 
 function CheckBoxElement(props: {
-    category: string,
-    categoryCount: number,
-    selectedCategory: string[],
-    setSelectedCategory: (categories: string[]) => void})
-{
-  const {category, categoryCount, selectedCategory, setSelectedCategory} = props;
+  category: string,
+  categoryCount: number,
+  selectedCategory: string[],
+  setSelectedCategory: (categories: string[]) => void
+}) {
+  const { category, categoryCount, selectedCategory, setSelectedCategory } = props;
   const id = `category-${category}`;
   const label = `${category} (${categoryCount})`;
   const selected = selectedCategory.includes(category);
   const categoryList = CategoriesDataJson as CategoriesData;
-  const categoryData = categoryList[category] ?? {description: ''};
+  const categoryData = categoryList[category] ?? { description: '' };
   const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);
   const handlePopoverOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -97,17 +98,17 @@ function CheckBoxElement(props: {
       />
     </div>
     <Popover open={open} anchorEl={anchorEl} onClose={handlePopoverClose}
-      sx={{pointerEvents: 'none'}}
+      sx={{ pointerEvents: 'none' }}
       anchorOrigin={{
         vertical: 'bottom',
         horizontal: 'center',
       }}>
-      <div dangerouslySetInnerHTML={{__html: categoryData.description}}/>
+      <div dangerouslySetInnerHTML={{ __html: categoryData.description }} />
     </Popover>
   </li>;
 }
 
-const style : {[key: string]: React.CSSProperties} = {
+const style: { [key: string]: React.CSSProperties } = {
   configButton: {
     margin: '8px',
     fontFamily: ['Notosans JP', 'sans-serif'].join(','),
