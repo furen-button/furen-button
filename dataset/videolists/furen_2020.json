@@ -1,7 +1,7 @@
 [
   {
     "kind": "youtube#video",
-    "etag": "hdlHY_KzpoCXHsjrECe6fj9Tpg0",
+    "etag": "zCFteLC7F95-3OnyTZ2EyLg5cgI",
     "id": "BsIfRx0W7Lc",
     "snippet": {
       "publishedAt": "2020-12-30T13:00:10Z",
@@ -79,8 +79,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "7481523",
-      "likeCount": "71107",
+      "viewCount": "7482570",
+      "likeCount": "71108",
       "favoriteCount": "0",
       "commentCount": "1575"
     },
@@ -90,7 +90,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sl5vjU3SL6EjqFdzJ8HVbjE9A1c",
+    "etag": "I51nrjTqHfI-sV5SNRELJ5J7qC4",
     "id": "rrnC_ziVx0I",
     "snippet": {
       "publishedAt": "2020-12-29T15:09:51Z",
@@ -159,13 +159,101 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "150705",
+      "viewCount": "150706",
       "likeCount": "5473",
       "favoriteCount": "0",
       "commentCount": "147"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/rrnC_ziVx0I\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "chs6-ctfAVa3vOSPsKj9zzwylf8",
+    "id": "ZD7c01HH7xY",
+    "snippet": {
+      "publishedAt": "2020-12-28T13:49:04Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【Fall Guys】王冠目指して！ウィンタースポーツ遊ぶ！【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nひさびさたのしみ～～！！\nどんなステージふえたんだろ！\n\n◆サムネイル作成\n⇒士道不覚悟切腹卍丸さん(@shidouhukakugo)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/ZD7c01HH7xY/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/ZD7c01HH7xY/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/ZD7c01HH7xY/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/ZD7c01HH7xY/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/ZD7c01HH7xY/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "大会",
+        "準々決勝",
+        "不破湊",
+        "星川サラ",
+        "安土桃",
+        "葛葉",
+        "本間ひまわり",
+        "成瀬鳴",
+        "リゼ・ヘルエスタ",
+        "叶",
+        "弦月藤士郎",
+        "卯月コウ",
+        "春崎エアル"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【Fall Guys】王冠目指して！ウィンタースポーツ遊ぶ！【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nひさびさたのしみ～～！！\nどんなステージふえたんだろ！\n\n◆サムネイル作成\n⇒士道不覚悟切腹卍丸さん(@shidouhukakugo)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H40M46S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "43805",
+      "likeCount": "1970",
+      "favoriteCount": "0",
+      "commentCount": "10"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/ZD7c01HH7xY\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
     }
   },
   {
@@ -544,7 +632,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "IIh9qt-DI-OBM6kLje68Oj7XGms",
+    "etag": "6m2P0MS83aJ_y6y3nT-AKBsI2bs",
     "id": "_kITtK-xAFU",
     "snippet": {
       "publishedAt": "2020-12-20T15:10:03Z",
@@ -627,13 +715,96 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "99987",
+      "viewCount": "99992",
       "likeCount": "3944",
       "favoriteCount": "0",
       "commentCount": "48"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/_kITtK-xAFU\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "zRC5P0uQzrtUrC10rW3hA9oKZPM",
+    "id": "a_RCZbt-aS8",
+    "snippet": {
+      "publishedAt": "2020-12-19T05:05:33Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【#マリカにじさんじ杯】Aリーグ フレン視点：勝つぞ！！【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#マリカにじさんじ杯\n\nれんしゅうのせいかみせよう！！！！\n\n◆サムネイル作成\n⇒mojiさん(@fm1824)\n\n#エリー・コニファー  (#エリーコニファー）\nhttps://www.youtube.com/channel/UCpNH2Zk2gw3JBjWAKSyZcQQ?sub_confirmation=1\nhttps://twitter.com/Eli_Conifer\n\n#リゼ・ヘルエスタ　（#リゼヘルエスタ）\nhttps://www.youtube.com/channel/UCZ1xuCK1kNmn5RzPYIZop3w?sub_confirmation=1\nhttps://twitter.com/Lize_Helesta\n\n#相羽ういは\nhttps://www.youtube.com/channel/UCnRQYHTnRLSF0cLJwMnedCg?sub_confirmation=1\nhttps://twitter.com/AibaUiha\n\n#夕陽リリ\nhttps://www.youtube.com/channel/UC48jH1ul-6HOrcSSfoR02fQ?sub_confirmation=1\nhttps://twitter.com/Yuuhi_Riri\n\n#朝日南アカネ\nhttps://www.youtube.com/channel/UCe_p3YEuYJb8Np0Ip9dk-FQ?sub_confirmation=1\nhttps://twitter.com/Akane_Asahina__\n\n#文野環\nhttps://www.youtube.com/channel/UCBiqkFJljoxAj10SoP2w2Cg?sub_confirmation=1\nhttps://twitter.com/nekokan_chu\n\n#魔使マオ\nhttps://www.youtube.com/channel/UCerkculBD7YLc_vOGrF7tKg?sub_confirmation=1\nhttps://twitter.com/matsukai_mao\n\n#鈴谷アキ\nhttps://www.youtube.com/channel/UCpnvhOIJ6BN-vPkYU9ls-Eg?sub_confirmation=1\nhttps://twitter.com/aki_suzuya\n\n#白雪巴\nhttps://www.youtube.com/channel/UCuvk5PilcvDECU7dDZhQiEw?sub_confirmation=1\nhttps://twitter.com/Tomoe_Shirayuki\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/a_RCZbt-aS8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/a_RCZbt-aS8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/a_RCZbt-aS8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/a_RCZbt-aS8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/a_RCZbt-aS8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "ゲーム",
+        "実況",
+        "Nintendo",
+        "マリオカート8デラックス",
+        "マリカ",
+        "マリオカート",
+        "大会",
+        "マリオカート8 DX"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【#マリカにじさんじ杯】Aリーグ フレン視点：勝つぞ！！【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#マリカにじさんじ杯\n\nれんしゅうのせいかみせよう！！！！\n\n◆サムネイル作成\n⇒mojiさん(@fm1824)\n\n#エリー・コニファー  (#エリーコニファー）\nhttps://www.youtube.com/channel/UCpNH2Zk2gw3JBjWAKSyZcQQ?sub_confirmation=1\nhttps://twitter.com/Eli_Conifer\n\n#リゼ・ヘルエスタ　（#リゼヘルエスタ）\nhttps://www.youtube.com/channel/UCZ1xuCK1kNmn5RzPYIZop3w?sub_confirmation=1\nhttps://twitter.com/Lize_Helesta\n\n#相羽ういは\nhttps://www.youtube.com/channel/UCnRQYHTnRLSF0cLJwMnedCg?sub_confirmation=1\nhttps://twitter.com/AibaUiha\n\n#夕陽リリ\nhttps://www.youtube.com/channel/UC48jH1ul-6HOrcSSfoR02fQ?sub_confirmation=1\nhttps://twitter.com/Yuuhi_Riri\n\n#朝日南アカネ\nhttps://www.youtube.com/channel/UCe_p3YEuYJb8Np0Ip9dk-FQ?sub_confirmation=1\nhttps://twitter.com/Akane_Asahina__\n\n#文野環\nhttps://www.youtube.com/channel/UCBiqkFJljoxAj10SoP2w2Cg?sub_confirmation=1\nhttps://twitter.com/nekokan_chu\n\n#魔使マオ\nhttps://www.youtube.com/channel/UCerkculBD7YLc_vOGrF7tKg?sub_confirmation=1\nhttps://twitter.com/matsukai_mao\n\n#鈴谷アキ\nhttps://www.youtube.com/channel/UCpnvhOIJ6BN-vPkYU9ls-Eg?sub_confirmation=1\nhttps://twitter.com/aki_suzuya\n\n#白雪巴\nhttps://www.youtube.com/channel/UCuvk5PilcvDECU7dDZhQiEw?sub_confirmation=1\nhttps://twitter.com/Tomoe_Shirayuki\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT58M18S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "79111",
+      "likeCount": "2978",
+      "favoriteCount": "0",
+      "commentCount": "31"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/a_RCZbt-aS8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
     }
   },
   {
@@ -722,6 +893,177 @@
   },
   {
     "kind": "youtube#video",
+    "etag": "0z7iA4EyAcUOj5LKbOVmJgDT1jY",
+    "id": "8Hl8SfH3hqg",
+    "snippet": {
+      "publishedAt": "2020-12-16T11:45:37Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【#にじホロ宇宙人狼】そうだ、僕がキラだ。【Among Us/フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#にじホロ宇宙人狼\n\n※コラボ先の方に失礼のないようお願いします\nぼいちゃでやるのはじめて！たのしみ！！！\n\n～ホロライブ～\n白上フブキ\nhttps://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg\n夏色まつり\nhttps://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg?view_as=subscriber\n白銀ノエル\nhttps://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ\n紫咲シオン\nhttps://www.youtube.com/channel/UCXTpFs_3PqI41qX2d9tL2Rw\n潤羽るしあ\nhttps://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ\n\n～にじさんじ～\n本間ひまわり\nhttps://www.youtube.com/channel/UC0g1AE0DOjBYnLhkgoRWN1w\n椎名唯華\nhttps://www.youtube.com/channel/UC_4tXjqecqox5Uc05ncxpxg\n月ノ美兎\nhttps://www.youtube.com/channel/UCD-miitqNY3nyukJ4Fnf4_A\n郡道美玲\nhttps://www.youtube.com/channel/UCeShTCVgZyq2lsBW9QwIJcw\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/8Hl8SfH3hqg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/8Hl8SfH3hqg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/8Hl8SfH3hqg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/8Hl8SfH3hqg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/8Hl8SfH3hqg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "ゲーム",
+        "実況",
+        "白上フブキ",
+        "夏色まつり",
+        "白銀ノエル",
+        "紫咲シオン",
+        "潤羽るしあ",
+        "本間ひまわり",
+        "椎名唯華",
+        "月ノ美兎",
+        "郡道美玲",
+        "Among Us",
+        "amongus",
+        "宇宙人狼",
+        "ホロライブ"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【#にじホロ宇宙人狼】そうだ、僕がキラだ。【Among Us/フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#にじホロ宇宙人狼\n\n※コラボ先の方に失礼のないようお願いします\nぼいちゃでやるのはじめて！たのしみ！！！\n\n～ホロライブ～\n白上フブキ\nhttps://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg\n夏色まつり\nhttps://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg?view_as=subscriber\n白銀ノエル\nhttps://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ\n紫咲シオン\nhttps://www.youtube.com/channel/UCXTpFs_3PqI41qX2d9tL2Rw\n潤羽るしあ\nhttps://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ\n\n～にじさんじ～\n本間ひまわり\nhttps://www.youtube.com/channel/UC0g1AE0DOjBYnLhkgoRWN1w\n椎名唯華\nhttps://www.youtube.com/channel/UC_4tXjqecqox5Uc05ncxpxg\n月ノ美兎\nhttps://www.youtube.com/channel/UCD-miitqNY3nyukJ4Fnf4_A\n郡道美玲\nhttps://www.youtube.com/channel/UCeShTCVgZyq2lsBW9QwIJcw\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H37M5S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "131332",
+      "likeCount": "5004",
+      "favoriteCount": "0",
+      "commentCount": "44"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/8Hl8SfH3hqg\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "22dhVf6-03MXCRr5NArBomxvRsQ",
+    "id": "brmz_rbzKj8",
+    "snippet": {
+      "publishedAt": "2020-12-15T13:44:48Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【マリオカート8 DX】視聴者参加型！1時間以内に3位以上とる！【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nばつげーむのないようはきめてない\n\n◆サムネイルに使用させていただいたイラスト\n⇒木乃伊さん(@_I__O_U__)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/brmz_rbzKj8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/brmz_rbzKj8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/brmz_rbzKj8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/brmz_rbzKj8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/brmz_rbzKj8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "ゲーム",
+        "実況",
+        "雑談",
+        "オフコラボ",
+        "裏話",
+        "Nintendo"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【マリオカート8 DX】視聴者参加型！1時間以内に3位以上とる！【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nばつげーむのないようはきめてない\n\n◆サムネイルに使用させていただいたイラスト\n⇒木乃伊さん(@_I__O_U__)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H6M46S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "55509",
+      "likeCount": "2146",
+      "favoriteCount": "0",
+      "commentCount": "16"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/brmz_rbzKj8\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
     "etag": "6M3XByIiPTe6wfW0YYs6lH0CSV8",
     "id": "pPUfzm34vfA",
     "snippet": {
@@ -802,7 +1144,254 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "GMMvBBFuORrI6_ipz6NgLbFtkvs",
+    "etag": "2ixTgoSPfn5lCETHc5YHbUmZsbQ",
+    "id": "nwlzTc2Xe1g",
+    "snippet": {
+      "publishedAt": "2020-12-11T13:46:39Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【#ここフレわんわん】初オフコラボ！たこ焼きの中身は‥！？【天宮こころ/フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\n♡みゃみゃ\nhttps://www.youtube.com/channel/UCkIimWZ9gBJRamKF0rmPU8w\n\n◆サムネイルに使用させていただいたイラスト\n⇒はつかさん(@hatuka0107)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/nwlzTc2Xe1g/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/nwlzTc2Xe1g/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/nwlzTc2Xe1g/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/nwlzTc2Xe1g/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/nwlzTc2Xe1g/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "ゲーム",
+        "実況",
+        "雑談",
+        "天宮こころ",
+        "あまみゃ",
+        "オフコラボ",
+        "コラボ",
+        "たこ焼き"
+      ],
+      "categoryId": "24",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【#ここフレわんわん】初オフコラボ！たこ焼きの中身は‥！？【天宮こころ/フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\n♡みゃみゃ\nhttps://www.youtube.com/channel/UCkIimWZ9gBJRamKF0rmPU8w\n\n◆サムネイルに使用させていただいたイラスト\n⇒はつかさん(@hatuka0107)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H35M44S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "240739",
+      "likeCount": "7486",
+      "favoriteCount": "0",
+      "commentCount": "46"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/nwlzTc2Xe1g\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "DYBUiq6XwN2_rXWwFd6-GCDrb-M",
+    "id": "Vs1pMb2CWnU",
+    "snippet": {
+      "publishedAt": "2020-12-08T16:00:49Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【Minecraft】ひさびさブランチマイニング【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nはなそ～～～～ぜ\n\n◆サムネイルに使用させていただいたイラスト\n⇒そぞまさん(@_szm1111)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/Vs1pMb2CWnU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/Vs1pMb2CWnU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/Vs1pMb2CWnU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/Vs1pMb2CWnU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/Vs1pMb2CWnU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "ゲーム",
+        "実況",
+        "マインクラフト",
+        "マイクラ",
+        "まいくら",
+        "まいんくらふと",
+        "minecraft",
+        "ブランチマイニング",
+        "雑談"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【Minecraft】ひさびさブランチマイニング【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nはなそ～～～～ぜ\n\n◆サムネイルに使用させていただいたイラスト\n⇒そぞまさん(@_szm1111)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H48M22S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "46556",
+      "likeCount": "1902",
+      "favoriteCount": "0",
+      "commentCount": "10"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/Vs1pMb2CWnU\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "Ov8AiSHfO_digU2dl5Rw6fC9iLM",
+    "id": "J_Q6TGgRFmg",
+    "snippet": {
+      "publishedAt": "2020-12-06T09:12:32Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【お絵描き心理テスト】えっちなのはいけません！！！【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nあくまでしんりてすとです\n\n◆サムネイルに使用させていただいたイラスト\n⇒マ嶋さん【@76_holy】\n\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/J_Q6TGgRFmg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/J_Q6TGgRFmg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/J_Q6TGgRFmg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/J_Q6TGgRFmg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/J_Q6TGgRFmg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "雑談",
+        "チャット",
+        "カトリーナ面接",
+        "マシュマロ",
+        "クソマロ"
+      ],
+      "categoryId": "24",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【お絵描き心理テスト】えっちなのはいけません！！！【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nあくまでしんりてすとです\n\n◆サムネイルに使用させていただいたイラスト\n⇒マ嶋さん【@76_holy】\n\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H7M11S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "106157",
+      "likeCount": "3433",
+      "favoriteCount": "0",
+      "commentCount": "32"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/J_Q6TGgRFmg\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "fwlnGe3PajNRX5G0RdQGv74CocI",
     "id": "jfmfldNoJ8s",
     "snippet": {
       "publishedAt": "2020-12-04T16:21:11Z",
@@ -872,7 +1461,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "44716",
+      "viewCount": "44717",
       "likeCount": "1645",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -1046,7 +1635,86 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "XV52nXrQ55EdKTaySYCySkMMpok",
+    "etag": "sOol4bU6qLXpH9eAlOKsOM7SgVk",
+    "id": "IeTqCx2MfKs",
+    "snippet": {
+      "publishedAt": "2020-12-01T15:14:05Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【Minecraft】イルカの水槽作りたい(願望)【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nすいそうつくりたいけどなにもかんがえてない\n\n◆サムネイル作成\n⇒しおぬきしおらーめんさん(@LDDsholwa)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/IeTqCx2MfKs/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/IeTqCx2MfKs/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/IeTqCx2MfKs/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/IeTqCx2MfKs/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/IeTqCx2MfKs/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "雑談",
+        "Minecraft",
+        "マイクラ",
+        "マインクラフト"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【Minecraft】イルカの水槽作りたい(願望)【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nすいそうつくりたいけどなにもかんがえてない\n\n◆サムネイル作成\n⇒しおぬきしおらーめんさん(@LDDsholwa)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H57M43S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "49789",
+      "likeCount": "2044",
+      "favoriteCount": "0",
+      "commentCount": "16"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/IeTqCx2MfKs\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "ZCnKx9JQ8t_FxrkmktyrZ_daFNU",
     "id": "Ro2kdbW_tIg",
     "snippet": {
       "publishedAt": "2020-11-30T14:35:59Z",
@@ -1115,8 +1783,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "43377",
-      "likeCount": "1781",
+      "viewCount": "43378",
+      "likeCount": "1782",
       "favoriteCount": "0",
       "commentCount": "26"
     },
@@ -1126,7 +1794,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "SEeIDb7m5jfjvUJl5g7VxbCoU2c",
+    "etag": "UYC04T-urU7x07F7mpu5tZQ-duQ",
     "id": "VY9lji7z3hM",
     "snippet": {
       "publishedAt": "2020-11-26T15:43:13Z",
@@ -1194,7 +1862,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "79913",
+      "viewCount": "79915",
       "likeCount": "2620",
       "favoriteCount": "0",
       "commentCount": "18"
@@ -1288,6 +1956,89 @@
   },
   {
     "kind": "youtube#video",
+    "etag": "ZYBkqAi4k_VSmvqGawY7dJNVNIo",
+    "id": "VLJC4guDkes",
+    "snippet": {
+      "publishedAt": "2020-11-23T08:28:41Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【歌枠】うれしいので歌ったり話したりする！【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nうれしいのでうたいます\nわたしがよろこんでたのしんでるだけです\n\n◆サムネイルに使用させていただいたイラスト\n⇒辺境のらっとさん(@rot_zatta)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/VLJC4guDkes/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/VLJC4guDkes/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/VLJC4guDkes/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/VLJC4guDkes/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/VLJC4guDkes/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "雑談",
+        "歌枠",
+        "歌",
+        "音楽",
+        "ボカロ",
+        "ボーカロイド",
+        "VOCALOID",
+        "アニソン"
+      ],
+      "categoryId": "10",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【歌枠】うれしいので歌ったり話したりする！【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nうれしいのでうたいます\nわたしがよろこんでたのしんでるだけです\n\n◆サムネイルに使用させていただいたイラスト\n⇒辺境のらっとさん(@rot_zatta)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H20M47S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "66508",
+      "likeCount": "2826",
+      "favoriteCount": "0",
+      "commentCount": "27"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/VLJC4guDkes\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
     "etag": "Rmk5EjsxwgkUJ6yjUQ3If44wHSs",
     "id": "G92-CPa3jrE",
     "snippet": {
@@ -1372,7 +2123,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "fB8z88J-oi8a0N5va1UlwxF9FYw",
+    "etag": "Q9jUtloxgFf_b4oOtc8py_wqSns",
     "id": "07oUbuoQvKg",
     "snippet": {
       "publishedAt": "2020-11-20T20:18:04Z",
@@ -1444,13 +2195,97 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "125870",
+      "viewCount": "125872",
       "likeCount": "3508",
       "favoriteCount": "0",
       "commentCount": "23"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/07oUbuoQvKg\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "6ICuaP39qT1bZUQ8wtVCp36a6K8",
+    "id": "hSFiNkv2Vwo",
+    "snippet": {
+      "publishedAt": "2020-11-17T15:20:14Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【お絵描き心理テスト】本性が丸裸にされる‥！？【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nしんりてすとたのしいよね\n\n◆サムネイル使用させていただいたイラスト\n⇒ひろた果さん(@ hirota_fruit)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/hSFiNkv2Vwo/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/hSFiNkv2Vwo/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/hSFiNkv2Vwo/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/hSFiNkv2Vwo/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/hSFiNkv2Vwo/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "雑談",
+        "ゲーム",
+        "実況",
+        "お絵かき心理テスト",
+        "心理テスト",
+        "お絵描き",
+        "絵",
+        "イラスト",
+        "アプリ"
+      ],
+      "categoryId": "24",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【お絵描き心理テスト】本性が丸裸にされる‥！？【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nしんりてすとたのしいよね\n\n◆サムネイル使用させていただいたイラスト\n⇒ひろた果さん(@ hirota_fruit)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H14M55S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "106634",
+      "likeCount": "3400",
+      "favoriteCount": "0",
+      "commentCount": "34"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/hSFiNkv2Vwo\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
     }
   },
   {
@@ -1533,7 +2368,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jP6IO1okR0YoEfSmEe51-cBLNxs",
+    "etag": "nEtZZaGi_tV6IynL4q-pGxG6OF4",
     "id": "Niz3XniDUJc",
     "snippet": {
       "publishedAt": "2020-11-15T16:06:08Z",
@@ -1602,7 +2437,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "74440",
+      "viewCount": "74442",
       "likeCount": "2419",
       "favoriteCount": "0",
       "commentCount": "17"
@@ -1698,7 +2533,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gZ2mjEux4IXcKEqZ4v7vBfkpJIg",
+    "etag": "jWmcDmngjme4FMvj05TQY0Cs-kY",
     "id": "YzV9Wcr__vE",
     "snippet": {
       "publishedAt": "2020-11-13T16:06:14Z",
@@ -1772,7 +2607,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "65474",
+      "viewCount": "65473",
       "likeCount": "2104",
       "favoriteCount": "0",
       "commentCount": "24"
@@ -2038,7 +2873,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KFPJPqCy2ywaiuR6RN6VcLM0igc",
+    "etag": "RD3A83qA2RhWcFbI57QVqxkRbdo",
     "id": "Smq5_Tp3d6g",
     "snippet": {
       "publishedAt": "2020-11-04T15:20:31Z",
@@ -2111,7 +2946,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "43527",
+      "viewCount": "43529",
       "likeCount": "1539",
       "favoriteCount": "0",
       "commentCount": "22"
@@ -2203,7 +3038,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "e1N4r5EqJ7eAJd1EHz0nPQBi4lc",
+    "etag": "sjEuDTvsX1uIILw3zLqW3ssCJdk",
     "id": "0XuQAE1N3JU",
     "snippet": {
       "publishedAt": "2020-11-02T13:48:02Z",
@@ -2295,7 +3130,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "87109",
+      "viewCount": "87112",
       "likeCount": "3215",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -2382,7 +3217,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JW8H_a5mLceFsxy2MkV9ZnT0bTs",
+    "etag": "IDf4x4f3pA8ozELFhOY9Sk3jWHE",
     "id": "AUXRRfzw8WI",
     "snippet": {
       "publishedAt": "2020-10-31T11:39:48Z",
@@ -2464,7 +3299,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "124437",
+      "viewCount": "124438",
       "likeCount": "3587",
       "favoriteCount": "0",
       "commentCount": "54"
@@ -2475,7 +3310,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "P5Ctq1O0gR2fevZaUvg8YDSE95Y",
+    "etag": "XxwkYv6ScHd92xqym0nnAlnnrfs",
     "id": "divhaTosnbQ",
     "snippet": {
       "publishedAt": "2020-10-30T20:38:29Z",
@@ -2549,7 +3384,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "92140",
+      "viewCount": "92141",
       "likeCount": "2982",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -2560,7 +3395,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "R7r8imwKfhJ8qr2bGA94Dl6GK3E",
+    "etag": "w34q19eELTPU4QXovkZ4-0C5ry8",
     "id": "_x_H7oGeemE",
     "snippet": {
       "publishedAt": "2020-10-29T15:42:03Z",
@@ -2630,7 +3465,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "36069",
+      "viewCount": "36070",
       "likeCount": "1437",
       "favoriteCount": "0",
       "commentCount": "12"
@@ -3052,6 +3887,87 @@
   },
   {
     "kind": "youtube#video",
+    "etag": "1hvrbDKENccpOwaF8ekg7Zc0OEc",
+    "id": "s_atA2zRfwI",
+    "snippet": {
+      "publishedAt": "2020-10-20T12:22:23Z",
+      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
+      "title": "【Minecraft】海でロストしたアイテム帰ってきた‥！？【フレン・E・ルスタリオ/にじさんじ】",
+      "description": "配信タグ：#ルスタリオンエア\n\nすすめたいきもちとはうらはらに\nかいろがわからないのである\n\n◆サムネイル作成\n⇒Ma.さん(@Ma48869487)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/s_atA2zRfwI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/s_atA2zRfwI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/s_atA2zRfwI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/s_atA2zRfwI/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/s_atA2zRfwI/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "フレン・E・ルスタリオ",
+      "tags": [
+        "フレン・E・ルスタリオ",
+        "フレン",
+        "にじさんじ",
+        "Vtuber",
+        "バーチャルライバー",
+        "女性ライバー",
+        "女性",
+        "ふれん",
+        "雑談",
+        "ゲーム",
+        "実況",
+        "Minecraft",
+        "マインクラフト",
+        "まいんくらふと"
+      ],
+      "categoryId": "20",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "【Minecraft】海でロストしたアイテム帰ってきた‥！？【フレン・E・ルスタリオ/にじさんじ】",
+        "description": "配信タグ：#ルスタリオンエア\n\nすすめたいきもちとはうらはらに\nかいろがわからないのである\n\n◆サムネイル作成\n⇒Ma.さん(@Ma48869487)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
+      },
+      "defaultAudioLanguage": "ja"
+    },
+    "contentDetails": {
+      "duration": "PT1H16M44S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": true,
+      "contentRating": {},
+      "projection": "rectangular"
+    },
+    "statistics": {
+      "viewCount": "73978",
+      "likeCount": "2135",
+      "favoriteCount": "0",
+      "commentCount": "18"
+    },
+    "player": {
+      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/s_atA2zRfwI\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "kind": "youtube#video",
     "etag": "CIqAdT1rr6Mztl9Xz5SrcRlUWgo",
     "id": "nZo30mrmsDg",
     "snippet": {
@@ -3145,7 +4061,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "djTln5Pyy0VFlPdupSNKmwjzz7A",
+    "etag": "0v5zyZFZ41bHn4zJ9SgSF8TesMI",
     "id": "o8CRnfTxKCg",
     "snippet": {
       "publishedAt": "2020-10-18T15:15:10Z",
@@ -3219,8 +4135,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "359380",
-      "likeCount": "8767",
+      "viewCount": "359409",
+      "likeCount": "8770",
       "favoriteCount": "0",
       "commentCount": "127"
     },
@@ -3314,7 +4230,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "bNC7OExIe04RCeqDd5VONQV0Eyw",
+    "etag": "l49yy6pxEe_R7_MTZyAWpIEuPb0",
     "id": "4bTNldXB840",
     "snippet": {
       "publishedAt": "2020-10-12T14:30:38Z",
@@ -3386,7 +4302,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "61186",
+      "viewCount": "61187",
       "likeCount": "2165",
       "favoriteCount": "0",
       "commentCount": "16"
@@ -3397,7 +4313,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "YsOiJzqZlsvVkJIA3pNIz1JRKhk",
+    "etag": "268xqjWrmbzUGKwyjfZPlKXm3r8",
     "id": "W4RlKpj_y9U",
     "snippet": {
       "publishedAt": "2020-10-10T15:00:40Z",
@@ -3473,8 +4389,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "238120",
-      "likeCount": "4949",
+      "viewCount": "238135",
+      "likeCount": "4948",
       "favoriteCount": "0",
       "commentCount": "59"
     },
@@ -3571,7 +4487,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "pNL3YPdN_3ASueKGzBVAqI3tI8s",
+    "etag": "dcHQi4_cB6XM3ihID62MJnwdcOQ",
     "id": "gsHR7Mrk4II",
     "snippet": {
       "publishedAt": "2020-10-07T14:02:37Z",
@@ -3653,7 +4569,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "101353",
+      "viewCount": "101358",
       "likeCount": "3850",
       "favoriteCount": "0",
       "commentCount": "30"
@@ -3664,7 +4580,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "L6vw-40zJmn8e1MB1q14CdtfIZI",
+    "etag": "VGXb52sPS_Dt8VM_NiWA3as7fZc",
     "id": "NcxvIwnlAa4",
     "snippet": {
       "publishedAt": "2020-10-06T15:45:28Z",
@@ -3736,7 +4652,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "89500",
+      "viewCount": "89502",
       "likeCount": "2782",
       "favoriteCount": "0",
       "commentCount": "13"
@@ -3829,7 +4745,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MqGZ0zcvJG4UqF6oXIWDfA47O-U",
+    "etag": "FQzY0MVwAWRnKFbhYA8o1mtipXc",
     "id": "Te0iFUruYCU",
     "snippet": {
       "publishedAt": "2020-10-02T16:08:35Z",
@@ -3898,946 +4814,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "384270",
-      "likeCount": "8076",
-      "favoriteCount": "0",
-      "commentCount": "92"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/Te0iFUruYCU\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "0i8a1ptYY5tNyxGQz5UJvw3SR7w",
-    "id": "QGvT1s9TlEo",
-    "snippet": {
-      "publishedAt": "2020-09-28T15:53:08Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【Minecraft】おさかなを捕まえに行きます！【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nきょうこそおさかなとりいくど！！！\n\n◆サムネイル作成\n⇒なろさん(@naro_oak)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/QGvT1s9TlEo/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/QGvT1s9TlEo/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/QGvT1s9TlEo/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/QGvT1s9TlEo/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/QGvT1s9TlEo/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "Minecraft",
-        "初心者",
-        "ゲーム",
-        "実況",
-        "マインクラフト",
-        "マイクラ",
-        "建築"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【Minecraft】おさかなを捕まえに行きます！【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nきょうこそおさかなとりいくど！！！\n\n◆サムネイル作成\n⇒なろさん(@naro_oak)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT2H29M21S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "70175",
-      "likeCount": "1983",
-      "favoriteCount": "0",
-      "commentCount": "7"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/QGvT1s9TlEo\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "zvskFILI5H47uhivUoVXY6oPcbc",
-    "id": "nq2s_qnDVSw",
-    "snippet": {
-      "publishedAt": "2020-09-27T09:57:45Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【Minecraft】水族館の続きとかいろいろ！【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nいろいろかんせいさせてくぞ！！！\n\n◆サムネイル作成\n⇒しおぬきしおらーめんさん(@LDDsholwa)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/nq2s_qnDVSw/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/nq2s_qnDVSw/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/nq2s_qnDVSw/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/nq2s_qnDVSw/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/nq2s_qnDVSw/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "Minecraft",
-        "初心者",
-        "ゲーム",
-        "実況",
-        "マインクラフト",
-        "マイクラ",
-        "建築"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【Minecraft】水族館の続きとかいろいろ！【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nいろいろかんせいさせてくぞ！！！\n\n◆サムネイル作成\n⇒しおぬきしおらーめんさん(@LDDsholwa)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT2H30M14S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "65505",
-      "likeCount": "1965",
-      "favoriteCount": "0",
-      "commentCount": "9"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/nq2s_qnDVSw\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "Xt47x0TDWSPDuxByhIf3ymmFQTI",
-    "id": "6TxQmeeO7aQ",
-    "snippet": {
-      "publishedAt": "2020-09-24T14:22:52Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【歌枠】らんねーちゃんとデュエットするよ～～！【フレン・E・ルスタリオ/早瀬走/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nふたりでうたうよ～～～～！！！！！\n\n♪らんねーちゃん♪\nhttps://www.youtube.com/channel/UC2OacIzd2UxGHRGhdHl1Rhw\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/6TxQmeeO7aQ/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/6TxQmeeO7aQ/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/6TxQmeeO7aQ/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/6TxQmeeO7aQ/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/6TxQmeeO7aQ/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "デュエット",
-        "早瀬走",
-        "音楽",
-        "歌ってみた",
-        "スキキライ",
-        "革命デュアリズム",
-        "脳漿炸裂ガール",
-        "ボカロ",
-        "ボーカロイド",
-        "VOCALOID",
-        "嗚呼素晴らしきニャン生",
-        "Preserved Roses"
-      ],
-      "categoryId": "10",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【歌枠】らんねーちゃんとデュエットするよ～～！【フレン・E・ルスタリオ/早瀬走/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nふたりでうたうよ～～～～！！！！！\n\n♪らんねーちゃん♪\nhttps://www.youtube.com/channel/UC2OacIzd2UxGHRGhdHl1Rhw\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT1H14M43S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "72732",
-      "likeCount": "2892",
-      "favoriteCount": "0",
-      "commentCount": "24"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/6TxQmeeO7aQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "btfa2p2lVchUqfBP1TAfk7Wn8Iw",
-    "id": "wgKP2LPDCQg",
-    "snippet": {
-      "publishedAt": "2020-09-23T14:19:50Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【Minecraft】銀行が建つみたいです【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nすいろのおてつだいをするよてい？\n\n◆サムネイル作成\n⇒mojiさん(@fm1824)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/wgKP2LPDCQg/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/wgKP2LPDCQg/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/wgKP2LPDCQg/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/wgKP2LPDCQg/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/wgKP2LPDCQg/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "Minecraft",
-        "初心者",
-        "ゲーム",
-        "実況",
-        "マインクラフト",
-        "マイクラ",
-        "建築",
-        "鷹宮リオン",
-        "天宮こころ",
-        "アルス・アルマル",
-        "長尾景",
-        "相羽ういは",
-        "早瀬走",
-        "葉加瀬冬雪"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【Minecraft】銀行が建つみたいです【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nすいろのおてつだいをするよてい？\n\n◆サムネイル作成\n⇒mojiさん(@fm1824)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT1H34M40S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "68894",
-      "likeCount": "2144",
-      "favoriteCount": "0",
-      "commentCount": "13"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/wgKP2LPDCQg\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "bNC7OExIe04RCeqDd5VONQV0Eyw",
-    "id": "4bTNldXB840",
-    "snippet": {
-      "publishedAt": "2020-10-12T14:30:38Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【Minecraft】いろいろ進めちゃうぞ！【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nすいぞくかんのいりぐちどうする！？\n\n◆サムネイル作成\n⇒なぎすけさん(@nagisuke_gbp)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/4bTNldXB840/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/4bTNldXB840/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/4bTNldXB840/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/4bTNldXB840/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/4bTNldXB840/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "Minecraft",
-        "初心者",
-        "ゲーム",
-        "実況",
-        "マインクラフト",
-        "マイクラ",
-        "建築"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【Minecraft】いろいろ進めちゃうぞ！【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nすいぞくかんのいりぐちどうする！？\n\n◆サムネイル作成\n⇒なぎすけさん(@nagisuke_gbp)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT1H49M51S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "61186",
-      "likeCount": "2165",
-      "favoriteCount": "0",
-      "commentCount": "16"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/4bTNldXB840\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "YsOiJzqZlsvVkJIA3pNIz1JRKhk",
-    "id": "W4RlKpj_y9U",
-    "snippet": {
-      "publishedAt": "2020-10-10T15:00:40Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【Home Sweet home】罰ゲームで最恐ホラゲやる【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nさいごまでがんばりたい(やるとはいってない)\n\n◆サムネイル作成\n⇒しおぬきしおらーめんさん(@ LDDsholwa)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/W4RlKpj_y9U/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/W4RlKpj_y9U/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/W4RlKpj_y9U/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/W4RlKpj_y9U/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/W4RlKpj_y9U/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "実況",
-        "ゲーム",
-        "女騎士",
-        "罰ゲーム",
-        "ホラゲー",
-        "ホラーゲーム",
-        "Home sweet home",
-        "ほーむすうぃーとほーむ",
-        "ホームスイートホーム",
-        "絶叫",
-        "ホラー"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【Home Sweet home】罰ゲームで最恐ホラゲやる【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nさいごまでがんばりたい(やるとはいってない)\n\n◆サムネイル作成\n⇒しおぬきしおらーめんさん(@ LDDsholwa)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT2H31M54S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "238120",
-      "likeCount": "4949",
-      "favoriteCount": "0",
-      "commentCount": "59"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/W4RlKpj_y9U\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "WzF-NtPuaunpMEgdVawGg1QL4H8",
-    "id": "sFBLz5Uiv9M",
-    "snippet": {
-      "publishedAt": "2020-10-09T18:00:11Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【マリオ35】2時間以内に1位取れなかったらホラゲ【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nまあらくしょうでしょ＾＾\n\n◆サムネイル作成\n⇒mojiさん(@fm1824)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/sFBLz5Uiv9M/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/sFBLz5Uiv9M/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/sFBLz5Uiv9M/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/sFBLz5Uiv9M/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/sFBLz5Uiv9M/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "罰ゲーム",
-        "バーチャルライバー",
-        "フレン",
-        "ゲーム",
-        "フレン・E・ルスタリオ",
-        "女性ライバー",
-        "Super mario bros.35",
-        "実況",
-        "ホラゲー",
-        "女性",
-        "マリオ35",
-        "女騎士",
-        "ふれん",
-        "耐久",
-        "雑談",
-        "1位耐久",
-        "にじさんじ",
-        "ホラーゲーム",
-        "Vtuber",
-        "Nintendo"
-      ],
-      "categoryId": "24",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【マリオ35】2時間以内に1位取れなかったらホラゲ【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nまあらくしょうでしょ＾＾\n\n◆サムネイル作成\n⇒mojiさん(@fm1824)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT2H19M23S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "63610",
-      "likeCount": "2144",
-      "favoriteCount": "0",
-      "commentCount": "24"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/sFBLz5Uiv9M\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "pNL3YPdN_3ASueKGzBVAqI3tI8s",
-    "id": "gsHR7Mrk4II",
-    "snippet": {
-      "publishedAt": "2020-10-07T14:02:37Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【歌枠】エコーが綺麗になったよ(多分)【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nおんしつどう？どう？？\n\n◆サムネイル作成\n⇒士道不覚悟切腹卍丸さん(@shidouhukakugo)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/gsHR7Mrk4II/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/gsHR7Mrk4II/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/gsHR7Mrk4II/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/gsHR7Mrk4II/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/gsHR7Mrk4II/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "音楽",
-        "歌",
-        "歌枠",
-        "ボカロ",
-        "アニソン",
-        "テレキャスタービーボーイ",
-        "Mela!",
-        "KING",
-        "ヒバナ",
-        "拝啓ドッペルゲンガー",
-        "エンヴィキャットウォーク",
-        "はなまるぴっぴはよいこだけ",
-        "秒針を噛む",
-        "夜に駆ける",
-        "ドラマツルギー",
-        "地球最後の告白を",
-        "セツナトリップ"
-      ],
-      "categoryId": "10",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【歌枠】エコーが綺麗になったよ(多分)【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nおんしつどう？どう？？\n\n◆サムネイル作成\n⇒士道不覚悟切腹卍丸さん(@shidouhukakugo)\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT1H23M49S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "101353",
-      "likeCount": "3850",
-      "favoriteCount": "0",
-      "commentCount": "30"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/gsHR7Mrk4II\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "L6vw-40zJmn8e1MB1q14CdtfIZI",
-    "id": "NcxvIwnlAa4",
-    "snippet": {
-      "publishedAt": "2020-10-06T15:45:28Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【Minecraft】水族館を完成させたい！【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nてんじょういまだになににしようかなやんでる\n\n◆サムネイル作成\n⇒なぎすけさん(@nagisuke_gbp)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/NcxvIwnlAa4/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/NcxvIwnlAa4/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/NcxvIwnlAa4/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/NcxvIwnlAa4/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/NcxvIwnlAa4/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "Minecraft",
-        "初心者",
-        "ゲーム",
-        "実況",
-        "マインクラフト",
-        "マイクラ",
-        "建築"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【Minecraft】水族館を完成させたい！【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nてんじょういまだになににしようかなやんでる\n\n◆サムネイル作成\n⇒なぎすけさん(@nagisuke_gbp)\n\nリソースパック名:(Mizuno's 16 Craft)　/bymizuno\nhttp://mizunomcmemo.blogspot.com/p/resourcepack.html\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT1H58M29S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "89500",
-      "likeCount": "2782",
-      "favoriteCount": "0",
-      "commentCount": "13"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/NcxvIwnlAa4\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "sxRlDUH08iH3hBihF3h-MRr4zrs",
-    "id": "nccHTpmNebo",
-    "snippet": {
-      "publishedAt": "2020-10-03T04:44:53Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【マリオ35】マリオでバトロワ！？勝つ気しかない【フレン・E・ルスタリオ/にじさんじ】",
-      "description": "配信タグ：#ルスタリオンエア\n\nばとろわまりお\n\n◆サムネイル作成\n⇒バキュラ･オルタさん(@JanneAlter7451)\n\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/nccHTpmNebo/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/nccHTpmNebo/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/nccHTpmNebo/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/nccHTpmNebo/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/nccHTpmNebo/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "バーチャルライバー",
-        "フレン・E・ルスタリオ",
-        "mario35",
-        "フレン",
-        "Vtuber",
-        "女性",
-        "にじさんじ",
-        "絶叫",
-        "女性ライバー",
-        "雑談",
-        "マリオ35",
-        "Nintendo",
-        "実況",
-        "ふれん",
-        "Super mario bros.35"
-      ],
-      "categoryId": "20",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【マリオ35】マリオでバトロワ！？勝つ気しかない【フレン・E・ルスタリオ/にじさんじ】",
-        "description": "配信タグ：#ルスタリオンエア\n\nばとろわまりお\n\n◆サムネイル作成\n⇒バキュラ･オルタさん(@JanneAlter7451)\n\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT1H9M50S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": true,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "58011",
-      "likeCount": "2027",
-      "favoriteCount": "0",
-      "commentCount": "14"
-    },
-    "player": {
-      "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/nccHTpmNebo\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-    }
-  },
-  {
-    "kind": "youtube#video",
-    "etag": "MqGZ0zcvJG4UqF6oXIWDfA47O-U",
-    "id": "Te0iFUruYCU",
-    "snippet": {
-      "publishedAt": "2020-10-02T16:08:35Z",
-      "channelId": "UCuep1JCrMvSxOGgGhBfJuYw",
-      "title": "【雑談】メイフでおはなしをするだけ【フレン・E・ルスタリオ/メリッサ・キンレンカ/イブラヒム/にじさんじ】",
-      "description": "配信タグ：#メイフ\n\nおはなしをするだけ\n\n◆サムネイル使用イラスト\n⇒にじゅさん(@ nijuunanayo0827)\n\n▽参加者▽\nイブラヒム\nhttps://www.youtube.com/channel/UCmZ1Rbthn-6Jm_qOGjYsh5A\n\nメリッサ\nhttps://www.youtube.com/channel/UCwcyyxn6h9ex4sMXGtpQE_g\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/Te0iFUruYCU/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/Te0iFUruYCU/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/Te0iFUruYCU/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i.ytimg.com/vi/Te0iFUruYCU/sddefault.jpg",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i.ytimg.com/vi/Te0iFUruYCU/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "フレン・E・ルスタリオ",
-      "tags": [
-        "フレン・E・ルスタリオ",
-        "フレン",
-        "にじさんじ",
-        "Vtuber",
-        "バーチャルライバー",
-        "女性ライバー",
-        "女性",
-        "ふれん",
-        "雑談",
-        "実況",
-        "メリッサ・キンレンカ",
-        "イブラヒム",
-        "メイフ"
-      ],
-      "categoryId": "24",
-      "liveBroadcastContent": "none",
-      "defaultLanguage": "ja",
-      "localized": {
-        "title": "【雑談】メイフでおはなしをするだけ【フレン・E・ルスタリオ/メリッサ・キンレンカ/イブラヒム/にじさんじ】",
-        "description": "配信タグ：#メイフ\n\nおはなしをするだけ\n\n◆サムネイル使用イラスト\n⇒にじゅさん(@ nijuunanayo0827)\n\n▽参加者▽\nイブラヒム\nhttps://www.youtube.com/channel/UCmZ1Rbthn-6Jm_qOGjYsh5A\n\nメリッサ\nhttps://www.youtube.com/channel/UCwcyyxn6h9ex4sMXGtpQE_g\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nにじさんじ所属バーチャルライバーの\nフレン・E・ルスタリオです\n\nチャンネル登録、高評価、通知設定よろしく！！！！\n\n\n◆メンバーシップ◆\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/join\n月額490円で登録できます！！\n・名前の横に専用バッジがつくぞ\n・コメントで可愛いスタンプが使えちゃうぞ\n・必ず月１でメンバー限定配信が見れるぞ\n(雑談、同時視聴、絵本読み聞かせ、ASMR etc…)\n\n\n◆ Twitter\nhttps://twitter.com/furen_2434\n◆チャンネル登録\nhttps://www.youtube.com/channel/UCuep1JCrMvSxOGgGhBfJuYw/?sub_confirmation=1\n\n◆生放送関連のツイート #ルスタリオンエア\n◆ファントーク #フレン親衛隊\n◆ファンアート #フレン見て\n\n\n【にじさんじ関連】\n\n◆ 公式HP\nhttps://nijisanji.co.jp/\n\n◆ 公式Twitter\nhttps://twitter.com/Nijisanji_app\n\n◆ Booth公式Twitter\nhttps://twitter.com/booth_pm\n\n◆ 公式オンラインショップ\nhttps://nijisanji.booth.pm/\n\n◆ お問い合わせやファンレターはこちら\nhttps://nijisanji.co.jp/cont...\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー"
-      },
-      "defaultAudioLanguage": "ja"
-    },
-    "contentDetails": {
-      "duration": "PT1H33M42S",
-      "dimension": "2d",
-      "definition": "hd",
-      "caption": "false",
-      "licensedContent": false,
-      "contentRating": {},
-      "projection": "rectangular"
-    },
-    "statistics": {
-      "viewCount": "384270",
+      "viewCount": "384275",
       "likeCount": "8076",
       "favoriteCount": "0",
       "commentCount": "92"
@@ -4930,7 +4907,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0i8a1ptYY5tNyxGQz5UJvw3SR7w",
+    "etag": "pQnDSKRWM67RV07BQlDgU0kcr64",
     "id": "QGvT1s9TlEo",
     "snippet": {
       "publishedAt": "2020-09-28T15:53:08Z",
@@ -5002,7 +4979,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "70175",
+      "viewCount": "70176",
       "likeCount": "1983",
       "favoriteCount": "0",
       "commentCount": "7"
@@ -5096,7 +5073,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Xt47x0TDWSPDuxByhIf3ymmFQTI",
+    "etag": "0xUXvGS7TOqkk0_KiPo3gD4Z8NI",
     "id": "6TxQmeeO7aQ",
     "snippet": {
       "publishedAt": "2020-09-24T14:22:52Z",
@@ -5173,7 +5150,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "72732",
+      "viewCount": "72734",
       "likeCount": "2892",
       "favoriteCount": "0",
       "commentCount": "24"
@@ -5608,7 +5585,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LKwA0ZIWfwlxKGS93pvv3LXbBHc",
+    "etag": "JiXxupw_DG3lLvPec9PuR_Low6U",
     "id": "QevCRYP4R5U",
     "snippet": {
       "publishedAt": "2020-09-14T14:33:37Z",
@@ -5681,7 +5658,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "69991",
+      "viewCount": "69993",
       "likeCount": "2266",
       "favoriteCount": "0",
       "commentCount": "15"
@@ -5774,7 +5751,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "P8QeOHVYJTCX22LZCYBKrr7lvAY",
+    "etag": "UJLOCMyIEFdKfYC0fT8BtJVQTdQ",
     "id": "9JJvIGGw3hI",
     "snippet": {
       "publishedAt": "2020-09-12T10:00:54Z",
@@ -5846,7 +5823,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "54964",
+      "viewCount": "54969",
       "likeCount": "2585",
       "favoriteCount": "0",
       "commentCount": "30"
@@ -5944,7 +5921,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jS3Vrh4iHUwlPF6Oo239nOmLrfA",
+    "etag": "Fb8PBg18oJss_yCCYqyMWNAgonA",
     "id": "encWgwcKDfs",
     "snippet": {
       "publishedAt": "2020-09-08T16:18:54Z",
@@ -6018,7 +5995,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "113971",
+      "viewCount": "113983",
       "likeCount": "2212",
       "favoriteCount": "0",
       "commentCount": "44"
@@ -6029,7 +6006,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "BmeNSLJ33TpXOjLY3xMh5fJef-k",
+    "etag": "NuwmXcrkBzocROYOtypytdIKPZg",
     "id": "kWWrDyDCvhQ",
     "snippet": {
       "publishedAt": "2020-09-07T12:36:34Z",
@@ -6103,8 +6080,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "68268",
-      "likeCount": "2819",
+      "viewCount": "68271",
+      "likeCount": "2820",
       "favoriteCount": "0",
       "commentCount": "44"
     },
@@ -6114,7 +6091,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "5NAwL9dcxjltPQhNs6Lt705bTpk",
+    "etag": "UbStE2j5ISXxPS06WwwDUYgakTw",
     "id": "W7YLBQ0E_GI",
     "snippet": {
       "publishedAt": "2020-09-06T14:12:18Z",
@@ -6185,7 +6162,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "78724",
+      "viewCount": "78725",
       "likeCount": "2381",
       "favoriteCount": "0",
       "commentCount": "23"
@@ -6280,7 +6257,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "364FQaeMRDSaw9LVzAKnpw2XvUA",
+    "etag": "e55yQvuRLP5yzubVD7RvuWW1hTc",
     "id": "uXoYKO9UT7I",
     "snippet": {
       "publishedAt": "2020-09-02T13:03:13Z",
@@ -6353,7 +6330,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "69191",
+      "viewCount": "69195",
       "likeCount": "2406",
       "favoriteCount": "0",
       "commentCount": "24"
@@ -6364,7 +6341,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Mjb1QjU3YJWLaHdmv3-enQPZ14Q",
+    "etag": "XlVqyu1iot4KqF0UBJelMGjWIVY",
     "id": "Iv_yUMO6PaA",
     "snippet": {
       "publishedAt": "2020-09-01T11:00:11Z",
@@ -6444,8 +6421,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "561641",
-      "likeCount": "18633",
+      "viewCount": "561674",
+      "likeCount": "18632",
       "favoriteCount": "0",
       "commentCount": "482"
     },
@@ -6544,7 +6521,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "R330ZXC3X4OZfhS-pQbZRwIercA",
+    "etag": "fLCI1qVKCBQI0SCAbrPcutzWC-Q",
     "id": "vMsu8-E7PZk",
     "snippet": {
       "publishedAt": "2020-08-30T13:39:11Z",
@@ -6615,7 +6592,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "80269",
+      "viewCount": "80270",
       "likeCount": "2505",
       "favoriteCount": "0",
       "commentCount": "20"
@@ -7060,7 +7037,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ewKjU9Ao4tdCTUNEZDX2UjMoKHQ",
+    "etag": "ClN8YJccUwzZdR-fiig5xajcP38",
     "id": "VYugCzUe6lU",
     "snippet": {
       "publishedAt": "2020-08-22T13:12:12Z",
@@ -7131,7 +7108,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "82650",
+      "viewCount": "82649",
       "likeCount": "2709",
       "favoriteCount": "0",
       "commentCount": "17"
@@ -7306,7 +7283,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "AKnUCYXWXjsnfTFa-S33Rh1MiYQ",
+    "etag": "w4CV_FQj2vMkPcXpZo06JaQ6uEU",
     "id": "kjnvanPj1QI",
     "snippet": {
       "publishedAt": "2020-08-18T15:43:07Z",
@@ -7375,7 +7352,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "41630",
+      "viewCount": "41631",
       "likeCount": "1464",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -7386,7 +7363,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JF63D2iT3EISqA159fIVieGNj_c",
+    "etag": "zrGZonKWU3C0Ln2xGOErk3SO9TE",
     "id": "cVUuGpp33ro",
     "snippet": {
       "publishedAt": "2020-08-16T09:49:32Z",
@@ -7457,8 +7434,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "208908",
-      "likeCount": "4189",
+      "viewCount": "208923",
+      "likeCount": "4188",
       "favoriteCount": "0",
       "commentCount": "96"
     },
@@ -7468,7 +7445,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "0CK0VsrJxR0uB5ca7dAZxU262VQ",
+    "etag": "jrz0DU1ycVJ5-iXZ_Ax4O_DDXL8",
     "id": "S2eOkMCoRLw",
     "snippet": {
       "publishedAt": "2020-08-15T11:30:37Z",
@@ -7539,8 +7516,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "125253",
-      "likeCount": "4316",
+      "viewCount": "125257",
+      "likeCount": "4315",
       "favoriteCount": "0",
       "commentCount": "58"
     },
@@ -7632,7 +7609,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "P1-HlDz9eBAzfiTCmcS8CfYrEH0",
+    "etag": "roRkNnBmm_cyZ5-WTUpCT7RfGWI",
     "id": "3te8fJvqmHs",
     "snippet": {
       "publishedAt": "2020-08-13T08:18:12Z",
@@ -7703,7 +7680,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "61872",
+      "viewCount": "61877",
       "likeCount": "1901",
       "favoriteCount": "0",
       "commentCount": "19"
@@ -7714,7 +7691,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cNhQCpWajobmv16pOTGtT2viO1o",
+    "etag": "eepFPTqMjOvJ0gkrHpeYdfaPNU8",
     "id": "Oimjw6woDtI",
     "snippet": {
       "publishedAt": "2020-08-12T09:29:08Z",
@@ -7785,7 +7762,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "108709",
+      "viewCount": "108710",
       "likeCount": "2906",
       "favoriteCount": "0",
       "commentCount": "22"
@@ -8443,7 +8420,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vIotV1MzlwpmpIdJ4nvDhNJav2w",
+    "etag": "f035X6Gxcs1VO2CgG8UStarlBd4",
     "id": "jOdqonaMj-o",
     "snippet": {
       "publishedAt": "2020-08-01T10:26:45Z",
@@ -8510,7 +8487,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "51684",
+      "viewCount": "51683",
       "likeCount": "2344",
       "favoriteCount": "0",
       "commentCount": "34"
@@ -8694,7 +8671,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "3fvt7GGQJ-zZf66QDkxJ_voN-yI",
+    "etag": "2z3dXcjscIaHh_OKPr2dj8fexSE",
     "id": "S9sd_HvFB9k",
     "snippet": {
       "publishedAt": "2020-07-29T13:15:11Z",
@@ -8763,10 +8740,10 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "10212783",
-      "likeCount": "99067",
+      "viewCount": "10214906",
+      "likeCount": "99079",
       "favoriteCount": "0",
-      "commentCount": "2527"
+      "commentCount": "2467"
     },
     "player": {
       "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/S9sd_HvFB9k\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
@@ -8774,7 +8751,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Gq2monn3zjJnxiIzGno43eWDvPY",
+    "etag": "dxFpkxBEIrEolbb3G_5MRrTQLic",
     "id": "2LpvPqGbYmA",
     "snippet": {
       "publishedAt": "2020-07-29T13:04:46Z",
@@ -8843,7 +8820,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "129835",
+      "viewCount": "129837",
       "likeCount": "6972",
       "favoriteCount": "0",
       "commentCount": "162"
@@ -8854,7 +8831,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DtW2LAK1OFWO0sTMXKW89yzFfEU",
+    "etag": "320TRrowVdozQwRfF4XU-yu73eY",
     "id": "bne3qDTejG8",
     "snippet": {
       "publishedAt": "2020-07-28T13:34:35Z",
@@ -8923,7 +8900,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "103466",
+      "viewCount": "103472",
       "likeCount": "2745",
       "favoriteCount": "0",
       "commentCount": "40"
@@ -9015,7 +8992,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "muTS-jrWOo9_AO3Y2XAMHbkGxQQ",
+    "etag": "1rpbqH9iDa7LDjGpOMrKjlbwSVI",
     "id": "iB1ouyPjP0E",
     "snippet": {
       "publishedAt": "2020-07-25T04:12:13Z",
@@ -9080,7 +9057,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "43518",
+      "viewCount": "43517",
       "likeCount": "1770",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -9091,7 +9068,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "HnymQA1ZWpDcA9cCbO79s8x4-gQ",
+    "etag": "1hAz-bbkFon7PxDhOhVz1_k5QKI",
     "id": "Dc58Xsbuq_g",
     "snippet": {
       "publishedAt": "2020-07-23T15:16:56Z",
@@ -9161,7 +9138,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "57027",
+      "viewCount": "57037",
       "likeCount": "2057",
       "favoriteCount": "0",
       "commentCount": "32"
@@ -9172,7 +9149,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VKGOKcj845SotV5C01H9ASVIb3Y",
+    "etag": "TiiyGz57cpUoAUcfXFncnjODyyQ",
     "id": "nqQtuKdjOOU",
     "snippet": {
       "publishedAt": "2020-07-22T06:18:16Z",
@@ -9238,7 +9215,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "68256",
+      "viewCount": "68260",
       "likeCount": "2671",
       "favoriteCount": "0",
       "commentCount": "44"
@@ -9338,7 +9315,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "LJzL_7lCezA5P6cnaF9HwjlV6GY",
+    "etag": "WG7m8ucUzQIzDZopZNLihB09FLs",
     "id": "frkzRGMqw-g",
     "snippet": {
       "publishedAt": "2020-07-17T14:22:41Z",
@@ -9408,7 +9385,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "44422",
+      "viewCount": "44423",
       "likeCount": "1550",
       "favoriteCount": "0",
       "commentCount": "27"
@@ -9484,7 +9461,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nii1eVcssC8w_Zrkg4qHzRo1p9k",
+    "etag": "PHoaZ9SC6-LM56DNtz3djRGE8cg",
     "id": "az8gruC9i2k",
     "snippet": {
       "publishedAt": "2020-07-16T13:31:31Z",
@@ -9545,7 +9522,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "22849",
+      "viewCount": "22851",
       "likeCount": "1102",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -9621,7 +9598,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "VdTqh-LcsQJInduSCQ3-al6hDwc",
+    "etag": "V8mcn0jvqiZHxtgwN5lnmjvVwF4",
     "id": "B823CzRrdfE",
     "snippet": {
       "publishedAt": "2020-07-12T12:50:03Z",
@@ -9675,7 +9652,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "52247",
+      "viewCount": "52248",
       "likeCount": "1744",
       "favoriteCount": "0",
       "commentCount": "26"
@@ -9828,7 +9805,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "QNxib0VAXURePKFhNWhUNWM9J8k",
+    "etag": "oddLW78NAaqQWeyZT0ijuehVtWU",
     "id": "h8c0T7c8Tno",
     "snippet": {
       "publishedAt": "2020-07-09T13:54:58Z",
@@ -9894,7 +9871,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "54985",
+      "viewCount": "54987",
       "likeCount": "1920",
       "favoriteCount": "0",
       "commentCount": "29"
@@ -9905,7 +9882,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Ga1kuG5EHNd2rvxll_8hwcePO88",
+    "etag": "G3sPfNpWk8ipylwh5-gcSsTg6fc",
     "id": "uB0GAuDKch8",
     "snippet": {
       "publishedAt": "2020-07-07T12:28:04Z",
@@ -9972,7 +9949,7 @@
     },
     "statistics": {
       "viewCount": "109668",
-      "likeCount": "3368",
+      "likeCount": "3369",
       "favoriteCount": "0",
       "commentCount": "68"
     },
@@ -10062,7 +10039,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "irVTlODcgXuGo6JStjrqDr4RhYc",
+    "etag": "G6nYTEZyr88N98c1nXZPt1QqDSM",
     "id": "4QJZK8sMqEU",
     "snippet": {
       "publishedAt": "2020-07-05T15:53:08Z",
@@ -10136,8 +10113,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "85434",
-      "likeCount": "2110",
+      "viewCount": "85446",
+      "likeCount": "2111",
       "favoriteCount": "0",
       "commentCount": "46"
     },
@@ -10147,7 +10124,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "IcxGNPrBIiwtJ7bWByQ5vAyXcno",
+    "etag": "qN_ASLrfIzIN8UbFN6S9QojbmX4",
     "id": "co8eE4mm_-M",
     "snippet": {
       "publishedAt": "2020-07-04T20:32:14Z",
@@ -10221,7 +10198,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "75453",
+      "viewCount": "75466",
       "likeCount": "1718",
       "favoriteCount": "0",
       "commentCount": "39"
@@ -10478,7 +10455,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "eeg6WEWRYtDqrsboJKPgIPsllcU",
+    "etag": "pA1eGFtbR1boR2T93vfYQjMSjPk",
     "id": "b2nsa7JH5dA",
     "snippet": {
       "publishedAt": "2020-06-29T14:00:22Z",
@@ -10547,7 +10524,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "54564",
+      "viewCount": "54568",
       "likeCount": "1947",
       "favoriteCount": "0",
       "commentCount": "23"
@@ -10558,7 +10535,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "WrTK_LSx1PKDv-gIxlq2nNrAWRQ",
+    "etag": "a6E__sRlFfCG8wZMGF3_tzA0k6w",
     "id": "N4d5ngK2ZAo",
     "snippet": {
       "publishedAt": "2020-06-28T19:09:27Z",
@@ -10626,7 +10603,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "68608",
+      "viewCount": "68617",
       "likeCount": "1917",
       "favoriteCount": "0",
       "commentCount": "38"
@@ -10637,7 +10614,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "eH1BooyTy6aJnyljB0WO9g40X18",
+    "etag": "1zGfG0j3foqBBGIs9PNUVUhOadk",
     "id": "yjZ2z34-v2A",
     "snippet": {
       "publishedAt": "2020-06-27T15:37:06Z",
@@ -10706,7 +10683,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "72157",
+      "viewCount": "72158",
       "likeCount": "1979",
       "favoriteCount": "0",
       "commentCount": "12"
@@ -10717,7 +10694,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Hoz-u-EmhqYGT-OsHxBtKrPp4uc",
+    "etag": "KSZ6fd_njh0YyAZ3_rYfaW_ELxk",
     "id": "HnM7Jgk6f4c",
     "snippet": {
       "publishedAt": "2020-06-26T15:35:19Z",
@@ -10784,7 +10761,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "49516",
+      "viewCount": "49515",
       "likeCount": "1611",
       "favoriteCount": "0",
       "commentCount": "19"
@@ -10795,7 +10772,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "urI_-9rObEUmQ5o-OzSjOEJ81ag",
+    "etag": "L82j36l1RTjyUqeLKZCPybL96oI",
     "id": "uPrk_lX8Q3o",
     "snippet": {
       "publishedAt": "2020-06-23T12:43:22Z",
@@ -10866,7 +10843,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "100738",
+      "viewCount": "100739",
       "likeCount": "3110",
       "favoriteCount": "0",
       "commentCount": "57"
@@ -10877,7 +10854,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "oPZaecGxo-LtcePFGGZappOQPuY",
+    "etag": "eJJfakLSs_HTLFhk0KWR4ELT6vk",
     "id": "LDXHv8rZbEw",
     "snippet": {
       "publishedAt": "2020-06-22T12:24:50Z",
@@ -10946,7 +10923,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "49872",
+      "viewCount": "49874",
       "likeCount": "1561",
       "favoriteCount": "0",
       "commentCount": "18"
@@ -10957,7 +10934,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "mUc2GghbUyt_WgdUkJRLCcPXQw0",
+    "etag": "orzFDJgjfuUy8qM3mhYpQ0-8mhw",
     "id": "cgsuT12qifg",
     "snippet": {
       "publishedAt": "2020-06-20T12:28:40Z",
@@ -11030,7 +11007,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "29823",
+      "viewCount": "29824",
       "likeCount": "1189",
       "favoriteCount": "0",
       "commentCount": "34"
@@ -11206,7 +11183,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "1KAhC8ibhXxwO17xqhN1ciCCdBg",
+    "etag": "tlVe-Cvxw8LU9YimRDreGbtzH4E",
     "id": "cs4PGIzWM8Y",
     "snippet": {
       "publishedAt": "2020-06-17T14:11:00Z",
@@ -11275,7 +11252,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "26747",
+      "viewCount": "26748",
       "likeCount": "1273",
       "favoriteCount": "0",
       "commentCount": "29"
@@ -11370,7 +11347,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "dEN8ADwsR6iPS-HvColiBRkbkEo",
+    "etag": "TJ1Tw3AeMWI8AHkHMaD7WBNPSvI",
     "id": "fLNxIXBnRpo",
     "snippet": {
       "publishedAt": "2020-06-15T12:08:50Z",
@@ -11440,8 +11417,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "61389",
-      "likeCount": "2607",
+      "viewCount": "61400",
+      "likeCount": "2608",
       "favoriteCount": "0",
       "commentCount": "53"
     },
@@ -11532,7 +11509,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "98DWBkau2_0NpBL1vQk9o89c_XM",
+    "etag": "NZ14x-RQSmCbiwzPITyV7Jn2YHY",
     "id": "LwoVFPwaDp8",
     "snippet": {
       "publishedAt": "2020-06-13T09:55:11Z",
@@ -11602,7 +11579,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "88301",
+      "viewCount": "88304",
       "likeCount": "2506",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -11694,7 +11671,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "TP5nmoJbyTGUUGcaR6VTpfXQrrA",
+    "etag": "RydcXNuy0y-Ek5y2ZSB_irvAjoA",
     "id": "qvOiu_rL1Vg",
     "snippet": {
       "publishedAt": "2020-06-09T14:20:35Z",
@@ -11766,7 +11743,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "71385",
+      "viewCount": "71386",
       "likeCount": "2299",
       "favoriteCount": "0",
       "commentCount": "38"
@@ -11777,7 +11754,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nJCZTqho8t_-wp51794AIC8j3NI",
+    "etag": "U014LRQmbPNXCMTWH0oF3EvIoyk",
     "id": "FSuEGthmNoY",
     "snippet": {
       "publishedAt": "2020-06-08T15:06:55Z",
@@ -11846,7 +11823,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "96787",
+      "viewCount": "96789",
       "likeCount": "2824",
       "favoriteCount": "0",
       "commentCount": "28"
@@ -11857,7 +11834,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "v5on6Ro1-uAx5ggg07aXPQ-hUYs",
+    "etag": "VmRaQM8cnrKznKw_aPnTqhWZQUs",
     "id": "jQB6AfODSU0",
     "snippet": {
       "publishedAt": "2020-06-07T00:10:27Z",
@@ -11930,7 +11907,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "259805",
+      "viewCount": "259811",
       "likeCount": "6439",
       "favoriteCount": "0",
       "commentCount": "131"
@@ -12021,7 +11998,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DcYyis7NwB5kUxcjGJjbo4NKXW8",
+    "etag": "ErAYTExF72GEyqwCiXHrML-atDo",
     "id": "HtswuCJtqk8",
     "snippet": {
       "publishedAt": "2020-06-02T14:32:26Z",
@@ -12093,7 +12070,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "53127",
+      "viewCount": "53128",
       "likeCount": "1640",
       "favoriteCount": "0",
       "commentCount": "25"
@@ -12104,7 +12081,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cK-24RrAtH_p_daEBcCR6ixbc70",
+    "etag": "QY8aN4MnRPwU8CKb7jYVW3pixNI",
     "id": "lXQsExIhHiI",
     "snippet": {
       "publishedAt": "2020-06-01T12:32:18Z",
@@ -12176,7 +12153,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "48564",
+      "viewCount": "48566",
       "likeCount": "1560",
       "favoriteCount": "0",
       "commentCount": "35"
@@ -12267,7 +12244,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "_eXbkIC5Xl_BwqEcKmM9J29dQzM",
+    "etag": "HAztWB4buerxSCC9GKyVNj-MqgM",
     "id": "tIs0QtFgyGU",
     "snippet": {
       "publishedAt": "2020-05-30T07:14:52Z",
@@ -12339,7 +12316,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "53645",
+      "viewCount": "53649",
       "likeCount": "1912",
       "favoriteCount": "0",
       "commentCount": "50"
@@ -12427,7 +12404,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nMdKtR3wzFZTDrzV-n2uNXu4rWk",
+    "etag": "YOS_-4Ov3_TSIPocH5hEAwGFkAs",
     "id": "5xvzPCUgGn0",
     "snippet": {
       "publishedAt": "2020-05-28T13:45:25Z",
@@ -12497,8 +12474,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "45363",
-      "likeCount": "1800",
+      "viewCount": "45367",
+      "likeCount": "1801",
       "favoriteCount": "0",
       "commentCount": "35"
     },
@@ -12508,7 +12485,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "3PCrtEgmUt0nSPn4niYn8CgPggI",
+    "etag": "CE83-dOWgIyysHkmkGRHR5Jrvfc",
     "id": "XRpZVS1lHpc",
     "snippet": {
       "publishedAt": "2020-05-27T12:07:26Z",
@@ -12579,7 +12556,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "82993",
+      "viewCount": "82994",
       "likeCount": "2252",
       "favoriteCount": "0",
       "commentCount": "30"
@@ -12671,7 +12648,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Fc8CWZdxJ9DYtXFedBL9XM_cXTk",
+    "etag": "z5R9d3145qcBOCmXIkkEZ8dLCfw",
     "id": "PS3i8v_16S8",
     "snippet": {
       "publishedAt": "2020-05-25T13:33:12Z",
@@ -12739,7 +12716,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "57598",
+      "viewCount": "57600",
       "likeCount": "1805",
       "favoriteCount": "0",
       "commentCount": "27"
@@ -12750,7 +12727,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "NfUP1RJ1DZsF-E8n7-Bb2PXHDdw",
+    "etag": "BLGLi2Nt9KCO716r6xYnvfhfinY",
     "id": "hA-12GLqjLk",
     "snippet": {
       "publishedAt": "2020-05-24T11:39:54Z",
@@ -12819,7 +12796,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "248133",
+      "viewCount": "248134",
       "likeCount": "5603",
       "favoriteCount": "0",
       "commentCount": "65"
@@ -12830,7 +12807,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "I7Uh_COtixuJwpULIl0Cb2DlhcQ",
+    "etag": "IJvgbIuTQfKDw4uRj2EO4LONy24",
     "id": "tA62xfRSJao",
     "snippet": {
       "publishedAt": "2020-05-23T12:37:58Z",
@@ -12903,7 +12880,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "53026",
+      "viewCount": "53029",
       "likeCount": "1792",
       "favoriteCount": "0",
       "commentCount": "37"
@@ -13153,7 +13130,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "74glX7st0rDz9w3FWh9wvb7mJjE",
+    "etag": "Y2yUrhxoE9383OtyhiqxIcA0K6U",
     "id": "IS-8eupGP_I",
     "snippet": {
       "publishedAt": "2020-05-19T10:00:11Z",
@@ -13224,8 +13201,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "1559506",
-      "likeCount": "29356",
+      "viewCount": "1559746",
+      "likeCount": "29358",
       "favoriteCount": "0",
       "commentCount": "842"
     },
@@ -13235,7 +13212,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "yxFgpYPhDfsfR5osEmvOTJZzk3w",
+    "etag": "00CBfugV7Q8v2Fe5E3IfOcchzwI",
     "id": "66GKONl5XoY",
     "snippet": {
       "publishedAt": "2020-05-18T15:35:01Z",
@@ -13306,7 +13283,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "52289",
+      "viewCount": "52290",
       "likeCount": "1275",
       "favoriteCount": "0",
       "commentCount": "33"
@@ -13317,7 +13294,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ixCIz8rTUTsrOK9Dlr8IbxaRg4s",
+    "etag": "b-jR_GdY8cGw_J-7Hizrz4PZR3I",
     "id": "G9yH2MZ3f78",
     "snippet": {
       "publishedAt": "2020-05-17T14:47:08Z",
@@ -13388,7 +13365,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "122701",
+      "viewCount": "122708",
       "likeCount": "2400",
       "favoriteCount": "0",
       "commentCount": "41"
@@ -13478,7 +13455,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "WWxKJuosKLkPH8awN8DmycwRmFw",
+    "etag": "J3D1KSMnoG80ZGepP-iYCD5qJoM",
     "id": "AnnVqFPwP70",
     "snippet": {
       "publishedAt": "2020-05-15T20:36:02Z",
@@ -13548,7 +13525,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "162381",
+      "viewCount": "162396",
       "likeCount": "3369",
       "favoriteCount": "0",
       "commentCount": "52"
@@ -13559,7 +13536,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Am351d6IyQsnXVbA3ba4vgJMLSw",
+    "etag": "52hnhfCmV1qLUIGqMdYlguG3Pw8",
     "id": "Z98RPj15pho",
     "snippet": {
       "publishedAt": "2020-05-14T13:56:37Z",
@@ -13628,7 +13605,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "61371",
+      "viewCount": "61372",
       "likeCount": "1890",
       "favoriteCount": "0",
       "commentCount": "49"
@@ -13719,7 +13696,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jW2hnOQyXH0zNVRLz0bQL7BQl5w",
+    "etag": "0RcFx9uU8lZ9U86FNEzBPNIXcyI",
     "id": "n3yQdcyBcvY",
     "snippet": {
       "publishedAt": "2020-05-12T13:52:59Z",
@@ -13791,7 +13768,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "80424",
+      "viewCount": "80426",
       "likeCount": "2786",
       "favoriteCount": "0",
       "commentCount": "55"
@@ -13802,7 +13779,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "Vilt9O6wXklBh-0HNP1Ugd1wmls",
+    "etag": "Zj3qaE2ll8qF5kTEFIWlz5Su5hI",
     "id": "8ILWUUFnLnw",
     "snippet": {
       "publishedAt": "2020-05-10T13:48:50Z",
@@ -13869,8 +13846,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "421884",
-      "likeCount": "11778",
+      "viewCount": "421926",
+      "likeCount": "11779",
       "favoriteCount": "0",
       "commentCount": "243"
     },
@@ -14286,7 +14263,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "djT3U20OUTdHtOLI66xyBsXQbbo",
+    "etag": "lqz__MGNI5v2MgDuyuN3V03-OcQ",
     "id": "8-qCPPRZ8c0",
     "snippet": {
       "publishedAt": "2020-05-02T13:26:11Z",
@@ -14354,7 +14331,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "93327",
+      "viewCount": "93328",
       "likeCount": "3177",
       "favoriteCount": "0",
       "commentCount": "46"
@@ -14687,7 +14664,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9qASPZeaZayA8hb18WtLbr1siDo",
+    "etag": "l6DBrk7gMyEiREU0btIQ0ioENkE",
     "id": "-iD8nUdIZNE",
     "snippet": {
       "publishedAt": "2020-04-27T15:05:44Z",
@@ -14753,7 +14730,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "49766",
+      "viewCount": "49765",
       "likeCount": "1793",
       "favoriteCount": "0",
       "commentCount": "19"
@@ -14843,7 +14820,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9Kxg001id9GI_1OkdazOFxlyMKU",
+    "etag": "TmvRkhqms45Qw084GXUYI0qZ2q8",
     "id": "I5Uunw6GtvM",
     "snippet": {
       "publishedAt": "2020-04-26T08:40:27Z",
@@ -14914,8 +14891,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "92996",
-      "likeCount": "2748",
+      "viewCount": "93000",
+      "likeCount": "2747",
       "favoriteCount": "0",
       "commentCount": "49"
     },
@@ -14925,7 +14902,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nzqjaSrSrdE6YPmla0o1LP6nfAw",
+    "etag": "VjcAJephqmeqgaNRb_Ip7tZYGsc",
     "id": "RPmJd0WXsqk",
     "snippet": {
       "publishedAt": "2020-04-25T11:06:56Z",
@@ -14998,7 +14975,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "109925",
+      "viewCount": "109928",
       "likeCount": "4267",
       "favoriteCount": "0",
       "commentCount": "72"
@@ -15009,7 +14986,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "FwnZG__i6H1J4vD8qb5xYlwfat4",
+    "etag": "uT89e2eiS5Bxjw43bijz_uzMFMQ",
     "id": "El7G5FiqrYI",
     "snippet": {
       "publishedAt": "2020-04-23T16:25:36Z",
@@ -15076,7 +15053,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "39727",
+      "viewCount": "39732",
       "likeCount": "1103",
       "favoriteCount": "0",
       "commentCount": "17"
@@ -15087,7 +15064,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "czgi2z3HFvu8um-zVifCeNHkFPc",
+    "etag": "GAK8KZnFZhosUg8glXEyp7EPAjc",
     "id": "JDafq9Zjza8",
     "snippet": {
       "publishedAt": "2020-04-22T11:51:16Z",
@@ -15156,7 +15133,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "68143",
+      "viewCount": "68145",
       "likeCount": "3618",
       "favoriteCount": "0",
       "commentCount": "81"
@@ -15167,7 +15144,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "vSXXlLnWNuQhFuG4JnaFVM2ZlJE",
+    "etag": "JcVBr2J6IBzYkzufUhDlMzXbbUE",
     "id": "pZYee-sG4Xs",
     "snippet": {
       "publishedAt": "2020-04-21T12:41:22Z",
@@ -15233,7 +15210,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "57942",
+      "viewCount": "57943",
       "likeCount": "1771",
       "favoriteCount": "0",
       "commentCount": "56"
@@ -15244,7 +15221,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6d6EzOdySGdZFqfocO0eRTzjOCY",
+    "etag": "jbaibaPHeKS6OtSiCCSuJrKAj4I",
     "id": "SBw_sypPhRY",
     "snippet": {
       "publishedAt": "2020-04-20T14:32:35Z",
@@ -15312,7 +15289,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "39382",
+      "viewCount": "39384",
       "likeCount": "1114",
       "favoriteCount": "0",
       "commentCount": "23"
@@ -15323,7 +15300,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DdmdiX2IKUAk5DIiNK-shHGxqhA",
+    "etag": "vps27JceqR32HpzZlxrQrcFEbGM",
     "id": "-8S5jd1Ur88",
     "snippet": {
       "publishedAt": "2020-04-20T12:33:01Z",
@@ -15377,7 +15354,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "51709",
+      "viewCount": "51711",
       "likeCount": "1565",
       "favoriteCount": "0",
       "commentCount": "14"
@@ -15388,7 +15365,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "muefqMunXFt36hCcfkJRnnp_76g",
+    "etag": "Ont2TSvmvpuMu3bo0azfVcvs2Es",
     "id": "e-NmPretsqs",
     "snippet": {
       "publishedAt": "2020-04-19T16:28:51Z",
@@ -15456,7 +15433,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "56763",
+      "viewCount": "56764",
       "likeCount": "1483",
       "favoriteCount": "0",
       "commentCount": "30"
@@ -15467,7 +15444,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cX-5ELLtNDgHfkujSeRPKfTwyLI",
+    "etag": "OMKlpHY9CYlt565wyZAXwFgY66o",
     "id": "L2F91WQ6MSA",
     "snippet": {
       "publishedAt": "2020-04-19T09:04:48Z",
@@ -15521,7 +15498,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "58038",
+      "viewCount": "58041",
       "likeCount": "1486",
       "favoriteCount": "0",
       "commentCount": "30"
@@ -15532,7 +15509,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "zVZYQFh5Nbu9V4IjFi0l0D46EKk",
+    "etag": "fx_dhjIugLaqR8qlu5rrtC4hlB0",
     "id": "rQq53s0r2so",
     "snippet": {
       "publishedAt": "2020-04-18T12:01:09Z",
@@ -15600,7 +15577,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "52043",
+      "viewCount": "52046",
       "likeCount": "1561",
       "favoriteCount": "0",
       "commentCount": "11"
@@ -15611,7 +15588,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9WweTq9JfsVX5d7L5l89ieNdR88",
+    "etag": "ux9T65zd_w3h4SBHaHzpU6zGVJg",
     "id": "4G-uICsdc5Y",
     "snippet": {
       "publishedAt": "2020-04-16T13:51:29Z",
@@ -15680,8 +15657,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "112800",
-      "likeCount": "3566",
+      "viewCount": "112810",
+      "likeCount": "3567",
       "favoriteCount": "0",
       "commentCount": "45"
     },
@@ -15691,7 +15668,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "stgPrmY0qYWUwWtg4LwToPFUefw",
+    "etag": "3LhdzcXkvc6J47aX16k4tkh7fNs",
     "id": "NBG3G-hmjmI",
     "snippet": {
       "publishedAt": "2020-04-15T14:50:07Z",
@@ -15757,7 +15734,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "67190",
+      "viewCount": "67192",
       "likeCount": "2033",
       "favoriteCount": "0",
       "commentCount": "35"
@@ -15854,7 +15831,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cvF_U7C9CnbVFFz8lIqf2fvTfkw",
+    "etag": "1xABtWPGcSc-PIlJQIUTUIBbHBw",
     "id": "_9AoKlfRoBs",
     "snippet": {
       "publishedAt": "2020-04-13T12:31:44Z",
@@ -15923,7 +15900,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "391285",
+      "viewCount": "391294",
       "likeCount": "9481",
       "favoriteCount": "0",
       "commentCount": "191"
@@ -15934,7 +15911,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "blWr1vpPvf9OK6CB4WvqOFN8gjI",
+    "etag": "XfDZ13RyL4JFl-mXTprdqoJkoNQ",
     "id": "Sev367xfvi8",
     "snippet": {
       "publishedAt": "2020-04-12T11:01:50Z",
@@ -16001,7 +15978,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "42820",
+      "viewCount": "42824",
       "likeCount": "1515",
       "favoriteCount": "0",
       "commentCount": "36"
@@ -16012,7 +15989,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "wIA9WRe8ZpMhqrV6R5k59moyENM",
+    "etag": "t3MuYB7S6aKOf2efmuzBL4yw3uw",
     "id": "D1maLHWOYKA",
     "snippet": {
       "publishedAt": "2020-04-11T03:04:02Z",
@@ -16079,7 +16056,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "163017",
+      "viewCount": "163021",
       "likeCount": "8038",
       "favoriteCount": "0",
       "commentCount": "92"
@@ -16090,7 +16067,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "zvuiwaEx4hzdjgocR7FHjvNaxXA",
+    "etag": "l2RSioMSP0irmlqBJgPFZ0VdXUA",
     "id": "p0SF_qfFHfw",
     "snippet": {
       "publishedAt": "2020-04-09T13:42:16Z",
@@ -16156,7 +16133,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "57669",
+      "viewCount": "57670",
       "likeCount": "1683",
       "favoriteCount": "0",
       "commentCount": "46"
@@ -16167,7 +16144,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "J-sK51OvBcicMdf4O82DRlFJon0",
+    "etag": "M16ZSuLiHWri9d7EmCW-dU74vXk",
     "id": "wdf3L3tnirI",
     "snippet": {
       "publishedAt": "2020-04-08T15:36:02Z",
@@ -16242,7 +16219,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "55834",
+      "viewCount": "55835",
       "likeCount": "1947",
       "favoriteCount": "0",
       "commentCount": "24"
@@ -16253,7 +16230,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MbdK1sZytdjVdJ-rtiusFD0fEzE",
+    "etag": "DIomXnOEiD3DU3ndGKTDWblA-PI",
     "id": "UW9ZGbIQFxc",
     "snippet": {
       "publishedAt": "2020-04-07T14:39:08Z",
@@ -16329,7 +16306,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "35901",
+      "viewCount": "35902",
       "likeCount": "1687",
       "favoriteCount": "0",
       "commentCount": "18"
@@ -16431,7 +16408,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "KSn0bw_pqLigMl_WCsMPzokOm4Q",
+    "etag": "1s28nWkLXqvL2iQwXHbgX6Liulg",
     "id": "u-bRYhJankc",
     "snippet": {
       "publishedAt": "2020-04-04T13:37:12Z",
@@ -16497,7 +16474,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "101117",
+      "viewCount": "101120",
       "likeCount": "2486",
       "favoriteCount": "0",
       "commentCount": "62"
@@ -16508,7 +16485,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "ICMID8wK4PWbiEQyGR8cl1_e-a4",
+    "etag": "zR5CWDvy5ezgKoYts83xsK6FFaY",
     "id": "mQrXpCt3Jyc",
     "snippet": {
       "publishedAt": "2020-04-03T15:35:00Z",
@@ -16582,7 +16559,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "20342",
+      "viewCount": "20343",
       "likeCount": "640",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -16675,7 +16652,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "xt-7bgHlfwjn1eRXU6EBxhFw66U",
+    "etag": "LMjTPxIMXWL8CtPapB-umnxhZT0",
     "id": "PCu5XI_TkkI",
     "snippet": {
       "publishedAt": "2020-04-01T13:06:30Z",
@@ -16744,7 +16721,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "82670",
+      "viewCount": "82673",
       "likeCount": "2706",
       "favoriteCount": "0",
       "commentCount": "54"
@@ -16755,7 +16732,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "MWBlJNHXFw3Mv1lJownmw-RHY2g",
+    "etag": "I3kq_Z4WqGcs7ahHK4zUqGSK_Hg",
     "id": "J03EVWq1xHk",
     "snippet": {
       "publishedAt": "2020-03-30T15:36:05Z",
@@ -16820,7 +16797,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "22674",
+      "viewCount": "22675",
       "likeCount": "870",
       "favoriteCount": "0",
       "commentCount": "31"
@@ -17061,7 +17038,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "geLKd41VKRRMUFp_1DDPo2g8LLk",
+    "etag": "UbHoRuWGuj1OwBH47ztHMgMrTsw",
     "id": "qDOIpqWU6n8",
     "snippet": {
       "publishedAt": "2020-03-25T16:40:09Z",
@@ -17115,7 +17092,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "30032",
+      "viewCount": "30037",
       "likeCount": "1074",
       "favoriteCount": "0",
       "commentCount": "18"
@@ -17256,7 +17233,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "dum0yf5B2W3rE_c4zqFsPz2r87o",
+    "etag": "iLUJ7mcQnYF7lp0lWz7yIrO-yvE",
     "id": "vbQoCp4jqRc",
     "snippet": {
       "publishedAt": "2020-03-21T15:38:28Z",
@@ -17310,7 +17287,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "41799",
+      "viewCount": "41800",
       "likeCount": "1086",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -17386,7 +17363,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "6QLbR6N4PyzvJ8lLtTMwYXTU-mA",
+    "etag": "soedU-YCLIeQsk9YS-rpkTVO43U",
     "id": "JxZgLozu8Ko",
     "snippet": {
       "publishedAt": "2020-03-21T06:02:57Z",
@@ -17440,7 +17417,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "98925",
+      "viewCount": "98936",
       "likeCount": "2128",
       "favoriteCount": "0",
       "commentCount": "39"
@@ -17711,7 +17688,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "7zlQp1d8iRMkYIPiARKyPmR6ZZY",
+    "etag": "oIGgiWHfu7TTT3Bmy0GIS7Qzbig",
     "id": "MMpXSKAvTVg",
     "snippet": {
       "publishedAt": "2020-03-14T17:41:37Z",
@@ -17780,7 +17757,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "178948",
+      "viewCount": "178958",
       "likeCount": "4104",
       "favoriteCount": "0",
       "commentCount": "70"
@@ -17921,7 +17898,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "gl29dTnbrJlXgdF8qT2W_cqq9hM",
+    "etag": "Dizh7H8-md8EmKEfSNp8cM5s418",
     "id": "gi-UJO1G5PM",
     "snippet": {
       "publishedAt": "2020-03-12T13:59:35Z",
@@ -17989,7 +17966,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "71262",
+      "viewCount": "71270",
       "likeCount": "2433",
       "favoriteCount": "0",
       "commentCount": "52"
@@ -18279,7 +18256,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "RVRX96qnWlJrpDnAkDyqK9t8SbA",
+    "etag": "qHmtLQAjNqyTFrNVZcJYU14Kp7I",
     "id": "A3x-uhqnLqs",
     "snippet": {
       "publishedAt": "2020-03-07T06:08:54Z",
@@ -18333,7 +18310,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "47215",
+      "viewCount": "47216",
       "likeCount": "1781",
       "favoriteCount": "0",
       "commentCount": "26"
@@ -18344,7 +18321,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "nMP7FYQaaCTFDEEld4zlQDHgu64",
+    "etag": "3E5nFx1Y-kz_WblPRQkH9x4I5_U",
     "id": "6SnOUOnbjoA",
     "snippet": {
       "publishedAt": "2020-03-06T16:43:41Z",
@@ -18398,7 +18375,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "57078",
+      "viewCount": "57081",
       "likeCount": "1563",
       "favoriteCount": "0",
       "commentCount": "67"
@@ -18409,7 +18386,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DHDZNcQRgX2-xQHIB4kfxOM2dCs",
+    "etag": "BMkV1J-OAJdhEXEJhGz2p52Ycrg",
     "id": "7FM6qAZH2x4",
     "snippet": {
       "publishedAt": "2020-03-05T14:21:18Z",
@@ -18479,8 +18456,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "145547",
-      "likeCount": "3452",
+      "viewCount": "145554",
+      "likeCount": "3451",
       "favoriteCount": "0",
       "commentCount": "107"
     },
@@ -18815,7 +18792,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "DhMoywItEJnNhZTY1ftyhasm-3A",
+    "etag": "4fFK8oZouot7N0OJL1VF2AgBUWY",
     "id": "_IYbN_js2j4",
     "snippet": {
       "publishedAt": "2020-02-29T13:54:00Z",
@@ -18869,7 +18846,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "17322",
+      "viewCount": "17321",
       "likeCount": "729",
       "favoriteCount": "0",
       "commentCount": "16"
@@ -18880,7 +18857,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "X1uVZc1RrYGAQlv-g31CX9RzliA",
+    "etag": "2Jozmo37ZyXH0Sk6-tc6C9Y_b3c",
     "id": "zc9JiFfrDbA",
     "snippet": {
       "publishedAt": "2020-02-29T06:26:58Z",
@@ -18934,7 +18911,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "34860",
+      "viewCount": "34861",
       "likeCount": "820",
       "favoriteCount": "0",
       "commentCount": "21"
@@ -19010,7 +18987,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "IO-O1ryy2cY1SIySq5xefbU0zQw",
+    "etag": "FHQVO_iDlmVvmEd6wfUOUZs7n7w",
     "id": "zaIWvixqY6k",
     "snippet": {
       "publishedAt": "2020-02-27T18:22:21Z",
@@ -19064,7 +19041,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "88041",
+      "viewCount": "88044",
       "likeCount": "1877",
       "favoriteCount": "0",
       "commentCount": "39"
@@ -19075,7 +19052,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "4p8ldhAIgiMi44nHJnsgGJi4uhY",
+    "etag": "YYvv7qNopIFbDpbuzgYR-e-WFtY",
     "id": "aJLbN7kplN0",
     "snippet": {
       "publishedAt": "2020-02-26T15:29:50Z",
@@ -19129,7 +19106,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "20970",
+      "viewCount": "20969",
       "likeCount": "908",
       "favoriteCount": "0",
       "commentCount": "27"
@@ -19140,7 +19117,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "3wEayQOkPAcIZxKxDXwEGGcaDsg",
+    "etag": "6hczFUquEeNGmdLn4AaaC2jvygo",
     "id": "f2RnRB1Rctk",
     "snippet": {
       "publishedAt": "2020-02-26T10:07:09Z",
@@ -19195,7 +19172,7 @@
     },
     "statistics": {
       "viewCount": "0",
-      "likeCount": "6082",
+      "likeCount": "6083",
       "favoriteCount": "0",
       "commentCount": "0"
     },
@@ -19205,7 +19182,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "cVjfhuMSMXNHAb6e3efcazeU66M",
+    "etag": "gDFLpudWWQcqbZXv8k_B04LbNrk",
     "id": "AKYSfSjmrTw",
     "snippet": {
       "publishedAt": "2020-02-25T13:23:17Z",
@@ -19259,7 +19236,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "82994",
+      "viewCount": "82997",
       "likeCount": "2230",
       "favoriteCount": "0",
       "commentCount": "58"
@@ -19400,7 +19377,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "37lS43H0BC17Wche6F-BxRHO9H4",
+    "etag": "xb9CoxngvcvJzFoD11JvBENxmQw",
     "id": "CVk-Db1VhcM",
     "snippet": {
       "publishedAt": "2020-02-20T15:02:46Z",
@@ -19454,7 +19431,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "157788",
+      "viewCount": "157790",
       "likeCount": "4011",
       "favoriteCount": "0",
       "commentCount": "57"
@@ -19465,7 +19442,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "2AViZcMa3dxxA_UgC3TuX7Wixrg",
+    "etag": "6CyG89PGEnUMHlTqalph0Rc-TOs",
     "id": "SE69vTrviDI",
     "snippet": {
       "publishedAt": "2020-02-15T14:17:17Z",
@@ -19533,7 +19510,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "142598",
+      "viewCount": "142599",
       "likeCount": "4283",
       "favoriteCount": "0",
       "commentCount": "111"
@@ -19544,7 +19521,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "n_O7iKpLqjmL9dhc9uEpo_MeGUE",
+    "etag": "3yfJs7lPgOaHIWqXhUAFb88g8SY",
     "id": "w9N2iNSVrcY",
     "snippet": {
       "publishedAt": "2020-02-14T17:37:26Z",
@@ -19598,7 +19575,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "108565",
+      "viewCount": "108568",
       "likeCount": "2169",
       "favoriteCount": "0",
       "commentCount": "39"
@@ -19674,7 +19651,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "jkgNOi1KH88n_xLqEZ9052WqCmw",
+    "etag": "u4VpydQcAAE5B3aBMZAPKnu9-_0",
     "id": "sNsn7tNaTK8",
     "snippet": {
       "publishedAt": "2020-02-12T15:15:59Z",
@@ -19728,7 +19705,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "32965",
+      "viewCount": "32967",
       "likeCount": "1499",
       "favoriteCount": "0",
       "commentCount": "48"
@@ -19739,7 +19716,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "JKAipFr9yinqIAHekWHBhzsCmm4",
+    "etag": "in4J2zG8ANsdK5HeT06ZlckSMMU",
     "id": "H2OggsL5vNo",
     "snippet": {
       "publishedAt": "2020-02-11T14:53:05Z",
@@ -19793,7 +19770,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "59665",
+      "viewCount": "59666",
       "likeCount": "1838",
       "favoriteCount": "0",
       "commentCount": "88"
@@ -19804,7 +19781,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "pmQTMDs1lrn8Jjm-SiIiVaLipro",
+    "etag": "M2obvCZ9lq7OAJlME2OhlSdw668",
     "id": "29W7mDgRGx0",
     "snippet": {
       "publishedAt": "2020-02-10T14:38:05Z",
@@ -19858,7 +19835,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "27030",
+      "viewCount": "27032",
       "likeCount": "1321",
       "favoriteCount": "0",
       "commentCount": "92"
@@ -19869,7 +19846,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "sy4x--WInMnncTR9p-DMsvMV3hM",
+    "etag": "bg8vFWxQe7j52UomEyZ5QkYGWwI",
     "id": "r7jr2ecyplo",
     "snippet": {
       "publishedAt": "2020-02-09T12:19:57Z",
@@ -19923,7 +19900,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "68344",
+      "viewCount": "68345",
       "likeCount": "2609",
       "favoriteCount": "0",
       "commentCount": "49"
@@ -19934,7 +19911,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "J03fU7MpPYpXCSqqxuIYyq3IGKc",
+    "etag": "B5499Jn6u2GD62W-LClJWFzk-X0",
     "id": "20m5OtnskxE",
     "snippet": {
       "publishedAt": "2020-02-04T14:11:45Z",
@@ -19988,8 +19965,8 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "73934",
-      "likeCount": "2704",
+      "viewCount": "73935",
+      "likeCount": "2705",
       "favoriteCount": "0",
       "commentCount": "73"
     },
@@ -19999,7 +19976,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "CNNMAR-hdS00HOrX8qCgXBhAgUI",
+    "etag": "UMfBC3MJKsrvDTxdJ4TdTI_emv0",
     "id": "MbYYd2TX74o",
     "snippet": {
       "publishedAt": "2020-02-02T14:09:16Z",
@@ -20053,7 +20030,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "116264",
+      "viewCount": "116270",
       "likeCount": "3878",
       "favoriteCount": "0",
       "commentCount": "84"
@@ -20064,7 +20041,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "9UkzRDyJZfhbdig5APTsanqiNiY",
+    "etag": "eYfGJoYLDmQhvmJTySJfUsW9TX8",
     "id": "XBqmYnPLMzc",
     "snippet": {
       "publishedAt": "2020-02-02T07:27:49Z",
@@ -20118,7 +20095,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "134298",
+      "viewCount": "134309",
       "likeCount": "3887",
       "favoriteCount": "0",
       "commentCount": "87"
@@ -20129,7 +20106,7 @@
   },
   {
     "kind": "youtube#video",
-    "etag": "8x36U9oSBZnRo5skgSdS4leUKrA",
+    "etag": "aSsFCY_J5gDe7SAhneODrwdkyFI",
     "id": "6dh2TTlvBdY",
     "snippet": {
       "publishedAt": "2020-02-01T12:24:37Z",
@@ -20183,7 +20160,7 @@
       "projection": "rectangular"
     },
     "statistics": {
-      "viewCount": "349578",
+      "viewCount": "349606",
       "likeCount": "12825",
       "favoriteCount": "0",
       "commentCount": "294"
