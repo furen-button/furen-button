@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta property="og:title" content="フレンボタン">
@@ -12,39 +13,50 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon-180x180.png" sizes="180x180">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Kiwi+Maru&family=Noto+Sans+JP&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Kiwi+Maru&family=Noto+Sans+JP&display=swap" media="print" onload="this.media='all'">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Kiwi+Maru&family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Kiwi+Maru&family=Noto+Sans+JP&display=swap"
+        media="print" onload="this.media='all'">
     <style>
         /* 連続で収縮 */
         @keyframes heartbeat {
             0% {
                 transform: scale(1);
             }
+
             4% {
                 transform: scale(1.1);
             }
+
             7% {
                 transform: scale(1);
             }
+
             11% {
                 transform: scale(1.07);
             }
+
             18% {
                 transform: scale(1);
             }
         }
+
         /* 一回だけ拡大縮小 */
         @keyframes scaleOnce {
             0% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.1);
             }
+
             100% {
                 transform: scale(1);
             }
         }
+
         body {
             font-family: 'Noto Sans JP', sans-serif;
             background-color: #fffafa;
@@ -53,19 +65,24 @@
             background-position: top right;
             background-repeat: repeat-y;
         }
+
         hr {
             border: none;
         }
+
         .anime-button {
             animation: heartbeat 1s infinite ease-in-out;
             background-color: #cff7ff;
         }
+
         .anime-clip {
             animation: heartbeat 1s infinite ease-in-out;
         }
+
         h1 {
             text-align: center;
         }
+
         .logo {
             font-family: 'Mochiy Pop One', serif;
             font-size: 50px;
@@ -74,38 +91,41 @@
             text-decoration: none;
             letter-spacing: .5rem;
         }
+
         p {
             max-width: calc(100% - 500px);
             min-width: min(400px, 100%);
             background-color: #fffafaaa;
         }
+
         ul#category-buttons {
             max-width: calc(100% - 500px);
             min-width: min(400px, 100%);
             padding-left: 0px;
         }
-        ul#category-buttons > li {
+
+        ul#category-buttons>li {
             display: inline-flex;
             white-space: pre;
         }
 
         .fixed-button {
-          width: 100px;
-          height: 100px;
-          font-size: 50px;
-          position: fixed;
-          right: 0;
-          bottom: 0;
-          z-index: 1100;
-          color: black;
-          border-radius: 50%;
-          border: gray solid 1px;
-          background-color: #fffafaff;
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: 1100;
+            color: black;
+            border-radius: 50%;
+            border: gray solid 1px;
+            background-color: #fffafaff;
         }
 
         .fixed-button:hover {
-          cursor: pointer;
-          background-color: #ec1d2f;
+            cursor: pointer;
+            background-color: #ec1d2f;
         }
 
         .fixed-button:active {
@@ -120,28 +140,37 @@
         }
     </style>
 </head>
+
 <body>
-<div>
-    <h1>
-      <a href="." class="logo">フレンボタン</a>
-      <a target="_blank" href="https://furen-button.github.io/furen-button/feed.rss">
-        <img src="img/icons8-rss-48.png" width="48px" height="48px" alt="rss">
-      </a>
-    </h1>
-    <a href="https://twitter.com/intent/tweet?button_hashtag=フレンボタン&url=https://furen-button.github.io/furen-button/" class="twitter-hashtag-button" data-show-count="false">Tweet #フレンボタン</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <p><a href="https://www.youtube.com/@FurenELustario" target="_blank">コーヴァス帝国から来た女騎士フレン・E・ルスタリオさん</a>のボイス切り抜きをまとめます。</p>
-    <p>このページは<a href="http://ushiumi.ichiya-boshi.net" target="_blank">宇志海ボタン</a>様をはじめ、<a href="https://wikiwiki.jp/nijisanji/%E2%97%8B%E2%97%8B%E3%83%9C%E3%82%BF%E3%83%B3" target="_blank">様々なボタン</a>のオマージュです。</p>
-    <p>「i」アイコンクリックで元動画、クリップのリンクが確認できます。</p>
-    <p><a href="https://www.anycolor.co.jp/guidelines/" target="_blank">ANYCOLOR二次創作ガイドライン</a>に基づき、ライバーの活動に敬意を払い、創作性のあるまとめができることを目指しています。</p>
-    <p>関連チャンネル: <a href="https://www.youtube.com/@master-j-abc" target="_blank">『コーヴァスのなきごえ』</a></p>
-    <p>関連twitter(X)アカウント: <a href="https://twitter.com/hero_master_j" target="_blank">『コーヴァスのなきごえ』</a></p>
-    <p>「フレン・E・ルスタリオ」チャンネルの<a href="./videos.html">動画一覧まとめページ</a></p>
-</div>
-<div id="root"></div>
-<hr style="clear: both;">
-<div>
-    <a href="./feed.rss"><img src="img/icons8-rss-48.png" width="48px" height="48px" alt="rssボタン">RSS</a> アイコン by <a target="_blank" href="https://icons8.com/icon/13841/rss">Icons8</a>
-</div>
-<script type="module" src="/src/main.tsx"></script>
+    <div>
+        <h1>
+            <a href="." class="logo">フレンボタン</a>
+            <a target="_blank" href="https://furen-button.github.io/furen-button/feed.rss">
+                <img src="img/icons8-rss-48.png" width="48px" height="48px" alt="rss">
+            </a>
+        </h1>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=フレンボタン&url=https://furen-button.github.io/furen-button/"
+            class="twitter-hashtag-button" data-show-count="false">Tweet #フレンボタン</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <p><a href="https://www.youtube.com/@FurenELustario"
+                target="_blank">コーヴァス帝国から来た女騎士フレン・E・ルスタリオさん</a>のボイス切り抜きをまとめます。</p>
+        <p>このページは<a href="http://ushiumi.ichiya-boshi.net" target="_blank">宇志海ボタン</a>様をはじめ、<a
+                href="https://wikiwiki.jp/nijisanji/%E2%97%8B%E2%97%8B%E3%83%9C%E3%82%BF%E3%83%B3"
+                target="_blank">様々なボタン</a>のオマージュです。</p>
+        <p>「i」アイコンクリックで元動画、クリップのリンクが確認できます。</p>
+        <p><a href="https://www.anycolor.co.jp/guidelines/"
+                target="_blank">ANYCOLOR二次創作ガイドライン</a>に基づき、ライバーの活動に敬意を払い、創作性のあるまとめができることを目指しています。</p>
+        <p>関連アカウント: 『コーヴァスのなきごえ』（<a href="https://www.youtube.com/@master-j-abc" target="_blank">YouTube</a>, <a
+                href="https://twitter.com/hero_master_j" target="_blank">Twitter(X)</a>)</p>
+        <p>「フレン・E・ルスタリオ」チャンネルの<a href="./videos.html">動画一覧まとめページ</a></p>
+    </div>
+    <div id="root"></div>
+    <hr style="clear: both;">
+    <div>
+        <a href="./feed.rss"><img src="img/icons8-rss-48.png" width="48px" height="48px" alt="rssボタン">RSS</a> アイコン by <a
+            target="_blank" href="https://icons8.com/icon/13841/rss">Icons8</a>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>
