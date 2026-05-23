@@ -1,10 +1,11 @@
 module.exports = {
+  root: true,
   env: {
-    es6: true,
+    es2021: true,
     node: true,
   },
   parserOptions: {
-    "ecmaVersion": 2018,
+    "ecmaVersion": "latest",
   },
   extends: [
     "eslint:recommended",
@@ -15,7 +16,6 @@ module.exports = {
     "prefer-arrow-callback": "error",
     "quotes": ["error", "double", {"allowTemplateLiterals": true}],
     "max-len": ["error", {"code": 120}],
-    "@typescript-eslint/no-var-requires": "off",
   },
   overrides: [
     {
