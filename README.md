@@ -8,7 +8,3 @@
 npm install
 npm run dev
 ```
-
-# ライセンス
-
-ソースコード部分は MIT ライセンスです。
