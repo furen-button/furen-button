@@ -34,9 +34,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
-      - name: Install dependencies
-        run: npm install
+          node-version: 24
       - name: Build
         run: npm ci && npm run build
         env:
