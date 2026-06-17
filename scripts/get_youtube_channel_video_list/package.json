@@ -1,24 +1,24 @@
 {
   "name": "get_youtube_channel_video_list",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "YouTube Data API v3 でチャンネルの全動画メタデータを取得し result.json に書き出す",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
   "scripts": {
-    "start": "tsc && node dist/main.js",
-    "lint": "eslint src/**/* .eslintrc.js",
-    "lint:fix": "eslint src/**/* .eslintrc.js --fix"
+    "start": "node src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "format": "biome format --write"
   },
   "keywords": [],
   "author": "Junki Hiroi",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.14.6",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
-    "eslint": "^8.35.0",
-    "eslint-config-standard-with-typescript": "^34.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.6.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "typescript": "^4.9.5"
+    "@biomejs/biome": "^2",
+    "@types/node": "^24",
+    "typescript": "^5"
   }
 }
