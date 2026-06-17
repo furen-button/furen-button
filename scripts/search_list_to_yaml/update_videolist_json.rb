@@ -85,12 +85,11 @@ videos.each do |d|
 end
 
 target_file_path = "#{__dir__}/../../public/dataset/videos.json"
-original_data = JSON.parse(File.read(target_file_path), symbolize_names: true)
 
-merged_data = original_data.push(*data).
+result = data.
   sort_by { |d| d[:viewCount] }.
   reverse.
   uniq { |d| d[:url] }.
   sort_by { |d| [d[:date], d[:id]] }
 
-File.write(target_file_path, JSON.dump(merged_data))
+File.write(target_file_path, JSON.dump(result))
