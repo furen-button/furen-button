@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.GH_PAT || github.token }}
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
